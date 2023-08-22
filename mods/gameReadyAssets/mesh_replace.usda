@@ -1,0 +1,93 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_4402C99EC2E35B81" (
+            references = @./meshes/mesh_4402C99EC2E35B81.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/mat_DD553F0CFB20AE3C/mat_DD553F0CFB20AE3C> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+            float3 xformOp:scale = (1, 1, 1)
+
+            over "mesh"
+            {
+                float3 xformOp:rotateYZX = (90, 0, -0)
+                float3 xformOp:scale = (0.5, 0.5, 0.5)
+            }
+        }
+
+        over "mesh_706BB7430D4A8F09" (
+            references = @./meshes/mesh_706BB7430D4A8F09.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/grass02> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+            double3 xformOp:rotateYZX = (0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+            over "mesh"
+            {
+                float3 xformOp:scale = (0.5, 0.5, 1)
+                double3 xformOp:translate = (1.4210854715202004e-14, 6.217248937900877e-15, 0.25)
+            }
+        }
+    }
+
+    over "Looks"
+    {
+        over "mat_DD553F0CFB20AE3C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/DD553F0CFB20AE3C_diffuse.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./texture/DD553F0CFB20AE3C_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}
+

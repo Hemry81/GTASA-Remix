@@ -1,0 +1,1560 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        def Material "Sliver"
+        {
+            token outputs:mdl:displacement.connect = </RootNode/Looks/Sliver/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </RootNode/Looks/Sliver/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </RootNode/Looks/Sliver/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Opacity.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                float inputs:anisotropy_constant = 0 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = -1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Anisotropy Amount"
+                    doc = "0 for isotropic, extents of -1 to 1 for anisotropy"
+                    hidden = false
+                )
+                color3f inputs:diffuse_color_constant = (0.95366794, 0.9536584, 0.9536584) (
+                    customData = {
+                        float3 default = (0.2, 0.2, 0.2)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Base Color"
+                    doc = "The base albedo color to use if no texture is specified"
+                    hidden = false
+                    renderType = "color"
+                )
+                float inputs:metallic_constant = 0.5 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = "Metallic Material"
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.099999994 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+    }
+
+    over "meshes"
+    {
+        over "mesh_D2A18A05CE5E88CB" (
+            prepend references = @../../captures/meshes/mesh_D2A18A05CE5E88CB.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_8EBD9D6F9949C142" (
+            prepend references = @../../captures/meshes/mesh_8EBD9D6F9949C142.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_B184BDE44A0BCA6D" (
+            prepend references = @../../captures/meshes/mesh_B184BDE44A0BCA6D.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_09DA2698959A025B" (
+            prepend references = @../../captures/meshes/mesh_09DA2698959A025B.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_45432E485F83A8AC" (
+            prepend references = @../../captures/meshes/mesh_45432E485F83A8AC.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_8FAACEFC9F89A8E7" (
+            prepend references = @../../captures/meshes/mesh_8FAACEFC9F89A8E7.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_7F8DDA32F6FDECC9" (
+            prepend references = @../../captures/meshes/mesh_7F8DDA32F6FDECC9.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_0C6277EA47A7A6F4" (
+            prepend references = @../../captures/meshes/mesh_0C6277EA47A7A6F4.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_4AD4B542749EFD3D" (
+            prepend references = @../../captures/meshes/mesh_4AD4B542749EFD3D.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_5A6B9152CE833CE2" (
+            prepend references = @../../captures/meshes/mesh_5A6B9152CE833CE2.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_B85CFD60D8BC7F4B" (
+            prepend references = @../../captures/meshes/mesh_B85CFD60D8BC7F4B.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_EE5A8617AFF67E94" (
+            prepend references = @../../captures/meshes/mesh_EE5A8617AFF67E94.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_59D45A4E920B9EAF" (
+            prepend references = @../../captures/meshes/mesh_59D45A4E920B9EAF.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_88F56F194A96B03B" (
+            prepend references = @../../captures/meshes/mesh_88F56F194A96B03B.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_D716983230FA4324" (
+            prepend references = @../../captures/meshes/mesh_D716983230FA4324.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_752B24DD20254A1A" (
+            prepend references = @../../captures/meshes/mesh_752B24DD20254A1A.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_FE11A9812C07BA1C" (
+            prepend references = @../../captures/meshes/mesh_FE11A9812C07BA1C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_23EF2A5E0E618F79" (
+            prepend references = @../../captures/meshes/mesh_23EF2A5E0E618F79.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_F3C9AD7674967F01" (
+            prepend references = @../../captures/meshes/mesh_F3C9AD7674967F01.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_A6E4E6FE80E93C77" (
+            prepend references = @../../captures/meshes/mesh_A6E4E6FE80E93C77.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_4FCF1EC861CD5C4A" (
+            prepend references = @../../captures/meshes/mesh_4FCF1EC861CD5C4A.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_EE1A2D55B0CC0B3C" (
+            prepend references = @../../captures/meshes/mesh_EE1A2D55B0CC0B3C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_DD7EAD3BB068CFF3" (
+            prepend references = @../../captures/meshes/mesh_DD7EAD3BB068CFF3.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_9DD2CF3D95BF9481" (
+            prepend references = @../../captures/meshes/mesh_9DD2CF3D95BF9481.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_DD4B1E001581CDD6" (
+            prepend references = @../../captures/meshes/mesh_DD4B1E001581CDD6.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_CBFBC3A26284D7FE" (
+            prepend references = @../../captures/meshes/mesh_CBFBC3A26284D7FE.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_67E164030FC287B0" (
+            prepend references = @../../captures/meshes/mesh_67E164030FC287B0.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_C6F103A4430A0638" (
+            prepend references = @../../captures/meshes/mesh_C6F103A4430A0638.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_004B80A866C961B1" (
+            prepend references = @../../captures/meshes/mesh_004B80A866C961B1.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_333E90CDF61975E5" (
+            prepend references = @../../captures/meshes/mesh_333E90CDF61975E5.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_0008A8B658B62685" (
+            prepend references = @../../captures/meshes/mesh_0008A8B658B62685.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_3D843A924614DF96" (
+            prepend references = @../../captures/meshes/mesh_3D843A924614DF96.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_3D77862B7C418662" (
+            prepend references = @../../captures/meshes/mesh_3D77862B7C418662.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_EC7E308A5BEF03BD" (
+            prepend references = @../../captures/meshes/mesh_EC7E308A5BEF03BD.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_4CFA536DF0113C00" (
+            prepend references = @../../captures/meshes/mesh_4CFA536DF0113C00.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_B1A4B7A67EDC8D7F" (
+            prepend references = @../../captures/meshes/mesh_B1A4B7A67EDC8D7F.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_A443266ADB6F8915" (
+            prepend references = @../../captures/meshes/mesh_A443266ADB6F8915.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_3A41D04FBBDF3D65" (
+            prepend references = @../../captures/meshes/mesh_3A41D04FBBDF3D65.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_A6917B92ABBF7A4A" (
+            prepend references = @../../captures/meshes/mesh_A6917B92ABBF7A4A.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_A710E53E0C84E23C" (
+            prepend references = @../../captures/meshes/mesh_A710E53E0C84E23C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_807C58BE187FC4A9" (
+            prepend references = @../../captures/meshes/mesh_807C58BE187FC4A9.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_DE9549FBFC6C3D11" (
+            prepend references = @../../captures/meshes/mesh_DE9549FBFC6C3D11.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_45D86B06D9A35883" (
+            prepend references = @../../captures/meshes/mesh_45D86B06D9A35883.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_6931F882BD9BC51D" (
+            prepend references = @../../captures/meshes/mesh_6931F882BD9BC51D.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_E3A0DAC983A5D1F1" (
+            prepend references = @../../captures/meshes/mesh_E3A0DAC983A5D1F1.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_D151EF2577DFEB9C" (
+            prepend references = @../../captures/meshes/mesh_D151EF2577DFEB9C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_DE5BB121A07920F5" (
+            prepend references = @../../captures/meshes/mesh_DE5BB121A07920F5.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_558BA6421F2CB4D5" (
+            prepend references = @../../captures/meshes/mesh_558BA6421F2CB4D5.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_BC1F9B60BA24478A" (
+            prepend references = @../../captures/meshes/mesh_BC1F9B60BA24478A.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_CACF9E261ED7E8DD" (
+            prepend references = @../../captures/meshes/mesh_CACF9E261ED7E8DD.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_2E65476573570474" (
+            prepend references = @../../captures/meshes/mesh_2E65476573570474.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_09A9E55B3B06F60E" (
+            prepend references = @../../captures/meshes/mesh_09A9E55B3B06F60E.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_52CFB711FEBAEA2B" (
+            prepend references = @../../captures/meshes/mesh_52CFB711FEBAEA2B.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_417E253558A2C96B" (
+            prepend references = @../../captures/meshes/mesh_417E253558A2C96B.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_1C31F1EE0E0D71D8" (
+            prepend references = @../../captures/meshes/mesh_1C31F1EE0E0D71D8.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_3726A63DB31AE706" (
+            prepend references = @../../captures/meshes/mesh_3726A63DB31AE706.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_B0BEB62673F89967" (
+            prepend references = @../../captures/meshes/mesh_B0BEB62673F89967.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_CF14E39F52740C1D" (
+            prepend references = @../../captures/meshes/mesh_CF14E39F52740C1D.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_6E6CD24991F69956" (
+            prepend references = @../../captures/meshes/mesh_6E6CD24991F69956.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_EE0A8846B7793FE4" (
+            prepend references = @../../captures/meshes/mesh_EE0A8846B7793FE4.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_78664CA66B40CC0B" (
+            prepend references = @../../captures/meshes/mesh_78664CA66B40CC0B.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_C54D3D787D3DBE8F" (
+            prepend references = @../../captures/meshes/mesh_C54D3D787D3DBE8F.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_78A71EC4FC20EC36" (
+            prepend references = @../../captures/meshes/mesh_78A71EC4FC20EC36.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_203D491DDB007344" (
+            prepend references = @../../captures/meshes/mesh_203D491DDB007344.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_3DDA06CF2E0AEF08" (
+            prepend references = @../../captures/meshes/mesh_3DDA06CF2E0AEF08.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_D4C684044360CC58" (
+            prepend references = @../../captures/meshes/mesh_D4C684044360CC58.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_1C4B6FD091C6543F" (
+            prepend references = @../../captures/meshes/mesh_1C4B6FD091C6543F.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_4F11495C80801129" (
+            prepend references = @../../captures/meshes/mesh_4F11495C80801129.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_4EB62B8745188F37" (
+            prepend references = @../../captures/meshes/mesh_4EB62B8745188F37.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_B55AC43F37DA235E" (
+            prepend references = @../../captures/meshes/mesh_B55AC43F37DA235E.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_21EDD27EFFF88D5E" (
+            prepend references = @../../captures/meshes/mesh_21EDD27EFFF88D5E.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_B012146CAF1E0D5C" (
+            prepend references = @../../captures/meshes/mesh_B012146CAF1E0D5C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_2065BC05BABEA41F" (
+            prepend references = @../../captures/meshes/mesh_2065BC05BABEA41F.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_1360168F073EC427" (
+            prepend references = @../../captures/meshes/mesh_1360168F073EC427.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_22E569C994D58A38" (
+            prepend references = @../../captures/meshes/mesh_22E569C994D58A38.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_1563BE87451D4A4A" (
+            prepend references = @../../captures/meshes/mesh_1563BE87451D4A4A.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_CACFA5A6A89AEFFA" (
+            prepend references = @../../captures/meshes/mesh_CACFA5A6A89AEFFA.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_C24B431A781A4AE6" (
+            prepend references = @../../captures/meshes/mesh_C24B431A781A4AE6.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_DD2BE4B245103BCD" (
+            prepend references = @../../captures/meshes/mesh_DD2BE4B245103BCD.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_3A14D58F5CB48B18" (
+            prepend references = @../../captures/meshes/mesh_3A14D58F5CB48B18.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_6DF37B9F10BE1A5C" (
+            prepend references = @../../captures/meshes/mesh_6DF37B9F10BE1A5C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_B1BF09C29AFDC417" (
+            prepend references = @../../captures/meshes/mesh_B1BF09C29AFDC417.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_E93ABBEDED5DD8EC" (
+            prepend references = @../../captures/meshes/mesh_E93ABBEDED5DD8EC.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_4D0B10B1A1DC59AC" (
+            prepend references = @../../captures/meshes/mesh_4D0B10B1A1DC59AC.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_361EF24756D2F4E8" (
+            prepend references = @../../captures/meshes/mesh_361EF24756D2F4E8.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_4CE2B79241E955F4" (
+            prepend references = @../../captures/meshes/mesh_4CE2B79241E955F4.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_64A58A59B2C1112C" (
+            prepend references = @../../captures/meshes/mesh_64A58A59B2C1112C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_839C79DCFCBB5FDC" (
+            prepend references = @../../captures/meshes/mesh_839C79DCFCBB5FDC.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_837D5AA339ACCD48" (
+            prepend references = @../../captures/meshes/mesh_837D5AA339ACCD48.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_872768E8943E601B" (
+            prepend references = @../../captures/meshes/mesh_872768E8943E601B.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_6469FCEFBADA7F60" (
+            prepend references = @../../captures/meshes/mesh_6469FCEFBADA7F60.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_32D896898D076B93" (
+            prepend references = @../../captures/meshes/mesh_32D896898D076B93.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_FC610DA97FAF2F2B" (
+            prepend references = @../../captures/meshes/mesh_FC610DA97FAF2F2B.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_9A2AF7AC0F34085A" (
+            prepend references = @../../captures/meshes/mesh_9A2AF7AC0F34085A.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_65253560AAA0698F" (
+            prepend references = @../../captures/meshes/mesh_65253560AAA0698F.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_A5B7CB3A901ACBBD" (
+            prepend references = @../../captures/meshes/mesh_A5B7CB3A901ACBBD.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_362D359B5A60F611" (
+            prepend references = @../../captures/meshes/mesh_362D359B5A60F611.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_46245199646A97A3" (
+            prepend references = @../../captures/meshes/mesh_46245199646A97A3.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_2EF9BE5855E68CD9" (
+            prepend references = @../../captures/meshes/mesh_2EF9BE5855E68CD9.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_D7C7257B7EE19383" (
+            prepend references = @../../captures/meshes/mesh_D7C7257B7EE19383.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_165D2B40D6F16423" (
+            prepend references = @../../captures/meshes/mesh_165D2B40D6F16423.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_B88E24D247395A9E" (
+            prepend references = @../../captures/meshes/mesh_B88E24D247395A9E.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_AD773AE23C874CBC" (
+            prepend references = @../../captures/meshes/mesh_AD773AE23C874CBC.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_13759B0993D38BEF" (
+            prepend references = @../../captures/meshes/mesh_13759B0993D38BEF.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_8B3F653DFEC48B33" (
+            prepend references = @../../captures/meshes/mesh_8B3F653DFEC48B33.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_CF195F5D378DAEF0" (
+            prepend references = @../../captures/meshes/mesh_CF195F5D378DAEF0.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_6BBBE38C30D53C5B" (
+            prepend references = @../../captures/meshes/mesh_6BBBE38C30D53C5B.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_AA04C5BE7FCEF08C" (
+            prepend references = @../../captures/meshes/mesh_AA04C5BE7FCEF08C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_CE49121A6062220E" (
+            prepend references = @../../captures/meshes/mesh_CE49121A6062220E.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_76118E8C800E48D5" (
+            prepend references = @../../captures/meshes/mesh_76118E8C800E48D5.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_395386496108472B" (
+            prepend references = @../../captures/meshes/mesh_395386496108472B.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_B124A837351790E1" (
+            prepend references = @../../captures/meshes/mesh_B124A837351790E1.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_687064EFA23E96D6" (
+            prepend references = @../../captures/meshes/mesh_687064EFA23E96D6.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_412C454320F869D1" (
+            prepend references = @../../captures/meshes/mesh_412C454320F869D1.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_15B1E5C1BC5D24EC" (
+            prepend references = @../../captures/meshes/mesh_15B1E5C1BC5D24EC.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_1952A3D1AA1A2A29" (
+            prepend references = @../../captures/meshes/mesh_1952A3D1AA1A2A29.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_A9D4EFDC5EE69B2F" (
+            prepend references = @../../captures/meshes/mesh_A9D4EFDC5EE69B2F.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_EDD0D44CBDD1FAD8" (
+            prepend references = @../../captures/meshes/mesh_EDD0D44CBDD1FAD8.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_3EABE431CBDB4069" (
+            prepend references = @../../captures/meshes/mesh_3EABE431CBDB4069.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_A5A56CA42F4AAF66" (
+            prepend references = @../../captures/meshes/mesh_A5A56CA42F4AAF66.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_3D3D827C24CCD338" (
+            prepend references = @../../captures/meshes/mesh_3D3D827C24CCD338.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_6E4852DAD4B8E0A4" (
+            prepend references = @../../captures/meshes/mesh_6E4852DAD4B8E0A4.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_122DD169DA986E76" (
+            prepend references = @../../captures/meshes/mesh_122DD169DA986E76.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_0FFDB7A107C64BC3" (
+            prepend references = @../../captures/meshes/mesh_0FFDB7A107C64BC3.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_4D8A69AEBDDE8E17" (
+            prepend references = @../../captures/meshes/mesh_4D8A69AEBDDE8E17.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_2836DBDEF20D417F" (
+            prepend references = @../../captures/meshes/mesh_2836DBDEF20D417F.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_5C38FFE46FCACF63" (
+            prepend references = @../../captures/meshes/mesh_5C38FFE46FCACF63.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_4D5256EF77B324FD" (
+            prepend references = @../../captures/meshes/mesh_4D5256EF77B324FD.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_9C5AD4540A10FB8C" (
+            prepend references = @../../captures/meshes/mesh_9C5AD4540A10FB8C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_90AC4CA50A50F35D" (
+            prepend references = @../../captures/meshes/mesh_90AC4CA50A50F35D.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_51E6EDC585BEC09D" (
+            prepend references = @../../captures/meshes/mesh_51E6EDC585BEC09D.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_2A77FDB7684129A2" (
+            prepend references = @../../captures/meshes/mesh_2A77FDB7684129A2.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_996CD87C01C9049C" (
+            prepend references = @../../captures/meshes/mesh_996CD87C01C9049C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_B743BA52006C627E" (
+            prepend references = @../../captures/meshes/mesh_B743BA52006C627E.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_98E370D9B7C53805" (
+            prepend references = @../../captures/meshes/mesh_98E370D9B7C53805.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+        }
+
+        over "mesh_E42F7E408E3E2B8C" (
+            prepend references = @../../captures/meshes/mesh_E42F7E408E3E2B8C.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_2EBEF7D3F4CBF551" (
+            prepend references = @../../captures/meshes/mesh_2EBEF7D3F4CBF551.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_9441C9A6BDC27D84" (
+            prepend references = @../../captures/meshes/mesh_9441C9A6BDC27D84.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_5641E7595AC41A92"
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+
+            over "mesh"
+            {
+                rel material:binding = None (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "mesh_3B7EDD57E5659566"
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_44B2DB3CDA056D76"
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_D482944FB588C3B9"
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_2E0FC2BE109285F9"
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_79C5F7EB61DD337F"
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_A8E4C2BCB9401DEB"
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_C0C3FA4D2A4BE9E1"
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_496C6592F3F7FC0F"
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_70589CF0A30D44BE"
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+
+        over "mesh_E6083B262A6DB1B9"
+        {
+            rel material:binding = </RootNode/Looks/Sliver> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+        }
+    }
+}
+

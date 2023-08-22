@@ -1,0 +1,484 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (50000, 0, 0)
+                double radius = 500
+            }
+            dictionary Perspective = {
+                double3 position = (500, 500, 500)
+                double3 target = (-0.000003978038705554354, -0.000003978038478180679, 0.000007956076956361358)
+            }
+            dictionary Right = {
+                double3 position = (0, -50000, 0)
+                double radius = 500
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 50000)
+                double radius = 500
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./Vechicle_Dirt.usda"
+        }
+        dictionary renderSettings = {
+            float3 "rtx:debugView:pixelDebug:textColor" = (0, 1e18, 0)
+            float3 "rtx:fog:fogColor" = (0.75, 0.75, 0.75)
+            float3 "rtx:post:backgroundZeroAlpha:backgroundDefaultColor" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gain" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:offset" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:saturation" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:blackpoint" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gain" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:lift" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:multiply" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:offset" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:whitepoint" = (1, 1, 1)
+            float3 "rtx:post:lensDistortion:lensFocalLengthArray" = (10, 30, 50)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffX" = (450, 475, 500)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffY" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:cutoffPoint" = (2, 2, 2)
+            float3 "rtx:post:lensFlares:haloFlareFalloff" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:haloFlareRadius" = (75, 75, 75)
+            float3 "rtx:post:lensFlares:isotropicFlareFalloff" = (50, 50, 50)
+            float3 "rtx:post:tonemap:whitepoint" = (1, 1, 1)
+            float3 "rtx:raytracing:inscattering:singleScatteringAlbedo" = (0.9, 0.9, 0.9)
+            float3 "rtx:raytracing:inscattering:transmittanceColor" = (0.5, 0.5, 0.5)
+            float3 "rtx:sceneDb:ambientLightColor" = (0.1, 0.1, 0.1)
+        }
+    }
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        def Material "mat_6744B3BBF6879D1B" (
+            prepend references = @../../captures/materials/mat_6744B3BBF6879D1B.usd@</Looks/mat_6744B3BBF6879D1B>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_D90D4D3A363E2D06" (
+            prepend references = @../../captures/materials/mat_D90D4D3A363E2D06.usd@</Looks/mat_D90D4D3A363E2D06>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_E00210386D1E3D7B" (
+            prepend references = @../../captures/materials/mat_E00210386D1E3D7B.usd@</Looks/mat_E00210386D1E3D7B>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_A7126B29C7A1F586" (
+            prepend references = @../../captures/materials/mat_A7126B29C7A1F586.usd@</Looks/mat_A7126B29C7A1F586>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_DF24CDC606001ADD" (
+            prepend references = @../../captures/materials/mat_DF24CDC606001ADD.usd@</Looks/mat_DF24CDC606001ADD>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_A501878863BF1862" (
+            prepend references = @../../captures/materials/mat_A501878863BF1862.usd@</Looks/mat_A501878863BF1862>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_71C896437A8ECE62" (
+            prepend references = @../../captures/materials/mat_71C896437A8ECE62.usd@</Looks/mat_71C896437A8ECE62>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_1B67CA7C24B9DF56" (
+            prepend references = @../../captures/materials/mat_1B67CA7C24B9DF56.usd@</Looks/mat_1B67CA7C24B9DF56>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_7B1116EE80CDA9D6" (
+            prepend references = @../../captures/materials/mat_7B1116EE80CDA9D6.usd@</Looks/mat_7B1116EE80CDA9D6>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_70D3CAA09EE18851" (
+            prepend references = @../../captures/materials/mat_70D3CAA09EE18851.usd@</Looks/mat_70D3CAA09EE18851>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_53F3C7A9D23B2155" (
+            prepend references = @../../captures/materials/mat_53F3C7A9D23B2155.usd@</Looks/mat_53F3C7A9D23B2155>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_2666BCF9E135D13E" (
+            prepend references = @../../captures/materials/mat_2666BCF9E135D13E.usd@</Looks/mat_2666BCF9E135D13E>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_DAB9D43440C2814C" (
+            prepend references = @../../captures/materials/mat_DAB9D43440C2814C.usd@</Looks/mat_DAB9D43440C2814C>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_F235711A4170FFAF" (
+            prepend references = @../../captures/materials/mat_F235711A4170FFAF.usd@</Looks/mat_F235711A4170FFAF>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "mat_C5EC256B892AF69B" (
+            prepend references = @../../captures/materials/mat_C5EC256B892AF69B.usd@</Looks/mat_C5EC256B892AF69B>
+        )
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/vechicle_dirt.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+            }
+        }
+    }
+}
+

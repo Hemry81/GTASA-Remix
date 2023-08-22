@@ -1,0 +1,18 @@
+#usda 1.0
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_A501878863BF1862"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./A501878863BF1862_albedo.dds@
+                asset inputs:normalmap_texture = @./A501878863BF1862_normal.dds@
+                asset inputs:reflectionroughness_texture = @./A501878863BF1862_rough.dds@
+            }
+        }
+    }
+}
+

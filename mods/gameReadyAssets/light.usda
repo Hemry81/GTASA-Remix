@@ -1,0 +1,1248 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_7CBD40F69B3F1360" (
+            references = @../../captures/meshes/mesh_7CBD40F69B3F1360.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/mat_6C623E5230AFF8CF> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def RectLight "Airport_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (21, 10.999999999999998, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Airport_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (26, 11, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Airport_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (31, 11, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Airport_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (36, 11, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Airport_Light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (41, 11, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Airport_Light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (46, 11, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Airport_Light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (21, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Airport_Light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (26, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Airport_Light_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (31, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Airport_Light_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (36, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Airport_Light_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (41, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Airport_Light_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (46, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_876C7E32ABEA5BB2" (
+            payload = None
+            references = @../../captures/meshes/mesh_876C7E32ABEA5BB2.usd@
+        )
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def RectLight "Luggage_Room_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+                instanceable = false
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-16.2, 11.5, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Luggage_Room_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+                instanceable = false
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.65, 11.5, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Luggage_Room_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+                instanceable = false
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (10.9, 11.5, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Luggage_Room_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (25, 11.5, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Luggage_Room_Light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-16.2, -3.2, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Luggage_Room_Light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.65, -3.2, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Luggage_Room_Light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (10.9, -3.2, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Luggage_Room_Light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (25, -3.2, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Luggage_Room_Light_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.66, 4.200000000000009, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Luggage_Room_Light_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 1
+                float intensity = 100
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (11.6, 4.199999999999997, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_898CF16C05C9BD72" (
+            references = @../../captures/meshes/mesh_898CF16C05C9BD72.usd@
+        )
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def SphereLight "CJHome_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float diffuse = 1
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.12
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.631023473641882, -1.5616874480043224, 0.6940412689529689)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_2634ADCEE8C94B32" (
+            references = @../../captures/meshes/mesh_2634ADCEE8C94B32.usd@
+        )
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def SphereLight "StreetLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                bool inputs:normalize = 1
+                float intensity = 500
+                bool light:enableCaustics = 0
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 2.8)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4C277D1761299A8B" (
+            references = @../../captures/meshes/mesh_4C277D1761299A8B.usd@
+        )
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def RectLight "Street_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 0.15
+                bool inputs:normalize = 1
+                float intensity = 500
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                bool visibleInPrimaryRay = 0
+                float width = 0.8
+                double3 xformOp:rotateYZX = (0, 6.500000096857548, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.46837010406790475, 0.013196293136559447, 3.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4C2489FAD0A31AB9" (
+            references = @../../captures/meshes/mesh_4C2489FAD0A31AB9.usd@
+        )
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def DiskLight "StreetLightType4_Light" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                bool inputs:normalize = 1
+                float intensity = 500
+                float radius = 0.18
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.36, 0, 4.22)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_5ED6BD34465B1EA4" (
+            references = @../../captures/meshes/mesh_5ED6BD34465B1EA4.usd@
+        )
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+            float3 xformOp:rotateYZX = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+            def RectLight "Tunnel_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 0.5
+                bool inputs:normalize = 1
+                float intensity = 1000
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                float width = 2
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (67.85, -10.07, 3.7)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_2D3B3C25D765D1D2" (
+            references = @../../captures/meshes/mesh_2D3B3C25D765D1D2.usd@
+        )
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def DiskLight "Pizza_Light" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.25
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0.08)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_5D8FB85D290F2DC7" (
+            references = @../../captures/meshes/mesh_5D8FB85D290F2DC7.usd@
+        )
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def SphereLight "CJ_Room_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.05
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, -1.0000000149011612)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_32040A04B8F232D5" (
+            references = @../../captures/meshes/mesh_32040A04B8F232D5.usd@
+        )
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def SphereLight "Ad_light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.121494994067911, -4.229145472015239, 1.9328616384286996)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "Ad_light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4.890155860964456, -2.2291454720152397, 1.9328616384286996)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "Ad_light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4.656861689780138, -0.22914547201523927, 1.9328616384286996)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "Ad_light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4.41127486279349, 1.7708545279847585, 1.9328616384286996)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "Ad_light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (4.1513181322205135, 3.77085452798476, 1.9328616384286996)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "Ad_light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.889848836005955, 5.770854527984756, 1.9328616384286996)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "Ad_light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-5.157133420057653, -4.21625609059747, 1.9328616384286994)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "Ad_light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-4.868150313640318, -2.2237685602198116, 1.9328616384286994)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "Ad_light_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-4.581056943009183, -0.2307799584339736, 1.9328616384286994)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "Ad_light_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-4.305845628182515, 1.7653592205264417, 1.9328616384286994)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "Ad_light_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-4.044524232594155, 3.765181370113226, 1.9328616384286994)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "Ad_light_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 30
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.7846648798425817, 5.765391186520136, 1.9328616384286994)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_40457909CA94A75C" (
+            references = @../../captures/meshes/mesh_40457909CA94A75C.usd@
+        )
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def DiskLight "Signs_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, -13.500000201165676, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.400000035762787, 0.10000000149011612, 4.500000067055225)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def DiskLight "Signs_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, -13.500000201165676, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.400000035762787, -3.059999998509884, 4.500000067055225)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def DiskLight "Signs_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, -13.500000201165676, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.400000035762787, -6.219999998509884, 4.500000067055225)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def DiskLight "Signs_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, -13.500000201165676, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.400000035762787, -9.379999998509884, 4.500000067055225)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def DiskLight "Signs_Light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, -13.500000201165676, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.400000035762787, -12.539999998509884, 4.500000067055225)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def DiskLight "Signs_Light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.394867956189859, 12.652934828289233, 4.5000000670552325)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def DiskLight "Signs_Light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.394867956189822, 9.492934828289275, 4.5000000670552645)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def DiskLight "Signs_Light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.3948679561898536, 6.332934828289323, 4.5000000670552325)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def DiskLight "Signs_Light_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.394867956189866, 3.172934828289162, 4.500000067055233)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def DiskLight "Signs_Light_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.3948679561898483, 0.012934828289201228, 4.5000000670552325)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B8EA0EF3A1DB16C3"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "Street_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 0.3
+                float intensity = 100
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                float width = 1.8
+                double3 xformOp:rotateYZX = (0, 22.500000335276127, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.9000000432133675, 0, 5.300000078976154)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Street_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 0.3
+                float intensity = 100
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                float width = 1.8
+                double3 xformOp:rotateYZX = (0, -22.5, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.9, 0, 5.300000078976154)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_490B788A5B361C35"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "SphereLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 100
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.65, 0, 4.4)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+    }
+
+    over "Looks"
+    {
+        over "mat_24E3AC08C370B770"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/props/24E3AC08C370B770_albedo.dds@ (
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 300 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./texture/props/24E3AC08C370B770_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./texture/props/24E3AC08C370B770_normal.dds@ (
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./texture/props/24E3AC08C370B770_rough.dds@ (
+                    hidden = false
+                )
+            }
+        }
+    }
+}
+

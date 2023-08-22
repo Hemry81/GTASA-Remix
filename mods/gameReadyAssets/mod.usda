@@ -1,0 +1,22 @@
+#usda 1.0
+(
+    customLayerData = {
+        int refinementOverrideImplVersion = 0
+    }
+    subLayers = [
+        @./characters.usda@,
+        @./Pedestrian.usda@,
+        @./light.usda@,
+        @./texture/sky/sky.usda@,
+        @./texture/plant/plant.usda@,
+        @./texture/props/props.usda@,
+        @./cars.usda@,
+        @./buildings.usda@,
+        @./effect.usda@,
+        @./materials.usda@,
+        @./water.usda@,
+        @./rough_only.usda@
+    ]
+    upAxis = "Z"
+)
+

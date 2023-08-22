@@ -1,0 +1,68 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_F9F9609466CD8D4D"
+        {
+            def Xform "Xform" (
+                references = @../../../../captures/meshes/mesh_F9F9609466CD8D4D.usd@
+            )
+            {
+                double3 xformOp:rotateYZX = (0, 0, -0)
+                double3 xformOp:scale = (20, 20, 20)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_9F15511F8AF8516F"
+        {
+            def Xform "Xform" (
+                references = @../../../../captures/meshes/mesh_9F15511F8AF8516F.usd@
+            )
+            {
+                double3 xformOp:rotateYZX = (0, 0, -0)
+                double3 xformOp:scale = (20, 20, 20)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_35CB82799C618070"
+        {
+            def Xform "Xform" (
+                references = @../../../../captures/meshes/mesh_35CB82799C618070.usd@
+            )
+            {
+                double3 xformOp:rotateYZX = (0, 0, -0)
+                double3 xformOp:scale = (20, 20, 20)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+

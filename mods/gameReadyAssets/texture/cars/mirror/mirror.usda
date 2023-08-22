@@ -1,0 +1,101 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        def Material "Mirror" (
+            references = None
+        )
+        {
+            token outputs:mdl:displacement.connect = </RootNode/Looks/Mirror/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </RootNode/Looks/Mirror/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </RootNode/Looks/Mirror/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @../../../materials/AperturePBR_Opacity.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                color3f inputs:diffuse_color_constant = (0.000001, 9.9999e-7, 9.9999e-7) (
+                    customData = {
+                        float3 default = (0.2, 0.2, 0.2)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Base Color"
+                    doc = "The base albedo color to use if no texture is specified"
+                    hidden = false
+                    renderType = "color"
+                )
+                asset inputs:diffuse_texture = @./scratch_diffuse.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:metallic_constant = 0 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = "Metallic Material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./scratch_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:reflection_roughness_constant = 0.5 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./scratch_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+    }
+}
+

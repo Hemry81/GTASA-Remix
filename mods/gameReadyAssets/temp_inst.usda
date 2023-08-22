@@ -1,0 +1,3604 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary omni_layer = {
+            dictionary muteness = {
+            }
+        }
+    }
+    upAxis = "Z"
+)
+
+def "RootNode"
+{
+    over "instances"
+    {
+        over "inst_0E00937454CD1CD0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_AA40257B4576280A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3A7AD23B84349E3C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7846968941D75C72_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7CCB9585FE98B12E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_77CF7FA8BD1F4487_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8DB89BFD279FF2A9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0BCF344EDEDF9AB9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_25569A1BB9BAA3FC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7DBCCA723F3F2F46_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3833301E6B046154_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_5654E2FC46FBF3B3_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_04BF76236A39BAEE_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1EC5E23138743F16_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_6B3A8C2ABCB7D422_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_EEC3AE43652EA93A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_180EFA55AEEACFAD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BA564BD1FE043CB6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E0236FB0761107C8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0C26770658E1D2F2_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_335896E89D19996D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F792119B0DFB7D24_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_CC5C35A7C648C44A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_183BD3A053EDEB91_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C461920150C4E62D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4559140B704AF45A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_876BC9ABD80E23A0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9287FF20933659AE_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F1FBA1F85CDBF158_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0DC76BE60D395BCA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F6549448FEFBF1AA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8E5C43EE8B480742_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C815607F43EEACE8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_11CDFACCEA4C98B8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_623E09A107D81AA3_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A608D44D1C87226A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D3D39539C6794A60_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_09377D3A4003AACC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_94DFB168ECD51807_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2728321E0F7D2E36_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_DBBEB36168F81058_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_87F85EA919CD1AE6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4D35AA078A664FA5_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B7FC767674826567_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_AE8164739CBA674A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D39AA17895DAC1FB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A5C55CF2142BFDF8_0" (
+            delete references = </RootNode/meshes/mesh_A5C55CF2142BFDF8>
+        )
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_AEBC8BAEF64E16BA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4E4429409D39E47B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A14EBCD3837CCFEB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_26225C2F1E737973_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_94B3944223FAF74E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B58246668213366B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B90AF32743D8A9EB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E5C152BA1BAB0601_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9D49BB198692C0F9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FA20998EE983ABB4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_14C05E1C28109157_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_54F85AA0702779A1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1657BE1F7BF83A17_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FA11E8ECDC30FE70_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_17CBD4CD24A9BF81_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1CF9579EE8FDA93D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D46068420E000F74_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D3FF07DF510374DB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3C6FB32774AF7B6E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BD86EEC9DCF6F3FD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C6A5E17664D352EE_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_42CB77CE23A72818_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C6C941AAC939738C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_438B4033971D24E6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3E202ACDDF43CDB6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D7AC21A2AEB14656_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_40A463BE8B6D8687_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_ECDE9BDD2E66CD5D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4B0E2F8E27018141_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A91B7D229E498E48_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7A1FAFCBBD0A34DA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BD42EF296335A00D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A1A7FCD4A2A73406_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B580F7EF4AB3224C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_845DB4061853CBAD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_79A90CBF0D64F924_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FD0A0543E4715285_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0917ACFEA14928A2_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7F4650845DDE463D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2E6B4AF43C497E60_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_53ECB653DF62526D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_238D56497E441AED_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A8A32D1746E20E1B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_183C1DE4AF0489A4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C799F801861F5D40_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_03DEC44CCE9CDD28_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_6024627127C715A8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_041662302FD5C01A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A261873FCE9A8949_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A5A4C94F3AAF6C76_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3F946980D6855649_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D34BD965C0494977_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_50DF018A02E402CA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A13D54A92E25A47C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BBFA9AD6D19194DA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FD4B40C01CA6AD2D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0A5827A30C79BF8D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8D9E61C675ED914C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B8CDF692888EE53E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D8D47A7BAD38A246_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_509C9743F8F48649_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BD684B08E0F6FEB3_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3EFDED00A31E29FA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F8D6E11903022053_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1363DD6253296F23_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_82BCB1B69BEC7AA4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4FB6929D8194B1AF_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_82B63221F1F56332_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_47E1709833773550_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8368323588763F95_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C473EB43D95332FE_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F86EAFCC34F285A4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9ABF424EE36E9EC9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9E777C5B68C0478F_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E49C80EF00F1FC07_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B5567AD0BC470C97_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_528C032411E7E0C1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_62F90C1DB4C6AC2D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3E925877DF0C9585_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_CAF8819ECB8E66E0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2AC5FF5C1C2C36F0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_EA85A79D32EF348A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1F62C0372322B759_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7E3FAF914A0A98A9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1D3C704AFAEDCD84_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7CF981F6BAC17E41_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_5426496F369911DD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_36F8A1370172EE3F_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1E21C2E908E0834A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_370A74219D215D94_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_DFA8A513C3D4401F_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7800272F9CE40F3F_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_38D8C69897CC4BB5_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_32749C3420DB6A62_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_733369E6E011A7A1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_19CB8DB4A79E2EF8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F6AD39FB2A0F4D46_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_39DD04B257F3393D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_40928AF2043E267C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_03DEFB6013954C2B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_008C17E1D2D22955_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0D7295D21F6E6DD7_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C069ABC89E642A20_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_89407BC8716FF505_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_22B215A56AE067EC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C07B2248735323B4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A27EB0ED9EDB6CD4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8748258A8CC372CD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A45C1DF67FF72FFD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3B69E3E0E38AA261_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A2B37B1BA41A1F81_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_CB1E3EEBE205A907_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_5E33BB8A6C1A6831_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_84DC0287ACE6B1B8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A3E19E598169E568_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A8EAD64D8E655009_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A5F05E01E3742D39_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_376BE68D79B9DF12_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_24517E662A227E64_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1782F654A1377F63_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C9BB78F2A76144AB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_11ADEC353DA5193E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3F8877A638A50F88_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_40D099780357E277_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B2F175C1CA74386C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B6706DC037C3E67C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_867F77B079897F4B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A9D4B3AD3FEB17F0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A598B0CF87ED155C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FDFCE2B122D04B82_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2EF38446348B719B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E085831A2585F0F4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A4A3EAA626F5CF9C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_EB1C7BF276538F16_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F284D5AE1E0E0869_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_296C43356E75E4EE_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C68640E9D7BC3FD0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7D96499B8ECD85FB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7D86F6BDD1752B97_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_07374AE6243BEB6E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_5A089E9F8D8913A5_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_14D1FEAFA7F84819_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_47495DAA13097E65_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3AAF43419F26AA06_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F7073C4B25B01902_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_DCEE06582E4A78C6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FF378604084F436E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9B458E9FF191EE03_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8CD869BC3EC313D0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_ACE7BBBE00862FD6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_39C183A0736B929B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BB894CC6CDC5C321_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2D7D79D104AE5802_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_22F671C8380DFBAA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_294B3D64CFAC8CD0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_939E553D2044DA33_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D9CDE059F3E7471F_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E8434CCCE877D5BB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0DDC035F84D22D51_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3A501F2E5FEFA52D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_719E382B456076B0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_5FEC2FFEA8FA0F62_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FA1155FF3ABDB345_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F150498D3E152597_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_38DD50948A9A7677_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F368EDC11B5D63C1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BEA6EB9DB9E4C1E4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F1BDBAA2F3968EA7_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_AF18814DCF6759EC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_62FA22B1ED5DF815_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A2A1FF69183D4A21_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1F1AC931FCAAE4EB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_CEB3602BFA4E271A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FDCFAF36668C2A97_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1439BE6999D88B11_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1CEB7C996547BA66_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8AA5190B4EC457A3_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_716AADD32B4E870A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_469885245B85296A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_DE8743E90AFF705C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3E8072689941983D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7F7650FCF27C5EA6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_DD2EE178A292ADBD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_89BB04EA39B83831_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_354245C6D5ECF73C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_10B7D501E189D58C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1F3E3C201D41CD79_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1BB33F2CA20E2025_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_79BD489864E2AE1D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0C422683E0214529_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E0DE4B9B7E3C92D3_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_EAC031547B0963A2_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_6CB79EE782490BB2_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4473ADC7260052AF_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_AA614E3E556BB45A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C403C3DF0FE07763_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_28C365F9E4B474B1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_430C6DDD90EFE157_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B31D8AAA88D9C84B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_98CF9AC8D5BEBED2_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_CB2BBA97AD5E4391_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_959E6589D61D0026_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0E3634AE113983EB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_47BF043FA1264753_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_74ABB4C772159322_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_04D385EBEA156AEC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A6685B19F824FFFD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1B253A02D7780556_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0B87AD46E311C8F0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E62559D828642958_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2A09C53575DE9701_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E4F2E78014B9BC1B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C6179992C78874DA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_74AE177073C0FA82_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_305E24F3D1889D4A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2627D945FA692A3D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_427A988DFDF6451A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_56718EE7BB46C60D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7C0AC74AEACEA0C8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_EB233F93A3B29050_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FDFEB5D06B440870_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_36FFB5F04D3A381F_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_6B42757491F6B7A4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_67ADC34546506B75_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_523AEF6F897A6637_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_87A6E13222AA03D8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D682D4A2CFC45C58_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_726B3992EE13EB95_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_42057CCBD375E1F6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FB2505A439EAF73C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_EFEB0E591438AF8C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_11D06B56AC4B8D0E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A03110904E19332D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_ECD4C7DAC2A0697D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_84D3071DF8EABF42_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3500DF6DA1C3C2B0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E26D70B54F30A4CA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_49C060EFD9271B4F_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1DF6C76A85B62093_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_405C183D87AB84D8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_14791954E6105D2C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C367E974ED44CC7F_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F01B81D514868A5A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_6F25363A3228EF76_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BAC5CA667B0480A3_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8307DF78840E04DC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2F8BCD1100C2A6F1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9F933FE66C3A271F_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A757DDD97F055A8E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_496A77A1AAAA072B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4906E2D3BC9005CF_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_CE7613E1E30FF312_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C314279DD150624C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8CE1D7D4688BFDBF_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C53A50F55CF14226_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3371C0232BA09159_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A22987CCA6894053_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_64774A0ED24082EC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2946CC39232FB421_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F7EFB27E664EA405_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_07581B8876D1FB4E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_108A8F62500B5E2B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_900CF50DCCBA43FC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_90C56EB04F28AEF9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_5C34C101E8B2BEE8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0FFEF40794E1AF05_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1CD37CB811F7E3D1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_6E1FBFA0988144B8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_06AE8EEF32E751C2_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_382C84E1E8980825_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1E7627ECD6F91D1E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4A20090CBE8D4C74_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8899B2364226FB09_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_AFD20944C3EA44EE_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C99888F470EFA40E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BEA4A445A1DD6733_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_21BC7AB2808105A5_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B393B105FDB6E1F1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8FCDB6F74AF81AB1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_739313252C9DFEC0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_68AFDBB844909E01_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_46F019EA20024D96_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_564333ABF5D91E9D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_AF0B76BEA39D84B8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3FF813C6CFD26224_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E895088DB451E3B0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_765EA06FACAA2409_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7594DE17EB832EA6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F60D0C1EDC65310A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_02B0C69098E89FA0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FC75149D37492AE4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D9194C5FEDDDB7FB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_ABEAFC3E311EC9B9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C4C954FD192A8D81_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4CA9246B97165AB0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7C973EE4854272FD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A6784301252079B2_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_328C70D450580C0B_0"
+        {
+            rel material:binding = </RootNode/Looks/mat_8FC82B0CA4CB0EDF> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E483B404FCE2A310_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_5A3BEA58F8AA948A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C4B3B06BB81C4C0F_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_6FC7BE971335BB92_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C24397AAE8F574B0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F7A845D603660544_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_56CC937C7E7A8D07_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E0D74EBB91858BED_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4A868120372900FB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FF8E671EA6FAA728_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_99F54A8E25B2E172_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_98372EBFF31D79C7_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7D1DA17616FA143B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3B14A9F0B1E88075_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_459C687EEEE60A28_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B2FE074CB5BB3B98_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FF4BF536AA9DD298_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_ABD7AAF964FAC5CF_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_4B58A9CF29E78D85_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_28B0A1FA579CB023_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E41D1CA2416AE561_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F8CC601D7219ECE9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_88DB9333363793CA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A3FE3BD89B255DD9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3385B6BDDAEAF0B6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8323A2D9AAE1FB69_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_CCD16CC3D3A91AF2_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7987CBD93228C35C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_5A9941D2A4620F45_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_99F0E2A49C3B46A1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BC2CE2B5A51EEE20_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_13EF3DFEAE35487E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D77E581F4676648E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B434197C0BC6B281_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C7A3BFA8662F30E1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2A236A74B4BEC153_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E18D87B1575CAE3C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B375953FE8D1BA6C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_26B9F3D42B1C6FD2_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C1433B4A580C2AC8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_50FB010A4E6FA866_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_85B5C66BB0370432_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_35B0F991A5CABDB1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B1901CAA25AF42D9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_89D4CF10659BCFE9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9CF39524136D211E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3F8AB4DF81BA71CD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_51ED0175A56970EC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A83626FD8EA399D9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D9C0653C58D178E4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_6EB9D55412E100F7_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F07E0A48F65B1EB8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1D00ADF3277F14F4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FB55EA54B7B1C9D4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E83A2952F95791EC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_144A2982EEB06FF1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A27632A4D084743B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C04EA19D12C6C262_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_AE3477A9C0AF19BF_0" (
+            delete references = </RootNode/meshes/mesh_AE3477A9C0AF19BF>
+            prepend references = @../../captures/meshes/mesh_A5C55CF2142BFDF8.usd@
+        )
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_FF86A07DD9760FE3_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_63AF3412220E143E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_5ED611FB65D26B70_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_35264A9EE5729F0A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_5814790D3FEFF523_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_62FCC0431252EFB8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_606162070FD88402_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_352A7C3020A90EAD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3DC39AA16E9B8FB4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E270CC3AE6689BF8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B75475983EA2BCA0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C08D05919CDEC570_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A1BE1F44DF133364_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E77B134B4529A460_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B63BBFDE0FDCF6DD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C0DE53B8C3B3665A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_F94923F818606188_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A01561F068876567_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_003431A5D99A0A1D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8648A8AE3483F577_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E1412629F1386C19_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_CA36B5A8C0111D35_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_A6D67197F6D39A34_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_74EC037BB2DBCA24_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_21DA2BA49E6DA8FC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9780AC015235ED35_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D2E8036D33E266E8_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_ECFD0DC8745B7276_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_945746A459589DFC_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_23FC84B023769DA9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_090F5C267C04D6B5_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3F41253070ADD67D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E282159A8774E22C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2C8E8A0185ADA9AF_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9BC689C9DF897A38_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D80F023252E4EEB0_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_ED625469A2A76D0C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_95D5B0C54476C6D7_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E2E1F20EA981E47E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B0D6256A04BFE34A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BEC718F46A35856F_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C965160546483E25_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3F3CA53EFEDF76F4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_15A643D12E10EC74_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_06F9C61E19AAE48D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_69BFC01DB73587BB_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0814423C8577A42B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_38053521547A32D3_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_EE732467506E663D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_B0DD197818EA3FEE_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_12ACABEF03CBCC21_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BFB143E7A9BBB989_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_246DB2213A59086C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2399EA3B1DED5578_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_39DB3FBC317CBD00_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E012118469293A9D_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_831370AB7F58DD0E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E54F7E61D9B8E17C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C522E733C6FF0228_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C0F704594339B988_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_2CC0D75AEEA277CD_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1EF2650717450FD7_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E6C65590E62CA1EF_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3F4412EC78F567B6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_8D03692CB8E61DE6_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7AE306FC6D3E074B_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_BC7DA253CA812FE4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7E06FDA8DCC8769A_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_97481D731E7FE748_0"
+        {
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_CD1B7BF851E001E1_0"
+        {
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_91DDA69859C1D5A2_0"
+        {
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_B10B9D6E202F0308_0"
+        {
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_B8EE5DCC96C30EBC_0"
+        {
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_B5E97E420D8D01E3_0"
+        {
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_B5E2AAF6FFB2AE98_0"
+        {
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_EE628EEEB9AE6669_0"
+        {
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_2731D293FF032517_0"
+        {
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_76DA21F35BD224C3_0"
+        {
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_8FE97516B5073546_0"
+        {
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+    }
+
+    def "Looks"
+    {
+        over "mat_5E4E38B22D784321"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                float inputs:ior_constant = 1.485 (
+                    customData = {
+                        float default = 1.3
+                        dictionary range = {
+                            float max = 3
+                            float min = 1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Index of Refraction"
+                    doc = "Index of Refraction of the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./texture/cars/glass/5E4E38B22D784321_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:thin_wall_thickness = 0.099999994 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0.001
+                        }
+                        dictionary soft_range = {
+                            float max = 1
+                            float min = 0.001
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled material thickness"
+                    doc = "Simulated thickness for thin-walled materials (0 disables thin-walled mode)"
+                    hidden = false
+                )
+                bool inputs:thin_walled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled"
+                    doc = "Whether the material is thin-walled"
+                    hidden = false
+                )
+                asset inputs:transmittance_texture = @./texture/cars/glass/5E4E38B22D784321_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance or Diffuse Albedo Texture"
+                    doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_diffuse_layer = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Use diffuse layer"
+                    doc = "When set, simulates a diffuse layer on top of the material"
+                    hidden = false
+                )
+            }
+        }
+
+        def Material "Windows_Glass" (
+            references = @./materials/AperturePBR_Translucent.usda@</Looks/Windows_Glass>
+        )
+        {
+            token outputs:mdl:displacement.connect = </RootNode/Looks/Windows_Glass/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </RootNode/Looks/Windows_Glass/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </RootNode/Looks/Windows_Glass/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                float inputs:ior_constant = 1.485 (
+                    customData = {
+                        float default = 1.3
+                        dictionary range = {
+                            float max = 3
+                            float min = 1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Index of Refraction"
+                    doc = "Index of Refraction of the material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:thin_wall_thickness = 1 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0.001
+                        }
+                        dictionary soft_range = {
+                            float max = 1
+                            float min = 0.001
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled material thickness"
+                    doc = "Simulated thickness for thin-walled materials (0 disables thin-walled mode)"
+                    hidden = false
+                )
+                bool inputs:thin_walled = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled"
+                    doc = "Whether the material is thin-walled"
+                    hidden = false
+                )
+                asset inputs:transmittance_texture = @./texture/cars/glass/scratch_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance or Diffuse Albedo Texture"
+                    doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_diffuse_layer = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Use diffuse layer"
+                    doc = "When set, simulates a diffuse layer on top of the material"
+                    hidden = false
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+    }
+}
+
