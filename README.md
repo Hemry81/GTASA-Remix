@@ -4,19 +4,20 @@ Welcome to the GTASA RTX-Remix Project! This project is dedicated to enhancing t
 # Requirements
 To get started with the GTASA RTX-Remix Project, ensure that you have the following:
 
--**GTA San Andreas Game**: Make sure you have a legally obtained copy of GTA San Andreas installed on your computer.
--**RTX-Compatible Graphics Card**: You'll need an NVIDIA RTX series graphics card to take full advantage of the RTX enhancements.
--**Modding Tools**: Install the necessary modding tools, such as Mod Loader to simplify the mod installation process.
+- **GTA San Andreas Game**: Make sure you have a legally obtained copy of GTA San Andreas installed on your computer.
+- **RTX-Compatible Graphics Card**: You'll need an NVIDIA RTX series graphics card to take full advantage of the RTX enhancements.
+- **Modding Tools**: Install the necessary modding tools, such as Mod Loader to simplify the mod installation process.
+- **Downgrade**: For better compatibility, you'll need to downgrade to version 1.0 in order to run the game with RTX-Remix.
+- **RTX-Remix**: Get the latest version of RTX-Remix from [RTX-Remix GitHub](https://github.com/NVIDIAGameWorks/rtx-remix) and download the release. Make sure to update the "bridge-remix" and "dxvk-remix" files in the Action Tab. The latest version includes support for DLSS 3 frame generation.
 
 # Mod Installation
 Follow these steps to install the GTASA RTX-Remix mod:
 - **Backup**: Before installing any mods, it's highly recommended to create a backup of your GTA San Andreas game files. This will allow you to revert back to the original game state if needed.
-- **Downgrade**: For better compatibility, you'll need to downgrade to version 1.0 in order to run the game with RTX-Remix.
 - **Download**: click on the "Code" button. From the dropdown, select "Download ZIP" to download the mod files to your computer.
 - **Extract**: Once the ZIP file is downloaded, extract its contents to a temporary location on your computer.
-- **Create Folder**: Open your GTA San Andreas game folder and navigate to "Your Game Folder\rtx-remix\mods\gameReadyAssets". If the rtx-remix folder or any subsequent folders do not exist, create them manually.
-- **Copy Files**: Copy the extracted mod files from the temporary location and paste them into the gameReadyAssets folder you created.
-- **Move Folder**: Move the Capture Folder to "Your Game Folder\rtx-remix" and place the "rtx.conf" file from the "rtx-config" folder into your game folder.
+- **Create Folder**: Open your GTA San Andreas game folder and navigate to "Your Game Folder\rtx-remix". If the rtx-remix folder do not exist, create it manually.
+- **Copy Files**: Copy the extracted mod files from the temporary location and paste them into the "rtx-remix" folder you created.
+- **Move File**: place the "rtx.conf" file from the "rtx-config" folder into your game folder.
 - **Let's RTX**: Launch GTA San Andreas with RTX enhancements.
 
 Note: The specific installation directory mentioned above, Your Game Folder\rtx-remix\mods\gameReadyAssets, may vary depending on your game folder structure and the instructions provided by the mod developer. Please refer to the documentation or README file provided with the mod for any additional installation instructions or requirements.
