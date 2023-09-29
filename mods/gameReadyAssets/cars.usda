@@ -1,6 +1,11 @@
 #usda 1.0
 (
     subLayers = [
+        @./texture/cars/tire/tire.usda@,
+        @./texture/cars/train/train.usda@,
+        @./without_reflection.usda@,
+        @./with_reflection.usda@,
+        @./Glass.usda@,
         @./texture/cars/rims/rims.usda@,
         @./texture/cars/mirror/mirror.usda@,
         @./texture/cars/headlights/headlight.usda@
@@ -12,59 +17,6 @@ over "RootNode"
 {
     over "Looks"
     {
-        over "mat_8DFEEC5AFD5B4752"
-        {
-            over "Shader"
-            {
-                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
-                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                float inputs:ior_constant = 1.48 (
-                    customData = {
-                        float default = 1.3
-                        dictionary range = {
-                            float max = 3
-                            float min = 1
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Index of Refraction"
-                    doc = "Index of Refraction of the material"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./texture/cars/8DFEEC5AFD5B4752_normal.dds@ (
-                    hidden = false
-                )
-                bool inputs:thin_walled = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Thin-walled"
-                    doc = "Whether the material is thin-walled"
-                    hidden = false
-                )
-                asset inputs:transmittance_texture = @./texture/cars/8DFEEC5AFD5B4752_albedo.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Transmittance or Diffuse Albedo Texture"
-                    doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
-                    hidden = false
-                )
-                bool inputs:use_diffuse_layer = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Use diffuse layer"
-                    doc = "When set, simulates a diffuse layer on top of the material"
-                    hidden = false
-                )
-            }
-        }
-
         def Material "mat_FDEF676A66F14600"
         {
             over "Shader"
@@ -122,6 +74,40 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Metallic Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_EA8646F3A1CDD659"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/cars/8DFEEC5AFD5B4752_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./texture/cars/8DFEEC5AFD5B4752_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./texture/cars/8DFEEC5AFD5B4752_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
                     hidden = false
                 )
             }

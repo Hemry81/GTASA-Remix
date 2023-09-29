@@ -24,6 +24,24 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                bool inputs:enable_opacity = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Opacity"
+                    displayName = "Enable Opacity"
+                    doc = "Enables the use of cutout opacity"
+                    hidden = false
+                )
+                bool inputs:enable_thin_film = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Enable thin film"
+                    doc = "Adds a thin film coating to the material"
+                    hidden = false
+                )
                 asset inputs:metallic_texture = @@ (
                     customData = {
                         asset default = @@
@@ -42,7 +60,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:reflection_roughness_constant = 1 (
+                float inputs:reflection_roughness_constant = 0.5 (
                     customData = {
                         float default = 0.5
                         dictionary range = {
@@ -63,6 +81,28 @@ over "RootNode"
                     displayName = "Roughness Map"
                     hidden = false
                     renderType = "texture_2d"
+                )
+                float inputs:thin_film_thickness_constant = 200 (
+                    customData = {
+                        float default = 200
+                        dictionary range = {
+                            float max = 1500
+                            float min = 0.001
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Thin film constant thickness in nm"
+                    doc = "Thickness of the thin film if not specified in albedo texture"
+                    hidden = false
+                )
+                bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Thin film thickness from albedo alpha"
+                    doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
+                    hidden = false
                 )
             }
         }
@@ -745,7 +785,25 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @./texture/effect/2F580E4763FAB662_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./texture/effect/2F580E4763FAB662_emissive.dds@ (
@@ -768,9 +826,19 @@ over "RootNode"
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
                     hidden = false
                 )
                 asset inputs:reflectionroughness_texture = @@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
                     hidden = false
                 )
             }
@@ -806,7 +874,20 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 10 (
+                color3f inputs:emissive_color_constant = (1, 1, 1) (
+                    customData = {
+                        float3 default = (1, 0.1, 0.1)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Color"
+                    doc = "The emissive color when no emissive color texture is specified."
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 1 (
                     customData = {
                         float default = 40
                         dictionary range = {
@@ -839,9 +920,19 @@ over "RootNode"
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
                     hidden = false
                 )
                 asset inputs:reflectionroughness_texture = @@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
                     hidden = false
                 )
             }
@@ -877,12 +968,29 @@ over "RootNode"
             }
         }
 
-        over "mat_E963AE1977E1D8EA"
+        over "mat_66EFA5FE769C8102"
         {
             over "Shader"
             {
-                uniform bool enable_opacity = 0
-                asset inputs:diffuse_texture = @./texture/effect/E963AE1977E1D8EA_albedo.dds@ (
+                asset inputs:diffuse_texture = @./texture/effect/Skid_Mark_albedo.dds@ (
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./texture/effect/Skid_Mark_normal.dds@ (
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./texture/effect/Skid_Mark_rough.dds@ (
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_48188D919022F08A"
+        {
+            over "Shader"
+            {
+                uniform bool enable_opacity = 1
+                asset inputs:diffuse_texture = @./texture/effect/48188D919022F08A_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -890,57 +998,85 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
-                    renderType = "texture_2d"
                 )
-                bool inputs:enable_thin_film = 0 (
+                float inputs:emissive_intensity = 100 (
                     customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Enable thin film"
-                    doc = "Adds a thin film coating to the material"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./texture/effect/E963AE1977E1D8EA_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:opacity_constant = 1 (
-                    customData = {
-                        float default = 1
+                        float default = 40
                         dictionary range = {
-                            float max = 1
+                            float max = 65504
                             float min = 0
                         }
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Opacity Amount"
-                    doc = "Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque."
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./texture/effect/E963AE1977E1D8EA_rough.dds@ (
+                asset inputs:emissive_mask_texture = @./texture/effect/48188D919022F08A_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
                     hidden = false
-                    renderType = "texture_2d"
                 )
-                bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                bool inputs:enable_emission = 1 (
                     customData = {
                         bool default = 0
                     }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_DF22766F02C29A32"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/effect/48188D919022F08A_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
                     displayGroup = "Diffuse"
-                    displayName = "Thin film thickness from albedo alpha"
-                    doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 100 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./texture/effect/48188D919022F08A_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
                     hidden = false
                 )
             }

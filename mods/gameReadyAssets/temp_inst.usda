@@ -335,9 +335,7 @@ def "RootNode"
             )
         }
 
-        over "inst_A5C55CF2142BFDF8_0" (
-            delete references = </RootNode/meshes/mesh_A5C55CF2142BFDF8>
-        )
+        over "inst_A5C55CF2142BFDF8_0"
         {
             rel material:binding = </RootNode/Looks/Windows_Glass> (
                 bindMaterialAs = "weakerThanDescendants"
@@ -2425,7 +2423,7 @@ def "RootNode"
 
         over "inst_328C70D450580C0B_0"
         {
-            rel material:binding = </RootNode/Looks/mat_8FC82B0CA4CB0EDF> (
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
                 bindMaterialAs = "weakerThanDescendants"
             )
         }
@@ -2836,10 +2834,7 @@ def "RootNode"
             )
         }
 
-        over "inst_AE3477A9C0AF19BF_0" (
-            delete references = </RootNode/meshes/mesh_AE3477A9C0AF19BF>
-            prepend references = @../../captures/meshes/mesh_A5C55CF2142BFDF8.usd@
-        )
+        over "inst_AE3477A9C0AF19BF_0"
         {
             rel material:binding = </RootNode/Looks/Windows_Glass> (
                 bindMaterialAs = "weakerThanDescendants"
@@ -3431,6 +3426,204 @@ def "RootNode"
                 )
             }
         }
+
+        over "inst_353D9A48835BBE23_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            over "mesh"
+            {
+                rel material:binding = None (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_80CB5BA5EB7C5372_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            over "mesh"
+            {
+                rel material:binding = None (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+
+        over "inst_1E0B1AFE229D55A4_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_963A56D2E8730C79_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_936929E99CCE87CC_0"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "inst_1871DC34C4EB8892_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_18CBB6D6CB67FA60_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3D0899822A713B16_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_18F470A54F356B6C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_3EFD2352C47F80B9_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_1373F7B26906D140_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D799D2B0572FE014_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_89270A67E5F4D782_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_AC2B716A1F56F8F2_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_7B67B8D8FF7001FF_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9A0B42F14ADFAEB1_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_353D9A48835BBE23_1"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_D9DC0EECFD4BF638_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C8AAA3ED9F7CD5E5_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_AEE0225D2C793505_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_46C4D01BDC1794AE_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_9410476847CBF2CA_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_5FA5FA3DD60CE77C_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_C288F4A8BFE2BC32_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_0FCA68C08109452E_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "inst_E925AF19078107C7_0"
+        {
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
     }
 
     def "Looks"
@@ -3525,7 +3718,7 @@ def "RootNode"
                 uniform token info:implementationSource = "sourceAsset"
                 uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                float inputs:ior_constant = 1.485 (
+                float inputs:ior_constant = 1.56 (
                     customData = {
                         float default = 1.3
                         dictionary range = {
@@ -3538,7 +3731,7 @@ def "RootNode"
                     doc = "Index of Refraction of the material"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @@ (
+                asset inputs:normalmap_texture = @./texture/cars/glass/scratch_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -3565,7 +3758,7 @@ def "RootNode"
                     doc = "Simulated thickness for thin-walled materials (0 disables thin-walled mode)"
                     hidden = false
                 )
-                bool inputs:thin_walled = 0 (
+                bool inputs:thin_walled = 1 (
                     customData = {
                         bool default = 0
                     }
@@ -3574,7 +3767,7 @@ def "RootNode"
                     doc = "Whether the material is thin-walled"
                     hidden = false
                 )
-                asset inputs:transmittance_texture = @./texture/cars/glass/scratch_albedo.dds@ (
+                asset inputs:transmittance_texture = @@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -3585,7 +3778,7 @@ def "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                bool inputs:use_diffuse_layer = 1 (
+                bool inputs:use_diffuse_layer = 0 (
                     customData = {
                         bool default = 0
                     }

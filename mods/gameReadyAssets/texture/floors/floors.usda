@@ -8,7 +8,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./0D15E29E9ABFAAD5_diffuse.dds@ (
+                asset inputs:diffuse_texture = @./0D15E29E9ABFAAD5_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -18,6 +18,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                asset inputs:height_texture = @./0D15E29E9ABFAAD5_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./0D15E29E9ABFAAD5_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -38,6 +42,55 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+            }
+        }
+
+        over "mat_8FEF9D91BEF15037"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./8FEF9D91BEF15037_albedo.dds@
+                asset inputs:height_texture = @./8FEF9D91BEF15037_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
+                asset inputs:normalmap_texture = @./8FEF9D91BEF15037_normal.dds@
+                asset inputs:reflectionroughness_texture = @./8FEF9D91BEF15037_rough.dds@
+            }
+        }
+
+        over "mat_F7F69573676B5F75"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./F7F69573676B5F75_albedo.dds@ (
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:height_texture = @./F7F69573676B5F75_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
+                asset inputs:normalmap_texture = @./F7F69573676B5F75_normal.dds@ (
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./F7F69573676B5F75_rough.dds@ (
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_E9500436F26948A1"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./E9500436F26948A1_albedo.dds@
+                asset inputs:height_texture = @./E9500436F26948A1_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
+                asset inputs:normalmap_texture = @./E9500436F26948A1_normal.dds@
+                asset inputs:reflectionroughness_texture = @./E9500436F26948A1_rough.dds@
             }
         }
     }

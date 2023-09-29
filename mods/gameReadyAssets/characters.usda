@@ -161,6 +161,11 @@ over "RootNode"
                     renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./texture/characters/B4873F7FDB1D1404_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
                     hidden = false
                 )
                 asset inputs:reflectionroughness_texture = @./texture/characters/B4873F7FDB1D1404_rough.dds@ (
@@ -172,6 +177,31 @@ over "RootNode"
                     displayName = "Roughness Map"
                     hidden = false
                     renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_DA50E6D8BA27A905"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/characters/DA50E6D8BA27A905_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./texture/characters/DA50E6D8BA27A905_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
                 )
             }
         }

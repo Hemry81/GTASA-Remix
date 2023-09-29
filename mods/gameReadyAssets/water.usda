@@ -5,90 +5,14 @@
 
 over "RootNode"
 {
-    over "meshes"
-    {
-        over "mesh_905CB54B07770D01"
-        {
-            rel material:binding = </RootNode/Looks/Water> (
-                bindMaterialAs = "weakerThanDescendants"
-            )
-            custom int preserveOriginalDrawCall = 1
-            token visibility = "invisible"
-        }
-
-        over "mesh_753417515C98F527"
-        {
-            rel material:binding = </RootNode/Looks/Water> (
-                bindMaterialAs = "weakerThanDescendants"
-            )
-            custom int preserveOriginalDrawCall = 1
-            token visibility = "invisible"
-            float3 xformOp:rotateYZX = (0, 0, 0)
-            float3 xformOp:scale = (1, 1, 1)
-            double3 xformOp:translate = (0, 0, 174)
-            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-        }
-
-        over "mesh_6FFBCD805F0447A4"
-        {
-            rel material:binding = </RootNode/Looks/Water> (
-                bindMaterialAs = "weakerThanDescendants"
-            )
-            custom int preserveOriginalDrawCall = 1
-            token visibility = "invisible"
-            float3 xformOp:rotateYZX = (0, 0, 0)
-            float3 xformOp:scale = (1, 1, 1)
-            double3 xformOp:translate = (0, 0, 0)
-            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-        }
-
-        over "mesh_895C69F5D58F45BC"
-        {
-            rel material:binding = </RootNode/Looks/Water> (
-                bindMaterialAs = "weakerThanDescendants"
-            )
-            custom int preserveOriginalDrawCall = 1
-            token visibility = "invisible"
-            double3 xformOp:rotateYZX = (0, 0, 0)
-            double3 xformOp:scale = (1, 1, 1)
-            double3 xformOp:translate = (0, 0, 0)
-            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-        }
-
-        over "mesh_C196412205F0997E"
-        {
-            rel material:binding = </RootNode/Looks/Water> (
-                bindMaterialAs = "weakerThanDescendants"
-            )
-        }
-
-        over "mesh_B8AE3D9C5363578F"
-        {
-            rel material:binding = </RootNode/Looks/Water> (
-                bindMaterialAs = "weakerThanDescendants"
-            )
-        }
-
-        over "mesh_415CA4E6C2D91B0A"
-        {
-            rel material:binding = </RootNode/Looks/Water> (
-                bindMaterialAs = "weakerThanDescendants"
-            )
-        }
-    }
-
     over "Looks"
     {
-        def Material "Water"
+        over "mat_59296793798A7318"
         {
-            token outputs:mdl:displacement.connect = </RootNode/Looks/Water/Shader.outputs:out>
-            token outputs:mdl:surface.connect = </RootNode/Looks/Water/Shader.outputs:out>
-            token outputs:mdl:volume.connect = </RootNode/Looks/Water/Shader.outputs:out>
-
-            def Shader "Shader"
+            over "Shader"
             {
-                uniform token info:implementationSource = "sourceAsset"
-                uniform asset info:mdl:sourceAsset = @../../captures/materials/AperturePBR_Translucent.mdl@
+                uniform bool enable_opacity = 1
+                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.3299999 (
                     customData = {
@@ -111,24 +35,6 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:thin_wall_thickness = 1 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0.001
-                        }
-                        dictionary soft_range = {
-                            float max = 1
-                            float min = 0.001
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Thin-walled material thickness"
-                    doc = "Simulated thickness for thin-walled materials (0 disables thin-walled mode)"
-                    hidden = false
                 )
                 bool inputs:thin_walled = 1 (
                     customData = {
@@ -139,20 +45,6 @@ over "RootNode"
                     doc = "Whether the material is thin-walled"
                     hidden = false
                 )
-                color3f inputs:transmittance_color = (0.97, 0.97, 0.97) (
-                    customData = {
-                        float3 default = (0.97, 0.97, 0.97)
-                        dictionary range = {
-                            float3 max = (1, 1, 1)
-                            float3 min = (0, 0, 0)
-                        }
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Transmittance Color"
-                    doc = "Expected transmittance after the specified transmittance distance through the volume."
-                    hidden = false
-                    renderType = "color"
-                )
                 asset inputs:transmittance_texture = @./texture/water/water_albedo.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -162,7 +54,6 @@ over "RootNode"
                     displayName = "Transmittance or Diffuse Albedo Texture"
                     doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
                     hidden = false
-                    renderType = "texture_2d"
                 )
                 bool inputs:use_diffuse_layer = 0 (
                     customData = {
@@ -172,9 +63,6 @@ over "RootNode"
                     displayName = "Use diffuse layer"
                     doc = "When set, simulates a diffuse layer on top of the material"
                     hidden = false
-                )
-                token outputs:out (
-                    renderType = "material"
                 )
             }
         }

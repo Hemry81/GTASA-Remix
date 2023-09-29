@@ -29,6 +29,10 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
+                asset inputs:height_texture = @./28476AA05605D640_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./28476AA05605D640_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -66,6 +70,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                asset inputs:height_texture = @./7FF5EBF9BAD3765F_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./7FF5EBF9BAD3765F_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -93,7 +101,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./27389EF2114D349F.dds@ (
+                asset inputs:diffuse_texture = @./27389EF2114D349F_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -103,6 +111,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                asset inputs:height_texture = @./27389EF2114D349F_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./27389EF2114D349F_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -140,6 +152,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                asset inputs:height_texture = @./BA60C774D430237E_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./BA60C774D430237E_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -177,16 +193,18 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                asset inputs:emissive_mask_texture = @./84D618EE13937065_normal.dds@ (
+                asset inputs:height_texture = @./84D618EE13937065_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
+                asset inputs:normalmap_texture = @./84D618EE13937065_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
                     hidden = false
-                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./84D618EE13937065_rough.dds@ (
                     colorSpace = "auto"
@@ -215,6 +233,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                asset inputs:height_texture = @./07A2BD3EF6FA6ABE_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./07A2BD3EF6FA6ABE_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -252,6 +274,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                asset inputs:height_texture = @./CD22E5C9BA98AB22_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./CD22E5C9BA98AB22_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -289,6 +315,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                asset inputs:height_texture = @./F7B04EC7EAC3E083_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./F7B04EC7EAC3E083_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -316,7 +346,6 @@ over "RootNode"
         {
             over "Shader"
             {
-                uniform bool enable_opacity = 0
                 asset inputs:diffuse_texture = @./ADB8A5D012BC6F63_albedo.dds@ (
                     customData = {
                         asset default = @@
@@ -327,17 +356,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                asset inputs:emissive_mask_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                    renderType = "texture_2d"
+                asset inputs:height_texture = @./ADB8A5D012BC6F63_height.dds@ (
+                    colorSpace = "raw"
                 )
+                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./ADB8A5D012BC6F63_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -349,6 +371,129 @@ over "RootNode"
                     renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./ADB8A5D012BC6F63_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_A7AF0625F588BB5B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./A7AF0625F588BB5B_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:height_texture = @./A7AF0625F588BB5B_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
+                asset inputs:normalmap_texture = @./A7AF0625F588BB5B_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./A7AF0625F588BB5B_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_FA498349FF03DE2C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./FA498349FF03DE2C_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:height_texture = @./FA498349FF03DE2C_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
+                asset inputs:normalmap_texture = @./FA498349FF03DE2C_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./FA498349FF03DE2C_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_BC36A7CEB3EFFD4A"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./BC36A7CEB3EFFD4A_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:height_texture = @./BC36A7CEB3EFFD4A_height.dds@ (
+                    colorSpace = "raw"
+                )
+                float inputs:displace_in = 0.01
+                asset inputs:normalmap_texture = @./BC36A7CEB3EFFD4A_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./BC36A7CEB3EFFD4A_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@

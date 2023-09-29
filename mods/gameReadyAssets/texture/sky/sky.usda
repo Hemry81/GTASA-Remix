@@ -7,33 +7,17 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_F9F9609466CD8D4D"
+        over "mesh_169842556D54E968"
         {
-            def Xform "Xform" (
-                references = @../../../../captures/meshes/mesh_F9F9609466CD8D4D.usd@
+            custom int preserveOriginalDrawCall = 0
+
+            def Xform "Xform_169842556D54E968_0" (
+                delete references = @../../meshesmesh_169842556D54E968.usd@
+                prepend references = @../../meshes/mesh_169842556D54E968.usd@
             )
             {
                 double3 xformOp:rotateYZX = (0, 0, -0)
-                double3 xformOp:scale = (20, 20, 20)
-                double3 xformOp:translate = (0, 0, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-        }
-
-        over "mesh_9F15511F8AF8516F"
-        {
-            def Xform "Xform" (
-                references = @../../../../captures/meshes/mesh_9F15511F8AF8516F.usd@
-            )
-            {
-                double3 xformOp:rotateYZX = (0, 0, -0)
-                double3 xformOp:scale = (20, 20, 20)
+                double3 xformOp:scale = (5, 5, 5)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
@@ -47,12 +31,15 @@ over "RootNode"
 
         over "mesh_35CB82799C618070"
         {
-            def Xform "Xform" (
-                references = @../../../../captures/meshes/mesh_35CB82799C618070.usd@
+            custom int preserveOriginalDrawCall = 0
+
+            def Xform "Xform_35CB82799C618070_0" (
+                delete references = @../../meshesmesh_35CB82799C618070.usd@
+                prepend references = @../../meshes/mesh_35CB82799C618070.usd@
             )
             {
                 double3 xformOp:rotateYZX = (0, 0, -0)
-                double3 xformOp:scale = (20, 20, 20)
+                double3 xformOp:scale = (5, 5, 5)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
@@ -61,6 +48,362 @@ over "RootNode"
                 active = false
             )
             {
+            }
+        }
+
+        over "mesh_9F15511F8AF8516F"
+        {
+            def Xform "Xform_9F15511F8AF8516F_0" (
+                delete references = @../../meshesmesh_9F15511F8AF8516F.usd@
+                prepend references = @../../meshes/mesh_9F15511F8AF8516F.usd@
+            )
+            {
+                double3 xformOp:rotateYZX = (0, 0, -0)
+                double3 xformOp:scale = (5, 5, 5)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_F9F9609466CD8D4D"
+        {
+            def Xform "Xform_F9F9609466CD8D4D_0" (
+                delete references = @../../meshesmesh_F9F9609466CD8D4D.usd@
+                prepend references = @../../meshes/mesh_F9F9609466CD8D4D.usd@
+            )
+            {
+                double3 xformOp:rotateYZX = (0, 0, -0)
+                double3 xformOp:scale = (5, 5, 5)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+
+    over "Looks"
+    {
+        over "mat_7C580F06692E4693"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./7C580F06692E4693_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                color3f inputs:emissive_color_constant = (1, 1, 1) (
+                    customData = {
+                        float3 default = (1, 0.1, 0.1)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Color"
+                    doc = "The emissive color when no emissive color texture is specified."
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10000 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./7C580F06692E4693_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_5F0BCF2A981B2F8B"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./5F0BCF2A981B2F8B_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                color3f inputs:emissive_color_constant = (1, 1, 1) (
+                    customData = {
+                        float3 default = (1, 0.1, 0.1)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Color"
+                    doc = "The emissive color when no emissive color texture is specified."
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10000 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @.\5F0BCF2A981B2F8B_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_D686DC607FB7978C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./D686DC607FB7978C_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                color3f inputs:emissive_color_constant = (1, 1, 1) (
+                    customData = {
+                        float3 default = (1, 0.1, 0.1)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Color"
+                    doc = "The emissive color when no emissive color texture is specified."
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10000 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./D686DC607FB7978C_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_B06AEDEB93824BAE"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./B06AEDEB93824BAE_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                color3f inputs:emissive_color_constant = (1, 1, 1) (
+                    customData = {
+                        float3 default = (1, 0.1, 0.1)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Color"
+                    doc = "The emissive color when no emissive color texture is specified."
+                    hidden = false
+                )
+                float inputs:emissive_intensity = 10000 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = "Intensity of the emission"
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./B06AEDEB93824BAE_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = "The texture masking the emissive color"
+                    hidden = false
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = "Enables the emission of light from the material"
+                    hidden = false
+                )
+            }
+        }
+    }
+}
+
+over "Environment"
+{
+    over "sky"
+    {
+        over "AxisNorth"
+        {
+            double3 xformOp:rotateZYX = (0, 0, 0)
+
+            over "AxisLatitude"
+            {
+                double3 xformOp:rotateZYX = (0, 0, 51.426)
+
+                over "AxisSHA"
+                {
+                    double3 xformOp:rotateZYX = (284.74326398698406, 0, 0)
+
+                    over "AxisDeclination"
+                    {
+                        double3 xformOp:rotateZYX = (0, 0, -0.0695174687037288)
+
+                        over "DistantLight"
+                        {
+                            color3f color = (0.25, 0.013, 0)
+                            float intensity = 0
+                        }
+                    }
+                }
+            }
+
+            over "AxisAzimuth"
+            {
+                double3 xformOp:rotateZYX = (0, -78.41756156687549, 0)
+
+                over "AxisElevation"
+                {
+                    double3 xformOp:rotateZYX = (0, 0, -9.185317050992017)
+                }
+            }
+        }
+
+        over "DomeLight"
+        {
+            float3 xformOp:rotateZYX = (270, 0, 0)
+        }
+
+        over "Looks"
+        {
+            over "SkyMaterial"
+            {
+                over "Shader"
+                {
+                    float inputs:Azimuth = -78.417564
+                    custom float inputs:CloudCoverage = 0
+                    custom bool inputs:CumulusEnabled = 0
+                    float inputs:DayOfYear = 266
+                    float inputs:Declination = -0.06951747
+                    float inputs:Elevation = -9.185317
+                    custom float inputs:haze = 0
+                    float inputs:Latitude = 51.426
+                    float inputs:Longitude = -0.985
+                    float inputs:NorthOrientation = 0
+                    float inputs:SHA = -104.74326
+                    float inputs:TimeOfDay = 4.885
+                }
             }
         }
     }

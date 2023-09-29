@@ -4,6 +4,8 @@
         int refinementOverrideImplVersion = 0
     }
     subLayers = [
+        @./texture/rail/rail.usda@,
+        @./tree.usda@,
         @./characters.usda@,
         @./Pedestrian.usda@,
         @./light.usda@,
@@ -14,9 +16,7 @@
         @./buildings.usda@,
         @./effect.usda@,
         @./materials.usda@,
-        @./water.usda@,
-        @./rough_only.usda@
+        @./water.usda@
     ]
     upAxis = "Z"
 )
-

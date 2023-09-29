@@ -22,6 +22,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.02
+                asset inputs:height_texture = @./A00E5CACC1852CA7_height.dds@ (
+                    colorSpace = "raw"
+                )
                 asset inputs:normalmap_texture = @./A00E5CACC1852CA7_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -65,35 +69,6 @@ over "RootNode"
             }
         }
 
-        over "mat_F28063727A13056E"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./F28063727A13056E_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                float inputs:opacity_constant = 1 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Opacity Amount"
-                    doc = "Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque."
-                    hidden = false
-                )
-            }
-        }
-
         over "mat_5C91F7DAD437D85F"
         {
             over "Shader"
@@ -128,6 +103,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.02
+                asset inputs:height_texture = @./75A3841BC95D2C88_height.dds@ (
+                    colorSpace = "raw"
+                )
                 asset inputs:normalmap_texture = @./75A3841BC95D2C88_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -148,6 +127,14 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+            }
+        }
+
+        over "mat_B06AEDEB93824BAE"
+        {
+            over "Shader"
+            {
+                uniform bool enable_opacity = 1
             }
         }
     }

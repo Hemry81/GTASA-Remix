@@ -6,8 +6,7 @@
         @./texture/ground/ground.usda@,
         @./texture/pavement/pavement.usda@,
         @./texture/wall/wall.usda@,
-        @./texture/fence/fence.usda@,
-        @./texture/plant/plant.usda@
+        @./texture/fence/fence.usda@
     ]
     upAxis = "Z"
 )
@@ -49,43 +48,6 @@ over "RootNode"
             }
         }
 
-        over "mat_FA498349FF03DE2C"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./texture/asphalt/FA498349FF03DE2C_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./texture/asphalt/FA498349FF03DE2C_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./texture/asphalt/FA498349FF03DE2C_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
         over "mat_A32945DFAF434F6E"
         {
             over "Shader"
@@ -123,23 +85,6 @@ over "RootNode"
             }
         }
 
-        over "mat_CFC7CD685624E223"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./texture/CFC7CD685624E223.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
         over "mat_747EF7B8539EFE5A"
         {
             over "Shader"
@@ -166,43 +111,6 @@ over "RootNode"
                     displayName = "Roughness Amount"
                     doc = "Higher roughness values lead to more blurry reflections"
                     hidden = false
-                )
-            }
-        }
-
-        over "mat_BC36A7CEB3EFFD4A"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./texture/asphalt/BC36A7CEB3EFFD4A_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./texture/asphalt/BC36A7CEB3EFFD4A_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./texture/asphalt/BC36A7CEB3EFFD4A_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                    renderType = "texture_2d"
                 )
             }
         }
@@ -269,43 +177,6 @@ over "RootNode"
                     renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./texture/buildings/E6502EEC3C7E4712_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
-        over "mat_4CFAE07D99195DBF"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./texture/4CFAE07D99195DBF.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./texture/4CFAE07D99195DBF_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./texture/4CFAE07D99195DBF_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -444,7 +315,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./texture/211D551610B7F84A.dds@ (
+                asset inputs:diffuse_texture = @./texture/211D551610B7F84A_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -481,7 +352,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./texture/C91AA4F93C6B5279.dds@ (
+                asset inputs:diffuse_texture = @./texture/C91AA4F93C6B5279_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -574,74 +445,6 @@ over "RootNode"
             }
         }
 
-        over "mat_99CBDAA68ED0B164"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./texture/props/99CBDAA68ED0B164_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:enable_thin_film = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Enable thin film"
-                    doc = "Adds a thin film coating to the material"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./texture/props/99CBDAA68ED0B164_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./texture/props/99CBDAA68ED0B164_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:thin_film_thickness_constant = 200 (
-                    customData = {
-                        float default = 200
-                        dictionary range = {
-                            float max = 1500
-                            float min = 0.001
-                        }
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Thin film constant thickness in nm"
-                    doc = "Thickness of the thin film if not specified in albedo texture"
-                    hidden = false
-                )
-                bool inputs:thin_film_thickness_from_albedo_alpha = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Thin film thickness from albedo alpha"
-                    doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
-                    hidden = false
-                )
-            }
-        }
-
         over "mat_75EA8C9E2D6CBCED"
         {
             over "Shader"
@@ -679,43 +482,6 @@ over "RootNode"
             }
         }
 
-        over "mat_B2392DDD6FB8DA17"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./texture/B2392DDD6FB8DA17_diffuse.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./texture/B2392DDD6FB8DA17_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./texture/B2392DDD6FB8DA17_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
         over "mat_E619FD55F31AF97C"
         {
             over "Shader"
@@ -738,6 +504,75 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @./texture/buildings/F2C382A3E33D4477_albedo.dds@
+            }
+        }
+    }
+}
+
+over "Environment"
+{
+    over "sky"
+    {
+        over "AxisNorth"
+        {
+            double3 xformOp:rotateZYX = (0, 0, 0)
+
+            over "AxisLatitude"
+            {
+                double3 xformOp:rotateZYX = (0, 0, 51.426)
+
+                over "AxisSHA"
+                {
+                    double3 xformOp:rotateZYX = (274.6573389132278, 0, 0)
+
+                    over "AxisDeclination"
+                    {
+                        double3 xformOp:rotateZYX = (0, 0, 8.2702065069549)
+
+                        over "DistantLight"
+                        {
+                            color3f color = (0.34938934, 0.12709898, 0.03975574)
+                            float intensity = 0
+                        }
+                    }
+                }
+            }
+
+            over "AxisAzimuth"
+            {
+                double3 xformOp:rotateZYX = (0, -81.21044470391764, 0)
+
+                over "AxisElevation"
+                {
+                    double3 xformOp:rotateZYX = (0, 0, 3.5749632677302006)
+                }
+            }
+        }
+
+        over "DomeLight"
+        {
+            float3 xformOp:rotateZYX = (270, 0, 0)
+        }
+
+        over "Looks"
+        {
+            over "SkyMaterial"
+            {
+                over "Shader"
+                {
+                    float inputs:Azimuth = -81.21044
+                    custom float inputs:CloudCoverage = 0
+                    custom bool inputs:CumulusEnabled = 0
+                    float inputs:DayOfYear = 244
+                    float inputs:Declination = 8.270206
+                    float inputs:Elevation = 3.5749633
+                    custom float inputs:haze = 0
+                    float inputs:Latitude = 51.426
+                    float inputs:Longitude = -0.985
+                    float inputs:NorthOrientation = 0
+                    float inputs:SHA = -94.65734
+                    float inputs:TimeOfDay = 5.691389
+                }
             }
         }
     }
