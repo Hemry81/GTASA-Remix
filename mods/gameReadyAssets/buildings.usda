@@ -2099,6 +2099,40 @@ over "RootNode"
                 )
             }
         }
+
+        over "mat_EFC0B6B4BFB3759D"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/buildings/interiors/Metal042_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./texture/buildings/interiors/Metal042_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @./texture/buildings/interiors/Metal042_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
     }
 
     over "meshes"

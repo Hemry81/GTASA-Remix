@@ -501,10 +501,12 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
                 bool inputs:normalize = 1
-                float intensity = 300
+                float intensity = 1000
                 bool light:enableCaustics = 0
-                bool normalize = 1
+                bool normalize = 0
                 float radius = 0.3
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -512,7 +514,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 2.8)
@@ -541,17 +543,19 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
                 float height = 0.15
                 bool inputs:normalize = 1
-                float intensity = 300
-                bool normalize = 1
+                float intensity = 1000
+                bool normalize = 0
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 float width = 0.8
                 double3 xformOp:rotateYZX = (0, 6.300000096857548, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -571,15 +575,18 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
                 bool inputs:normalize = 1
-                float intensity = 300
+                float intensity = 1000
+                bool normalize = 0
                 float radius = 0.18
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-1.36, 0, 4.22)
@@ -612,9 +619,11 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
                 float height = 0.5
-                bool inputs:normalize = 1
-                float intensity = 1000
+                bool inputs:normalize = 0
+                float intensity = 500
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
@@ -632,9 +641,11 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
                 float height = 0.5
-                bool inputs:normalize = 1
-                float intensity = 1000
+                bool inputs:normalize = 0
+                float intensity = 500
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
@@ -687,8 +698,8 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -707,8 +718,8 @@ over "RootNode"
                 hide_in_stage_window = false
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -727,8 +738,8 @@ over "RootNode"
                 hide_in_stage_window = false
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -747,8 +758,8 @@ over "RootNode"
                 hide_in_stage_window = false
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -767,8 +778,8 @@ over "RootNode"
                 hide_in_stage_window = false
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -787,8 +798,8 @@ over "RootNode"
                 hide_in_stage_window = false
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -806,8 +817,8 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -826,8 +837,8 @@ over "RootNode"
                 hide_in_stage_window = false
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -846,8 +857,8 @@ over "RootNode"
                 hide_in_stage_window = false
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -866,8 +877,8 @@ over "RootNode"
                 hide_in_stage_window = false
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -886,8 +897,8 @@ over "RootNode"
                 hide_in_stage_window = false
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -906,8 +917,8 @@ over "RootNode"
                 hide_in_stage_window = false
             )
             {
-                float intensity = 30
-                bool normalize = 1
+                float intensity = 100
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -944,7 +955,7 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 1
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -964,7 +975,7 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 1
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -984,7 +995,7 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 1
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1004,7 +1015,7 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 1
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1024,7 +1035,7 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 1
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1043,7 +1054,7 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 1
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1063,7 +1074,7 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 1
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1083,7 +1094,7 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 1
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1103,7 +1114,7 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 1
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1123,7 +1134,7 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 1
+                bool normalize = 0
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1152,43 +1163,43 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "Street_Light_01" (
+            def SphereLight "Street_Light_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float height = 0.3
-                float intensity = 100
-                bool normalize = 1
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float intensity = 1000
+                float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
-                float width = 1.8
-                double3 xformOp:rotateYZX = (0, 22.300000335276128, -1.2722218725854064e-14)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.9000000432133675, 0, 5.300000078976154)
+                double3 xformOp:translate = (3.2, 0, 4.8)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def RectLight "Street_Light_02" (
+            def SphereLight "Street_Light_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float height = 0.3
-                float intensity = 100
-                bool normalize = 1
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float intensity = 1000
+                float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
-                float width = 1.8
-                double3 xformOp:rotateYZX = (0, -22.5, -1.2722218725854064e-14)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.9, 0, 5.300000078976154)
+                double3 xformOp:translate = (-3.2, 0, 4.8)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
         }
@@ -1494,6 +1505,152 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
         }
+
+        over "mesh_4AA5F1430BA14BE9"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "StreetLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float intensity = 1000
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.1000000312924385, 0.10000000149011612, 7.500000111758709)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_64863E93700A6B75"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "StreetLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                float diffuse = 1
+                bool enableColorTemperature = 1
+                float intensity = 1000
+                bool normalize = 0
+                float radius = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.600000023841858, -2.9000000432133675, 9.600000143051147)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "StreetLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                float diffuse = 1
+                bool enableColorTemperature = 1
+                float intensity = 1000
+                bool normalize = 0
+                float radius = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.600000023841858, 3.0000000447034836, 9.600000143051147)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "StreetLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                float diffuse = 1
+                bool enableColorTemperature = 1
+                float intensity = 1000
+                bool normalize = 0
+                float radius = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.300000049173832, 0.10000000149011612, 9.600000143051147)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_706574B969F892AA"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "StreetLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float height = 0.5
+                float intensity = 1000
+                bool normalize = 0
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                float width = 1
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-7.300000108778477, 0, 11.10000016540289)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "StreetLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float height = 0.5
+                float intensity = 1000
+                bool normalize = 0
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                float width = 1
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (7.3, 0, 11.10000016540289)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
     }
 
     over "Looks"
@@ -1503,6 +1660,11 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @./texture/props/24E3AC08C370B770_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
@@ -1539,80 +1701,21 @@ over "RootNode"
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @./texture/props/24E3AC08C370B770_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
                     hidden = false
                 )
                 asset inputs:reflectionroughness_texture = @./texture/props/24E3AC08C370B770_rough.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
                     hidden = false
                 )
-            }
-        }
-    }
-}
-
-over "Environment"
-{
-    over "sky"
-    {
-        over "AxisNorth"
-        {
-            double3 xformOp:rotateZYX = (0, 0, 0)
-
-            over "AxisLatitude"
-            {
-                double3 xformOp:rotateZYX = (0, 0, 51.426)
-
-                over "AxisSHA"
-                {
-                    double3 xformOp:rotateZYX = (266.66888116491276, 0, 0)
-
-                    over "AxisDeclination"
-                    {
-                        double3 xformOp:rotateZYX = (0, 0, -0.4586159591143632)
-
-                        over "DistantLight"
-                        {
-                            color3f color = (0.30408567, 0.075090356, 0.02163427)
-                            float intensity = 0
-                        }
-                    }
-                }
-            }
-
-            over "AxisAzimuth"
-            {
-                double3 xformOp:rotateZYX = (0, -92.89121067793315, 0)
-
-                over "AxisElevation"
-                {
-                    double3 xformOp:rotateZYX = (0, 0, 1.7175125642277655)
-                }
-            }
-        }
-
-        over "DomeLight"
-        {
-            float3 xformOp:rotateZYX = (270, 0, 0)
-        }
-
-        over "Looks"
-        {
-            over "SkyMaterial"
-            {
-                over "Shader"
-                {
-                    float inputs:Azimuth = -92.89121
-                    custom float inputs:CloudCoverage = 0
-                    custom bool inputs:CumulusEnabled = 0
-                    float inputs:DayOfYear = 267
-                    float inputs:Declination = -0.45861596
-                    float inputs:Elevation = 1.7175126
-                    custom float inputs:haze = 0
-                    float inputs:Latitude = 51.426
-                    float inputs:Longitude = -0.985
-                    float inputs:NorthOrientation = 0
-                    float inputs:SHA = -86.668884
-                    float inputs:TimeOfDay = 6.083889
-                }
             }
         }
     }

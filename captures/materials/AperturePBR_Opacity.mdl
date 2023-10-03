@@ -338,6 +338,23 @@ export material AperturePBR_Opacity(
     anno::display_name("Normal Map Encoding"),
     anno::description("Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel."),
     anno::in_group("Normal")
+  ]],
+
+  // -------------------- DISPLACEMENT ----------------------
+  uniform texture_2d height_texture = texture_2d()
+  [[
+    anno::display_name("Height Map"),
+    anno::in_group("Displacement"),
+    anno::description("A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."),
+    anno::unused()
+  ]],
+  uniform float displace_in = 1.0f
+  [[
+    anno::display_name("Inwards Displacement"),
+    anno::hard_range(0.0, 255.0),
+    anno::description("Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."),
+    anno::in_group("Displacement"),
+    anno::unused()
   ]]
 )
 [[

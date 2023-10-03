@@ -11,7 +11,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @../../captures/textures/F9BCEB604BE52640.dds@ (
+                asset inputs:diffuse_texture = @./texture/characters/F9BCEB604BE52640_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -62,7 +62,7 @@ over "RootNode"
                     hidden = false
                     renderType = "color"
                 )
-                asset inputs:diffuse_texture = @../../captures/textures/140A10A2108C6E0D.dds@ (
+                asset inputs:diffuse_texture = @./texture/characters/140A10A2108C6E0D_albedo.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -109,7 +109,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @../../captures/textures/A9C9EC59668F8FA3.dds@ (
+                asset inputs:diffuse_texture = @./texture/characters/A9C9EC59668F8FA3_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -120,6 +120,11 @@ over "RootNode"
                     renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./texture/characters/A9C9EC59668F8FA3_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
                     hidden = false
                 )
                 asset inputs:reflectionroughness_texture = @./texture/characters/A9C9EC59668F8FA3_rough.dds@ (
@@ -139,7 +144,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @../../captures/textures/B4873F7FDB1D1404.dds@ (
+                asset inputs:diffuse_texture = @./texture/characters/B4873F7FDB1D1404_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }

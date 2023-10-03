@@ -1,11 +1,9 @@
 #usda 1.0
 (
     subLayers = [
+        @./Glass.usda@,
         @./texture/cars/tire/tire.usda@,
         @./texture/cars/train/train.usda@,
-        @./without_reflection.usda@,
-        @./with_reflection.usda@,
-        @./Glass.usda@,
         @./texture/cars/rims/rims.usda@,
         @./texture/cars/mirror/mirror.usda@,
         @./texture/cars/headlights/headlight.usda@
@@ -92,6 +90,24 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
+                bool inputs:enable_thin_film = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Enable thin film"
+                    doc = "Adds a thin film coating to the material"
+                    hidden = false
+                )
+                asset inputs:metallic_texture = @./texture/cars/8DFEEC5AFD5B4752_metal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                )
                 asset inputs:normalmap_texture = @./texture/cars/8DFEEC5AFD5B4752_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -108,6 +124,28 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
+                    hidden = false
+                )
+                float inputs:thin_film_thickness_constant = 200 (
+                    customData = {
+                        float default = 200
+                        dictionary range = {
+                            float max = 1500
+                            float min = 0.001
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Thin film constant thickness in nm"
+                    doc = "Thickness of the thin film if not specified in albedo texture"
+                    hidden = false
+                )
+                bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Thin film thickness from albedo alpha"
+                    doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
                     hidden = false
                 )
             }

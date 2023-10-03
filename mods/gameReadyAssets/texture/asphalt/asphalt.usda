@@ -21,6 +21,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./28476AA05605D640_height.dds@ (
+                    colorSpace = "raw"
+                )
                 asset inputs:metallic_texture = @@ (
                     customData = {
                         asset default = @@
@@ -29,10 +33,6 @@ over "RootNode"
                     displayName = "Metallic Map"
                     hidden = false
                 )
-                asset inputs:height_texture = @./28476AA05605D640_height.dds@ (
-                    colorSpace = "raw"
-                )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./28476AA05605D640_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -70,10 +70,29 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                    hidden = false
+                )
                 asset inputs:height_texture = @./7FF5EBF9BAD3765F_height.dds@ (
                     colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                    hidden = false
                 )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./7FF5EBF9BAD3765F_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -111,10 +130,29 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                    hidden = false
+                )
                 asset inputs:height_texture = @./27389EF2114D349F_height.dds@ (
                     colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                    hidden = false
                 )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./27389EF2114D349F_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -152,10 +190,29 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                    hidden = false
+                )
                 asset inputs:height_texture = @./BA60C774D430237E_height.dds@ (
                     colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                    hidden = false
                 )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./BA60C774D430237E_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -193,10 +250,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01
                 asset inputs:height_texture = @./84D618EE13937065_height.dds@ (
                     colorSpace = "raw"
                 )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./84D618EE13937065_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -233,10 +290,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01
                 asset inputs:height_texture = @./07A2BD3EF6FA6ABE_height.dds@ (
                     colorSpace = "raw"
                 )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./07A2BD3EF6FA6ABE_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -274,10 +331,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01
                 asset inputs:height_texture = @./CD22E5C9BA98AB22_height.dds@ (
                     colorSpace = "raw"
                 )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./CD22E5C9BA98AB22_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -315,10 +372,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01
                 asset inputs:height_texture = @./F7B04EC7EAC3E083_height.dds@ (
                     colorSpace = "raw"
                 )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./F7B04EC7EAC3E083_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -356,10 +413,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01
                 asset inputs:height_texture = @./ADB8A5D012BC6F63_height.dds@ (
                     colorSpace = "raw"
                 )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./ADB8A5D012BC6F63_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -397,10 +454,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01
                 asset inputs:height_texture = @./A7AF0625F588BB5B_height.dds@ (
                     colorSpace = "raw"
                 )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./A7AF0625F588BB5B_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -438,10 +495,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01
                 asset inputs:height_texture = @./FA498349FF03DE2C_height.dds@ (
                     colorSpace = "raw"
                 )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./FA498349FF03DE2C_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -479,10 +536,10 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01
                 asset inputs:height_texture = @./BC36A7CEB3EFFD4A_height.dds@ (
                     colorSpace = "raw"
                 )
-                float inputs:displace_in = 0.01
                 asset inputs:normalmap_texture = @./BC36A7CEB3EFFD4A_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
