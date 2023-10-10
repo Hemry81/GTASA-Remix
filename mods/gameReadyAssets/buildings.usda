@@ -21,7 +21,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 1 (
+                float inputs:emissive_intensity = 0.3 (
                     customData = {
                         float default = 40
                         dictionary range = {

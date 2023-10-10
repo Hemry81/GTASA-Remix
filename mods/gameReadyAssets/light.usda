@@ -526,10 +526,10 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 4500
+                float colorTemperature = 6500
                 bool enableColorTemperature = 1
                 bool inputs:normalize = 1
-                float intensity = 500
+                float intensity = 100
                 bool light:enableCaustics = 0
                 bool normalize = 0
                 float radius = 0.3
@@ -1161,46 +1161,93 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def SphereLight "Street_Light_01" (
+            def RectLight "Street_Light_self_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float intensity = 500
+                float height = 2
+                float intensity = 10
                 bool normalize = 1
-                float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                float width = 1
+                double3 xformOp:rotateXYZ = (160.0000023841858, 1.74930514816379e-14, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.2, 0, 4.8)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def RectLight "Street_Light_main_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float height = 2
+                    float intensity = 200
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (0, 180, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (3.944304526105059e-31, 8.881784197001252e-16, 0.1)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
 
-            def SphereLight "Street_Light_02" (
+            def RectLight "Street_Light_self_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float intensity = 500
+                float height = 2
+                float intensity = 10
                 bool normalize = 1
-                float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                float width = 1
+                double3 xformOp:rotateXYZ = (-25, 180, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-3.2, 0, 4.8)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def RectLight "Street_Light_main_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float height = 2
+                    float intensity = 200
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    asset texture:file = @@
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (0, 180, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (6.77927340424307e-32, -8.881784197001252e-16, 0.1)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
         }
 
@@ -1884,71 +1931,75 @@ over "RootNode"
                 }
             }
         }
-    }
 
-    over "Looks"
-    {
-        over "mat_24E3AC08C370B770"
+        over "mesh_37EDDD93C2EF6646"
         {
-            over "Shader"
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "StrretLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
             {
-                asset inputs:diffuse_texture = @./texture/props/24E3AC08C370B770_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 300 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./texture/props/24E3AC08C370B770_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./texture/props/24E3AC08C370B770_normal.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @./texture/props/24E3AC08C370B770_rough.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
+                bool enableColorTemperature = 1
+                float intensity = 50
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.55, 0, 2.7)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "StrretLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                bool enableColorTemperature = 1
+                float intensity = 50
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.38, 0, 2.7)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_37FDCCDA622B8867"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def CylinderLight "Prop_light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 50
+                float length = 0.2
+                bool normalize = 1
+                float radius = 0.15
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsLine = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.02, 0, 0.20000000298023224)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
     }
