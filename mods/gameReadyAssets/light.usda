@@ -25,7 +25,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -33,6 +33,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -45,7 +46,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -53,6 +54,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -65,7 +67,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -73,6 +75,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -85,7 +88,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -93,6 +96,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -105,7 +109,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -113,6 +117,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -125,7 +130,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -133,6 +138,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -145,7 +151,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -153,6 +159,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -165,7 +172,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -173,6 +180,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -185,7 +193,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -193,6 +201,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -205,7 +214,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -213,6 +222,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -225,7 +235,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -233,6 +243,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -245,7 +256,7 @@ over "RootNode"
             )
             {
                 float height = 1
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -253,6 +264,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -285,7 +297,7 @@ over "RootNode"
             )
             {
                 float height = 2.5
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -293,6 +305,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4.5
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -306,7 +319,7 @@ over "RootNode"
             )
             {
                 float height = 2.5
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -314,6 +327,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4.5
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -327,7 +341,7 @@ over "RootNode"
             )
             {
                 float height = 2.5
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -335,6 +349,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4.5
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -347,7 +362,7 @@ over "RootNode"
             )
             {
                 float height = 2.5
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -355,6 +370,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4.5
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -367,7 +383,7 @@ over "RootNode"
             )
             {
                 float height = 2.5
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -375,6 +391,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4.5
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -387,7 +404,7 @@ over "RootNode"
             )
             {
                 float height = 2.5
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -395,6 +412,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4.5
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -407,7 +425,7 @@ over "RootNode"
             )
             {
                 float height = 2.5
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -415,6 +433,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4.5
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -427,7 +446,7 @@ over "RootNode"
             )
             {
                 float height = 2.5
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -435,6 +454,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4.5
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -447,7 +467,7 @@ over "RootNode"
             )
             {
                 float height = 2.5
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -455,6 +475,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4.5
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -467,7 +488,7 @@ over "RootNode"
             )
             {
                 float height = 2.5
-                bool inputs:normalize = 1
+                bool inputs:normalize = 0
                 float intensity = 100
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -475,6 +496,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
                 float width = 4.5
                 double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
@@ -507,7 +529,7 @@ over "RootNode"
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 bool inputs:normalize = 1
-                float intensity = 1000
+                float intensity = 500
                 bool light:enableCaustics = 0
                 bool normalize = 0
                 float radius = 0.3
@@ -550,7 +572,7 @@ over "RootNode"
                 bool enableColorTemperature = 1
                 float height = 0.15
                 bool inputs:normalize = 1
-                float intensity = 1000
+                float intensity = 500
                 bool normalize = 0
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -581,7 +603,7 @@ over "RootNode"
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 bool inputs:normalize = 1
-                float intensity = 1000
+                float intensity = 500
                 bool normalize = 0
                 float radius = 0.18
                 float shaping:cone:angle = 180
@@ -675,14 +697,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (5.121494994067911, -4.229145472015239, 1.9328616384286996)
@@ -695,14 +717,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (4.890155860964456, -2.2291454720152397, 1.9328616384286996)
@@ -715,14 +737,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (4.656861689780138, -0.22914547201523927, 1.9328616384286996)
@@ -735,14 +757,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (4.41127486279349, 1.7708545279847585, 1.9328616384286996)
@@ -755,14 +777,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (4.1513181322205135, 3.77085452798476, 1.9328616384286996)
@@ -775,14 +797,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.889848836005955, 5.770854527984756, 1.9328616384286996)
@@ -794,14 +816,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-5.157133420057653, -4.21625609059747, 1.9328616384286994)
@@ -814,14 +836,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-4.868150313640318, -2.2237685602198116, 1.9328616384286994)
@@ -834,14 +856,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-4.581056943009183, -0.2307799584339736, 1.9328616384286994)
@@ -854,14 +876,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-4.305845628182515, 1.7653592205264417, 1.9328616384286994)
@@ -874,14 +896,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-4.044524232594155, 3.765181370113226, 1.9328616384286994)
@@ -894,14 +916,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 0, -14.850482805853886)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-3.7846648798425817, 5.765391186520136, 1.9328616384286994)
@@ -931,14 +953,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, -13.300000201165677, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.400000035762787, 0.10000000149011612, 4.300000067055225)
@@ -951,14 +973,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, -13.300000201165677, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.400000035762787, -3.059999998509884, 4.300000067055225)
@@ -971,14 +993,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, -13.300000201165677, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.400000035762787, -6.219999998509884, 4.300000067055225)
@@ -991,14 +1013,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, -13.300000201165677, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.400000035762787, -9.379999998509884, 4.300000067055225)
@@ -1011,14 +1033,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, -13.300000201165677, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.400000035762787, -12.539999998509884, 4.300000067055225)
@@ -1030,14 +1052,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (2.394867956189859, 12.652934828289233, 4.300000067055232)
@@ -1050,14 +1072,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (2.394867956189822, 9.492934828289275, 4.300000067055264)
@@ -1070,14 +1092,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (2.3948679561898536, 6.332934828289323, 4.300000067055232)
@@ -1090,14 +1112,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (2.394867956189866, 3.172934828289162, 4.300000067055233)
@@ -1110,14 +1132,14 @@ over "RootNode"
             )
             {
                 float intensity = 100
-                bool normalize = 0
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (2.3948679561898483, 0.012934828289201228, 4.300000067055232)
@@ -1145,7 +1167,8 @@ over "RootNode"
             {
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float intensity = 1000
+                float intensity = 500
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1165,7 +1188,8 @@ over "RootNode"
             {
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float intensity = 1000
+                float intensity = 500
+                bool normalize = 1
                 float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1196,7 +1220,7 @@ over "RootNode"
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                bool visibleInPrimaryRay = 0
+                bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0.65, 0, 4.4)
@@ -1492,8 +1516,8 @@ over "RootNode"
             {
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float intensity = 1000
-                bool normalize = 0
+                float intensity = 500
+                bool normalize = 1
                 float radius = 0.1
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1519,8 +1543,8 @@ over "RootNode"
                 float colorTemperature = 4500
                 float diffuse = 1
                 bool enableColorTemperature = 1
-                float intensity = 1000
-                bool normalize = 0
+                float intensity = 500
+                bool normalize = 1
                 float radius = 1
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1541,8 +1565,8 @@ over "RootNode"
                 float colorTemperature = 4500
                 float diffuse = 1
                 bool enableColorTemperature = 1
-                float intensity = 1000
-                bool normalize = 0
+                float intensity = 500
+                bool normalize = 1
                 float radius = 1
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1563,8 +1587,8 @@ over "RootNode"
                 float colorTemperature = 4500
                 float diffuse = 1
                 bool enableColorTemperature = 1
-                float intensity = 1000
-                bool normalize = 0
+                float intensity = 500
+                bool normalize = 1
                 float radius = 1
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1590,8 +1614,8 @@ over "RootNode"
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 float height = 0.5
-                float intensity = 1000
-                bool normalize = 0
+                float intensity = 500
+                bool normalize = 1
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
@@ -1612,8 +1636,8 @@ over "RootNode"
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 float height = 0.5
-                float intensity = 1000
-                bool normalize = 0
+                float intensity = 500
+                bool normalize = 1
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus

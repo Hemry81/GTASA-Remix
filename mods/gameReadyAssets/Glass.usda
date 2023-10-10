@@ -4117,5 +4117,29 @@ def "RootNode"
                 )
             }
         }
+        over "mesh_D11ACE6307DADDD3" (
+            references = @./meshes/cars/glass/mesh_D11ACE6307DADDD3.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_E5608F2CD7235F3F" (
+            references = @./meshes/cars/glass/mesh_E5608F2CD7235F3F.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
     }
 }
