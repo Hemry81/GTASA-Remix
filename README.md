@@ -28,7 +28,7 @@ For improved graphics quality, we recommend installing the following mods togeth
 - **Essentials Pack : [SA - Essentials Pack](https://www.mixmods.com.br/2019/06/sa-essentials-pack/)**.
 - **MixSets v4.3.7 : [MixSets](https://mixmods.adorofilmes.net/2015/12/mod-mix-sets.html)**.
 - **[SA] SilentPatch v1.1 Build 32 : [SilentPatch](https://www.mixmods.com.br/2019/12/sa-silentpatch/)**.
-- **Improved Streaming : [](https://www.mixmods.com.br/2022/04/improved-streaming/)**.
+- **Improved Streaming : [Improved Streaming](https://www.mixmods.com.br/2022/04/improved-streaming/)**.
 - **OLA – Open Limit Adjuster v1.5.9 : [Open Limit Adjuster](https://www.mixmods.com.br/2022/10/open-limit-adjuster/)**.
 - **Carl Johnson Remastered (INSANITY CJ) : [Carl Johnson Remastered (INSANITY CJ)](https://www.mixmods.com.br/2018/06/carl-johnson-remastered-insanity-cj/)**.
 - **CJ Insanity + Upscale COMPLETE (all clothes in HD : [CJ Insanity + Upscale COMPLETE (all clothes in HD)](https://www.mixmods.com.br/2021/06/cj-insanity-upscale-complete-todas-as-roupas-em-hd/)**.
