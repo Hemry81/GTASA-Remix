@@ -27,15 +27,9 @@ For improved graphics quality, we recommend installing the following mods togeth
 - **SA - Essentials Pack : [SA - Essentials Pack](https://www.mixmods.com.br/2019/06/sa-essentials-pack/)**.
 - **Carl Johnson Remastered (INSANITY CJ) : [Carl Johnson Remastered (INSANITY CJ)](https://www.mixmods.com.br/2018/06/carl-johnson-remastered-insanity-cj/)**.
 - **CJ Insanity + Upscale COMPLETE (all clothes in HD : [CJ Insanity + Upscale COMPLETE (all clothes in HD)](https://www.mixmods.com.br/2021/06/cj-insanity-upscale-complete-todas-as-roupas-em-hd/)**.
-- **ECG – Enhanced Classic Graphics – Vehicle.txd : [ECG – Enhanced Classic Graphics – Vehicle.txd](https://www.mixmods.com.br/2020/01/ecg-enhanced-classic-graphics-vehicle-txd/)**.
-- **SA/SA:DE Proper Vehicles Retex : [SA/SA:DE Proper Vehicles Retex](https://www.mixmods.com.br/2022/04/sa-sade-proper-vehicles-retex/)**.
-- **Real Skybox : [Real Skybox](https://www.mixmods.com.br/2021/06/sa-real-skybox/)**.
-
-Please note that installing some of these mods may result in the loss of RTX-Remixed PBR textures. We are currently working on matching the texture hash for some of them, but this process is still in progress.
 
 # Contributing
 - We welcome contributions from the community! If you have any improvements or suggestions for the GTASA RTX-Remix mod, please follow our guidelines for contributing. Fork this repository, make your modifications, and submit a pull request.
-- Inside the "Tools" folder, you will find a Python script that generates a new "rough_only.usda" file and automatically copies the newly captured texture to a designated folder. If you're interested in contributing to this project, please refer to the detailed description provided in the tools folder.
 
 # Community Guidelines
 To maintain a healthy and constructive environment, we kindly ask all community members to adhere to the following guidelines:
