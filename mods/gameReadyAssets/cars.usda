@@ -194,5 +194,19 @@ over "RootNode"
             }
         }
     }
+
+    over "instances"
+    {
+        over "inst_E5608F2CD7235F3F_0"
+        {
+            over "mesh"
+            {
+                float3 xformOp:rotateXYZ = (0, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.0000010854628271772526, -0.0063004457852002815, 0.39585951016549004)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
 }
 

@@ -163,15 +163,6 @@ def "RootNode"
                     doc = "Index of Refraction of the material"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./texture/cars/glass/scratch_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
                 bool inputs:thin_walled = 1 (
                     customData = {
                         bool default = 0

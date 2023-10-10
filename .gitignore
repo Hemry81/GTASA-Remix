@@ -1,6 +1,7 @@
 captures/*
 Big_meshes*
 *_test*
+*_inst*
 not  modified folder.txt
 *.psd
 .thumbs/
