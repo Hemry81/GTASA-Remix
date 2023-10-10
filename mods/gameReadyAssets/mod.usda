@@ -4,6 +4,7 @@
         int refinementOverrideImplVersion = 0
     }
     subLayers = [
+        @./mesh_replacement.usda@,
         @./texture/rail/rail.usda@,
         @./tree.usda@,
         @./characters.usda@,
@@ -20,3 +21,4 @@
     ]
     upAxis = "Z"
 )
+

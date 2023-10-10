@@ -1,0 +1,134 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_E834500BAEC427E7"
+        {
+            def Xform "Xform_E834500BAEC427E7_0" (
+                delete references = @./Tunnel 01mesh_E834500BAEC427E7.usd@
+                prepend references = @./Tunnel 01/mesh_E834500BAEC427E7.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_485BA2A627B617C4" (
+            delete references = @../../../../captures/meshes/mesh_485BA2A627B617C4.usd@
+            prepend references = @./meshes//mesh_485BA2A627B617C4.usd@
+        )
+        {
+            def Xform "Xform_485BA2A627B617C4_0" (
+                delete references = @./Tunnel 01mesh_485BA2A627B617C4.usd@
+                prepend references = @./Tunnel 01/mesh_485BA2A627B617C4.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_A70067C486512457"
+        {
+            def Xform "Xform_A70067C486512457_0" (
+                delete references = @./Tunnel 01mesh_A70067C486512457.usd@
+                prepend references = @./Tunnel 01/mesh_A70067C486512457.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+
+    over "Looks"
+    {
+        over "mat_B7BD93F4BC657F04"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @../../texture/wall/Tiles027_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:displace_in = 0.01 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                    hidden = false
+                )
+                asset inputs:height_texture = @../../texture/wall/Tiles027_height.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @../../texture/wall/Tiles027_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @../../texture/wall/Tiles027_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+    }
+}
+

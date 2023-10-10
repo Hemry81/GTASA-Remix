@@ -159,56 +159,6 @@ over "RootNode"
             }
         }
 
-        over "mat_72F44E5A77F84F90"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./72F44E5A77F84F90_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:emissive_intensity = 100 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./72F44E5A77F84F90_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-            }
-        }
-
         over "mat_3D77890B1799114E"
         {
             over "Shader"
@@ -355,9 +305,28 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:displace_in = 0.05
+                float inputs:displace_in = 0.05 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                    hidden = false
+                )
                 asset inputs:height_texture = @./3B808DD547963FC7_height.dds@ (
                     colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                    hidden = false
                 )
                 asset inputs:normalmap_texture = @./3B808DD547963FC7_normal.dds@ (
                     colorSpace = "auto"
@@ -651,7 +620,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:reflection_roughness_constant = 0.099999994 (
+                float inputs:reflection_roughness_constant = 0.29999998 (
                     customData = {
                         float default = 0.5
                         dictionary range = {
@@ -1295,6 +1264,107 @@ over "RootNode"
                 active = false
             )
             {
+            }
+        }
+
+        over "mesh_08A0A4461F95E387"
+        {
+            custom int preserveOriginalDrawCall = 0
+
+            def Xform "Xform_08A0A4461F95E387_0" (
+                delete references = @../../meshes/props/Street Lights/Street Lights 01street light 01.usd@
+                prepend references = @../../meshes/props/Street Lights/Street Lights 01/street light 01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "StreetLight_01" (
+                active = false
+            )
+            {
+            }
+
+            def RectLight "StreetLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float height = 0.8
+                float intensity = 300
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (0, 0, -90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.2000000178813934, 0, 3.1000000461935997)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_13BC67D990EDA007"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_7BE8C3A491D6518C"
+        {
+            def Xform "Xform_7BE8C3A491D6518C_0" (
+                delete references = @../../meshes/props/Street Lights/Street Lights 01street light 01.usd@
+                prepend references = @../../meshes/props/Street Lights/Street Lights 01/street light 01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1.2, 1.2, 1.2)
+                double3 xformOp:translate = (0.30000000447034836, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def RectLight "StreetLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float height = 1
+                float intensity = 300
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                float width = 0.6
+                double3 xformOp:rotateXYZ = (0, 0, -90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.1000000163912773, 0.05, 3.8000000566244125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
     }

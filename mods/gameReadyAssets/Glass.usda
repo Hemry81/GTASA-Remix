@@ -172,7 +172,7 @@ def "RootNode"
                     displayName = "Normal Map"
                     hidden = false
                 )
-                bool inputs:thin_walled = 0 (
+                bool inputs:thin_walled = 1 (
                     customData = {
                         bool default = 0
                     }
@@ -1830,6 +1830,2283 @@ def "RootNode"
         }
         over "mesh_1EFF61706EBE5257" (
             references = @./meshes/cars/glass/mesh_1EFF61706EBE5257.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_0389E5EEEBB133E0" (
+            references = @./meshes/cars/glass/mesh_0389E5EEEBB133E0.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_B2004C957DFE16C8" (
+            references = @./meshes/cars/glass/mesh_B2004C957DFE16C8.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C5192D96920C1842" (
+            references = @./meshes/cars/glass/mesh_C5192D96920C1842.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_DC82307F8D0705D1" (
+            references = @./meshes/cars/glass/mesh_DC82307F8D0705D1.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_B43373CC9CDFD87C" (
+            references = @./meshes/cars/glass/mesh_B43373CC9CDFD87C.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_50AEFEE5C16AB3B5" (
+            references = @./meshes/cars/glass/mesh_50AEFEE5C16AB3B5.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_0377BAF4F920006F" (
+            references = @./meshes/cars/glass/mesh_0377BAF4F920006F.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_39D084CA3605382C" (
+            references = @./meshes/cars/glass/mesh_39D084CA3605382C.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_FDC7E8E7BFF80FC2" (
+            references = @./meshes/cars/glass/mesh_FDC7E8E7BFF80FC2.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_F90FD6F23456D684" (
+            references = @./meshes/cars/glass/mesh_F90FD6F23456D684.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_D22ED079E0D19D9C" (
+            references = @./meshes/cars/glass/mesh_D22ED079E0D19D9C.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_52578D74499DDD9F" (
+            references = @./meshes/cars/glass/mesh_52578D74499DDD9F.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_1C77EBD93A91BB09" (
+            references = @./meshes/cars/glass/mesh_1C77EBD93A91BB09.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_8A5E80254C1FB43D" (
+            references = @./meshes/cars/glass/mesh_8A5E80254C1FB43D.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_AEE0225D2C793505" (
+            references = @./meshes/cars/glass/mesh_AEE0225D2C793505.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C8AAA3ED9F7CD5E5" (
+            references = @./meshes/cars/glass/mesh_C8AAA3ED9F7CD5E5.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_D9DC0EECFD4BF638" (
+            references = @./meshes/cars/glass/mesh_D9DC0EECFD4BF638.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_A70388E12FC5B2BF" (
+            references = @./meshes/cars/glass/mesh_A70388E12FC5B2BF.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_A7110161C2F2BB2B" (
+            references = @./meshes/cars/glass/mesh_A7110161C2F2BB2B.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_E0308F23D055E3C6" (
+            references = @./meshes/cars/glass/mesh_E0308F23D055E3C6.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C5061A44C24DFDDF" (
+            references = @./meshes/cars/glass/mesh_C5061A44C24DFDDF.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_EE38D1612DF9640E" (
+            references = @./meshes/cars/glass/mesh_EE38D1612DF9640E.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_45CABF0C3676F6E7" (
+            references = @./meshes/cars/glass/mesh_45CABF0C3676F6E7.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_CFD27263A74AB888" (
+            references = @./meshes/cars/glass/mesh_CFD27263A74AB888.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_24BE853C92785F50" (
+            references = @./meshes/cars/glass/mesh_24BE853C92785F50.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_BC64B100E98F6E2B" (
+            references = @./meshes/cars/glass/mesh_BC64B100E98F6E2B.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_3CC0FC7A87D2DCEE" (
+            references = @./meshes/cars/glass/mesh_3CC0FC7A87D2DCEE.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_A5A8D8512C8D512F" (
+            references = @./meshes/cars/glass/mesh_A5A8D8512C8D512F.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_57D8A71C4D15A796" (
+            references = @./meshes/cars/glass/mesh_57D8A71C4D15A796.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C2DC63E66639FD7D" (
+            references = @./meshes/cars/glass/mesh_C2DC63E66639FD7D.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_58ECC3298A13C742" (
+            references = @./meshes/cars/glass/mesh_58ECC3298A13C742.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_A16F333B9B1EE5D1" (
+            references = @./meshes/cars/glass/mesh_A16F333B9B1EE5D1.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_7C5D90AB8BEE945D" (
+            references = @./meshes/cars/glass/mesh_7C5D90AB8BEE945D.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_6CFF07EFBF8759FB" (
+            references = @./meshes/cars/glass/mesh_6CFF07EFBF8759FB.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_815DF37174F2B853" (
+            references = @./meshes/cars/glass/mesh_815DF37174F2B853.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_4D716F9C2948060A" (
+            references = @./meshes/cars/glass/mesh_4D716F9C2948060A.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_838A4D29482F2D10" (
+            references = @./meshes/cars/glass/mesh_838A4D29482F2D10.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_13D6BDD92F566B89" (
+            references = @./meshes/cars/glass/mesh_13D6BDD92F566B89.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C645FE0072B33577" (
+            references = @./meshes/cars/glass/mesh_C645FE0072B33577.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_1F788D86C0729E34" (
+            references = @./meshes/cars/glass/mesh_1F788D86C0729E34.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_5072DE88C1B7CC9F" (
+            references = @./meshes/cars/glass/mesh_5072DE88C1B7CC9F.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_B8D00FBA9F42D114" (
+            references = @./meshes/cars/glass/mesh_B8D00FBA9F42D114.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_5FA06C31CB5ADABE" (
+            references = @./meshes/cars/glass/mesh_5FA06C31CB5ADABE.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_68FB1CE268FD775B" (
+            references = @./meshes/cars/glass/mesh_68FB1CE268FD775B.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C28870154FFF022A" (
+            references = @./meshes/cars/glass/mesh_C28870154FFF022A.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_1686FCBE2750B9B2" (
+            references = @./meshes/cars/glass/mesh_1686FCBE2750B9B2.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_45EB3FC00A54AB8F" (
+            references = @./meshes/cars/glass/mesh_45EB3FC00A54AB8F.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_F9A531ACD66D7B05" (
+            references = @./meshes/cars/glass/mesh_F9A531ACD66D7B05.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_3D60969200449B13" (
+            references = @./meshes/cars/glass/mesh_3D60969200449B13.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_B860ECE06B051454" (
+            references = @./meshes/cars/glass/mesh_B860ECE06B051454.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_29ACDBAEA6A5941B" (
+            references = @./meshes/cars/glass/mesh_29ACDBAEA6A5941B.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_6114BEA75939A0ED" (
+            references = @./meshes/cars/glass/mesh_6114BEA75939A0ED.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_20C7AE96FDB0D658" (
+            references = @./meshes/cars/glass/mesh_20C7AE96FDB0D658.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_AC53103EF1C8D29A" (
+            references = @./meshes/cars/glass/mesh_AC53103EF1C8D29A.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_F2E6CF208A8B912D" (
+            references = @./meshes/cars/glass/mesh_F2E6CF208A8B912D.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_694E9E074DAF12E0" (
+            references = @./meshes/cars/glass/mesh_694E9E074DAF12E0.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_13D31E6E2E830229" (
+            references = @./meshes/cars/glass/mesh_13D31E6E2E830229.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_63AB2F42B683FBE7" (
+            references = @./meshes/cars/glass/mesh_63AB2F42B683FBE7.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_EA1A368246644BBE" (
+            references = @./meshes/cars/glass/mesh_EA1A368246644BBE.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_F64A4F08786C3DEF" (
+            references = @./meshes/cars/glass/mesh_F64A4F08786C3DEF.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_66721DAC8269729B" (
+            references = @./meshes/cars/glass/mesh_66721DAC8269729B.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_8A35960B2DC05112" (
+            references = @./meshes/cars/glass/mesh_8A35960B2DC05112.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_872F1D259F91DC87" (
+            references = @./meshes/cars/glass/mesh_872F1D259F91DC87.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_9C87DF0C7BF6AFB4" (
+            references = @./meshes/cars/glass/mesh_9C87DF0C7BF6AFB4.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_EA684F274AD8D19D" (
+            references = @./meshes/cars/glass/mesh_EA684F274AD8D19D.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_AD1409A54CF21FE2" (
+            references = @./meshes/cars/glass/mesh_AD1409A54CF21FE2.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_FFD6F682F0DC8468" (
+            references = @./meshes/cars/glass/mesh_FFD6F682F0DC8468.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_A25D8E08A2A80C7E" (
+            references = @./meshes/cars/glass/mesh_A25D8E08A2A80C7E.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_A6D614351CA02938" (
+            references = @./meshes/cars/glass/mesh_A6D614351CA02938.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_18C7A8D6C775B3A0" (
+            references = @./meshes/cars/glass/mesh_18C7A8D6C775B3A0.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_9D69FF56662B224E" (
+            references = @./meshes/cars/glass/mesh_9D69FF56662B224E.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_5D28B58703793426" (
+            references = @./meshes/cars/glass/mesh_5D28B58703793426.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_16E6928219F6E7BB" (
+            references = @./meshes/cars/glass/mesh_16E6928219F6E7BB.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_1C7177B722991ABC" (
+            references = @./meshes/cars/glass/mesh_1C7177B722991ABC.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_38948557F46C9E69" (
+            references = @./meshes/cars/glass/mesh_38948557F46C9E69.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C1AEDB3EAA450B3F" (
+            references = @./meshes/cars/glass/mesh_C1AEDB3EAA450B3F.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_1394A9D2EE4D5B2F" (
+            references = @./meshes/cars/glass/mesh_1394A9D2EE4D5B2F.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_54096A8A77360052" (
+            references = @./meshes/cars/glass/mesh_54096A8A77360052.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C5512D65FA1FD158" (
+            references = @./meshes/cars/glass/mesh_C5512D65FA1FD158.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_030FE0A78ED613E7" (
+            references = @./meshes/cars/glass/mesh_030FE0A78ED613E7.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_7959684054761241" (
+            references = @./meshes/cars/glass/mesh_7959684054761241.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_144BC34FBC8736AA" (
+            references = @./meshes/cars/glass/mesh_144BC34FBC8736AA.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_550C369D7C4DFB69" (
+            references = @./meshes/cars/glass/mesh_550C369D7C4DFB69.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_E7B3F10CB7EAC279" (
+            references = @./meshes/cars/glass/mesh_E7B3F10CB7EAC279.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_FB8FE1B9157B99B7" (
+            references = @./meshes/cars/glass/mesh_FB8FE1B9157B99B7.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_1CAC48239AB4E589" (
+            references = @./meshes/cars/glass/mesh_1CAC48239AB4E589.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_EB5F049C1F58CA8E" (
+            references = @./meshes/cars/glass/mesh_EB5F049C1F58CA8E.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_9283BFAEF1382EDE" (
+            references = @./meshes/cars/glass/mesh_9283BFAEF1382EDE.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_44634DBA93A65019" (
+            references = @./meshes/cars/glass/mesh_44634DBA93A65019.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_A1B1EB0395AFE287" (
+            references = @./meshes/cars/glass/mesh_A1B1EB0395AFE287.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_B0D48B0BF227D75D" (
+            references = @./meshes/cars/glass/mesh_B0D48B0BF227D75D.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_27DCC917D7FB178C" (
+            references = @./meshes/cars/glass/mesh_27DCC917D7FB178C.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C8602BE493F1C8E7" (
+            references = @./meshes/cars/glass/mesh_C8602BE493F1C8E7.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_96C5100BAF001FAC" (
+            references = @./meshes/cars/glass/mesh_96C5100BAF001FAC.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_D4EB1BACA12070FA" (
+            references = @./meshes/cars/glass/mesh_D4EB1BACA12070FA.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_AC0026F4E475D881" (
+            references = @./meshes/cars/glass/mesh_AC0026F4E475D881.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_A742B13F79C33317" (
+            references = @./meshes/cars/glass/mesh_A742B13F79C33317.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_BCA0412110A35B41" (
+            references = @./meshes/cars/glass/mesh_BCA0412110A35B41.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_B77A038AF7160055" (
+            references = @./meshes/cars/glass/mesh_B77A038AF7160055.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_8BA6317472F05C56" (
+            references = @./meshes/cars/glass/mesh_8BA6317472F05C56.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_DDE766DB74D18009" (
+            references = @./meshes/cars/glass/mesh_DDE766DB74D18009.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_BAD54E89658F80A9" (
+            references = @./meshes/cars/glass/mesh_BAD54E89658F80A9.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_37E43DEAA4621742" (
+            references = @./meshes/cars/glass/mesh_37E43DEAA4621742.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_9FAE4BB05F94B158" (
+            references = @./meshes/cars/glass/mesh_9FAE4BB05F94B158.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_741B77CB0FBFFE28" (
+            references = @./meshes/cars/glass/mesh_741B77CB0FBFFE28.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_DA10E1A1BC606FB8" (
+            references = @./meshes/cars/glass/mesh_DA10E1A1BC606FB8.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_598547A9FF88B8F1" (
+            references = @./meshes/cars/glass/mesh_598547A9FF88B8F1.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_E5C41B1FC77AEBAF" (
+            references = @./meshes/cars/glass/mesh_E5C41B1FC77AEBAF.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_BB96ACF172DCE9CD" (
+            references = @./meshes/cars/glass/mesh_BB96ACF172DCE9CD.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_5EB929092FFD0390" (
+            references = @./meshes/cars/glass/mesh_5EB929092FFD0390.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_CB9F11175C10BEDD" (
+            references = @./meshes/cars/glass/mesh_CB9F11175C10BEDD.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_984F2CAD54D9D265" (
+            references = @./meshes/cars/glass/mesh_984F2CAD54D9D265.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_FC3D2436AD077F08" (
+            references = @./meshes/cars/glass/mesh_FC3D2436AD077F08.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_EBA0C315625582DB" (
+            references = @./meshes/cars/glass/mesh_EBA0C315625582DB.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_DCF1E66F9153522A" (
+            references = @./meshes/cars/glass/mesh_DCF1E66F9153522A.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C324B75F2361BEF6" (
+            references = @./meshes/cars/glass/mesh_C324B75F2361BEF6.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_5C114949BF1C336A" (
+            references = @./meshes/cars/glass/mesh_5C114949BF1C336A.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C5CBD1B2F88C8E8A" (
+            references = @./meshes/cars/glass/mesh_C5CBD1B2F88C8E8A.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_AC669442BE93380C" (
+            references = @./meshes/cars/glass/mesh_AC669442BE93380C.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_9D583327B5153ABF" (
+            references = @./meshes/cars/glass/mesh_9D583327B5153ABF.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_712F14B6276EAB1C" (
+            references = @./meshes/cars/glass/mesh_712F14B6276EAB1C.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_3380F0092CB1E8AA" (
+            references = @./meshes/cars/glass/mesh_3380F0092CB1E8AA.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_73B8F4B57486005C" (
+            references = @./meshes/cars/glass/mesh_73B8F4B57486005C.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_82B9F813473D970A" (
+            references = @./meshes/cars/glass/mesh_82B9F813473D970A.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_FA3111B0DA0451F2" (
+            references = @./meshes/cars/glass/mesh_FA3111B0DA0451F2.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_2C7685277B97104A" (
+            references = @./meshes/cars/glass/mesh_2C7685277B97104A.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_1D670562E19CA5D1" (
+            references = @./meshes/cars/glass/mesh_1D670562E19CA5D1.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_CE63D78BC2DF1F43" (
+            references = @./meshes/cars/glass/mesh_CE63D78BC2DF1F43.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_DA3A45803FA33106" (
+            references = @./meshes/cars/glass/mesh_DA3A45803FA33106.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_73A95406FB6ED912" (
+            references = @./meshes/cars/glass/mesh_73A95406FB6ED912.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_2031F7034F9FEF6E" (
+            references = @./meshes/cars/glass/mesh_2031F7034F9FEF6E.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_CF2C677A57AEF49F" (
+            references = @./meshes/cars/glass/mesh_CF2C677A57AEF49F.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_29EA6DBA9E3CDD50" (
+            references = @./meshes/cars/glass/mesh_29EA6DBA9E3CDD50.usd@
+        )
+        {
+            token visibility = "invisible"
+            rel material:binding = </RootNode/Looks/Windows_Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+        over "mesh_B9FFE9405669E157" (
+            references = @./meshes/cars/glass/mesh_B9FFE9405669E157.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_9AB7059F3A1ABB9C" (
+            references = @./meshes/cars/glass/mesh_9AB7059F3A1ABB9C.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_78626398A03C75E0" (
+            references = @./meshes/cars/glass/mesh_78626398A03C75E0.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_A9CBCA82A6D8B611" (
+            references = @./meshes/cars/glass/mesh_A9CBCA82A6D8B611.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_734114C0C54E1A1A" (
+            references = @./meshes/cars/glass/mesh_734114C0C54E1A1A.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_91D593527699DC4D" (
+            references = @./meshes/cars/glass/mesh_91D593527699DC4D.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_5EA5AE1B0B65A836" (
+            references = @./meshes/cars/glass/mesh_5EA5AE1B0B65A836.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_27EA205B58A8B777" (
+            references = @./meshes/cars/glass/mesh_27EA205B58A8B777.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_6A0A3F7B43F8FCDC" (
+            references = @./meshes/cars/glass/mesh_6A0A3F7B43F8FCDC.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_67F4BD488E44B85E" (
+            references = @./meshes/cars/glass/mesh_67F4BD488E44B85E.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_64A651C94F03DD20" (
+            references = @./meshes/cars/glass/mesh_64A651C94F03DD20.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_0FCA68C08109452E" (
+            references = @./meshes/cars/glass/mesh_0FCA68C08109452E.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_E925AF19078107C7" (
+            references = @./meshes/cars/glass/mesh_E925AF19078107C7.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_636EC89973435111" (
+            references = @./meshes/cars/glass/mesh_636EC89973435111.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_64A66EE5920A4C23" (
+            references = @./meshes/cars/glass/mesh_64A66EE5920A4C23.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_BFACD0D2F1AE334D" (
+            references = @./meshes/cars/glass/mesh_BFACD0D2F1AE334D.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_075CC8D87B5184A3" (
+            references = @./meshes/cars/glass/mesh_075CC8D87B5184A3.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_9D69424580A66F7B" (
+            references = @./meshes/cars/glass/mesh_9D69424580A66F7B.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_70B37E64783F2E8A" (
+            references = @./meshes/cars/glass/mesh_70B37E64783F2E8A.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_7B81FD37B46B3836" (
+            references = @./meshes/cars/glass/mesh_7B81FD37B46B3836.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_B318C2EB52969E7F" (
+            references = @./meshes/cars/glass/mesh_B318C2EB52969E7F.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_5B17198E2839EA65" (
+            references = @./meshes/cars/glass/mesh_5B17198E2839EA65.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_B487AD760D95E5D0" (
+            references = @./meshes/cars/glass/mesh_B487AD760D95E5D0.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_7FB31C7F97F16B6B" (
+            references = @./meshes/cars/glass/mesh_7FB31C7F97F16B6B.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_598589FB98E911B2" (
+            references = @./meshes/cars/glass/mesh_598589FB98E911B2.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_7F8CDA0C13A3FA67" (
+            references = @./meshes/cars/glass/mesh_7F8CDA0C13A3FA67.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_5A70332B76E7AA1D" (
+            references = @./meshes/cars/glass/mesh_5A70332B76E7AA1D.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_0581A6B4E8503D26" (
+            references = @./meshes/cars/glass/mesh_0581A6B4E8503D26.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_19470538169C09A2" (
+            references = @./meshes/cars/glass/mesh_19470538169C09A2.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_781A6A9E7FB42652" (
+            references = @./meshes/cars/glass/mesh_781A6A9E7FB42652.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_4DBD55F540BAA7FB" (
+            references = @./meshes/cars/glass/mesh_4DBD55F540BAA7FB.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_8DFD0D346E79A581" (
+            references = @./meshes/cars/glass/mesh_8DFD0D346E79A581.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_59EAF2DE839A048E" (
+            references = @./meshes/cars/glass/mesh_59EAF2DE839A048E.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_AD802B379718F7EB" (
+            references = @./meshes/cars/glass/mesh_AD802B379718F7EB.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_E107DD19251FEE40" (
+            references = @./meshes/cars/glass/mesh_E107DD19251FEE40.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_87FD29B3791361FF" (
+            references = @./meshes/cars/glass/mesh_87FD29B3791361FF.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_498B2EEF681DE090" (
+            references = @./meshes/cars/glass/mesh_498B2EEF681DE090.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_D108C7696B557777" (
+            references = @./meshes/cars/glass/mesh_D108C7696B557777.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_9A8448187E46DA89" (
+            references = @./meshes/cars/glass/mesh_9A8448187E46DA89.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_CEAC1904637D86FB" (
+            references = @./meshes/cars/glass/mesh_CEAC1904637D86FB.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C2E01A66DB7B8457" (
+            references = @./meshes/cars/glass/mesh_C2E01A66DB7B8457.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_70FA5CFDFDA1EE68" (
+            references = @./meshes/cars/glass/mesh_70FA5CFDFDA1EE68.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_AEC3D25BFBF7D5A0" (
+            references = @./meshes/cars/glass/mesh_AEC3D25BFBF7D5A0.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_46C4D01BDC1794AE" (
+            references = @./meshes/cars/glass/mesh_46C4D01BDC1794AE.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_9628E3246283B49C" (
+            references = @./meshes/cars/glass/mesh_9628E3246283B49C.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_9410476847CBF2CA" (
+            references = @./meshes/cars/glass/mesh_9410476847CBF2CA.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_5FA5FA3DD60CE77C" (
+            references = @./meshes/cars/glass/mesh_5FA5FA3DD60CE77C.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_C3DB400F7A635E97" (
+            references = @./meshes/cars/glass/mesh_C3DB400F7A635E97.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_8C64D15B2AC51E1D" (
+            references = @./meshes/cars/glass/mesh_8C64D15B2AC51E1D.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_95FC7F0742989962" (
+            references = @./meshes/cars/glass/mesh_95FC7F0742989962.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_027253540DF8F511" (
+            references = @./meshes/cars/glass/mesh_027253540DF8F511.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_4D5BC0DDE8285058" (
+            references = @./meshes/cars/glass/mesh_4D5BC0DDE8285058.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_E2CD6CC2ECA19539" (
+            references = @./meshes/cars/glass/mesh_E2CD6CC2ECA19539.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_3783ABA312F9396D" (
+            references = @./meshes/cars/glass/mesh_3783ABA312F9396D.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_41C1597D778AFED9" (
+            references = @./meshes/cars/glass/mesh_41C1597D778AFED9.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_86F52D180BCA3F37" (
+            references = @./meshes/cars/glass/mesh_86F52D180BCA3F37.usd@
+        )
+        {
+            token visibility = "invisible"
+            over "mesh"
+            {
+                rel material:binding = </RootNode/Looks/Windows_Glass> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+        over "mesh_D40D3F96B4472B67" (
+            references = @./meshes/cars/glass/mesh_D40D3F96B4472B67.usd@
         )
         {
             token visibility = "invisible"

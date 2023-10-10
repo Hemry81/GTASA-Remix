@@ -1,2 +1,7 @@
-/captures/*
+captures/*
+Big_meshes*
+*_test*
+not  modified folder.txt
+*.psd
+.thumbs/
 !/.gitattributes
