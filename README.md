@@ -8,7 +8,8 @@ To get started with the GTASA RTX-Remix Project, ensure that you have the follow
 - **RTX-Compatible Graphics Card**: You'll need an NVIDIA RTX series graphics card to take full advantage of the RTX enhancements.
 - **Modding Tools**: Install the necessary modding tools, such as Mod Loader to simplify the mod installation process.
 - **Downgrade**: For better compatibility, you'll need to downgrade to version 1.0 in order to run the game with RTX-Remix.
-- **RTX-Remix**: Get the latest version of RTX-Remix from [RTX-Remix GitHub](https://github.com/NVIDIAGameWorks/rtx-remix) and download the release. Make sure to update the "bridge-remix" and "dxvk-remix" files in the Action Tab. The latest version includes support for DLSS 3 frame generation.
+- **RTX-Remix**: Get the latest version of RTX-Remix from [RTX-Remix GitHub](https://github.com/NVIDIAGameWorks/rtx-remix) and download the release. Make sure to update the "bridge-remix" and "dxvk-remix" files in the Action Tab.
+- You can use [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader/releases/latest/download/RTX.Remix.Downloader.exe) to download and update to lastest version of RTX-Remix). Here is the original Github page of the tool : [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader)
 
 # Mod Installation
 Follow these steps to install the GTASA RTX-Remix mod:
@@ -24,9 +25,16 @@ Note: The specific installation directory mentioned above, Your Game Folder\rtx-
 
 # Mod Recommendation
 For improved graphics quality, we recommend installing the following mods together:
-- **SA - Essentials Pack : [SA - Essentials Pack](https://www.mixmods.com.br/2019/06/sa-essentials-pack/)**.
+- **Essentials Pack : [SA - Essentials Pack](https://www.mixmods.com.br/2019/06/sa-essentials-pack/)**.
+- **MixSets v4.3.7 : [MixSets](https://mixmods.adorofilmes.net/2015/12/mod-mix-sets.html)**.
+- **[SA] SilentPatch v1.1 Build 32 : [SilentPatch](https://www.mixmods.com.br/2019/12/sa-silentpatch/)**.
+- **Improved Streaming : [](https://www.mixmods.com.br/2022/04/improved-streaming/)**.
+- **OLA – Open Limit Adjuster v1.5.9 : [Open Limit Adjuster](https://www.mixmods.com.br/2022/10/open-limit-adjuster/)**.
 - **Carl Johnson Remastered (INSANITY CJ) : [Carl Johnson Remastered (INSANITY CJ)](https://www.mixmods.com.br/2018/06/carl-johnson-remastered-insanity-cj/)**.
 - **CJ Insanity + Upscale COMPLETE (all clothes in HD : [CJ Insanity + Upscale COMPLETE (all clothes in HD)](https://www.mixmods.com.br/2021/06/cj-insanity-upscale-complete-todas-as-roupas-em-hd/)**.
+- **Ped Spec : [Ped Spec](https://www.mixmods.com.br/2015/02/ped-spec-iluminacao-specular-nas-pessoas-como-no-mobile/)**.
+- **ImVehFt – Improved Vehicle Features : [ImVehFt](https://www.mixmods.com.br/2020/01/imvehft-improved-vehicle-features/)**.
+- **VehFuncs v2.4 : [VehFuncs](https://www.mixmods.com.br/2023/01/sa-vehfuncs/)**.
 
 # Contributing
 - We welcome contributions from the community! If you have any improvements or suggestions for the GTASA RTX-Remix mod, please follow our guidelines for contributing. Fork this repository, make your modifications, and submit a pull request.
