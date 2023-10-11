@@ -753,54 +753,6 @@ over "RootNode"
             }
         }
 
-        over "mat_DF22766F02C29A32"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./texture/effect/48188D919022F08A_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                float inputs:emissive_intensity = 100 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./texture/effect/48188D919022F08A_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-            }
-        }
-
         over "mat_76BD5D19A139B6BC"
         {
             over "Shader"

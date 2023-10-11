@@ -572,7 +572,7 @@ over "RootNode"
                 bool enableColorTemperature = 1
                 float height = 0.15
                 bool inputs:normalize = 1
-                float intensity = 500
+                float intensity = 300
                 bool normalize = 0
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -603,7 +603,7 @@ over "RootNode"
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 bool inputs:normalize = 1
-                float intensity = 500
+                float intensity = 300
                 bool normalize = 0
                 float radius = 0.18
                 float shaping:cone:angle = 180
@@ -648,7 +648,7 @@ over "RootNode"
                 bool enableColorTemperature = 1
                 float height = 0.5
                 bool inputs:normalize = 0
-                float intensity = 500
+                float intensity = 300
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
@@ -670,7 +670,7 @@ over "RootNode"
                 bool enableColorTemperature = 1
                 float height = 0.5
                 bool inputs:normalize = 0
-                float intensity = 500
+                float intensity = 300
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
@@ -948,204 +948,6 @@ over "RootNode"
             custom int preserveOriginalDrawCall = 1
             token visibility = "invisible"
 
-            def DiskLight "Signs_Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 100
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (0, -13.300000201165677, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.400000035762787, 0.10000000149011612, 4.300000067055225)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def DiskLight "Signs_Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-                hide_in_stage_window = false
-            )
-            {
-                float intensity = 100
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (0, -13.300000201165677, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.400000035762787, -3.059999998509884, 4.300000067055225)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def DiskLight "Signs_Light_03" (
-                prepend apiSchemas = ["ShapingAPI"]
-                hide_in_stage_window = false
-            )
-            {
-                float intensity = 100
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (0, -13.300000201165677, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.400000035762787, -6.219999998509884, 4.300000067055225)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def DiskLight "Signs_Light_04" (
-                prepend apiSchemas = ["ShapingAPI"]
-                hide_in_stage_window = false
-            )
-            {
-                float intensity = 100
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (0, -13.300000201165677, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.400000035762787, -9.379999998509884, 4.300000067055225)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def DiskLight "Signs_Light_05" (
-                prepend apiSchemas = ["ShapingAPI"]
-                hide_in_stage_window = false
-            )
-            {
-                float intensity = 100
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (0, -13.300000201165677, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-2.400000035762787, -12.539999998509884, 4.300000067055225)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def DiskLight "Signs_Light_06" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 100
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.394867956189859, 12.652934828289233, 4.300000067055232)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def DiskLight "Signs_Light_07" (
-                prepend apiSchemas = ["ShapingAPI"]
-                hide_in_stage_window = false
-            )
-            {
-                float intensity = 100
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.394867956189822, 9.492934828289275, 4.300000067055264)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def DiskLight "Signs_Light_08" (
-                prepend apiSchemas = ["ShapingAPI"]
-                hide_in_stage_window = false
-            )
-            {
-                float intensity = 100
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.3948679561898536, 6.332934828289323, 4.300000067055232)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def DiskLight "Signs_Light_09" (
-                prepend apiSchemas = ["ShapingAPI"]
-                hide_in_stage_window = false
-            )
-            {
-                float intensity = 100
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.394867956189866, 3.172934828289162, 4.300000067055233)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def DiskLight "Signs_Light_10" (
-                prepend apiSchemas = ["ShapingAPI"]
-                hide_in_stage_window = false
-            )
-            {
-                float intensity = 100
-                bool normalize = 1
-                float radius = 0.5
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (0, 13.5, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.3948679561898483, 0.012934828289201228, 4.300000067055232)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
             over "mesh"
             {
                 normal3f[] normals (
@@ -1154,6 +956,405 @@ over "RootNode"
                 texCoord2f[] primvars:st = [(-4, -1), (0.49964154, 1.9985018), (0.49964154, -0.9985018), (6, -1), (-4, -1), (0.07568982, -0.9985018), (0.07568982, 1.9985018), (6, -1), (-4, -0.5), (0.07558112, 1.9985018), (5.9950047, 1.9985018), (0.07558112, -0.9985018), (5.9950047, -0.9985018), (6, -0.5), (-4, -0.5), (-3.9950047, -0.9985018), (0.49975026, -0.9985018), (-3.9950047, 1.9985018), (0.49975026, 1.9985018), (6, -0.5), (-4, -1), (0.49975026, 1.9985018), (0.49975026, -0.9985018), (6, -1), (-4, -1), (0.07558113, -0.9985018), (0.07558113, 1.9985018), (6, -1), (-4, -0.5), (0.07568981, 1.9985018), (5.9950037, 1.9985018), (0.07568981, -0.9985018), (5.9950037, -0.9985018), (6, -0.5), (-4, -0.5), (-3.9950047, -0.9985018), (0.49964154, -0.9985018), (-3.9950047, 1.9985018), (0.49964154, 1.9985018), (6, -0.5), (-4, -1), (0.499638, 1.9985018), (0.499638, -0.9985018), (6, -1), (-4, -1), (0.075692624, -0.9985018), (0.075692624, 1.9985018), (6, -1), (-4, -0.5), (0.07558057, 1.9985018), (5.9950037, 1.9985013), (0.07558057, -0.9985018), (5.9950037, -0.9985018), (6, -0.5), (-4, -0.5), (-3.9950051, -0.9985018), (0.49975005, -0.9985018), (-3.9950051, 1.9985013), (0.49975005, 1.9985018), (6, -0.5), (-4, -1), (0.49975044, 1.9985018), (0.49975044, -0.9985018), (6, -1), (-4, -1), (0.07558015, -0.9985018), (0.07558015, 1.9985018), (6, -1), (-4, -0.5), (0.075693026, 1.9985018), (5.9950037, 1.9985013), (0.075693026, -0.9985018), (5.9950037, -0.9985018), (6, -0.5), (-4, -0.5), (-3.995005, -0.9985018), (0.4996376, -0.9985018), (-3.995005, 1.9985013), (0.4996376, 1.9985018), (6, -0.5), (0.0004994571, -0.00049972534), (0.00049960613, -0.00049972534), (0.88799727, -0.00049972534), (0.0004993379, -0.99949837), (0.9995005, -0.9995012), (0.0019354224, -0.9995012), (0.99950016, -0.9995003), (0.0019352138, -0.9995003), (0.11311796, -0.00049972534), (0.9995003, -0.0005016327), (0, -1), (0.113072634, -0.00049972534), (0.9980649, -0.00049972534), (1, -0.5), (0, -0.5), (0.001934737, -0.35545063), (0, -1), (0.9995005, -0.35545063), (1, -0.5), (0, -0.5), (0.88804257, -0.00049972534), (0.9995005, -0.9995003), (1.999001, -0.3029623), (1.999001, -0.67445564), (0.0016417503, -0.3029623), (1.9983582, -0.20928955), (0.002174437, -0.6830902), (1.9978255, -0.79395866), (0.0025550127, -0.2159996), (0.0025550723, -0.79395866), (0.0025554895, -0.2944584), (0.0025555491, -0.70015526), (0.0019126534, -0.23499012), (1.9980874, -0.2944584), (0.0013797879, -0.78545475), (1.9986202, -0.7087908), (1.999001, -0.24170017), (1.999001, -0.78545475), (0.0004994571, -0.00049972534), (0.00049960613, -0.00049972534), (0.88799727, -0.00049972534), (0.0004993379, -0.99949837), (0.9995005, -0.9995012), (0.0019354224, -0.9995012), (0.99950016, -0.9995003), (0.0019352138, -0.9995003), (0.11311796, -0.00049972534), (0.9995003, -0.0005016327), (0, -1), (0.113072634, -0.00049972534), (0.9980649, -0.00049972534), (1, -0.5), (0, -0.5), (0.001934737, -0.35545063), (0, -1), (0.9995005, -0.35545063), (1, -0.5), (0, -0.5), (0.88804257, -0.00049972534), (0.9995005, -0.9995003), (1.999001, -0.3029623), (1.999001, -0.67445564), (0.0016417503, -0.3029623), (1.9983582, -0.20928955), (0.0019126534, -0.23499012), (1.9980874, -0.2944584), (0.0025554895, -0.2944584), (0.0025555491, -0.70015526), (0.002174437, -0.6830902), (1.9978255, -0.79395866), (0.0013797879, -0.78545475), (1.9986202, -0.7087908), (0.0025550127, -0.2159996), (0.0025550723, -0.79395866), (1.999001, -0.24170017), (1.999001, -0.78545475), (0.0004994571, -0.00049972534), (0.00049960613, -0.00049972534), (0.88799727, -0.00049972534), (0.0004993379, -0.99949837), (0.9995005, -0.9995012), (0.0019354224, -0.9995012), (0.99950016, -0.9995003), (0.0019352138, -0.9995003), (0.11311796, -0.00049972534), (0.9995003, -0.0005016327), (0, -1), (0.113072634, -0.00049972534), (0.9980649, -0.00049972534), (1, -0.5), (0, -0.5), (0.001934737, -0.35545063), (0, -1), (0.9995005, -0.35545063), (1, -0.5), (0, -0.5), (0.88804257, -0.00049972534), (0.9995005, -0.9995003), (1.999001, -0.3029623), (1.999001, -0.67445564), (0.0016417503, -0.3029623), (1.9983582, -0.20928955), (0.0019126534, -0.23499012), (1.9980874, -0.2944584), (0.0025554895, -0.2944584), (0.0025555491, -0.70015526), (0.002174437, -0.6830902), (1.9978255, -0.79395866), (0.0013797879, -0.78545475), (1.9986202, -0.7087908), (0.0025550127, -0.2159996), (0.0025550723, -0.79395866), (1.999001, -0.24170017), (1.999001, -0.78545475), (0.0004994571, -0.00049972534), (0.00049960613, -0.00049972534), (0.88799727, -0.00049972534), (0.0004993379, -0.99949837), (0.9995005, -0.9995012), (0.0019354224, -0.9995012), (0.99950016, -0.9995003), (0.0019352138, -0.9995003), (0.11311796, -0.00049972534), (0.9995003, -0.0005016327), (0, -1), (0.113072634, -0.00049972534), (0.9980649, -0.00049972534), (1, -0.5), (0, -0.5), (0.001934737, -0.35545063), (0, -1), (0.9995005, -0.35545063), (1, -0.5), (0, -0.5), (0.88804257, -0.00049972534), (0.9995005, -0.9995003), (1.999001, -0.3029623), (1.999001, -0.67445564), (0.0016417503, -0.3029623), (1.9983582, -0.20928955), (0.0019126534, -0.23499012), (1.9980874, -0.2944584), (0.0025554895, -0.2944584), (0.0025555491, -0.70015526), (0.002174437, -0.6830902), (1.9978255, -0.79395866), (0.0013797879, -0.78545475), (1.9986202, -0.7087908), (0.0025550127, -0.2159996), (0.0025550723, -0.79395866), (1.999001, -0.24170017), (1.999001, -0.78545475), (0.0004994571, -0.00049972534), (0.00049960613, -0.00049972534), (0.88799727, -0.00049972534), (0.0004993379, -0.99949837), (0.9995005, -0.9995012), (0.0019354224, -0.9995012), (0.99950016, -0.9995003), (0.0019352138, -0.9995003), (0.11311796, -0.00049972534), (0.9995003, -0.0005016327), (0, -1), (0.113072634, -0.00049972534), (0.9980649, -0.00049972534), (1, -0.5), (0, -0.5), (0.001934737, -0.35545063), (0, -1), (0.9995005, -0.35545063), (1, -0.5), (0, -0.5), (0.88804257, -0.00049972534), (0.9995005, -0.9995003), (1.999001, -0.3029623), (1.999001, -0.67445564), (0.0016417503, -0.3029623), (1.9983582, -0.20928955), (0.0019126534, -0.23499012), (1.9980874, -0.2944584), (0.0025554895, -0.2944584), (0.0025555491, -0.70015526), (0.002174437, -0.6830902), (1.9978255, -0.79395866), (0.0013797879, -0.78545475), (1.9986202, -0.7087908), (0.0025550127, -0.2159996), (0.0025550723, -0.79395866), (1.999001, -0.24170017), (1.999001, -0.78545475), (0.0004994571, -0.00049972534), (0.00049960613, -0.00049972534), (0.88799727, -0.00049972534), (0.0004993379, -0.99949837), (0.9995005, -0.9995012), (0.0019354224, -0.9995012), (0.99950016, -0.9995003), (0.0019352138, -0.9995003), (0.11311796, -0.00049972534), (0.9995003, -0.0005016327), (0, -1), (0.113072634, -0.00049972534), (0.9980649, -0.00049972534), (1, -0.5), (0, -0.5), (0.001934737, -0.35545063), (0, -1), (0.9995005, -0.35545063), (1, -0.5), (0, -0.5), (0.88804257, -0.00049972534), (0.9995005, -0.9995003), (1.999001, -0.3029623), (1.999001, -0.67445564), (0.0016417503, -0.3029623), (1.9983582, -0.20928955), (0.0019126534, -0.23499012), (1.9980874, -0.2944584), (0.0025554895, -0.2944584), (0.0025555491, -0.70015526), (0.002174437, -0.6830902), (1.9978255, -0.79395866), (0.0013797879, -0.78545475), (1.9986202, -0.7087908), (0.0025550127, -0.2159996), (0.0025550723, -0.79395866), (1.999001, -0.24170017), (1.999001, -0.78545475), (0.0004994571, -0.00049972534), (0.00049960613, -0.00049972534), (0.88799727, -0.00049972534), (0.0004993379, -0.99949837), (0.9995005, -0.9995012), (0.0019354224, -0.9995012), (0.99950016, -0.9995003), (0.0019352138, -0.9995003), (0.11311796, -0.00049972534), (0.9995003, -0.0005016327), (0, -1), (0.113072634, -0.00049972534), (0.9980649, -0.00049972534), (1, -0.5), (0, -0.5), (0.001934737, -0.35545063), (0, -1), (0.9995005, -0.35545063), (1, -0.5), (0, -0.5), (0.88804257, -0.00049972534), (0.9995005, -0.9995003), (1.999001, -0.3029623), (1.999001, -0.67445564), (0.0016417503, -0.3029623), (1.9983582, -0.20928955), (0.0019126534, -0.23499012), (1.9980874, -0.2944584), (0.0025554895, -0.2944584), (0.0025555491, -0.70015526), (0.002174437, -0.6830902), (1.9978255, -0.79395866), (0.0013797879, -0.78545475), (1.9986202, -0.7087908), (0.0025550127, -0.2159996), (0.0025550723, -0.79395866), (1.999001, -0.24170017), (1.999001, -0.78545475), (0.0004994571, -0.00049972534), (0.00049960613, -0.00049972534), (0.88799727, -0.00049972534), (0.0004993379, -0.99949837), (0.9995005, -0.9995012), (0.0019354224, -0.9995012), (0.99950016, -0.9995003), (0.0019352138, -0.9995003), (0.11311796, -0.00049972534), (0.9995003, -0.0005016327), (0, -1), (0.113072634, -0.00049972534), (0.9980649, -0.00049972534), (1, -0.5), (0, -0.5), (0.001934737, -0.35545063), (0, -1), (0.9995005, -0.35545063), (1, -0.5), (0, -0.5), (0.88804257, -0.00049972534), (0.9995005, -0.9995003), (1.999001, -0.3029623), (1.999001, -0.67445564), (0.0016417503, -0.3029623), (1.9983582, -0.20928955), (0.0019126534, -0.23499012), (1.9980874, -0.2944584), (0.0025554895, -0.2944584), (0.0025555491, -0.70015526), (0.002174437, -0.6830902), (1.9978255, -0.79395866), (0.0013797879, -0.78545475), (1.9986202, -0.7087908), (0.0025550127, -0.2159996), (0.0025550723, -0.79395866), (1.999001, -0.24170017), (1.999001, -0.78545475), (0.0004994571, -0.00049972534), (0.00049960613, -0.00049972534), (0.88799727, -0.00049972534), (0.0004993379, -0.99949837), (0.9995005, -0.9995012), (0.0019354224, -0.9995012), (0.99950016, -0.9995003), (0.0019352138, -0.9995003), (0.11311796, -0.00049972534), (0.9995003, -0.0005016327), (0, -1), (0.113072634, -0.00049972534), (0.9980649, -0.00049972534), (1, -0.5), (0, -0.5), (0.001934737, -0.35545063), (0, -1), (0.9995005, -0.35545063), (1, -0.5), (0, -0.5), (0.88804257, -0.00049972534), (0.9995005, -0.9995003), (1.999001, -0.3029623), (1.999001, -0.67445564), (0.0016417503, -0.3029623), (1.9983582, -0.20928955), (0.0019126534, -0.23499012), (1.9980874, -0.2944584), (0.0025554895, -0.2944584), (0.0025555491, -0.70015526), (0.002174437, -0.6830902), (1.9978255, -0.79395866), (0.0013797879, -0.78545475), (1.9986202, -0.7087908), (0.0025550127, -0.2159996), (0.0025550723, -0.79395866), (1.999001, -0.24170017), (1.999001, -0.78545475), (0.0004994571, -0.00049972534), (0.00049960613, -0.00049972534), (0.88799727, -0.00049972534), (0.0004993379, -0.99949837), (0.9995005, -0.9995012), (0.0019354224, -0.9995012), (0.99950016, -0.9995003), (0.0019352138, -0.9995003), (0.11311796, -0.00049972534), (0.9995003, -0.0005016327), (0, -1), (0.113072634, -0.00049972534), (0.9980649, -0.00049972534), (1, -0.5), (0, -0.5), (0.001934737, -0.35545063), (0, -1), (0.9995005, -0.35545063), (1, -0.5), (0, -0.5), (0.88804257, -0.00049972534), (0.9995005, -0.9995003), (1.999001, -0.3029623), (1.999001, -0.67445564), (0.0016417503, -0.3029623), (1.9983582, -0.20928955), (0.0019126534, -0.23499012), (1.9980874, -0.2944584), (0.0025554895, -0.2944584), (0.0025555491, -0.70015526), (0.002174437, -0.6830902), (1.9978255, -0.79395866), (0.0013797879, -0.78545475), (1.9986202, -0.7087908), (0.0025550127, -0.2159996), (0.0025550723, -0.79395866), (1.999001, -0.24170017), (1.999001, -0.78545475)] (
                     interpolation = "vertex"
                 )
+            }
+
+            def DiskLight "Signs_Light_self_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, -90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.400000035762787, 0.10000000149011612, 4.300000067055225)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def RectLight "Signs_Light_main_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 1
+                    float intensity = 20
+                    bool isProjector = 0
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def DiskLight "Signs_Light_self_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, -90, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.400000035762787, -3.059999998509884, 4.300000067055225)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def RectLight "Signs_Light_main_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 1
+                    float intensity = 20
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def DiskLight "Signs_Light_self_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, -90, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.400000035762787, -6.219999998509884, 4.300000067055225)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def RectLight "Signs_Light_main_03" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 1
+                    float intensity = 20
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def DiskLight "Signs_Light_self_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, -90, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.400000035762787, -9.379999998509884, 4.300000067055225)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def RectLight "Signs_Light_main_04" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 1
+                    float intensity = 20
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def DiskLight "Signs_Light_self_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, -90, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.400000035762787, -12.539999998509884, 4.300000067055225)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def RectLight "Signs_Light_main_05" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 1
+                    float intensity = 20
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def DiskLight "Signs_Light_self_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, -90, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.394867956189859, 12.652934828289233, 4.300000067055232)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def RectLight "Signs_Light_main_06" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 1
+                    float intensity = 20
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def DiskLight "Signs_Light_self_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, -90, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.394867956189822, 9.492934828289275, 4.300000067055264)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def RectLight "Signs_Light_main_07" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 1
+                    float intensity = 20
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def DiskLight "Signs_Light_self_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, -90, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.3948679561898536, 6.332934828289323, 4.300000067055232)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def RectLight "Signs_Light_main_08" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 1
+                    float intensity = 20
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def DiskLight "Signs_Light_self_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, -90, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.394867956189866, 3.172934828289162, 4.300000067055233)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def RectLight "Signs_Light_main_09" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 1
+                    float intensity = 20
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def DiskLight "Signs_Light_self_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, -90, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.3948679561898483, 0.012934828289201228, 4.300000067055232)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def RectLight "Signs_Light_main_10" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 1
+                    float intensity = 20
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
         }
 
@@ -1168,7 +1369,7 @@ over "RootNode"
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 float height = 2
-                float intensity = 10
+                float intensity = 50
                 bool normalize = 1
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1189,7 +1390,7 @@ over "RootNode"
                     float colorTemperature = 4500
                     bool enableColorTemperature = 1
                     float height = 2
-                    float intensity = 200
+                    float intensity = 100
                     bool normalize = 1
                     float shaping:cone:angle = 180
                     float shaping:cone:softness
@@ -1212,7 +1413,7 @@ over "RootNode"
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 float height = 2
-                float intensity = 10
+                float intensity = 50
                 bool normalize = 1
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1233,7 +1434,7 @@ over "RootNode"
                     float colorTemperature = 4500
                     bool enableColorTemperature = 1
                     float height = 2
-                    float intensity = 200
+                    float intensity = 100
                     bool normalize = 1
                     float shaping:cone:angle = 180
                     float shaping:cone:softness
@@ -1283,7 +1484,7 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float intensity = 500
+                float intensity = 300
                 bool normalize = 0
                 float radius = 0.1
                 float shaping:cone:angle = 180
@@ -1563,7 +1764,7 @@ over "RootNode"
             {
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
-                float intensity = 500
+                float intensity = 300
                 bool normalize = 1
                 float radius = 0.1
                 float shaping:cone:angle = 180
@@ -1590,7 +1791,7 @@ over "RootNode"
                 float colorTemperature = 4500
                 float diffuse = 1
                 bool enableColorTemperature = 1
-                float intensity = 500
+                float intensity = 300
                 bool normalize = 1
                 float radius = 1
                 float shaping:cone:angle = 180
@@ -1612,7 +1813,7 @@ over "RootNode"
                 float colorTemperature = 4500
                 float diffuse = 1
                 bool enableColorTemperature = 1
-                float intensity = 500
+                float intensity = 300
                 bool normalize = 1
                 float radius = 1
                 float shaping:cone:angle = 180
@@ -1634,7 +1835,7 @@ over "RootNode"
                 float colorTemperature = 4500
                 float diffuse = 1
                 bool enableColorTemperature = 1
-                float intensity = 500
+                float intensity = 300
                 bool normalize = 1
                 float radius = 1
                 float shaping:cone:angle = 180
@@ -1661,7 +1862,7 @@ over "RootNode"
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 float height = 0.5
-                float intensity = 500
+                float intensity = 300
                 bool normalize = 1
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
@@ -1683,7 +1884,7 @@ over "RootNode"
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
                 float height = 0.5
-                float intensity = 500
+                float intensity = 300
                 bool normalize = 1
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
