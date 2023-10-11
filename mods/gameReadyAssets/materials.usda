@@ -1,6 +1,7 @@
 #usda 1.0
 (
     subLayers = [
+        @./texture/roof/roof.usda@,
         @./texture/floors/floors.usda@,
         @./texture/asphalt/asphalt.usda@,
         @./texture/ground/ground.usda@,
