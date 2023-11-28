@@ -24,15 +24,15 @@ Follow these steps to install the GTASA RTX-Remix mod:
 Note: The specific installation directory mentioned above, Your Game Folder\rtx-remix\mods\gameReadyAssets, may vary depending on your game folder structure and the instructions provided by the mod developer. Please refer to the documentation or README file provided with the mod for any additional installation instructions or requirements.
 
 # Mod Recommendation
-For improved graphics quality, we recommend installing the following mods together:
-- **Essentials Pack : [SA - Essentials Pack](https://www.mixmods.com.br/2019/06/sa-essentials-pack/)**.
-- **MixSets v4.3.7 : [MixSets](https://mixmods.adorofilmes.net/2015/12/mod-mix-sets.html)**.
-- **[SA] SilentPatch v1.1 Build 32 : [SilentPatch](https://www.mixmods.com.br/2019/12/sa-silentpatch/)**.
-- **Improved Streaming : [Improved Streaming](https://www.mixmods.com.br/2022/04/improved-streaming/)**.
-- **OLA – Open Limit Adjuster v1.5.9 : [Open Limit Adjuster](https://www.mixmods.com.br/2022/10/open-limit-adjuster/)**.
-- **Carl Johnson Remastered (INSANITY CJ) : [Carl Johnson Remastered (INSANITY CJ)](https://www.mixmods.com.br/2018/06/carl-johnson-remastered-insanity-cj/)**.
-- **CJ Insanity + Upscale COMPLETE (all clothes in HD : [CJ Insanity + Upscale COMPLETE (all clothes in HD)](https://www.mixmods.com.br/2021/06/cj-insanity-upscale-complete-todas-as-roupas-em-hd/)**.
-- **Ped Spec : [Ped Spec](https://www.mixmods.com.br/2015/02/ped-spec-iluminacao-specular-nas-pessoas-como-no-mobile/)**.
+To enhance stability and improve graphics quality, we recommend installing the following mods alongside our game mod::
+- **Essentials Pack : [SA - Essentials Pack](https://www.mixmods.com.br/2019/06/sa-essentials-pack/)** (An important mod to ensure compatibility with Remix).
+- **MixSets v4.3.7 : [MixSets](https://mixmods.adorofilmes.net/2015/12/mod-mix-sets.html)** (Fixes various issues in the original game and improve stability with Remix).
+- **[SA] SilentPatch v1.1 Build 32 : [SilentPatch](https://www.mixmods.com.br/2019/12/sa-silentpatch/)** (Addresses multiple issues in the original game).
+- **Improved Streaming : [Improved Streaming](https://www.mixmods.com.br/2022/04/improved-streaming/)** (Resolves memory streaming problems).
+- **OLA – Open Limit Adjuster v1.5.9 : [Open Limit Adjuster](https://www.mixmods.com.br/2022/10/open-limit-adjuster/)** (Resolves memory-related issues).
+- **Carl Johnson Remastered (INSANITY CJ) : [Carl Johnson Remastered (INSANITY CJ)](https://www.mixmods.com.br/2018/06/carl-johnson-remastered-insanity-cj/)** (Provides high-resolution CJ textures with a recreated body mesh. Our CJ PBR texture is currently based on this pack).
+- **CJ Insanity + Upscale COMPLETE (all clothes in HD : [CJ Insanity + Upscale COMPLETE (all clothes in HD)](https://www.mixmods.com.br/2021/06/cj-insanity-upscale-complete-todas-as-roupas-em-hd/)** (Enhances CJ's clothing textures with high resolution).
+- **Ped Spec : [Ped Spec](https://www.mixmods.com.br/2015/02/ped-spec-iluminacao-specular-nas-pessoas-como-no-mobile/)**  (Fixes mesh shaking issues).
 - **ImVehFt – Improved Vehicle Features : [ImVehFt](https://www.mixmods.com.br/2020/01/imvehft-improved-vehicle-features/)**.
 - **VehFuncs v2.4 : [VehFuncs](https://www.mixmods.com.br/2023/01/sa-vehfuncs/)**.
 
