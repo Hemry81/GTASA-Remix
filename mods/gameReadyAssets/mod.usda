@@ -19,7 +19,8 @@
         @./buildings.usda@,
         @./effect.usda@,
         @./materials.usda@,
-        @./water.usda@
+        @./water.usda@,
+        @./CJHouse.usda@
     ]
     upAxis = "Z"
 )
