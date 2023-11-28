@@ -3,7 +3,3 @@
     upAxis = "Z"
 )
 
-over "RootNode"
-{
-}
-

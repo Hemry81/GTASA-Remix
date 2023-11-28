@@ -1,0 +1,62 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_E6C0F626876974DD"
+        {
+            def Xform "Xform_E6C0F626876974DD_0" (
+                delete references = @../Rail Remastermesh_E6C0F626876974DD.usd@
+                prepend references = @../Rail Remaster/mesh_E6C0F626876974DD.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_7AC6AC8F3EF31E55"
+        {
+            def Xform "Xform_7AC6AC8F3EF31E55_0" (
+                delete references = @../Rail Remastermesh_7AC6AC8F3EF31E55.usd@
+                prepend references = @../Rail Remaster/mesh_7AC6AC8F3EF31E55.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (100, 100, 100)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+
+    over "instances"
+    {
+        over "inst_7AC6AC8F3EF31E55_0"
+        {
+            over "Xform_7AC6AC8F3EF31E55_0"
+            {
+                double3 xformOp:scale = (1, 1, 1)
+            }
+        }
+    }
+}
+

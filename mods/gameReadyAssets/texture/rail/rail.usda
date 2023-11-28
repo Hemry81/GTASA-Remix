@@ -1,4 +1,7 @@
 #usda 1.0
+(
+    upAxis = "Z"
+)
 
 over "RootNode"
 {
@@ -14,8 +17,11 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:displace_in = 0.025 (
                     customData = {
@@ -27,7 +33,9 @@ over "RootNode"
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
                     hidden = false
                 )
                 asset inputs:height_texture = @./railway_height.dds@ (
@@ -37,8 +45,11 @@ over "RootNode"
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:metallic_texture = @./railway_metal.dds@ (
                     colorSpace = "auto"
@@ -48,6 +59,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Metallic Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./railway_normal.dds@ (
                     colorSpace = "auto"
@@ -57,6 +69,7 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./railway_rough.dds@ (
                     colorSpace = "auto"
@@ -66,6 +79,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -80,8 +94,11 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:displace_in = 0.02 (
                     customData = {
@@ -93,18 +110,23 @@ over "RootNode"
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
                     hidden = false
                 )
-                asset inputs:height_texture = @/rock_height.dds@ (
+                asset inputs:height_texture = @./rock_height.dds@ (
                     colorSpace = "raw"
                     customData = {
                         asset default = @@
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./rock_normal.dds@ (
                     customData = {
@@ -113,6 +135,7 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./rock_rough.dds@ (
                     customData = {
@@ -121,6 +144,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }

@@ -1,0 +1,1701 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+
+    def "Looks"
+    {
+        def Material "taxi_yellow"
+        {
+            token outputs:mdl:displacement.connect = </RootNode/Looks/taxi_yellow/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </RootNode/Looks/taxi_yellow/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </RootNode/Looks/taxi_yellow/Shader.outputs:out>
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Opacity.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @./meshes/cars/body/taxi/taxi_text_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:metallic_constant = 0.39999998 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = "Metallic Material"
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+        def Material "police_deep_blue"
+        {
+            token outputs:mdl:displacement.connect = </RootNode/Looks/police_deep_blue/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </RootNode/Looks/police_deep_blue/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </RootNode/Looks/police_deep_blue/Shader.outputs:out>
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Opacity.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                color3f inputs:diffuse_color_constant = (0.2, 0.2, 0.2) (
+                    customData = {
+                        float3 default = (0.2, 0.2, 0.2)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Base Color"
+                    doc = "The base albedo color to use if no texture is specified"
+                    hidden = false
+                )
+                asset inputs:diffuse_texture = @./meshes/cars/body/common/police_deep_blue_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:metallic_constant = 0.39999998 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = "Metallic Material"
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+    }
+    over "meshes"
+    {
+        over "mesh_35E716FF6B179D13"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_35E716FF6B179D13" (
+                references = @./meshes/cars/static/mesh_35E716FF6B179D13.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_E82CCC8267BE89B1"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_E82CCC8267BE89B1" (
+                references = @./meshes/cars/static/mesh_E82CCC8267BE89B1.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_DBF5DDBBBDBA042D"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_DBF5DDBBBDBA042D" (
+                references = @./meshes/cars/static/mesh_DBF5DDBBBDBA042D.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_0BA8550EE46DB4B0"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_0BA8550EE46DB4B0" (
+                references = @./meshes/cars/static/mesh_0BA8550EE46DB4B0.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_7B02660040794207"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_7B02660040794207" (
+                references = @./meshes/cars/static/mesh_7B02660040794207.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_E890ACFEA5BEA3AB"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_E890ACFEA5BEA3AB" (
+                references = @./meshes/cars/static/mesh_E890ACFEA5BEA3AB.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_B9088685A43EF196"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_B9088685A43EF196" (
+                references = @./meshes/cars/static/mesh_B9088685A43EF196.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_F2E80F8CEAA580AE"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_F2E80F8CEAA580AE" (
+                references = @./meshes/cars/static/mesh_F2E80F8CEAA580AE.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_A3CC458B2925F889"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_A3CC458B2925F889" (
+                references = @./meshes/cars/static/mesh_A3CC458B2925F889.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_F2546FF028A5AAB4"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_F2546FF028A5AAB4" (
+                references = @./meshes/cars/static/mesh_F2546FF028A5AAB4.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_2F23D5F1E60C940C"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_2F23D5F1E60C940C" (
+                references = @./meshes/cars/static/mesh_2F23D5F1E60C940C.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_61C6A50ECD624B18"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_61C6A50ECD624B18" (
+                references = @./meshes/cars/static/mesh_61C6A50ECD624B18.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_693FA9459015121C"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_693FA9459015121C" (
+                references = @./meshes/cars/static/mesh_693FA9459015121C.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_B4F473389CBC06BE"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_B4F473389CBC06BE" (
+                references = @./meshes/cars/static/mesh_B4F473389CBC06BE.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_27DAD9BABB7BCD08"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_27DAD9BABB7BCD08" (
+                references = @./meshes/cars/static/mesh_27DAD9BABB7BCD08.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_E5D0393F5F3C7E99"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_E5D0393F5F3C7E99" (
+                references = @./meshes/cars/static/mesh_E5D0393F5F3C7E99.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_B44813445EBC2CA4"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_B44813445EBC2CA4" (
+                references = @./meshes/cars/static/mesh_B44813445EBC2CA4.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_D0EE487D37B63A5D"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_D0EE487D37B63A5D" (
+                references = @./meshes/cars/static/mesh_D0EE487D37B63A5D.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_0D2592003B1F2EFF"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_0D2592003B1F2EFF" (
+                references = @./meshes/cars/static/mesh_0D2592003B1F2EFF.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_9E0B38821CD8E549"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_9E0B38821CD8E549" (
+                references = @./meshes/cars/static/mesh_9E0B38821CD8E549.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_5C01D807F89F56D8"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_5C01D807F89F56D8" (
+                references = @./meshes/cars/static/mesh_5C01D807F89F56D8.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_0D99F27CF91F04E5"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_0D99F27CF91F04E5" (
+                references = @./meshes/cars/static/mesh_0D99F27CF91F04E5.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_3EFC8339E11BA363"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_3EFC8339E11BA363" (
+                references = @./meshes/cars/static/mesh_3EFC8339E11BA363.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_EEA10B8CB8CC13FE"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_EEA10B8CB8CC13FE" (
+                references = @./meshes/cars/static/mesh_EEA10B8CB8CC13FE.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_C58AD9C7CECD38D4"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_C58AD9C7CECD38D4" (
+                references = @./meshes/cars/static/mesh_C58AD9C7CECD38D4.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_94AE93C00D4D40F3"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_94AE93C00D4D40F3" (
+                references = @./meshes/cars/static/mesh_94AE93C00D4D40F3.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_C536B9BB0CCD12CE"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_C536B9BB0CCD12CE" (
+                references = @./meshes/cars/static/mesh_C536B9BB0CCD12CE.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_260E404B4D1E05D5"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_260E404B4D1E05D5" (
+                references = @./meshes/cars/static/mesh_260E404B4D1E05D5.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_F653C8FE14C9B548"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_F653C8FE14C9B548" (
+                references = @./meshes/cars/static/mesh_F653C8FE14C9B548.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_184103BAC2642C76"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_184103BAC2642C76" (
+                references = @./meshes/cars/static/mesh_184103BAC2642C76.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_56A47345E90AF362"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_56A47345E90AF362" (
+                references = @./meshes/cars/static/mesh_56A47345E90AF362.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_5770EAB41F6F3BBF"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_5770EAB41F6F3BBF" (
+                references = @./meshes/cars/static/mesh_5770EAB41F6F3BBF.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_872D620146B88B22"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_872D620146B88B22" (
+                references = @./meshes/cars/static/mesh_872D620146B88B22.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_116C96006976BDAF"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_116C96006976BDAF" (
+                references = @./meshes/cars/static/mesh_116C96006976BDAF.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_C1311EB530A10D32"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_C1311EB530A10D32" (
+                references = @./meshes/cars/static/mesh_C1311EB530A10D32.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_E3AD002A1302C04B"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_E3AD002A1302C04B" (
+                references = @./meshes/cars/static/mesh_E3AD002A1302C04B.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_4282037260690AEB"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_4282037260690AEB" (
+                references = @./meshes/cars/static/mesh_4282037260690AEB.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_3091CC54CE74D4E2"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_3091CC54CE74D4E2" (
+                references = @./meshes/cars/static/mesh_3091CC54CE74D4E2.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_7E74BCABE51A0BF6"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_7E74BCABE51A0BF6" (
+                references = @./meshes/cars/static/mesh_7E74BCABE51A0BF6.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_ED5A1629C2DDC040"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_ED5A1629C2DDC040" (
+                references = @./meshes/cars/static/mesh_ED5A1629C2DDC040.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_6A52CC9C6C79F27F"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_6A52CC9C6C79F27F" (
+                references = @./meshes/cars/static/mesh_6A52CC9C6C79F27F.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_CB7DCFC41F1238DF"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_CB7DCFC41F1238DF" (
+                references = @./meshes/cars/static/mesh_CB7DCFC41F1238DF.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_0EDE8FA5410EFD41"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_0EDE8FA5410EFD41" (
+                references = @./meshes/cars/static/mesh_0EDE8FA5410EFD41.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_DE83071018D94DDC"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_DE83071018D94DDC" (
+                references = @./meshes/cars/static/mesh_DE83071018D94DDC.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_B57A5427DA1BC10B"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_B57A5427DA1BC10B" (
+                references = @./meshes/cars/static/mesh_B57A5427DA1BC10B.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_FB9F24D8F1751E1F"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_FB9F24D8F1751E1F" (
+                references = @./meshes/cars/static/mesh_FB9F24D8F1751E1F.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_68B18E5AD6B2D5A9"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_68B18E5AD6B2D5A9" (
+                references = @./meshes/cars/static/mesh_68B18E5AD6B2D5A9.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_8B3517D65561E8A8"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_8B3517D65561E8A8" (
+                references = @./meshes/cars/static/mesh_8B3517D65561E8A8.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_5B689F630CB65835"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_5B689F630CB65835" (
+                references = @./meshes/cars/static/mesh_5B689F630CB65835.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_EFB954EF7816E796"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_EFB954EF7816E796" (
+                references = @./meshes/cars/static/mesh_EFB954EF7816E796.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_4E9657B70B7D2D36"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_4E9657B70B7D2D36" (
+                references = @./meshes/cars/static/mesh_4E9657B70B7D2D36.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_3995C45D1532AD8E"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_3995C45D1532AD8E" (
+                references = @./meshes/cars/static/mesh_3995C45D1532AD8E.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_680DEE2614B2FFB3"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_680DEE2614B2FFB3" (
+                references = @./meshes/cars/static/mesh_680DEE2614B2FFB3.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_F2E99D7D9A5DA41E"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_F2E99D7D9A5DA41E" (
+                references = @./meshes/cars/static/mesh_F2E99D7D9A5DA41E.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_2F22470096F4B0BC"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_2F22470096F4B0BC" (
+                references = @./meshes/cars/static/mesh_2F22470096F4B0BC.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_75E147C834F99621"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_75E147C834F99621" (
+                references = @./meshes/cars/static/mesh_75E147C834F99621.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_D4CE449047925C81"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_D4CE449047925C81" (
+                references = @./meshes/cars/static/mesh_D4CE449047925C81.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_A3CDD77A59DDDC39"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_A3CDD77A59DDDC39" (
+                references = @./meshes/cars/static/mesh_A3CDD77A59DDDC39.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_F255FD01585D8E04"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_F255FD01585D8E04" (
+                references = @./meshes/cars/static/mesh_F255FD01585D8E04.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_61C737FFBD9A6FA8"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_61C737FFBD9A6FA8" (
+                references = @./meshes/cars/static/mesh_61C737FFBD9A6FA8.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_116D04F1198E991F"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_116D04F1198E991F" (
+                references = @./meshes/cars/static/mesh_116D04F1198E991F.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_C1308C4440592982"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_C1308C4440592982" (
+                references = @./meshes/cars/static/mesh_C1308C4440592982.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_6F241637C91ABB8E"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_6F241637C91ABB8E" (
+                references = @./meshes/cars/static/mesh_6F241637C91ABB8E.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_CE0B156FBA71712E"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_CE0B156FBA71712E" (
+                references = @./meshes/cars/static/mesh_CE0B156FBA71712E.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_BC7E5C2E015DB867"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_BC7E5C2E015DB867" (
+                references = @./meshes/cars/static/mesh_BC7E5C2E015DB867.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_EDE6765500DDEA5A"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_EDE6765500DDEA5A" (
+                references = @./meshes/cars/static/mesh_EDE6765500DDEA5A.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_75EB249E6EFE79D6"
+        {
+            rel material:binding = </RootNode/Looks/police_deep_blue> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_75EB249E6EFE79D6" (
+                references = @./meshes/cars/static/mesh_75EB249E6EFE79D6.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_0045228447D389E8"
+        {
+            rel material:binding = </RootNode/Looks/police_deep_blue> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_0045228447D389E8" (
+                references = @./meshes/cars/static/mesh_0045228447D389E8.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_40E2AE5A9951CA86"
+        {
+            rel material:binding = </RootNode/Looks/police_deep_blue> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_40E2AE5A9951CA86" (
+                references = @./meshes/cars/static/mesh_40E2AE5A9951CA86.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_7DC92317A1C47C78"
+        {
+            rel material:binding = </RootNode/Looks/police_deep_blue> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_7DC92317A1C47C78" (
+                references = @./meshes/cars/static/mesh_7DC92317A1C47C78.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+        over "mesh_297DD6812E93782C"
+        {
+            rel material:binding = </RootNode/Looks/police_deep_blue> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            def Xform "Xform_297DD6812E93782C" (
+                references = @./meshes/cars/static/mesh_297DD6812E93782C.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+    }
+}

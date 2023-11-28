@@ -355,6 +355,40 @@ export material AperturePBR_Opacity(
     anno::description("Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."),
     anno::in_group("Displacement"),
     anno::unused()
+  ]],
+
+  // -------------------- SUBSURFACE ----------------------
+  uniform color subsurface_transmittance_color = color(0.5f)
+  [[
+    anno::display_name("Subsurface Transmittance Color"),
+    anno::hard_range(0.0, 1.0),
+    anno::description("The transmittance color of subsurface material. This property can be easily considered as the light color after passing through volume."),
+    anno::in_group("Subsurface"),
+    anno::unused()
+  ]],
+  uniform float subsurface_measurement_distance = 0.0f
+  [[
+    anno::display_name("Subsurface Measurement Distance"),
+    anno::hard_range(0.0, 16.0),
+    anno::description("The distance between front and back surface of subsurface materials, or the thickness of the surface."),
+    anno::in_group("Subsurface"),
+    anno::unused()
+  ]],
+  uniform color subsurface_single_scattering_albedo = color(0.5f)
+  [[
+    anno::display_name("Subsurface Single Scattering Albedo"),
+    anno::hard_range(0.0, 1.0),
+    anno::description("The color of light that most easily passes through the material after a single time scattering inside volume."),
+    anno::in_group("Subsurface"),
+    anno::unused()
+  ]],
+  uniform float subsurface_volumetric_anisotropy = 0.0f
+  [[
+    anno::display_name("Subsurface Volumetric Anisotropy"),
+    anno::hard_range(-0.99, 0.99),
+    anno::description("The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward)."),
+    anno::in_group("Subsurface"),
+    anno::unused()
   ]]
 )
 [[
