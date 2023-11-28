@@ -1,6 +1,7 @@
 #usda 1.0
 (
     subLayers = [
+        @./Light/StripClub.usda@,
         @./Light/StreetLight.usda@,
         @./Light/Barber_Shop.usda@,
         @./Light/Casino_Police_Station.usda@,
