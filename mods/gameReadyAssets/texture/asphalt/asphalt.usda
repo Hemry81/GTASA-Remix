@@ -654,8 +654,8 @@ over "RootNode"
                 )
             }
         }
-        
-                over "mat_8CC1F78F6FC43C4A"
+
+        over "mat_8CC1F78F6FC43C4A"
         {
             over "Shader"
             {
@@ -714,7 +714,7 @@ over "RootNode"
                 )
             }
         }
-        
+
         over "mat_7EA240D0979F43FC"
         {
             over "Shader"
@@ -774,7 +774,7 @@ over "RootNode"
                 )
             }
         }
-        
+
         over "mat_6A56D8E7CEC027F0"
         {
             over "Shader"
@@ -834,7 +834,7 @@ over "RootNode"
                 )
             }
         }
-        
+
         over "mat_6FFBD44E63B90729"
         {
             over "Shader"
@@ -894,7 +894,7 @@ over "RootNode"
                 )
             }
         }
-        
+
         over "mat_7AD52609290E9702"
         {
             over "Shader"
@@ -954,7 +954,7 @@ over "RootNode"
                 )
             }
         }
-        
+
         over "mat_7D50B13D9A523BAA"
         {
             over "Shader"
@@ -1014,7 +1014,7 @@ over "RootNode"
                 )
             }
         }
-        
+
         over "mat_BDF7F10DD4C69160"
         {
             over "Shader"
@@ -1461,7 +1461,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                float inputs:displace_in = 0.005 (
+                float inputs:displace_in = 0.02 (
                     customData = {
                         float default = 1
                         dictionary range = {

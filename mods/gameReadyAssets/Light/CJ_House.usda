@@ -115,7 +115,7 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float intensity = 100
+                float intensity = 10
                 bool normalize = 0
                 float radius = 0.1
                 float shaping:cone:angle = 180

@@ -733,8 +733,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (1, 0.5000001, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
+                float inputs:intensity = 10
+                bool inputs:normalize = 1
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -779,8 +779,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 1, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
+                float inputs:intensity = 10
+                bool inputs:normalize = 1
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -825,8 +825,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 0.5, 1)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
+                float inputs:intensity = 10
+                bool inputs:normalize = 1
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -871,8 +871,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (1, 0.5000001, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
+                float inputs:intensity = 10
+                bool inputs:normalize = 1
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -917,8 +917,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 1, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
+                float inputs:intensity = 10
+                bool inputs:normalize = 1
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -963,8 +963,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 0.5, 1)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
+                float inputs:intensity = 10
+                bool inputs:normalize = 1
                 float inputs:radius = 0.1
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1053,8 +1053,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (1, 0.5000001, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1075,7 +1075,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (1, 0.5000001, 0.5)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
@@ -1099,8 +1099,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 1, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1121,7 +1121,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (0.5, 1, 0.5)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
@@ -1145,8 +1145,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 0.5, 1)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1167,7 +1167,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (0.5, 0.5, 1)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
@@ -1191,8 +1191,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (1, 0.5000001, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1213,7 +1213,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (1, 0.5000001, 0.5)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
@@ -1237,8 +1237,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 1, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1259,7 +1259,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (0.5, 1, 0.5)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
@@ -1283,8 +1283,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 0.5, 1)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1305,7 +1305,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (0.5, 0.5, 1)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
@@ -1329,8 +1329,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (1, 0.5000001, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1351,7 +1351,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (1, 0.5000001, 0.5)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
@@ -1375,8 +1375,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 1, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1397,7 +1397,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (0.5, 1, 0.5)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
@@ -1421,8 +1421,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 0.5, 1)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1443,7 +1443,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (0.5, 0.5, 1)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
@@ -1467,8 +1467,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (1, 0.5000001, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1489,7 +1489,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (1, 0.5000001, 0.5)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
@@ -1513,8 +1513,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 1, 0.5)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1535,7 +1535,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (0.5, 1, 0.5)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
@@ -1559,8 +1559,8 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 color3f inputs:color = (0.5, 0.5, 1)
                 bool inputs:enableColorTemperature = 0
-                float inputs:intensity = 10
-                bool inputs:normalize = 0
+                float inputs:intensity = 5
+                bool inputs:normalize = 1
                 float inputs:radius = 0.25
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
@@ -1581,7 +1581,7 @@ over "RootNode"
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (0.5, 0.5, 1)
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 10
+                    float inputs:intensity = 5
                     bool inputs:normalize = 0
                     float inputs:radius = 0.25
                     float inputs:shaping:cone:angle = 180
