@@ -17,6 +17,16 @@ over "RootNode"
             {
                 token visibility = "invisible"
             }
+
+            def Xform "Xform" (
+                references = @./mesh_9753C16606A1AF9C.usd@
+            )
+            {
+                double3 xformOp:rotateYZX = (0, 0, -0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
         }
 
         over "mesh_31D3540F9E881E75"

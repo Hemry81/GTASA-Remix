@@ -1,0 +1,369 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_9E3BFD05184E327A"
+        {
+            def Xform "Sun" (
+                references = @../meshes/Sky/Sphere.usd@
+            )
+            {
+                rel material:binding = </Looks/Sun> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateYZX = (0, 0, -0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Sun_Light" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    color3f color = (1, 0.87938917, 0.7528958)
+                    float intensity = 1000
+                    float radius = 10
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool treatAsPoint = 0
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_D0C76AE7496A0A67"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_99F293E9EF794A5F"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_35C83293A847A739"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_DFC2DA8B19E5EEBD"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_343FE7D4A982BFB8"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_E144F657A724D91D"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_60BB395CF570C141"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_FD3C9BAED91AD96A"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_58F6358445FA06EE"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_B2C7F1E1C3D05A27"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_B4BE7500D0B139BD"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_197B5B8B322E9677"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+
+def "Looks"
+{
+    def Material "Sun"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Sun/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Sun/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Sun/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.2, 0.2, 0.2) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = "The base albedo color to use if no texture is specified"
+                hidden = false
+            )
+            asset inputs:diffuse_texture = @../meshes/Sky/sun_albedo.dds@ (
+                colorSpace = "sRGB"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                hidden = false
+            )
+            color3f inputs:emissive_color_constant = (1, 0.1, 0.1) (
+                customData = {
+                    float3 default = (1, 0.1, 0.1)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Emissive"
+                displayName = "Emissive Color"
+                doc = "The emissive color when no emissive color texture is specified."
+                hidden = false
+            )
+            float inputs:emissive_intensity = 500 (
+                customData = {
+                    float default = 40
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0
+                    }
+                }
+                displayGroup = "Emissive"
+                displayName = "Emissive Intensity"
+                doc = "Intensity of the emission"
+                hidden = false
+            )
+            asset inputs:emissive_mask_texture = @../meshes/Sky/sun_albedo.dds@ (
+                colorSpace = "sRGB"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Emissive"
+                displayName = "Emissive Mask Map"
+                doc = "The texture masking the emissive color"
+                hidden = false
+            )
+            bool inputs:enable_emission = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Emissive"
+                displayName = "Enable Emission"
+                doc = "Enables the emission of light from the material"
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = "Higher roughness values lead to more blurry reflections"
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Moon"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Moon/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Moon/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Moon/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.2, 0.2, 0.2) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = "The base albedo color to use if no texture is specified"
+                hidden = false
+            )
+            asset inputs:diffuse_texture = @../meshes/Sky/moon_albedo.dds@ (
+                colorSpace = "sRGB"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                hidden = false
+            )
+            color3f inputs:emissive_color_constant = (1, 0.1, 0.1) (
+                customData = {
+                    float3 default = (1, 0.1, 0.1)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Emissive"
+                displayName = "Emissive Color"
+                doc = "The emissive color when no emissive color texture is specified."
+                hidden = false
+            )
+            float inputs:emissive_intensity = 50 (
+                customData = {
+                    float default = 40
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0
+                    }
+                }
+                displayGroup = "Emissive"
+                displayName = "Emissive Intensity"
+                doc = "Intensity of the emission"
+                hidden = false
+            )
+            asset inputs:emissive_mask_texture = @../meshes/Sky/moon_albedo.dds@ (
+                colorSpace = "sRGB"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Emissive"
+                displayName = "Emissive Mask Map"
+                doc = "The texture masking the emissive color"
+                hidden = false
+            )
+            bool inputs:enable_emission = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Emissive"
+                displayName = "Enable Emission"
+                doc = "Enables the emission of light from the material"
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @../meshes/Sky/moon_normal.dds@ (
+                colorSpace = "raw"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = "Higher roughness values lead to more blurry reflections"
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}
+
