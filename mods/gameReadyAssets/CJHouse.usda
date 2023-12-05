@@ -1006,20 +1006,6 @@ over "RootNode"
                 prepend references = @./meshes/CJHouse/KITCHENCABINETBODYAAAAAA.usd@
             )
             {
-                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
-                    bindMaterialAs = "weakerThanDescendants"
-                )
-                token visibility = "inherited"
-                double3 xformOp:rotateXYZ = (90, 6.04305356297942e-14, 180.00000268220901)
-                double3 xformOp:scale = (0.0156, 0.015599999576807022, 0.01600000075995922)
-                double3 xformOp:translate = (-2.2000000327825546, 3.200000047683716, -1.700000025331974)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def Xform "Kitchacabinetbody_04" (
-                prepend references = @./meshes/CJHouse/KITCHENCABINETBODYAAAAAA.usd@
-            )
-            {
                 rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
                     bindMaterialAs = "weakerThanDescendants"
                 )
@@ -1225,13 +1211,6 @@ over "RootNode"
 
         over "mesh_E30AB78471139FD8"
         {
-            token visibility = "inherited"
-
-            over "mesh"
-            {
-                token visibility = "invisible"
-            }
-
             def Xform "KCurtain1" (
                 prepend references = @./meshes/CJHouse/curtain1.usd@
             )
@@ -3412,13 +3391,13 @@ over "RootNode"
 
         over "mesh_94179CA5E9B28A1E"
         {
-            over "mesh"
+            over "mesh" (
+                active = false
+            )
             {
-                token visibility = "invisible"
             }
 
             def Xform "Xform_mesh_0" (
-
                 prepend references = @./meshes/CJHouse/Stairs.usd@
             )
             {
@@ -3430,7 +3409,6 @@ over "RootNode"
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
-
 
             def Material "Woodstairs"
             {
@@ -3516,8 +3494,6 @@ over "RootNode"
 
         over "mesh_6A77B6020B78E3E6"
         {
-            token visibility = "inherited"
-
             over "mesh" (
                 active = false
             )
@@ -3770,13 +3746,10 @@ over "RootNode"
 
         over "mesh_F0EF9CBD2E176CB0"
         {
-            token visibility = "inherited"
-
             over "mesh" (
                 active = false
             )
             {
-                token visibility = "invisible"
             }
 
             def Xform "floor" (
@@ -5586,12 +5559,6 @@ over "RootNode"
                 )
             }
         }
-    }
-
-    over "Camera"
-    {
-
-        token visibility = "invisible"
     }
 
     over "lights"
