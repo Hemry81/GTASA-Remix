@@ -224,7 +224,7 @@ over "RootNode"
                     bindMaterialAs = "weakerThanDescendants"
                 )
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:scale = (1.0000000149011612, 1.0000000149011612, 0.6000000089406967)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
@@ -378,7 +378,13 @@ over "RootNode"
 
         over "mesh_C55E311692B328E5"
         {
-            def Xform "Xform_mesh_0" (
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "TV" (
                 prepend references = @./meshes/CJHouse/Television_01_4k.usd@
             )
             {
@@ -386,12 +392,6 @@ over "RootNode"
                 double3 xformOp:scale = (1.4000000208616257, 1.4000000208616257, 1.4000000208616257)
                 double3 xformOp:translate = (-9.900000147521496, 3.1000000461935997, -1.85)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            over "mesh" (
-                active = false
-            )
-            {
             }
         }
 
@@ -651,33 +651,13 @@ over "RootNode"
                     prepend references = @./meshes/CJHouse/KITCHENCABINETBODYAAAAAA.usd@
                 )
                 {
-                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
+                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                     double3 xformOp:rotateXYZ = (90.00000134110451, 0, 90.00000134110451)
                     double3 xformOp:scale = (0.0156, 0.0156, 0.016)
                     double3 xformOp:translate = (-3.03, 1.29, -1.700000025331974)
                     uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-
-                def Xform "kitchencabinetdoor" (
-                    prepend references = @./meshes/CJHouse/KITCHENCABINETDOORAAAAAA.usd@
-                )
-                {
-                    rel material:binding = </RootNode/meshes/mesh_FD8934704F73733F/Wood_04> (
-                        bindMaterialAs = "weakerThanDescendants"
-                    )
-                    double3 xformOp:rotateXYZ = (90.00000134110451, 0, 90.00000134110451)
-                    double3 xformOp:scale = (0.015, 0.015, 0.015)
-                    double3 xformOp:translate = (-3, 1.28, -1.67)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                    over "GC_25H_25H_50H_001_Cube_001"
-                    {
-                        rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
-                            bindMaterialAs = "weakerThanDescendants"
-                        )
-                    }
                 }
 
                 def Xform "kitchencabinettop" (
@@ -700,6 +680,32 @@ over "RootNode"
                         )
                     }
                 }
+
+                def Xform "Door" (
+                    prepend references = @./meshes/CJHouse/Kitchencabinetdoor.usd@
+                )
+                {
+                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (90.00000134110451, 0, 90.00000134110451)
+                    double3 xformOp:scale = (0.800000011920929, 0.800000011920929, 0.800000011920929)
+                    double3 xformOp:translate = (-2.97, 1.3000000193715096, -1.600000023841858)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "Handle" (
+                    prepend references = @./meshes/CJHouse/KITCHENCABINETDOORhandle.usd@
+                )
+                {
+                    rel material:binding = </RootNode/meshes/mesh_94A0687761B5F008/Metal> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, 0, 90.00000134110451)
+                    double3 xformOp:scale = (0.800000011920929, 0.800000011920929, 0.800000011920929)
+                    double3 xformOp:translate = (-1.8, 1.4000000208616257, -1.2000000178813934)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
 
             def Scope "Kitchencabinet_01"
@@ -708,7 +714,7 @@ over "RootNode"
                     prepend references = @./meshes/CJHouse/KITCHENCABINETBODYAAAAAA.usd@
                 )
                 {
-                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
+                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                     double3 xformOp:rotateXYZ = (90.00000134110451, 0, 90.00000134110451)
@@ -761,12 +767,38 @@ over "RootNode"
                     prepend references = @./meshes/CJHouse/KITCHENCABINETBODYAAAAAA.usd@
                 )
                 {
-                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
+                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                     double3 xformOp:rotateXYZ = (90.00000134110451, 0, -90.00000134110451)
                     double3 xformOp:scale = (0.0158, 0.0156, 0.016)
                     double3 xformOp:translate = (-3.03, -0.6000000089406967, -1.700000025331974)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "Door_01" (
+                    prepend references = @./meshes/CJHouse/Kitchencabinetdoor.usd@
+                )
+                {
+                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (90.00000134110451, 0, 90.00000134110451)
+                    double3 xformOp:scale = (0.800000011920929, 0.800000011920929, 0.800000011920929)
+                    double3 xformOp:translate = (-2.97, -1.5000000223517418, -1.600000023841858)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "Handle_01" (
+                    prepend references = @./meshes/CJHouse/KITCHENCABINETDOORhandle.usd@
+                )
+                {
+                    rel material:binding = </RootNode/meshes/mesh_94A0687761B5F008/Metal> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, 0, 90.00000134110451)
+                    double3 xformOp:scale = (0.800000011920929, 0.800000011920929, 0.800000011920929)
+                    double3 xformOp:translate = (-1.8, -1.4000000208616257, -1.2000000178813934)
                     uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
@@ -777,33 +809,13 @@ over "RootNode"
                     prepend references = @./meshes/CJHouse/KITCHENCABINETBODYAAAAAA.usd@
                 )
                 {
-                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
+                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                     double3 xformOp:rotateXYZ = (90.00000134110451, 0, 180)
                     double3 xformOp:scale = (0.0158, 0.0156, 0.016)
                     double3 xformOp:translate = (-2.2000000327825546, -3.400000050663948, -1.700000025331974)
                     uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-
-                def Xform "kitchencabinetdoor" (
-                    prepend references = @./meshes/CJHouse/KITCHENCABINETDOORAAAAAA.usd@
-                )
-                {
-                    rel material:binding = </RootNode/meshes/mesh_FD8934704F73733F/Wood_04> (
-                        bindMaterialAs = "weakerThanDescendants"
-                    )
-                    double3 xformOp:rotateXYZ = (90.00000134110451, 0, 180)
-                    double3 xformOp:scale = (0.015, 0.015, 0.015)
-                    double3 xformOp:translate = (-2.2000000327825546, -3.400000050663948, -1.67)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                    over "GC_25H_25H_50H_001_Cube_001"
-                    {
-                        rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
-                            bindMaterialAs = "weakerThanDescendants"
-                        )
-                    }
                 }
 
                 def Xform "kitchencabinettop" (
@@ -825,6 +837,32 @@ over "RootNode"
                         )
                     }
                 }
+
+                def Xform "Door_02" (
+                    prepend references = @./meshes/CJHouse/Kitchencabinetdoor.usd@
+                )
+                {
+                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (90.00000134110451, 0, 180)
+                    double3 xformOp:scale = (0.800000011920929, 0.800000011920929, 0.800000011920929)
+                    double3 xformOp:translate = (-2.1000000312924385, -3.300000049173832, -1.600000023841858)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "Handle_02" (
+                    prepend references = @./meshes/CJHouse/KITCHENCABINETDOORhandle.usd@
+                )
+                {
+                    rel material:binding = </RootNode/meshes/mesh_94A0687761B5F008/Metal> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, 0, 180)
+                    double3 xformOp:scale = (0.800000011920929, 0.800000011920929, 0.800000011920929)
+                    double3 xformOp:translate = (-2.2000000327825546, -2.12, -1.2000000178813934)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
 
             def Scope "Kitchencabinet_03"
@@ -833,33 +871,13 @@ over "RootNode"
                     prepend references = @./meshes/CJHouse/KITCHENCABINETBODYAAAAAA.usd@
                 )
                 {
-                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
+                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                     double3 xformOp:rotateXYZ = (90.00000134110451, 0, 0)
                     double3 xformOp:scale = (0.015, 0.015, 0.018)
                     double3 xformOp:translate = (-1.3000000193715096, 3.200000047683716, -1.700000025331974)
                     uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-
-                def Xform "kitchencabinetdoor" (
-                    prepend references = @./meshes/CJHouse/KITCHENCABINETDOORAAAAAA.usd@
-                )
-                {
-                    rel material:binding = </RootNode/meshes/mesh_FD8934704F73733F/Wood_04> (
-                        bindMaterialAs = "weakerThanDescendants"
-                    )
-                    double3 xformOp:rotateXYZ = (90.00000134110451, 0, 0)
-                    double3 xformOp:scale = (0.0168, 0.015, 0.018)
-                    double3 xformOp:translate = (-1.3000000193715096, 3.200000047683716, -1.700000025331974)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                    over "GC_25H_25H_50H_001_Cube_001"
-                    {
-                        rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
-                            bindMaterialAs = "weakerThanDescendants"
-                        )
-                    }
                 }
 
                 def Xform "kitchencabinettop" (
@@ -881,13 +899,39 @@ over "RootNode"
                         )
                     }
                 }
+
+                def Xform "Door_03" (
+                    prepend references = @./meshes/CJHouse/Kitchencabinetdoor.usd@
+                )
+                {
+                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (90.00000134110451, 0, 0)
+                    double3 xformOp:scale = (0.800000011920929, 0.800000011920929, 0.800000011920929)
+                    double3 xformOp:translate = (-1.3000000193715096, 3.0000000447034836, -1.600000023841858)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "Handle_03" (
+                    prepend references = @./meshes/CJHouse/KITCHENCABINETDOORhandle.usd@
+                )
+                {
+                    rel material:binding = </RootNode/meshes/mesh_94A0687761B5F008/Metal> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (0.800000011920929, 0.800000011920929, 0.800000011920929)
+                    double3 xformOp:translate = (-1.2000000178813934, 1.82, -1.2000000178813934)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
 
             def Xform "Kitchacabinetbody_01" (
                 prepend references = @./meshes/CJHouse/KITCHENCABINETBODYAAAAAA.usd@
             )
             {
-                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
+                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
                     bindMaterialAs = "weakerThanDescendants"
                 )
                 double3 xformOp:rotateXYZ = (90.00000134110451, 0, -90.00000134110451)
@@ -914,12 +958,61 @@ over "RootNode"
                 prepend references = @./meshes/CJHouse/KITCHENCABINETBODYAAAAAA.usd@
             )
             {
-                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
+                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
                     bindMaterialAs = "weakerThanDescendants"
                 )
                 double3 xformOp:rotateXYZ = (90, 6.04305356297942e-14, -90)
                 double3 xformOp:scale = (0.032, 0.015599999576807022, 0.01600000075995922)
                 double3 xformOp:translate = (-3.0299999999999994, 2.7000000402331352, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "GC_25H_25H_50H_001_Cube_327"
+                {
+                    rel material:binding = None
+
+                    over "counterBorder" (
+                        active = true
+                    )
+                    {
+                    }
+
+                    over "counter" (
+                        active = true
+                    )
+                    {
+                    }
+
+                    over "cabinetDoor" (
+                        active = true
+                    )
+                    {
+                    }
+
+                    over "cabinetDoorBorder" (
+                        active = true
+                    )
+                    {
+                    }
+
+                    over "cabinetBaseboard" (
+                        active = true
+                    )
+                    {
+                    }
+                }
+            }
+
+            def Xform "Kitchacabinetbody_04" (
+                prepend references = @./meshes/CJHouse/KITCHENCABINETBODYAAAAAA.usd@
+            )
+            {
+                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (90, 6.04305356297942e-14, 180.00000268220901)
+                double3 xformOp:scale = (0.0156, 0.015599999576807022, 0.01600000075995922)
+                double3 xformOp:translate = (-2.2000000327825546, 3.200000047683716, -1.700000025331974)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -935,17 +1028,92 @@ over "RootNode"
                 double3 xformOp:translate = (-2.2000000327825546, 3.200000047683716, -1.700000025331974)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
+
+            def Material "Kitchenwood"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./texture/CJHouse/PaintedWood006B_2K-PNG_Color.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                    )
+                    float inputs:displace_in = 0.01 (
+                        customData = {
+                            float default = 1
+                            dictionary range = {
+                                float max = 255
+                                float min = 0
+                            }
+                        }
+                        displayGroup = "Displacement"
+                        displayName = "Inwards Displacement"
+                        doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                        hidden = false
+                    )
+                    asset inputs:height_texture = @./texture/CJHouse/PaintedWood006B_2K-PNG_Displacement.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Displacement"
+                        displayName = "Height Map"
+                        doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                        hidden = false
+                    )
+                    asset inputs:normalmap_texture = @./texture/CJHouse/PaintedWood006B_2K-PNG_NormalDX.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                    )
+                    asset inputs:reflectionroughness_texture = @./texture/CJHouse/PaintedWood006B_2K-PNG_Roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
         }
 
         over "mesh_131AB4D2A724A011"
         {
+            token visibility = "inherited"
+
             def Xform "TOPCABINET" (
-                prepend references = @./meshes/CJHouse/kitchencabinet.usd@
+                delete references = @./meshes/CJHouse/kitchencabinet.usd@
+                prepend references = @./meshes/CJHouse/kitchencabinetbody.usd@
             )
             {
+                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                token visibility = "inherited"
                 double3 xformOp:rotateXYZ = (90.00000134110451, 0, 90.00000134110451)
-                double3 xformOp:scale = (1.700000025331974, 1.700000025331974, 1.700000025331974)
-                double3 xformOp:translate = (-3.400000050663948, -2.1000000312924385, 0.30000000447034836)
+                double3 xformOp:scale = (0.6000000089406967, 1.600000023841858, 0.5000000074505806)
+                double3 xformOp:translate = (-3.400000050663948, -2.1000000312924385, 1.2000000178813934)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 over "CUBezierCurve_022"
@@ -957,12 +1125,17 @@ over "RootNode"
             }
 
             def Xform "TOPCABINET01" (
-                prepend references = @./meshes/CJHouse/kitchencabinet.usd@
+                delete references = @./meshes/CJHouse/kitchencabinet.usd@
+                prepend references = @./meshes/CJHouse/kitchencabinetbody.usd@
             )
             {
+                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                token visibility = "inherited"
                 double3 xformOp:rotateXYZ = (90.00000134110451, 0, 0)
-                double3 xformOp:scale = (2.0000000298023224, 2.0000000298023224, 2.0000000298023224)
-                double3 xformOp:translate = (-2.1000000312924385, 3.6000000536441803, 0.20000000298023224)
+                double3 xformOp:scale = (1.0000000149011612, 1.700000025331974, 0.61)
+                double3 xformOp:translate = (-2.1000000312924385, 3.6000000536441803, 1.2000000178813934)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 over "CUBezierCurve_022"
@@ -972,26 +1145,111 @@ over "RootNode"
                     )
                 }
             }
+
+            over "mesh"
+            {
+                token visibility = "invisible"
+            }
+
+            def Xform "handle" (
+                prepend references = @./meshes/CJHouse/kitchencabinetHandle.usd@
+            )
+            {
+                rel material:binding = </RootNode/meshes/mesh_94A0687761B5F008/Metal> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (90.00000134110451, 0, 90.00000134110451)
+                double3 xformOp:scale = (0.10000000149011612, 0.25, 0.10000000149011612)
+                double3 xformOp:translate = (-2.8000000417232513, -2.125, 0.6000000089406967)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "handle_01" (
+                prepend references = @./meshes/CJHouse/kitchencabinetHandle.usd@
+            )
+            {
+                rel material:binding = </RootNode/meshes/mesh_94A0687761B5F008/Metal> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (90.00000134110451, 0, 0)
+                double3 xformOp:scale = (0.10000000149011612, 0.25, 0.10000000149011612)
+                double3 xformOp:translate = (-2.15, 2.89, 0.6000000089406967)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Material "mETAL"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_131AB4D2A724A011/mETAL/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_131AB4D2A724A011/mETAL/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_131AB4D2A724A011/mETAL/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    asset inputs:diffuse_texture = @./texture/buildings/interiors/Metal042_albedo.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                    )
+                    asset inputs:normalmap_texture = @./texture/buildings/interiors/Metal042_normal.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                    )
+                    asset inputs:reflectionroughness_texture = @./texture/buildings/interiors/Metal042_rough.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
         }
 
         over "mesh_E30AB78471139FD8"
         {
-            def Xform "Xform_mesh_0" (
+            token visibility = "inherited"
+
+            over "mesh"
+            {
+                token visibility = "invisible"
+            }
+
+            def Xform "KCurtain1" (
                 prepend references = @./meshes/CJHouse/curtain1.usd@
             )
             {
+                token visibility = "inherited"
                 double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1.0000000149011612, 1.1000000163912773, 0.56)
+                double3 xformOp:scale = (1.0000000149011612, 0.800000011920929, 0.56)
                 double3 xformOp:translate = (-3.5, -1.4000000208616257, 0.22)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def Xform "Xform_mesh_1" (
+            def Xform "KCurtain2" (
                 prepend references = @./meshes/CJHouse/curtain2.usd@
             )
             {
+                token visibility = "inherited"
                 double3 xformOp:rotateXYZ = (0, 0, 90)
-                double3 xformOp:scale = (1, 1.1, 0.56)
+                double3 xformOp:scale = (1, 0.800000011920929, 0.56)
                 double3 xformOp:translate = (-3.500000052154064, 2.2, 0.22)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
@@ -1847,6 +2105,11 @@ over "RootNode"
                 prepend references = @./meshes/CJHouse/curtain1.usd@
             )
             {
+                rel material:binding = </RootNode/meshes/mesh_22CACE9787613EA6/fabric> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                token visibility = "inherited"
+                
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 0.9000000134110451, 1)
                 double3 xformOp:translate = (-2.9000000432133675, 5.445, 0.6)
@@ -2036,6 +2299,8 @@ over "RootNode"
 
         over "mesh_0137CC375C8492D0"
         {
+            token visibility = "inherited"
+
             over "mesh" (
                 active = false
             )
@@ -2105,24 +2370,33 @@ over "RootNode"
 
         over "mesh_8A780C51AB2A62F6"
         {
+            token visibility = "inherited"
+
             def Xform "Cabinetdoor" (
                 prepend references = @./meshes/CJHouse/kitchencabinetdoorvertAAAAAAA.usd@
             )
             {
-                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
+                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
                     bindMaterialAs = "weakerThanDescendants"
                 )
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (0.4000000059604645, 0.37, 0.5)
                 double3 xformOp:translate = (-2.534, -2.49, -0.64)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Cube_002"
+                {
+                    rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                }
             }
 
             def Xform "Cabinetdoor_01" (
                 prepend references = @./meshes/CJHouse/kitchencabinetdoorvertAAAAAAA.usd@
             )
             {
-                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
+                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
                     bindMaterialAs = "weakerThanDescendants"
                 )
                 double3 xformOp:rotateXYZ = (0, 0, 0)
@@ -2135,7 +2409,7 @@ over "RootNode"
                 prepend references = @./meshes/CJHouse/kitchencabinetdoorvertAAAAAAA.usd@
             )
             {
-                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Lightwood> (
+                rel material:binding = </RootNode/meshes/mesh_5C55C34A2DBD7792/Kitchenwood> (
                     bindMaterialAs = "weakerThanDescendants"
                 )
                 double3 xformOp:rotateXYZ = (0, 0, -90.00000134110451)
@@ -2548,6 +2822,7 @@ over "RootNode"
                 prepend references = @./meshes/CJHouse/rooflamp.usd@
             )
             {
+                token visibility = "inherited"
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, -1.23)
@@ -3137,15 +3412,111 @@ over "RootNode"
 
         over "mesh_94179CA5E9B28A1E"
         {
+            over "mesh"
+            {
+                token visibility = "invisible"
+            }
+
             def Xform "Xform_mesh_0" (
+
                 prepend references = @./meshes/CJHouse/Stairs.usd@
             )
             {
+                rel material:binding = </RootNode/meshes/mesh_94179CA5E9B28A1E/Woodstairs> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
+
+
+            def Material "Woodstairs"
+            {
+                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_94179CA5E9B28A1E/Woodstairs/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_94179CA5E9B28A1E/Woodstairs/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_94179CA5E9B28A1E/Woodstairs/Shader.outputs:out>
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Opacity.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                    color3f inputs:diffuse_color_constant = (0.2, 0.2, 0.2) (
+                        customData = {
+                            float3 default = (0.2, 0.2, 0.2)
+                            dictionary range = {
+                                float3 max = (1, 1, 1)
+                                float3 min = (0, 0, 0)
+                            }
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Base Color"
+                        doc = "The base albedo color to use if no texture is specified"
+                        hidden = false
+                    )
+                    asset inputs:diffuse_texture = @./texture/CJHouse/Wood051_2K-PNG_Color.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Diffuse"
+                        displayName = "Albedo Map"
+                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        hidden = false
+                    )
+                    float inputs:displace_in = 0.01 (
+                        customData = {
+                            float default = 1
+                            dictionary range = {
+                                float max = 255
+                                float min = 0
+                            }
+                        }
+                        displayGroup = "Displacement"
+                        displayName = "Inwards Displacement"
+                        doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                        hidden = false
+                    )
+                    asset inputs:height_texture = @./texture/CJHouse/Wood051_2K-PNG_Displacement.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Displacement"
+                        displayName = "Height Map"
+                        doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                        hidden = false
+                    )
+                    asset inputs:normalmap_texture = @./texture/CJHouse/Wood051_2K-PNG_NormalDX.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Normal"
+                        displayName = "Normal Map"
+                        hidden = false
+                    )
+                    asset inputs:reflectionroughness_texture = @./texture/CJHouse/Wood051_2K-PNG_Roughness.dds@ (
+                        colorSpace = "auto"
+                        customData = {
+                            asset default = @@
+                        }
+                        displayGroup = "Specular"
+                        displayName = "Roughness Map"
+                        hidden = false
+                    )
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+        }
+
+        over "mesh_6A77B6020B78E3E6"
+        {
+            token visibility = "inherited"
 
             over "mesh" (
                 active = false
@@ -3394,6 +3765,28 @@ over "RootNode"
                 active = false
             )
             {
+            }
+        }
+
+        over "mesh_F0EF9CBD2E176CB0"
+        {
+            token visibility = "inherited"
+
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+
+            def Xform "floor" (
+                prepend references = @./meshes/CJHouse/Floore.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
     }
@@ -5197,7 +5590,41 @@ over "RootNode"
 
     over "Camera"
     {
-        custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -1553.0729466580012)
+
+        token visibility = "invisible"
+    }
+
+    over "lights"
+    {
+        over "light_B24688D24F5F055D"
+        {
+            double3 xformOp:translate = (2496.331298828125, -1709.8812255859375, 1016.4000151455402)
+        }
+
+        over "light_E1054C97145B9D6F"
+        {
+            float3 xformOp:rotateZYX = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (2494.43115234375, -1699.1812744140625, 1016.6343994140625)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZYX", "xformOp:scale"]
+        }
+
+        over "light_4CDFD32A7D6CD843"
+        {
+            token visibility = "inherited"
+            float3 xformOp:rotateZYX = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (2498.7413087964314, -1707.6812744140625, 1020.2730378332377)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZYX", "xformOp:scale"]
+        }
+
+        over "light_91B16E5CCB88B671"
+        {
+            float3 xformOp:rotateZYX = (0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (2496.331298828125, -1709.8812255859375, 1016.390990566775)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZYX", "xformOp:scale"]
+        }
     }
 }
 
