@@ -1,4 +1,7 @@
 #usda 1.0
+(
+    upAxis = "Z"
+)
 
 over "RootNode"
 {
@@ -113,11 +116,11 @@ over "RootNode"
             }
         }
 
-        over "mat_0915B90F7999AAB5"
+        over "mat_8CF2EC5FB335231A"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./1805869014C294D9.dds@ (
+                asset inputs:diffuse_texture = @./47F9156D1F4571D2.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -126,20 +129,23 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                color3f inputs:emissive_color_constant = (1, 1, 1) (
+            }
+        }
+
+        over "mat_0915B90F7999AAB5"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./1805869014C294D9_albedo.dds@ (
                     customData = {
-                        float3 default = (1, 0.1, 0.1)
-                        dictionary range = {
-                            float3 max = (1, 1, 1)
-                            float3 min = (0, 0, 0)
-                        }
+                        asset default = @@
                     }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Color"
-                    doc = "The emissive color when no emissive color texture is specified."
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 100 (
+                float inputs:emissive_intensity = 1 (
                     customData = {
                         float default = 40
                         dictionary range = {
@@ -169,22 +175,6 @@ over "RootNode"
                     displayGroup = "Emissive"
                     displayName = "Enable Emission"
                     doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_8CF2EC5FB335231A"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./47F9156D1F4571D2.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
             }
@@ -281,7 +271,7 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def SphereLight "TrainLight_Front_R_01" (
+            def DiskLight "TrainLight_Front_R_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -294,13 +284,13 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (90.00000000000003, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0.67, 7.7, 0.62)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_L_01" (
+            def DiskLight "TrainLight_Front_L_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -313,13 +303,13 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (90.00000000000003, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.67, 7.7, 0.62)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_R_02" (
+            def DiskLight "TrainLight_Front_R_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -332,13 +322,13 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (90.00000000000003, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0.73, 7.7, 0.28)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_L_02" (
+            def DiskLight "TrainLight_Front_L_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -351,13 +341,13 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (90.00000000000003, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.73, 7.7, 0.28)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_R_03" (
+            def DiskLight "TrainLight_Front_R_03" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -370,13 +360,13 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (90.00000000000003, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.69, 8.8, -0.89)
+                double3 xformOp:translate = (0.69, 8.85, -0.89)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_L_03" (
+            def DiskLight "TrainLight_Front_L_03" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -389,13 +379,13 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (90.00000000000003, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.69, 8.8, -0.89)
+                double3 xformOp:translate = (-0.69, 8.85, -0.89)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Rear_R_01" (
+            def DiskLight "TrainLight_Rear_R_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -408,13 +398,13 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (-90, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.69, -8.800000131130219, -0.89)
+                double3 xformOp:translate = (0.69, -8.9, -0.89)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Rear_L_01" (
+            def DiskLight "TrainLight_Rear_L_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -427,9 +417,47 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (-90, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.69, -8.800000131130219, -0.89)
+                double3 xformOp:translate = (-0.69, -8.9, -0.89)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def DiskLight "TrainLight_Rear_Top_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 500
+                bool normalize = 1
+                float radius = 0.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -7.85, 1.36)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def DiskLight "TrainLight_Rear_Top_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 500
+                bool normalize = 1
+                float radius = 0.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (-90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, -7.85, 1.08)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
         }
@@ -438,7 +466,7 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def SphereLight "TrainLight_Front_R_01" (
+            def DiskLight "TrainLight_Front_R_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -457,7 +485,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_L_01" (
+            def DiskLight "TrainLight_Front_L_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -476,7 +504,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_R_02" (
+            def DiskLight "TrainLight_Front_R_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -495,7 +523,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_L_02" (
+            def DiskLight "TrainLight_Front_L_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -519,7 +547,7 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def SphereLight "TrainLight_Front_R_01" (
+            def DiskLight "TrainLight_Front_R_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -538,7 +566,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_R_02" (
+            def DiskLight "TrainLight_Front_R_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -557,7 +585,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_L_01" (
+            def DiskLight "TrainLight_Front_L_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -576,7 +604,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_L_02" (
+            def DiskLight "TrainLight_Front_L_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -595,7 +623,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_R_03" (
+            def DiskLight "TrainLight_Rear_R_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -608,13 +636,13 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, 180)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (10.100000150501728, 0, -1.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_R_04" (
+            def DiskLight "TrainLight_Rear_R_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -627,13 +655,13 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, 180)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (10.100000150501728, -1.3000000193715096, -1.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_L_03" (
+            def DiskLight "TrainLight_Rear_L_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -646,13 +674,13 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, 180)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (10.100000150501728, 0, 1.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "TrainLight_Front_L_04" (
+            def DiskLight "TrainLight_Rear_L_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -665,10 +693,91 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, 180)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (10.100000150501728, -1.3000000193715096, 1.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_8DEE5D2819B3E008"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def DiskLight "TrainLight_Front_L_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 300
+                bool normalize = 1
+                float radius = 0.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.7000000104308128, 8.85, -0.9000000134110451)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def DiskLight "TrainLight_Front_L_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 300
+                bool normalize = 1
+                float radius = 0.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.7, 8.85, -0.9000000134110451)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def DiskLight "TrainLight_Front_L_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 300
+                bool normalize = 1
+                float radius = 0.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.7000000104308128, -8.900000132620335, -0.9000000134110451)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def DiskLight "TrainLight_Front_L_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 300
+                bool normalize = 1
+                float radius = 0.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 180)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.7, -8.900000132620335, -0.9000000134110451)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
     }

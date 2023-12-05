@@ -1,0 +1,476 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_08A0A4461F95E387"
+        {
+            def RectLight "StreetLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float height = 0.8
+                float intensity = 500
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                float width = 0.5
+                double3 xformOp:rotateXYZ = (0, 0, -90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.2000000178813934, 0, 3.1000000461935997)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_2634ADCEE8C94B32"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            over "mesh"
+            {
+                normal3f[] normals (
+                    interpolation = "vertex"
+                )
+                texCoord2f[] primvars:st = [(0.2528348, -1.9180245), (0.7471652, -1.9180245), (0.18975073, -1.9180245), (0.87333226, -1.9180245), (0.12666768, -1.9180245), (0.81024826, -1.9180245), (0.2528348, -0.9921192), (0.7471652, -0.6549994), (0.7471652, -0.9921192), (0.12666777, 0.1795702), (0.18975088, -0.9921192), (0.87333226, -0.9921192), (0.12666768, -0.9921192), (0.12666768, -1.4895682), (0.8102484, -0.9921192), (0.3335002, -0.654999), (0.0010088432, -0.7500005), (0.0010088432, -1.7500005), (1.9389884, -1.079088), (1.9389884, -1.079088), (1.9389876, -0.75000083), (1.9389876, -1.750001), (0.0010089636, -1.083632), (0.0010089636, -1.083632), (1.9389876, -1.4209111), (1.9389876, -1.4209111), (0.0010088432, -1.4163675), (0.0010088432, -1.4163675), (0.0004994869, -1.9986563), (0.9995005, -1.9986563), (0.0004994869, -1.9986563), (0.99950033, -1.9986563), (0.0004994869, -1.9986563), (0.9995005, -1.9986563), (0.0004994869, -1.9165788), (0.9995005, -0.65500045), (0.9995005, -1.9165788), (0.0004994869, -1.9165788), (0.00049966574, 0.68865633), (0.99950033, -1.9165788), (0.0004994869, -1.9165788), (0.0004994869, -1.9986563), (0.9995005, -1.9165788), (0.33349985, -0.6550001), (1.9214267, -1.25), (1.9214267, -1.25), (2.018991, -1.5967636), (2.018991, -1.5967636), (2.018991, -1.25), (2.018991, -1.25), (1.9214267, -1.5967636), (1.9214267, -1.5967636), (2.018991, -0.9032364), (2.018991, -1.9032364), (1.9214267, -0.9032364), (1.9214267, -1.9032364), (0.9137557, -1.0048308), (0.9194249, -1.0027192), (0.9137557, -1.0048308), (0.9191769, -1.0053747), (0.9194249, -1.0027192), (0.9137557, -1.0048308), (0.9140038, -1.0021753), (0.9191769, -1.0053747), (0.9194249, -1.0027192), (0.9137557, -1.0048308), (0.9140038, -1.0021753), (0.9191769, -1.0053747), (0.9194249, -1.0027192), (0.9137557, -1.0048308), (0.9140038, -1.0021753), (0.9191769, -1.0053747), (0.9194249, -1.0027192), (0.9137557, -1.0048308), (0.9140038, -1.0021753), (0.9194249, -1.0027192), (0.9137557, -1.0048308), (0.9191769, -1.0053747), (0.9194249, -1.0027192), (0.9137557, -1.0048308), (0.9140038, -1.0021753), (0.9191769, -1.0053747), (0.9194249, -1.0027192), (0.9137557, -1.0048308), (0.9140038, -1.0021753), (0.9191769, -1.0053747), (0.9194249, -1.0027192), (0.9137557, -1.0048308), (0.9140038, -1.0021753), (0.9191769, -1.0053747), (0.9194249, -1.0027192), (0.9137557, -1.0048308), (0.9140038, -1.0021753), (0.9194249, -1.0027192), (0.9137557, -1.0048308), (0.9194249, -1.0027192)] (
+                    interpolation = "vertex"
+                )
+            }
+
+            def SphereLight "Sphere_StreetLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 6500
+                bool enableColorTemperature = 1
+                bool inputs:normalize = 1
+                float intensity = 50
+                bool light:enableCaustics = 0
+                bool normalize = 0
+                float radius = 0.4
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 2.8)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4C277D1761299A8B"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "Street_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float height = 0.15
+                bool inputs:normalize = 1
+                float intensity = 500
+                bool normalize = 0
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "invisible"
+                bool visibleInPrimaryRay = 1
+                float width = 0.8
+                double3 xformOp:rotateYZX = (0, 6.300000096857548, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.46837010406790475, 0.013196293136559447, 3.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4C2489FAD0A31AB9"
+        {
+            custom int preserveOriginalDrawCall = 1
+            token visibility = "invisible"
+
+            def DiskLight "StreetLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool disableFogInteraction = 0
+                bool enableColorTemperature = 1
+                bool inputs:normalize = 1
+                float intensity = 3000
+                bool light:enableCaustics = 0
+                bool normalize = 0
+                float radius = 0.18
+                float shaping:cone:angle = 180
+                float shaping:cone:softness = 0
+                float shaping:focus = 0
+                color3f shaping:focusTint = (0, 0, 0)
+                float shaping:ies:angleScale = 0
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.36, 0, 4.22)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B8EA0EF3A1DB16C3"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "Street_Light_main_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float height = 2
+                float intensity = 300
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                float width = 1
+                double3 xformOp:rotateXYZ = (22.5, -2.5444437748716082e-14, -90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000447034836, -2.1095510296631756e-17, 5.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Street_Light_main_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float height = 2
+                float intensity = 300
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                asset texture:file = @@
+                bool visibleInPrimaryRay = 1
+                float width = 1
+                double3 xformOp:rotateXYZ = (22.5, -3.1805547185895103e-15, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3, 1.7150588081359959e-18, 5.2)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_490B788A5B361C35"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Sphere_Street_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 200
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.65, 0, 4.4)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4AA5F1430BA14BE9"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "StreetLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float intensity = 500
+                bool normalize = 1
+                float radius = 0.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.1000000312924385, 0.10000000149011612, 7.500000111758709)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_64863E93700A6B75"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "StreetLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                float diffuse = 1
+                bool enableColorTemperature = 1
+                float intensity = 10
+                bool normalize = 1
+                float radius = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.600000023841858, -2.9000000432133675, 9.600000143051147)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "StreetLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                float diffuse = 1
+                bool enableColorTemperature = 1
+                float intensity = 10
+                bool normalize = 1
+                float radius = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.600000023841858, 3.0000000447034836, 9.600000143051147)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "StreetLight_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                float diffuse = 1
+                bool enableColorTemperature = 1
+                float intensity = 10
+                bool normalize = 1
+                float radius = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.300000049173832, 0.10000000149011612, 9.600000143051147)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_706574B969F892AA"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "StreetLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float height = 0.5
+                float intensity = 500
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                float width = 1
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-7.300000108778477, 0, 11.10000016540289)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "StreetLight_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float height = 0.5
+                float intensity = 500
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                float width = 1
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (7.3, 0, 11.10000016540289)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_7BE8C3A491D6518C"
+        {
+            custom int preserveOriginalDrawCall = 0
+
+            def Xform "Xform_7BE8C3A491D6518C_0" (
+                references = @../meshes/props/Light/Street Lights/Street Lights 01/street light 01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1.2, 1.2, 1.2)
+                double3 xformOp:translate = (0.30000000447034836, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def RectLight "StreetLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float colorTemperature = 4500
+                bool enableColorTemperature = 1
+                float height = 1
+                float intensity = 300
+                bool normalize = 1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                float width = 0.6
+                double3 xformOp:rotateXYZ = (0, 0, -90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.1000000163912775, 0.05, 3.8000000566244125)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_30426E7D41271826"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def Xform "Xform"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.05682098289116766, -0.28352060844576954, 14.03370059001167)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def RectLight "StreetLight_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 0.5
+                    float intensity = 300
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 0.2
+                    double3 xformOp:rotateXYZ = (0, 65, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-0.04322708383506324, 0.15655468120598925, 0.0029834982188461368)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def RectLight "StreetLight_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 0.5
+                    float intensity = 300
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 0.2
+                    double3 xformOp:rotateXYZ = (-0.8211776613005384, 71.67197022669703, 53.31920099890772)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-1.3819457305389733, 0.19720028918271737, 0.002983498213730229)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def RectLight "StreetLight_03" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float height = 0.5
+                    float intensity = 300
+                    bool normalize = 1
+                    float shaping:cone:angle = 180
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    float width = 0.2
+                    double3 xformOp:rotateXYZ = (-0.48515531079129914, 69.76009631339625, 128.50089841018814)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.2746863010343077, 0.19837811824822893, 0.005989916708358578)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+        }
+    }
+
+    over "Looks"
+    {
+    }
+}
+

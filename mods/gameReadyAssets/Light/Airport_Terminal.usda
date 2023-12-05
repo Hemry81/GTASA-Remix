@@ -1,0 +1,486 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_206C691026F84C41"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "Check_in_Counter_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (21, 10.999999999999998, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Check_in_Counter_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (26, 11, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Check_in_Counter_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (31, 11, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Check_in_Counter_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (36, 11, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Check_in_Counter_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (41, 11, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Check_in_Counter_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (46, 11, -9.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Check_in_Counter_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (21, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Check_in_Counter_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (26, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Check_in_Counter_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (31, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Check_in_Counter_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (36, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Check_in_Counter_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (41, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Check_in_Counter_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 1
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (46, 15.600000232458115, -8.200000122189522)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_876C7E32ABEA5BB2"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "Baggage_Reclaim_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+                instanceable = false
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-16.2, 11.5, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Baggage_Reclaim_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+                instanceable = false
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.65, 11.5, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Baggage_Reclaim_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+                instanceable = false
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (10.9, 11.5, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Baggage_Reclaim_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (25, 11.5, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Baggage_Reclaim_Light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-16.2, -3.2, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Baggage_Reclaim_Light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.65, -3.2, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Baggage_Reclaim_Light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (10.9, -3.2, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Baggage_Reclaim_Light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (25, -3.2, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Baggage_Reclaim_Light_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.66, 4.200000000000009, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def RectLight "Baggage_Reclaim_Light_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float height = 2.5
+                bool inputs:normalize = 0
+                float intensity = 10
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                token visibility = "inherited"
+                bool visibleInPrimaryRay = 1
+                float width = 4.5
+                double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (11.6, 4.199999999999997, 2.1)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+    }
+}
+

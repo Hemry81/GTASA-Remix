@@ -36,7 +36,7 @@ over "RootNode"
                     displayName = "Normal Map"
                     hidden = false
                 )
-                bool inputs:thin_walled = 1 (
+                bool inputs:thin_walled = 0 (
                     customData = {
                         bool default = 0
                     }

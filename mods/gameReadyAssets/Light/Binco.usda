@@ -1,0 +1,487 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_8738759D35CD854D"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def RectLight "Binco_Light_main_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (6.000000000000028, -5.999999999999986, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (6.000000000000028, -2.999999999999986, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000000000284, -5.999999999999986, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.0000000000000284, -2.999999999999986, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.842170943040401e-14, -5.999999999999986, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.842170943040401e-14, -2.999999999999986, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.9999999999999716, -5.999999999999986, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.9999999999999716, -2.999999999999986, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-5.999999999999972, -5.999999999999986, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-5.999999999999972, -2.999999999999986, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.999999999997073, 2.500000000000014, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (5.999999999997073, 5.500000000000014, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_13" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.9999999999970726, 2.500000000000014, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_14" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.9999999999970726, 5.500000000000014, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_15" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.9274360713316128e-12, 2.500000000000014, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_16" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.9274360713316128e-12, 5.500000000000014, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_17" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000000029274, 2.500000000000014, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_18" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0000000000029274, 5.500000000000014, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_19" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.000000000002927, 2.500000000000014, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_20" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.000000000002927, 5.500000000000014, 3.75)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def RectLight "Binco_Light_main_21" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:height = 1
+                float inputs:intensity = 500
+                float inputs:shaping:cone:angle = 120
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                float inputs:width = 1
+                bool normalize = 0
+                bool shaping:ies:normalize = 1
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (-1.4033418253411173e-14, -0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (10.200000151991844, 7.200000107288361, 2.600000038743019)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_D01958624929DDBE"
+        {
+            over "Xform" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+

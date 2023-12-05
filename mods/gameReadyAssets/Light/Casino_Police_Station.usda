@@ -1,0 +1,2355 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_609955D5EFC7DE59"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Casino_Police_Station_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-19.10000028461218, -25.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-26.60000028461218, -25.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-34.10000028461218, -25.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-19.10000028461218, -19.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-26.60000028461218, -19.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-34.10000028461218, -19.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-19.10000028461218, -13.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-26.60000028461218, -13.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-34.10000028461218, -13.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-19.10000028461218, -7.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-26.60000028461218, -7.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-34.10000028461218, -7.00000037252903, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_13" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-19.10000028461218, -1.0000003725290298, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_14" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-26.60000028461218, -1.0000003725290298, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_15" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-34.10000028461218, -1.0000003725290298, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_16" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-26.60000028461218, 5.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_17" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-19.10000028461218, 5.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_18" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-11.600000284612179, 5.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_19" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-26.60000028461218, 11.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_20" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-19.10000028461218, 11.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_21" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-11.600000284612179, 11.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_22" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-4.100000284612179, 5.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_23" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-4.100000284612179, 11.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_24" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.399999715387821, 5.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_25" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.399999715387821, 11.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_26" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (10.899999715387821, 5.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_27" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (10.899999715387821, 11.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_28" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (18.39999971538782, 5.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_29" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (18.39999971538782, 11.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_30" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (25.89999971538782, 5.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_31" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (25.89999971538782, 11.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_32" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (33.39999971538782, 5.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_33" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (33.39999971538782, 11.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_34" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (10.899999715387821, 18.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_35" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (10.899999715387821, 23.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_36" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (18.39999971538782, 18.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_37" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (18.39999971538782, 23.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_38" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (25.89999971538782, 18.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_39" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (25.89999971538782, 23.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_40" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (33.39999971538782, 18.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_41" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (33.39999971538782, 23.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_42" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.399999715387821, 23.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_43" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.399999715387821, 17.99999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_44" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.100000284612179, 23.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_45" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.100000284612179, 17.99999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_46" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-7.600000284612179, 23.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_47" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-7.600000284612179, 17.99999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_48" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-13.100000284612179, 23.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_49" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-13.100000284612179, 17.99999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_50" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-18.60000028461218, 23.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_51" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-18.60000028461218, 17.99999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_52" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-8.100000284612179, 27.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_53" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-13.600000284612179, 27.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_54" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-19.10000028461218, 27.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_55" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-24.60000028461218, 27.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_56" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.600000284612179, 27.49999962747097, 3.100000058114529)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_57" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.5
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-26.700000397861004, 21.600000321865082, 1.9000000402331352)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_9F8C23799ED2D4BB"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Casino_Police_Station_Light_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-14.300000213086605, 3.1000000461935997, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-18.600000277161598, 12.500000186264515, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-18.600000277161598, 5.000000186264515, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-18.600000277161598, -2.499999813735485, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-18.600000277161598, -9.999999813735485, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-18.600000277161598, -17.499999813735485, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-18.600000277161598, -24.999999813735485, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-22.300000332295895, 14.500000216066837, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-22.300000332295895, 18.500000216066837, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-27.300000332295895, 14.500000216066837, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-27.300000332295895, 18.500000216066837, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_13" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-33.5000004991889, 14.500000216066837, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_14" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-33.5000004991889, 18.500000216066837, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_15" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-24.50000036507845, 6.000000089406967, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_16" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-24.50000036507845, 8.940696716308594e-8, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_17" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-31.50000036507845, 6.000000089406967, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_18" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-31.50000036507845, 8.940696716308594e-8, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_19" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-24.50000036507845, -5.999999910593033, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_20" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-31.50000036507845, -5.999999910593033, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_21" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-24, -26.55, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_22" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-24, -22.549999999999997, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_24" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-29, -26.55, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_25" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-29, -22.549999999999997, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_23" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-34, -26.55, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_26" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-34, -22.549999999999997, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_27" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-24, -18.55, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_28" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-29, -18.55, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_29" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-34, -18.55, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_30" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-24.50000036507845, -10.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_31" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-24.50000036507845, 10.599999845027924, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_33" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-29.50000036507845, -10.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_34" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-29.50000036507845, 10.599999845027924, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_36" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-34.50000036507845, -10.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_37" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-34.50000036507845, 10.599999845027924, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_38" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-38.300000570714474, -10.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_39" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-38.300000570714474, -6.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_44" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-42.50000057071448, -10.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_45" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-42.50000057071448, -6.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_50" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-46.70000057071447, -10.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_51" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-46.70000057071447, -6.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_56" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-50.900000570714475, -10.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_57" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-50.900000570714475, -6.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_62" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-55.10000057071447, -10.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_63" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-55.10000057071447, -6.400000154972076, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_40" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-38.300000570714474, 6.200000092387199, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_41" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-38.300000570714474, 10.2000000923872, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_42" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-42.50000057071448, 6.200000092387199, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_43" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-42.50000057071448, 10.2000000923872, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_46" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-46.70000057071447, 6.200000092387199, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_47" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-46.70000057071447, 10.2000000923872, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_48" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-50.900000570714475, 6.200000092387199, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_49" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-50.900000570714475, 10.2000000923872, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_52" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-55.10000057071447, 6.200000092387199, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_53" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-55.10000057071447, 10.2000000923872, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_54" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-38.300000570714474, -0.7999999076128006, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_55" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-42.50000057071448, -0.7999999076128006, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Casino_Police_Station_Light_58" (
+                prepend apiSchemas = ["ShapingAPI"]
+                hide_in_stage_window = false
+            )
+            {
+                float intensity = 10
+                bool normalize = 1
+                float radius = 0.3
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool treatAsPoint = 0
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-46.70000057071447, -0.7999999076128006, -1.700000025331974)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}
+

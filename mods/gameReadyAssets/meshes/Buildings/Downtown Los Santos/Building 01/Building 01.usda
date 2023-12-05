@@ -1,0 +1,129 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_9753C16606A1AF9C"
+        {
+            token visibility = "inherited"
+
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+
+            def Xform "Xform" (
+                references = @./mesh_9753C16606A1AF9C.usd@
+            )
+            {
+                double3 xformOp:rotateYZX = (0, 0, -0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_31D3540F9E881E75"
+        {
+            token visibility = "inherited"
+
+            def Xform "Xform_31D3540F9E881E75_0" (
+                delete references = @../Building 01mesh_31D3540F9E881E75.usd@
+                prepend references = @../Building 01/mesh_31D3540F9E881E75.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+
+        over "mesh_F11396299F4360FE"
+        {
+            token visibility = "inherited"
+
+            def Xform "Xform_F11396299F4360FE_0" (
+                delete references = @../Building 01mesh_F11396299F4360FE.usd@
+                prepend references = @../Building 01/mesh_F11396299F4360FE.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+
+        over "mesh_0914F91DDDF8D690"
+        {
+            token visibility = "inherited"
+
+            def Xform "Xform_0914F91DDDF8D690_0" (
+                delete references = @../Building 01mesh_0914F91DDDF8D690.usd@
+                prepend references = @../Building 01/mesh_0914F91DDDF8D690.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+
+        over "mesh_AB26100E8EFECA8D"
+        {
+            token visibility = "inherited"
+
+            def Xform "Xform_AB26100E8EFECA8D_0" (
+                delete references = @../Building 01mesh_AB26100E8EFECA8D.usd@
+                prepend references = @../Building 01/mesh_AB26100E8EFECA8D.usd@
+            )
+            {
+                token visibility = "inherited"
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+                token visibility = "invisible"
+            }
+        }
+    }
+}
+

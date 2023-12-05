@@ -22,9 +22,28 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:displace_in = 0.02
+                float inputs:displace_in = 0.02 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                    hidden = false
+                )
                 asset inputs:height_texture = @./A00E5CACC1852CA7_height.dds@ (
                     colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                    hidden = false
                 )
                 asset inputs:normalmap_texture = @./A00E5CACC1852CA7_normal.dds@ (
                     colorSpace = "auto"
@@ -62,33 +81,6 @@ over "RootNode"
             }
         }
 
-        over "mat_459ABA7722E4FBF3"
-        {
-            over "Shader"
-            {
-            }
-        }
-
-        over "mat_5C91F7DAD437D85F"
-        {
-            over "Shader"
-            {
-                float inputs:opacity_constant = 1 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Opacity Amount"
-                    doc = "Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque."
-                    hidden = false
-                )
-            }
-        }
-
         over "mat_75A3841BC95D2C88"
         {
             over "Shader"
@@ -103,9 +95,28 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:displace_in = 0.02
+                float inputs:displace_in = 0.1 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                    hidden = false
+                )
                 asset inputs:height_texture = @./75A3841BC95D2C88_height.dds@ (
-                    colorSpace = "raw"
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                    hidden = false
                 )
                 asset inputs:normalmap_texture = @./75A3841BC95D2C88_normal.dds@ (
                     colorSpace = "auto"

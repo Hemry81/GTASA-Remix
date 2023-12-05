@@ -19,11 +19,12 @@ over "RootNode"
             uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
 
             def Xform "Xform_4402C99EC2E35B81_0" (
-                prepend references = @../../meshes/grass_small_01.usd@
+                delete references = @../../meshes/grass_small_01.usd@
+                prepend references = @../../meshes/vegetation/grass_small_01.usd@
             )
             {
                 double3 xformOp:rotateYZX = (0, 0, -0)
-                double3 xformOp:scale = (3, 3, 3)
+                double3 xformOp:scale = (2, 2, 2)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }

@@ -1,0 +1,8 @@
+#usda 1.0
+(
+    subLayers = [
+        @./Building 01/Building 01.usda@
+    ]
+    upAxis = "Z"
+)
+

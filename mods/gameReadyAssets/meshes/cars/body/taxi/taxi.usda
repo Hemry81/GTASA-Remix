@@ -1,0 +1,449 @@
+#usda 1.0
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_90AF96B3797447BC"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "Xform_90AF96B3797447BC_0" (
+                references = @./hood.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "mesh"
+                {
+                    over "mesh"
+                    {
+                        uniform bool doubleSided = 1
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_77AD40D33150BFD6"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "Xform_77AD40D33150BFD6_0" (
+                references = @./mainbody.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_126DD08C9C974197"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "Xform_126DD08C9C974197_0" (
+                references = @./head_skirt.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_A0E06BD2ED8C0697"
+        {
+            def Xform "Xform_A0E06BD2ED8C0697_0" (
+                references = @./left_door_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_794D51E0CA0CC359"
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "Xform_794D51E0CA0CC359_0" (
+                references = @./right_door_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_176117DB6C7C8A07"
+        {
+            def Xform "Xform_176117DB6C7C8A07_0" (
+                references = @./right_door_02.usd@
+            )
+            {
+                rel material:binding = </RootNode/Looks/taxi_yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_AEB21A230801B7EF"
+        {
+            def Xform "Xform_AEB21A230801B7EF_0" (
+                references = @./left_door_02.usd@
+            )
+            {
+                rel material:binding = </RootNode/Looks/taxi_yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_A4604BAEE836697A"
+        {
+            def Xform "Xform_A4604BAEE836697A_0" (
+                references = @./trunk.usd@
+            )
+            {
+                rel material:binding = </RootNode/Looks/taxi_yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_4DC86F7B83C847CF"
+        {
+            def Xform "Xform_4DC86F7B83C847CF_0" (
+                delete references = [
+                    @../../../../meshescube.usd@,
+                    @./mesh_4DC86F7B83C847CF.usd@
+                ]
+                prepend references = @./rear_skirt.usd@
+            )
+            {
+                rel material:binding = </RootNode/Looks/taxi_yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_FCCD18F81128FAD8" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "mesh_2106C2851D81EE7A" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "mesh_6FE3B27A36EF316E" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "mesh_7BC5C24DBF8CC8E7" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "mesh_DAEAC115CCE70247" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "mesh_ADE952FFD2A882FF" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "mesh_FC717884D328D0C2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "mesh_CF1409C1CB2C7744" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "mesh_1F49817492FBC7D9" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </RootNode/Looks/taxi_yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            over "mesh"
+            {
+                uniform bool doubleSided = 1
+            }
+        }
+    }
+
+    over "Looks"
+    {
+        def Material "taxi_yellow"
+        {
+            token outputs:mdl:displacement.connect = </Looks/taxi_yellow/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </Looks/taxi_yellow/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </Looks/taxi_yellow/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @../../../../materials/AperturePBR_Opacity.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                asset inputs:diffuse_texture = @./taxi_yellow.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                )
+                float inputs:metallic_constant = 0.29999998 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = "Metallic Material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @../../../../texture/cars/flakes_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:reflection_roughness_constant = 0 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = "Higher roughness values lead to more blurry reflections"
+                    hidden = false
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+
+        over "mat_17A7BA2A2093B14A"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./taxi_text_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 1 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @./taxi_text_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./taxi_text_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./taxi_text_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+    }
+}
+

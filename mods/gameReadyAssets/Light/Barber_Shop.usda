@@ -1,0 +1,118 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_9D44D68C71ECF5D9"
+        {
+            def Xform "Barber_Shop_01_Light_01" (
+                delete references = @../meshescube.usd@
+                prepend references = @../meshes/props/Light/SpotLight/SpotLight_01/SpotLight_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.7000000551342964, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Handle"
+                {
+                    over "Body"
+                    {
+                        float3 xformOp:rotateXYZ = (0, 20, 0)
+                    }
+                }
+            }
+
+            def Xform "Barber_Shop_01_Light_02" (
+                delete references = @../meshescube.usd@
+                prepend references = @../meshes/props/Light/SpotLight/SpotLight_01/SpotLight_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.8000000417232513, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Barber_Shop_01_Light_03" (
+                delete references = @../meshescube.usd@
+                prepend references = @../meshes/props/Light/SpotLight/SpotLight_01/SpotLight_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.95, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Handle"
+                {
+                    over "Body"
+                    {
+                        float3 xformOp:rotateXYZ = (0, -20, 0)
+                    }
+                }
+            }
+
+            def Xform "Barber_Shop_01_Light_04" (
+                delete references = @../meshescube.usd@
+                prepend references = @../meshes/props/Light/SpotLight/SpotLight_01/SpotLight_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.71, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Handle"
+                {
+                    over "Body"
+                    {
+                        float3 xformOp:rotateXYZ = (0, -20, 0)
+                    }
+                }
+            }
+
+            def Xform "Barber_Shop_01_Light_05" (
+                delete references = @../meshescube.usd@
+                prepend references = @../meshes/props/Light/SpotLight/SpotLight_01/SpotLight_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.859999958276749, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Barber_Shop_01_Light_06" (
+                delete references = @../meshescube.usd@
+                prepend references = @../meshes/props/Light/SpotLight/SpotLight_01/SpotLight_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (1.9199999448657035, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Handle"
+                {
+                    over "Body"
+                    {
+                        float3 xformOp:rotateXYZ = (0, 20, 0)
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+

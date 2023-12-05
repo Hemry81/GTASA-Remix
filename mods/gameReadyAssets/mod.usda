@@ -4,21 +4,22 @@
         int refinementOverrideImplVersion = 0
     }
     subLayers = [
+        @./helicopter.usda@,
+        @./texture/sky/sky.usda@,
+        @./light.usda@,
         @./mesh_replacement.usda@,
         @./texture/rail/rail.usda@,
         @./tree.usda@,
+        @./texture/plant/plant.usda@,
+        @./weapons.usda@,
         @./characters.usda@,
         @./Pedestrian.usda@,
-        @./light.usda@,
-        @./texture/sky/sky.usda@,
-        @./texture/plant/plant.usda@,
         @./texture/props/props.usda@,
         @./cars.usda@,
         @./buildings.usda@,
         @./effect.usda@,
         @./materials.usda@,
-        @./water.usda@,
-        @./CJHouse.usda@
+        @./water.usda@
     ]
     upAxis = "Z"
 )
