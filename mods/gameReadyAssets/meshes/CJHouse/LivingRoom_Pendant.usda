@@ -1,0 +1,546 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (50000, 0, 0)
+                double radius = 500
+            }
+            dictionary Perspective = {
+                double3 position = (-579.9208660334267, -73.7047403961348, 52.56300551045258)
+                double3 target = (-688.6499033822165, -190.44869380438735, 69.82992707798633)
+            }
+            dictionary Right = {
+                double3 position = (0, -50000, 0)
+                double radius = 500
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 50000)
+                double radius = 500
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary navmeshSettings = {
+            double agentHeight = 180
+            double agentRadius = 20
+            bool excludeRigidBodies = 1
+            int ver = 1
+            double voxelCeiling = 460
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./LivingRoom_Pendant.usda"
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+        dictionary renderSettings = {
+            float3 "rtx:debugView:pixelDebug:textColor" = (0, 1e18, 0)
+            float3 "rtx:fog:fogColor" = (0.75, 0.75, 0.75)
+            float3 "rtx:index:regionOfInterestMax" = (0, 0, 0)
+            float3 "rtx:index:regionOfInterestMin" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_ground_position" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_ground_reflectivity" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_rotation_axis" = (3.4028235e38, 3.4028235e38, 3.4028235e38)
+            float3 "rtx:post:backgroundZeroAlpha:backgroundDefaultColor" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gain" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:offset" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:saturation" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:blackpoint" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gain" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:lift" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:multiply" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:offset" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:whitepoint" = (1, 1, 1)
+            float3 "rtx:post:lensDistortion:lensFocalLengthArray" = (10, 30, 50)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffX" = (450, 475, 500)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffY" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:cutoffPoint" = (2, 2, 2)
+            float3 "rtx:post:lensFlares:haloFlareFalloff" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:haloFlareRadius" = (75, 75, 75)
+            float3 "rtx:post:lensFlares:isotropicFlareFalloff" = (50, 50, 50)
+            float3 "rtx:post:tonemap:whitepoint" = (1, 1, 1)
+            float3 "rtx:raytracing:inscattering:singleScatteringAlbedo" = (0.9, 0.9, 0.9)
+            float3 "rtx:raytracing:inscattering:transmittanceColor" = (0.5, 0.5, 0.5)
+            float3 "rtx:sceneDb:ambientLightColor" = (0.1, 0.1, 0.1)
+        }
+        string sourceDirPath = "C:/Users/desig/OneDrive/Documents/Blender/GTASA/buildings/CJ House/"
+        string sourceFilename = "livingroom light.blend"
+    }
+    defaultPrim = "root"
+    doc = "Blender v4.0.0 Alpha"
+    metersPerUnit = 0.01
+    upAxis = "Z"
+)
+
+def Xform "root"
+{
+    float3 xformOp:scale = (100, 100, 100)
+    uniform token[] xformOpOrder = ["xformOp:scale"]
+
+    def Xform "blub" (
+        references = @./LivingRoom_Pendant.usd@
+    )
+    {
+        custom string userProperties:blenderName:object = "blub"
+        float3 xformOp:rotateXYZ = (0, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+        def Xform "blub" (
+            references = @./rattan_pendant_light bulb.usd@
+        )
+        {
+            double3 xformOp:rotateXYZ = (0, 0, 0)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-6.633565902709961, -1.5677908658981323, 0.7793179154396057)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            over "Blub_Body" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </root/Looks/Metal> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+
+                over "Blub_Glass" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </root/Looks/Glass> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                }
+
+                over "Point"
+                {
+                    over "SphereLight"
+                    {
+                        float inputs:intensity = 1500
+                    }
+                }
+            }
+        }
+
+        over "light_paper" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </root/Looks/Paper> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "light_Support" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </root/Looks/White_Plastic> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+
+        over "Border" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </root/Looks/White_Plastic> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+    }
+
+    def Scope "Looks"
+    {
+        def Material "Glass"
+        {
+            token outputs:mdl:displacement.connect = </root/Looks/Glass/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </root/Looks/Glass/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </root/Looks/Glass/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+
+        def Material "Metal"
+        {
+            token outputs:mdl:displacement.connect = </root/Looks/Metal/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </root/Looks/Metal/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </root/Looks/Metal/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = """Metallic Material
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.099999994 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                    hidden = false
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+
+        def Material "Paper"
+        {
+            token outputs:mdl:displacement.connect = </root/Looks/Paper/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </root/Looks/Paper/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </root/Looks/Paper/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                color3f inputs:diffuse_color_constant = (0.83397686, 0.728245, 0.55061793) (
+                    customData = {
+                        float3 default = (0.2, 0.2, 0.2)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Base Color"
+                    doc = """The base albedo color to use if no texture is specified
+
+"""
+                    hidden = false
+                    renderType = "color"
+                )
+                asset inputs:diffuse_texture = @../../texture/paper/Paper004_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_thin_film = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Enable thin film"
+                    doc = """Adds a thin film coating to the material
+
+"""
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @../../texture/paper/Paper004_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:opacity_constant = 0.35999998 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Opacity Amount"
+                    doc = """Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque.
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.79999995 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @../../texture/paper/Paper004_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:subsurface_measurement_distance = 0.98999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 16
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Subsurface"
+                    displayName = "Subsurface Measurement Distance"
+                    doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:subsurface_thickness_texture = @../../texture/paper/Paper004_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Subsurface"
+                    displayName = "Thickness Map"
+                    doc = """The texture specifying the distance between front and back surface of subsurface materials in millimeter.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:subsurface_transmittance_texture = @../../texture/paper/Paper004_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Subsurface"
+                    displayName = "Subsurface Transmittance Map"
+                    doc = """The texture specifying the transmittance color of subsurface materials.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+
+        def Material "White_Plastic"
+        {
+            token outputs:mdl:displacement.connect = </root/Looks/White_Plastic/Shader.outputs:out>
+            token outputs:mdl:surface.connect = </root/Looks/White_Plastic/Shader.outputs:out>
+            token outputs:mdl:volume.connect = </root/Looks/White_Plastic/Shader.outputs:out>
+
+            def Shader "Shader"
+            {
+                uniform token info:implementationSource = "sourceAsset"
+                uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+                color3f inputs:diffuse_color_constant = (0.9227799, 0.9227707, 0.9227707) (
+                    customData = {
+                        float3 default = (0.2, 0.2, 0.2)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Base Color"
+                    doc = """The base albedo color to use if no texture is specified
+
+"""
+                    hidden = false
+                    renderType = "color"
+                )
+                asset inputs:diffuse_texture = @../../texture/paper/Paper004_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 100 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @../../texture/paper/Paper004_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                bool inputs:enable_thin_film = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Enable thin film"
+                    doc = """Adds a thin film coating to the material
+
+"""
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @../../texture/paper/Paper004_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:opacity_constant = 1 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Opacity Amount"
+                    doc = """Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque.
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.099999994 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @../../texture/paper/Paper004_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:subsurface_measurement_distance = 0 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 16
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Subsurface"
+                    displayName = "Subsurface Measurement Distance"
+                    doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Thin film thickness from albedo alpha"
+                    doc = """Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case.
+
+"""
+                    hidden = false
+                )
+                token outputs:out (
+                    renderType = "material"
+                )
+            }
+        }
+    }
+}
+

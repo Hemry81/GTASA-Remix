@@ -7,115 +7,15 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_DDE358953FAE5244"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "CJHouse_Light_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 800
-                bool normalize = 0
-                float radius = 0.1
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.4000000059604645, 0.10000000149011612, 3.0000000447034836)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def SphereLight "CJHouse_Light_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 500
-                bool normalize = 0
-                float radius = 0.1
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.3000000342726707, -10.6, 2.9)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def SphereLight "CJHouse_Light_03" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 500
-                bool normalize = 0
-                float radius = 0.1
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (4.6000000685453415, -8.400000125169754, 6.70000009983778)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def SphereLight "CJHouse_Light_04" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 500
-                bool normalize = 0
-                float radius = 0.1
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.8000000268220901, -8.400000125169754, 6.70000009983778)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def SphereLight "CJHouse_Light_05" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 500
-                bool normalize = 0
-                float radius = 0.1
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.6000000089406967, -3.500000052154064, 6.70000009983778)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-        }
-
         over "mesh_4CDA2E8D01C0B02A"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def SphereLight "CJHouse_Light_06" (
+            def SphereLight "CJHouse_changingroom_Light_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float intensity = 10
+                float intensity = 50
                 bool normalize = 0
                 float radius = 0.1
                 float shaping:cone:angle = 180
@@ -127,6 +27,25 @@ over "RootNode"
                 double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0.42, -0.51, 1.5000000223517418)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+            }
+
+            def SphereLight "CJHouse_changingroom_Light_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 50
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 180
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.30000000447034836, 3.7000000551342964, 1.5000000223517418)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
         }

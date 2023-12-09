@@ -1,7 +1,6 @@
 #usda 1.0
 (
     subLayers = [
-        @./static_car_texture.usda@,
         @./Glass.usda@,
         @./Light/headlight.usda@,
         @./texture/cars/textures.usda@,

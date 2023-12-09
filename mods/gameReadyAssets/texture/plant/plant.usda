@@ -5,10 +5,6 @@
 
 over "RootNode"
 {
-    over "Looks"
-    {
-    }
-
     over "meshes"
     {
         over "mesh_4402C99EC2E35B81"

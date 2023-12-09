@@ -17,7 +17,9 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -157,7 +159,9 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )

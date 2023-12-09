@@ -1647,8 +1647,11 @@ over "Looks"
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = "The base albedo color to use if no texture is specified"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
                 hidden = false
+                renderType = "color"
             )
             color3f inputs:emissive_color_constant = (1, 1, 1) (
                 customData = {
@@ -1660,8 +1663,11 @@ over "Looks"
                 }
                 displayGroup = "Emissive"
                 displayName = "Emissive Color"
-                doc = "The emissive color when no emissive color texture is specified."
+                doc = """The emissive color when no emissive color texture is specified.
+
+"""
                 hidden = false
+                renderType = "color"
             )
             float inputs:emissive_intensity = 0.1 (
                 customData = {
@@ -1673,7 +1679,9 @@ over "Looks"
                 }
                 displayGroup = "Emissive"
                 displayName = "Emissive Intensity"
-                doc = "Intensity of the emission"
+                doc = """Intensity of the emission
+
+"""
                 hidden = false
             )
             bool inputs:enable_emission = 1 (
@@ -1682,7 +1690,9 @@ over "Looks"
                 }
                 displayGroup = "Emissive"
                 displayName = "Enable Emission"
-                doc = "Enables the emission of light from the material"
+                doc = """Enables the emission of light from the material
+
+"""
                 hidden = false
             )
             float inputs:reflection_roughness_constant = 0.099999994 (
@@ -1695,7 +1705,9 @@ over "Looks"
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = "Higher roughness values lead to more blurry reflections"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
                 hidden = false
             )
             token outputs:out (

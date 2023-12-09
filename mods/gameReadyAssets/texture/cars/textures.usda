@@ -23,7 +23,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:emissive_intensity = 2 (
+                float inputs:emissive_intensity = 1 (
                     customData = {
                         float default = 40
                         dictionary range = {

@@ -67,22 +67,6 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (11.500000171363354, 6.200000092387199, 2.9000000432133675)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                over "Looks"
-                {
-                    over "Mirror"
-                    {
-                        over "Shader"
-                        {
-                            bool inputs:excludeFromWhiteMode (
-                                customData = {
-                                    token remappedFrom = ""
-                                }
-                                hidden = false
-                            )
-                        }
-                    }
-                }
             }
         }
 

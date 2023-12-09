@@ -17,29 +17,30 @@ over "RootNode"
                     bindMaterialAs = "weakerThanDescendants"
                 )
                 double3 xformOp:rotateYZX = (0, 0, -0)
-                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:scale = (0.5, 0.5, 0.5)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-
-                def SphereLight "Sun_Light" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    color3f color = (1, 0.87938917, 0.7528958)
-                    float intensity = 1000
-                    float radius = 10
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool treatAsPoint = 0
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-                }
+            }
+            
+            def SphereLight "SunLight" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:colorTemperature = 4500
+                bool inputs:enableColorTemperature = 1
+                float inputs:intensity = 300
+                float inputs:radius = 10
+                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool light:enableCaustics = 1
+                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
             over "mesh" (
@@ -182,8 +183,11 @@ def "Looks"
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Base Color"
-                doc = "The base albedo color to use if no texture is specified"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
                 hidden = false
+                renderType = "color"
             )
             asset inputs:diffuse_texture = @../meshes/Sky/sun_albedo.dds@ (
                 colorSpace = "sRGB"
@@ -192,8 +196,11 @@ def "Looks"
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                 hidden = false
+                renderType = "texture_2d"
             )
             color3f inputs:emissive_color_constant = (1, 0.1, 0.1) (
                 customData = {
@@ -205,10 +212,13 @@ def "Looks"
                 }
                 displayGroup = "Emissive"
                 displayName = "Emissive Color"
-                doc = "The emissive color when no emissive color texture is specified."
+                doc = """The emissive color when no emissive color texture is specified.
+
+"""
                 hidden = false
+                renderType = "color"
             )
-            float inputs:emissive_intensity = 500 (
+            float inputs:emissive_intensity = 1 (
                 customData = {
                     float default = 40
                     dictionary range = {
@@ -218,7 +228,9 @@ def "Looks"
                 }
                 displayGroup = "Emissive"
                 displayName = "Emissive Intensity"
-                doc = "Intensity of the emission"
+                doc = """Intensity of the emission
+
+"""
                 hidden = false
             )
             asset inputs:emissive_mask_texture = @../meshes/Sky/sun_albedo.dds@ (
@@ -228,8 +240,11 @@ def "Looks"
                 }
                 displayGroup = "Emissive"
                 displayName = "Emissive Mask Map"
-                doc = "The texture masking the emissive color"
+                doc = """The texture masking the emissive color
+
+"""
                 hidden = false
+                renderType = "texture_2d"
             )
             bool inputs:enable_emission = 1 (
                 customData = {
@@ -237,7 +252,9 @@ def "Looks"
                 }
                 displayGroup = "Emissive"
                 displayName = "Enable Emission"
-                doc = "Enables the emission of light from the material"
+                doc = """Enables the emission of light from the material
+
+"""
                 hidden = false
             )
             float inputs:reflection_roughness_constant = 0.5 (
@@ -250,7 +267,9 @@ def "Looks"
                 }
                 displayGroup = "Specular"
                 displayName = "Roughness Amount"
-                doc = "Higher roughness values lead to more blurry reflections"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
                 hidden = false
             )
             token outputs:out (

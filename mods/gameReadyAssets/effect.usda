@@ -177,6 +177,7 @@ over "RootNode"
             {
                 uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                asset inputs:diffuse_texture = @@
                 float inputs:emissive_intensity = 0.001 (
                     customData = {
                         float default = 40
@@ -196,7 +197,7 @@ over "RootNode"
                         asset default = @@
                     }
                     displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
+                    displayName = "Emissive Color Texture"
                     doc = "The texture masking the emissive color"
                     hidden = false
                     renderType = "texture_2d"
@@ -238,7 +239,7 @@ over "RootNode"
                         asset default = @@
                     }
                     displayGroup = "Volume"
-                    displayName = "Transmittance or Diffuse Albedo Texture"
+                    displayName = "Transmittance Color/Diffuse Albedo Texture"
                     doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
                     hidden = false
                     renderType = "texture_2d"
@@ -328,11 +329,13 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:emissive_intensity = 100 (
+                float inputs:emissive_intensity = 30 (
                     customData = {
                         float default = 40
                         dictionary range = {
@@ -342,7 +345,9 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                    doc = """Intensity of the emission
+
+"""
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./texture/effect/gun_fire_emissive.dds@ (
@@ -352,7 +357,9 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
+                    doc = """The texture masking the emissive color
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -362,7 +369,9 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
+                    doc = """Enables the emission of light from the material
+
+"""
                     hidden = false
                 )
             }

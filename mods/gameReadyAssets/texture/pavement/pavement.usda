@@ -137,7 +137,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                float inputs:displace_in = 0.025 (
+                float inputs:displace_in = 0.01 (
                     customData = {
                         float default = 1
                         dictionary range = {

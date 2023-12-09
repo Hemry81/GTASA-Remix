@@ -1,0 +1,263 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (50001.00779055035, 0.10218151045852512, -48.74445003084601)
+                double radius = 517.705078125
+            }
+            dictionary Perspective = {
+                double3 position = (21.352316564594005, 1.9488708962667518, -51.87583582101747)
+                double3 target = (-42.35767681433517, -8.712595388870437, -49.21946361786195)
+            }
+            dictionary Right = {
+                double3 position = (0.6290089116835745, -49999.12215893121, -50.104474273013594)
+                double radius = 23.200375366210938
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 50000)
+                double radius = 500
+            }
+            string boundCamera = "/OmniverseKit_Front"
+        }
+        dictionary navmeshSettings = {
+            double agentHeight = 180
+            double agentRadius = 20
+            bool excludeRigidBodies = 1
+            int ver = 1
+            double voxelCeiling = 460
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./rattan_pendant_light.usda"
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+        dictionary renderSettings = {
+            float3 "rtx:debugView:pixelDebug:textColor" = (0, 1e18, 0)
+            float3 "rtx:fog:fogColor" = (0.75, 0.75, 0.75)
+            float3 "rtx:index:regionOfInterestMax" = (0, 0, 0)
+            float3 "rtx:index:regionOfInterestMin" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_ground_position" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_ground_reflectivity" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_rotation_axis" = (3.4028235e38, 3.4028235e38, 3.4028235e38)
+            float3 "rtx:post:backgroundZeroAlpha:backgroundDefaultColor" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gain" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:offset" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:saturation" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:blackpoint" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gain" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:lift" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:multiply" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:offset" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:whitepoint" = (1, 1, 1)
+            float3 "rtx:post:lensDistortion:lensFocalLengthArray" = (10, 30, 50)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffX" = (450, 475, 500)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffY" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:cutoffPoint" = (2, 2, 2)
+            float3 "rtx:post:lensFlares:haloFlareFalloff" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:haloFlareRadius" = (75, 75, 75)
+            float3 "rtx:post:lensFlares:isotropicFlareFalloff" = (50, 50, 50)
+            float3 "rtx:post:tonemap:whitepoint" = (1, 1, 1)
+            float3 "rtx:raytracing:inscattering:singleScatteringAlbedo" = (0.9, 0.9, 0.9)
+            float3 "rtx:raytracing:inscattering:transmittanceColor" = (0.5, 0.5, 0.5)
+            float3 "rtx:sceneDb:ambientLightColor" = (0.1, 0.1, 0.1)
+        }
+        string sourceDirPath = "C:/Users/desig/OneDrive/Documents/Blender/GTASA/buildings/CJ House/"
+        string sourceFilename = "rattan pendant light.blend"
+    }
+    defaultPrim = "root"
+    doc = "Blender v4.0.0 Alpha"
+    metersPerUnit = 0.01
+    upAxis = "Z"
+)
+
+def Xform "root"
+{
+    float3 xformOp:scale = (100, 100, 100)
+    uniform token[] xformOpOrder = ["xformOp:scale"]
+
+    def Xform "rattan_pendant_light" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        references = @./rattan_pendant_light.usd@
+    )
+    {
+        custom string userProperties:blenderName:object = "Tessellation.001"
+        token visibility = "inherited"
+        float3 xformOp:rotateXYZ = (0, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+        over "Rattan" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </root/Rattan> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+        }
+    }
+
+    def Material "Glass"
+    {
+        token outputs:mdl:displacement.connect = </root/Glass/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </root/Glass/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </root/Glass/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Rattan"
+    {
+        token outputs:mdl:displacement.connect = </root/Rattan/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </root/Rattan/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </root/Rattan/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.45945948, 0.36520573, 0.283836) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:reflection_roughness_constant = 0.79999995 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Wire"
+    {
+        token outputs:mdl:displacement.connect = </root/Wire/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </root/Wire/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </root/Wire/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.04633206, 0.046331596, 0.046331596) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:reflection_roughness_constant = 0.19999999 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Xform "Wire_01" (
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        references = @./rattan_pendant_light bulb_plug.usd@
+    )
+    {
+        rel material:binding = </root/Wire> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        double3 xformOp:rotateXYZ = (0, 0, 0)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+        over "Wire"
+        {
+            over "Blub" (
+                references = @./rattan_pendant_light bulb.usd@
+            )
+            {
+                float3 xformOp:rotateXYZ = (0, 0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.01099427418066412, 0.008778417207278184, -0.4854745974035858)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Blub_Body"
+                {
+                    over "Blub_Glass" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </root/Glass> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                        float3 xformOp:rotateXYZ = (0, 0, 0)
+                        float3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (0, 0, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    }
+                }
+            }
+        }
+    }
+}
+
