@@ -11,6 +11,11 @@ To get started with the GTASA RTX-Remix Project, ensure that you have the follow
 - **RTX-Remix**: Get the latest version of RTX-Remix from [RTX-Remix GitHub](https://github.com/NVIDIAGameWorks/rtx-remix) and download the release. Make sure to update the "bridge-remix" and "dxvk-remix" files in the Action Tab.
 - You can use [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader/releases/latest/download/RTX.Remix.Downloader.exe) to download and update to lastest version of RTX-Remix). Here is the original Github page of the tool : [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader)
 
+# Sun Mod Requirements
+- CLEO : [CLEO](https://cleo.li/)
+- CLEO+ : [CLEO+](https://www.mixmods.com.br/2023/10/cleoplus/)
+- Newopcode : [Newopcode](https://www.mixmods.com.br/2020/10/newopcodes-cleo-v2-1/)
+
 # Mod Installation
 Follow these steps to install the GTASA RTX-Remix mod:
 - **Backup**: Before installing any mods, it's highly recommended to create a backup of your GTA San Andreas game files. This will allow you to revert back to the original game state if needed.
