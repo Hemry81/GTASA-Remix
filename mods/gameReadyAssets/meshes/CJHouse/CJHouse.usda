@@ -1857,7 +1857,7 @@ This parameter is unused.
                     uniform token info:implementationSource = "sourceAsset"
                     uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
                     uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-                    asset inputs:diffuse_texture = @../../texture/CJHouse/Leather014_albedo.dds@ (
+                    asset inputs:diffuse_texture = @../../texture/leather/Leather014_albedo.dds@ (
                         colorSpace = "auto"
                         customData = {
                             asset default = @@
@@ -1885,7 +1885,7 @@ This parameter is unused.
 """
                         hidden = false
                     )
-                    asset inputs:height_texture = @../../texture/CJHouse/Leather014_height.dds@ (
+                    asset inputs:height_texture = @../../texture/leather/Leather014_height.dds@ (
                         colorSpace = "auto"
                         customData = {
                             asset default = @@
@@ -1898,7 +1898,7 @@ This parameter is unused.
                         hidden = false
                         renderType = "texture_2d"
                     )
-                    asset inputs:normalmap_texture = @../../texture/CJHouse/Leather014_normal.dds@ (
+                    asset inputs:normalmap_texture = @../../texture/leather/Leather014_normal.dds@ (
                         colorSpace = "auto"
                         customData = {
                             asset default = @@
@@ -1908,7 +1908,7 @@ This parameter is unused.
                         hidden = false
                         renderType = "texture_2d"
                     )
-                    asset inputs:reflectionroughness_texture = @../../texture/CJHouse/Leather014_rough.dds@ (
+                    asset inputs:reflectionroughness_texture = @../../texture/leather/Leather014_rough.dds@ (
                         colorSpace = "auto"
                         customData = {
                             asset default = @@
@@ -6314,6 +6314,21 @@ This parameter is unused.
 """
                 hidden = false
                 renderType = "texture_2d"
+            )
+            float inputs:displace_in = 0.02 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 255
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
             )
             asset inputs:height_texture = @../../texture/wood/Planks039_height.dds@ (
                 colorSpace = "auto"

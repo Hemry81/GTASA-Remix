@@ -1,4 +1,4 @@
-script_name("SARemix_Real_Sun_v0.1")
+script_name("SARemix_Real_Sun_v0.11a")
 script_author("Hemry")
 script_url("https://github.com/Hemry81/GTASA-Remix")
 
@@ -27,15 +27,15 @@ function main()
         --ax, ay, az = calc_orien(px, py, pz, mx, my, mz)
         --setObjectRotation(moon, ax, ay, az)
         
-        local sun_threshold = 0.02
-        local moon_threshold = 0.02
+        local sun_threshold = 0.025
+        local moon_threshold = 0.025
         sx = (sx * sun_threshold) + px
         sy = (sy * sun_threshold) + py
-        sz = (sz * sun_threshold) + pz + 5
+        sz = (sz * sun_threshold) + pz
         
         mx = (mx * moon_threshold) + px
         my = (my * moon_threshold) + py
-        mz = (mz * moon_threshold) + pz + 5
+        mz = (mz * moon_threshold) + pz
         
         -- printStringNow("sx: "..formatNum(ax).. ", sy: ".. formatNum(ay)..", sz: " .. az, 10)
         
