@@ -105,8 +105,14 @@ over "RootNode"
             }
         }
 
-        over "mesh_8E63B7467C93F8E0"
+        over "mesh_8E63B7467C93F8E0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
         {
+            rel material:binding = </Looks/Leather_CJHouse_Single_Couch> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
             over "mesh" (
                 active = false
             )
@@ -1638,96 +1644,17 @@ This parameter is unused.
             }
 
             def Xform "Buffethandle" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
                 prepend references = @./poignebuffet.usd@
             )
             {
-                rel material:binding = </RootNode/meshes/mesh_E77A2E60B2780D1F/Buffethandletex> (
+                rel material:binding = </Looks/Shiny_Metal> (
                     bindMaterialAs = "weakerThanDescendants"
                 )
                 double3 xformOp:rotateXYZ = (0, 0, -90)
                 double3 xformOp:scale = (0.0014, 0.0014, 0.0012)
                 double3 xformOp:translate = (-3.1000000461935997, 1.0000000149011612, -2.37)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def Material "Buffethandletex"
-            {
-                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_E77A2E60B2780D1F/Buffethandletex/Shader.outputs:out>
-                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_E77A2E60B2780D1F/Buffethandletex/Shader.outputs:out>
-                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_E77A2E60B2780D1F/Buffethandletex/Shader.outputs:out>
-
-                def Shader "Shader"
-                {
-                    uniform token info:implementationSource = "sourceAsset"
-                    uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
-                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-                    asset inputs:diffuse_texture = @../../texture/CJHouse/BUFFET-paint_D.dds@ (
-                        colorSpace = "auto"
-                        customData = {
-                            asset default = @@
-                        }
-                        displayGroup = "Diffuse"
-                        displayName = "Albedo Map"
-                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                        hidden = false
-                        renderType = "texture_2d"
-                    )
-                    float inputs:metallic_constant = 0.97999996 (
-                        customData = {
-                            float default = 0
-                            dictionary range = {
-                                float max = 1
-                                float min = 0
-                            }
-                        }
-                        displayGroup = "Specular"
-                        displayName = "Metallic Amount"
-                        doc = """Metallic Material
-
-"""
-                        hidden = false
-                    )
-                    asset inputs:metallic_texture = @@ (
-                        colorSpace = "auto"
-                        customData = {
-                            asset default = @@
-                        }
-                        displayGroup = "Specular"
-                        displayName = "Metallic Map"
-                        hidden = false
-                        renderType = "texture_2d"
-                    )
-                    asset inputs:normalmap_texture = @../../texture/CJHouse/BUFFET-paint_N.dds@ (
-                        colorSpace = "auto"
-                        customData = {
-                            asset default = @@
-                        }
-                        displayGroup = "Normal"
-                        displayName = "Normal Map"
-                        hidden = false
-                        renderType = "texture_2d"
-                    )
-                    float inputs:reflection_roughness_constant = 0.099999994 (
-                        customData = {
-                            float default = 0.5
-                            dictionary range = {
-                                float max = 1
-                                float min = 0
-                            }
-                        }
-                        displayGroup = "Specular"
-                        displayName = "Roughness Amount"
-                        doc = """Higher roughness values lead to more blurry reflections
-
-"""
-                        hidden = false
-                    )
-                    token outputs:out (
-                        renderType = "material"
-                    )
-                }
             }
         }
 
@@ -3676,9 +3603,13 @@ This parameter is unused.
             }
 
             def Xform "floor" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
                 prepend references = @./Floore.usd@
             )
             {
+                rel material:binding = </Looks/WoodenFloor> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
@@ -4536,83 +4467,6 @@ This parameter is unused.
 
     over "Looks"
     {
-        over "mat_0D15E29E9ABFAAD5"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../texture/CJHouse/Planks037A_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.01 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @../../texture/CJHouse/Planks037A_height.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:metallic_texture = @../../texture/CJHouse/Planks037A_metal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @../../texture/CJHouse/Planks037A_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @../../texture/CJHouse/Planks037A_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
         over "mat_1965A327A53BCFE0"
         {
             over "Shader"
@@ -5067,83 +4921,6 @@ This parameter is unused.
             }
         }
 
-        over "mat_453404F24C4E6858"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../texture/CJHouse/Chocofur_Leather_Simple_01_diff.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.01 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:metallic_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
         over "mat_1A9A79A481BEEEB3"
         {
             over "Shader"
@@ -5215,7 +4992,7 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @../../texture/CJHouse/Planks021_albedo.dds@ (
+                asset inputs:diffuse_texture = @../../texture/wood/Planks021_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -5242,7 +5019,7 @@ This parameter is unused.
 """
                     hidden = false
                 )
-                asset inputs:height_texture = @../../texture/CJHouse/Planks021_height.dds@ (
+                asset inputs:height_texture = @../../texture/wood/Planks021_height.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -5255,7 +5032,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "texture_2d"
                 )
-                asset inputs:normalmap_texture = @../../texture/CJHouse/Planks021_normal.dds@ (
+                asset inputs:normalmap_texture = @../../texture/wood/Planks021_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -5265,7 +5042,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "texture_2d"
                 )
-                asset inputs:reflectionroughness_texture = @../../texture/CJHouse/Planks021_rough.dds@ (
+                asset inputs:reflectionroughness_texture = @../../texture/wood/Planks021_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -5953,7 +5730,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "color"
                 )
-                asset inputs:diffuse_texture = @../../texture/CJHouse/Planks021_albedo.dds@ (
+                asset inputs:diffuse_texture = @../../texture/wood/Planks021_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -5980,7 +5757,7 @@ This parameter is unused.
 """
                     hidden = false
                 )
-                asset inputs:height_texture = @../../texture/CJHouse/Planks021_height.dds@ (
+                asset inputs:height_texture = @../../texture/wood/Planks021_height.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -5993,7 +5770,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "texture_2d"
                 )
-                asset inputs:normalmap_texture = @../../texture/CJHouse/Planks021_normal.dds@ (
+                asset inputs:normalmap_texture = @../../texture/wood/Planks021_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -6003,7 +5780,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "texture_2d"
                 )
-                asset inputs:reflectionroughness_texture = @../../texture/CJHouse/Planks021_rough.dds@ (
+                asset inputs:reflectionroughness_texture = @../../texture/wood/Planks021_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -6400,6 +6177,19 @@ This parameter is unused.
                 hidden = false
                 renderType = "color"
             )
+            asset inputs:diffuse_texture = @../../texture/fabric/Fabric070_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
             float inputs:displace_in = 0.01 (
                 customData = {
                     float default = 1
@@ -6415,7 +6205,7 @@ This parameter is unused.
 """
                 hidden = false
             )
-            asset inputs:height_texture = @../../texture/fabric/Fabric053_height.dds@ (
+            asset inputs:height_texture = @../../texture/fabric/Fabric070_height.dds@ (
                 colorSpace = "auto"
                 customData = {
                     asset default = @@
@@ -6428,7 +6218,7 @@ This parameter is unused.
                 hidden = false
                 renderType = "texture_2d"
             )
-            asset inputs:normalmap_texture = @../../texture/fabric/Fabric053_normal.dds@ (
+            asset inputs:normalmap_texture = @../../texture/fabric/Fabric070_normal.dds@ (
                 colorSpace = "auto"
                 customData = {
                     asset default = @@
@@ -6438,7 +6228,7 @@ This parameter is unused.
                 hidden = false
                 renderType = "texture_2d"
             )
-            float inputs:reflection_roughness_constant = 0.5 (
+            float inputs:reflection_roughness_constant = 0.099999994 (
                 customData = {
                     float default = 0.5
                     dictionary range = {
@@ -6453,7 +6243,7 @@ This parameter is unused.
 """
                 hidden = false
             )
-            asset inputs:reflectionroughness_texture = @../../texture/fabric/Fabric053_rough.dds@ (
+            asset inputs:reflectionroughness_texture = @@ (
                 colorSpace = "auto"
                 customData = {
                     asset default = @@
@@ -6494,6 +6284,109 @@ This parameter is unused.
 
 """
                 hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "WoodenFloor"
+    {
+        token outputs:mdl:displacement.connect = </Looks/WoodenFloor/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/WoodenFloor/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/WoodenFloor/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @../../texture/wood/Planks037A_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:height_texture = @../../texture/wood/Planks039_height.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:metallic_texture = @../../texture/wood/Planks037A_metal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @../../texture/wood/Planks037A_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @../../texture/wood/Planks037A_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Leather_CJHouse_Single_Couch"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Leather_CJHouse_Single_Couch/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Leather_CJHouse_Single_Couch/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Leather_CJHouse_Single_Couch/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @../../texture/leather/Chocofur_Leather_Simple_01_diff.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
             )
             token outputs:out (
                 renderType = "material"
