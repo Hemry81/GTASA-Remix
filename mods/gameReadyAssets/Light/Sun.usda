@@ -29,7 +29,7 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 float inputs:colorTemperature = 4500
                 bool inputs:enableColorTemperature = 1
-                float inputs:intensity = 300
+                float inputs:intensity = 1200
                 float inputs:radius = 8
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
