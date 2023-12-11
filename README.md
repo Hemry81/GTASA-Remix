@@ -15,7 +15,7 @@ To get started with the GTASA RTX-Remix Project, ensure that you have the follow
 This mod changes the sun and moon in GTASA using MoonLoader and Lua scripts.
 
 **Installation** :
-- **MoonLoader** : Download and install MoonLoader from the provided link. This will allow you to run Lua scripts in GTASA: [MoonLoader](https://www.blast.hk/threads/13305/).
+- **MoonLoader** : Download and install MoonLoader from the provided link. This will allow you to run Lua scripts in GTASA: [MoonLoader (Russian)](https://www.blast.hk/threads/13305/) or [MoonLoader (English)](https://github.com/THE-FYP/MoonAdditions).
 - **MoonAdditions** : Download MoonAdditions from GitHub. Copy the MoonAdditions.dll file to your MoonLoader/lib folder: [MoonAdditions](https://github.com/THE-FYP/MoonAdditions).
 - **SARemix_Sun** : Download the SARemix_Sun.lua script and copy it to your MoonLoader folder.
 - If you previously installed my sun mod CLEO script, delete it to avoid conflicts.
