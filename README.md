@@ -6,7 +6,7 @@ To get started with the GTASA RTX-Remix Project, ensure that you have the follow
 
 - **GTA San Andreas Game**: Make sure you have a legally obtained copy of GTA San Andreas installed on your computer.
 - **RTX-Compatible Graphics Card**: You'll need an NVIDIA RTX series graphics card to take full advantage of the RTX enhancements.
-- **Modding Tools**: Install the necessary modding tools, such as Mod Loader to simplify the mod installation process.
+- **Modding Tools**: Install the necessary modding tools, such as ModLoader and MoonLoader.
 - **Downgrade**: For better compatibility, you'll need to downgrade to version 1.0 in order to run the game with RTX-Remix.
 - **RTX-Remix**: Get the latest version of RTX-Remix from [RTX-Remix GitHub](https://github.com/NVIDIAGameWorks/rtx-remix) and download the release. Make sure to update the "bridge-remix" and "dxvk-remix" files in the Action Tab.
 - You can use [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader/releases/latest/download/RTX.Remix.Downloader.exe) to download and update to lastest version of RTX-Remix). Here is the original Github page of the tool : [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader)
