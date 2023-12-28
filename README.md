@@ -20,6 +20,14 @@ This mod changes the sun and moon in GTASA using MoonLoader and Lua scripts.
 - **SARemix_Sun** : download the SARemix_Sun.lua file from the moonloader folder. Then copy it into your MoonLoader folder.
 - If you previously installed my sun mod CLEO script, delete it to avoid conflicts.
 
+# Health Bar Requirements
+The Health Bar Mod is a Lua script designed to reveal the original health bar that is hidden in Remix.
+
+**Installation** :
+- **MoonLoader** : Download and install MoonLoader from the provided link. This will allow you to run Lua scripts in GTASA: [MoonLoader (Russian)](https://www.blast.hk/threads/13305/) or [MoonLoader (English)](https://github.com/THE-FYP/MoonAdditions).
+- **MoonAdditions** : Download MoonAdditions from GitHub. Copy the MoonAdditions.dll file to your MoonLoader/lib folder: [MoonAdditions](https://github.com/THE-FYP/MoonAdditions).
+- **SARemix_HealthBar** : download the hbao.lua file from the moonloader folder. Then copy it into your MoonLoader folder.
+
 # Mod Installation
 Follow these steps to install the GTASA RTX-Remix mod:
 - **Backup**: Before installing any mods, it's highly recommended to create a backup of your GTA San Andreas game files. This will allow you to revert back to the original game state if needed.
