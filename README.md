@@ -28,19 +28,27 @@ The Health Bar Mod is a Lua script designed to reveal the original health bar th
 - **MoonAdditions** : Download MoonAdditions from GitHub. Copy the MoonAdditions.dll file to your MoonLoader/lib folder: [MoonAdditions](https://github.com/THE-FYP/MoonAdditions).
 - **SARemix_HealthBar** : download the hbao.lua file from the moonloader folder. Then copy it into your MoonLoader folder.
 
-# Mod Installation
+# Mod Installation :
 Follow these steps to install the GTASA RTX-Remix mod:
 - **Backup**: Before installing any mods, it's highly recommended to create a backup of your GTA San Andreas game files. This will allow you to revert back to the original game state if needed.
-- **Download**: click on the "Code" button. From the dropdown, select "Download ZIP" to download the mod files to your computer.
-- **Extract**: Once the ZIP file is downloaded, extract its contents to a temporary location on your computer.
-- **Create Folder**: Open your GTA San Andreas game folder and navigate to "Your Game Folder\rtx-remix". If the rtx-remix folder do not exist, create it manually.
-- **Copy Files**: Copy the extracted mod files from the temporary location and paste them into the "rtx-remix" folder you created.
+- **Download**:
+
+    **1**. Navigate to [GitHub Desktop](https://desktop.github.com/) and click "**Download for Windows**" to download the installer file.
+
+    **2**. Run the installer and follow the on-screen instructions to complete the setup process.
+
+    **3**. Once installed, open GitHub Desktop and sign into your account.
+
+    **4**. In the mod's GitHub repository page top right corner click "Code" then "Open with GitHub Desktop".
+
+    **5**. In Desktop, click "Clone" and select "Your Game Folder\rtx-remix" to clone the repository to.
+  (If the rtx-remix folder do not exist, create it manually.)
+
+    **6**. Wait for the cloning process to finish - this may take a few minutes for larger mods.
 - **Move File**: place the "rtx.conf" file from the "rtx-config" folder into your game folder.
 - **Let's RTX**: Launch GTA San Andreas with RTX enhancements.
 
-Note: The specific installation directory mentioned above, Your Game Folder\rtx-remix\mods\gameReadyAssets, may vary depending on your game folder structure and the instructions provided by the mod developer. Please refer to the documentation or README file provided with the mod for any additional installation instructions or requirements.
-
-# Mod Recommendation
+# Necessary Mod List: 
 To enhance stability and improve graphics quality, we recommend installing the following mods alongside our game mod::
 - **Essentials Pack : [SA - Essentials Pack](https://www.mixmods.com.br/2019/06/sa-essentials-pack/)** (An important mod to ensure compatibility with Remix).
 - **MixSets v4.3.7 : [MixSets](https://mixmods.adorofilmes.net/2015/12/mod-mix-sets.html)** (Fixes various issues in the original game and improve stability with Remix).
