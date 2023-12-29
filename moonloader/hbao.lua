@@ -24,7 +24,7 @@ function main()
 				if showtext then
 					mad.draw_text('SA REMIX HEALTH BAR ALWAYS ON STARTED', 10, 10, mad.font_style.MENU, 0.4, 0.9, mad.font_align.LEFT, 640, true, false, 255, 255, 255, 255, 0, 1)
                 else
-                    mad.draw_text('.', 0, 0, mad.font_style.MENU, 0.4, 0.9, mad.font_align.LEFT, 640, false, false, 255, 255, 255, 255, 0, 1)
+                    mad.draw_text('.', -10, -10, mad.font_style.MENU, 0.4, 0.9, mad.font_align.LEFT, 640, false, false, 255, 255, 255, 255, 0, 1)
                 end
 			end
 		end
