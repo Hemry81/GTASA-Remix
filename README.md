@@ -15,7 +15,7 @@ To get started with the GTASA RTX-Remix Project, ensure that you have the follow
 This mod changes the sun and moon in GTASA using MoonLoader and Lua scripts.
 
 **Installation** :
-- **MoonLoader** : Download and install MoonLoader from the provided link. This will allow you to run Lua scripts in GTASA: [MoonLoader (Russian)](https://www.blast.hk/threads/13305/) or [MoonLoader (English)](https://github.com/THE-FYP/MoonAdditions).
+- **MoonLoader** : Download and install MoonLoader from the provided link. This will allow you to run Lua scripts in GTASA: [MoonLoader (Russian)](https://www.blast.hk/threads/13305/) or [MoonLoader (English)](https://gtaforums.com/topic/890987-moonloader/).
 - **MoonAdditions** : Download MoonAdditions from GitHub. Copy the MoonAdditions.dll file to your MoonLoader/lib folder: [MoonAdditions](https://github.com/THE-FYP/MoonAdditions).
 - **SARemix_Sun** : download the SARemix_Sun.lua file from the moonloader folder. Then copy it into your MoonLoader folder.
 
@@ -25,7 +25,7 @@ This mod changes the sun and moon in GTASA using MoonLoader and Lua scripts.
 The Health Bar Mod is a Lua script designed to reveal the original health bar that is hidden in Remix.
 
 **Installation** :
-- **MoonLoader** : Download and install MoonLoader from the provided link. This will allow you to run Lua scripts in GTASA: [MoonLoader (Russian)](https://www.blast.hk/threads/13305/) or [MoonLoader (English)](https://github.com/THE-FYP/MoonAdditions).
+- **MoonLoader** : Download and install MoonLoader from the provided link. This will allow you to run Lua scripts in GTASA: [MoonLoader (Russian)](https://www.blast.hk/threads/13305/) or [MoonLoader (English)](https://gtaforums.com/topic/890987-moonloader/).
 - **MoonAdditions** : Download MoonAdditions from GitHub. Copy the MoonAdditions.dll file to your MoonLoader/lib folder: [MoonAdditions](https://github.com/THE-FYP/MoonAdditions).
 - **SARemix_HealthBar** : download the hbao.lua file from the moonloader folder. Then copy it into your MoonLoader folder.
 
