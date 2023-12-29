@@ -41,8 +41,9 @@ Follow these steps to install the GTASA RTX-Remix mod:
 
     **4**. In the mod's GitHub repository page top right corner click "Code" then "Open with GitHub Desktop".
 
-    **5**. In Desktop, click "Clone" and select "Your Game Folder\rtx-remix" to clone the repository to.
-  (If the rtx-remix folder do not exist, create it manually.)
+    **5**. In GitHub Desktop, click "Clone" and select "Your Game Folder\rtx-remix" to clone the repository to.
+
+    (If the rtx-remix folder do not exist, create it manually.)
 
     **6**. Wait for the cloning process to finish - this may take a few minutes for larger mods.
 - **Move File**: place the "rtx.conf" file from the "rtx-config" folder into your game folder.
