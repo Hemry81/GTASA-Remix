@@ -66,6 +66,8 @@ To enhance stability and improve graphics quality, we recommend installing the f
 - **ImVehFt – Improved Vehicle Features : [ImVehFt](https://www.mixmods.com.br/2020/01/imvehft-improved-vehicle-features/)**.
 - **VehFuncs v2.4 : [VehFuncs](https://www.mixmods.com.br/2023/01/sa-vehfuncs/)**.
 
+**Please note that any additional mods not listed here may cause conflicts and potentially break our mod. We strongly advise against installing any other mods unless you have a thorough understanding of their compatibility and potential effects.**
+
 # Contributing
 - We welcome contributions from the community! If you have any improvements or suggestions for the GTASA RTX-Remix mod, please follow our guidelines for contributing. Fork this repository, make your modifications, and submit a pull request.
 
