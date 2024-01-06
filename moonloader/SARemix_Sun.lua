@@ -1,97 +1,139 @@
-script_name("SARemix_Real_Sun_v0.11a")
+script_name("SARemix_Real_Sun")
 script_author("Hemry")
 script_url("https://github.com/Hemry81/GTASA-Remix")
-
+script_version("0.1.1")
 require "lib.moonloader"
+
 local mad = require 'MoonAdditions'
 local math = require('math')
+local moveitTimer = 0
+local moveitDuration = 0.005
+local debugmode = false
+
+local daycycle = {
+    id = 3891,
+    obj = nil,
+    pos = {
+    x = 0,
+    y = 0,
+    z = 0
+    },
+    rot = {
+    x = 0,
+    y = 0,
+    z = -22
+    }
+}
+local clouddome = {
+    id = 0,
+    obj = nil,
+    pos = {
+    x = 0,
+    y = 0,
+    z = 0
+    },
+    rot = {
+        x = 0,
+        y = 0,
+        z = 0
+        }
+}
+local stardome = {
+    id = 0,
+    obj = nil,
+    pos = {
+    x = 0,
+    y = 0,
+    z = 0
+    },
+    rot = {
+        x = 0,
+        y = 0,
+        z = 0
+        }
+}
+
+local RSL_firstStart = true
+local RSL_showtext = true
+local RSL_timer = 0
+
+local roty = -4
+
 function main()
+    wait(3000)
     while true do
+        loadobject(daycycle)
         wait(10)
-        
-        sun = loadobject(sun, 3896)
-        moon = loadobject(moon, 3908)
-        local hour, minute =  getTimeOfDay()
-        
-        local vi, sx, sy, sz = mad.get_sun_world_position()
-        
-        local mx, my, mz = sx * -1, sy * -1, sz * -1
-        
-        local px, py, pz = getCharCoordinates(PLAYER_PED)
-
-        --printStringNow("sx: "..formatNum(sx).. ", sy: ".. formatNum(sy)..", sz: ".. formatNum(sz).. ", mx: "..formatNum(mx).. ", my: ".. formatNum(my)..", mz: ".. formatNum(mz), 10)
-        
-        --local ax, ay, az = calc_orien(px, py, pz, sx, sy, sz)
-        --setObjectRotation(sun, ax, ay, az)
-        
-        --ax, ay, az = calc_orien(px, py, pz, mx, my, mz)
-        --setObjectRotation(moon, ax, ay, az)
-        
-        local sun_threshold = 0.025
-        local moon_threshold = 0.025
-        sx = (sx * sun_threshold) + px
-        sy = (sy * sun_threshold) + py
-        sz = (sz * sun_threshold) + pz
-        
-        mx = (mx * moon_threshold) + px
-        my = (my * moon_threshold) + py
-        mz = (mz * moon_threshold) + pz
-        
-        -- printStringNow("sx: "..formatNum(ax).. ", sy: ".. formatNum(ay)..", sz: " .. az, 10)
-        
-        -- if (hour < 19) and (hour > 4) then
-        --    setObjectCoordinates(sun, sx, sy, sz)
-        --else
-        --    setObjectCoordinates(sun, 0, 0, -100000)
-        --end
-        setObjectCoordinates(sun, sx, sy, sz)
-        setObjectCoordinates(moon, mx, my, mz)
-    
+        showInfo()
+        if os.clock() - moveitTimer > moveitDuration then
+			moveIt()
+			moveitTimer = os.clock()
+		end
     end
 end
-
-function atan2(y, x)
-    local angle = 0
-    if x > 0 then
-        angle = math.atan(y/x)
-    elseif x < 0 then
-        angle = math.atan(y/x) + math.pi
-    elseif y > 0 then  
-        angle = math.pi/2
-    elseif y < 0 then
-        angle = -math.pi/2
-    end
-    return angle
-end
-
-function calc_orien(ax, ay, az, bx, by, bz)
-    -- printStringNow("px: "..formatNum(ax).. ", py: ".. formatNum(ay)..", pz: ".. formatNum(az).. ", ox: "..formatNum(bx).. ", oy: ".. formatNum(by)..", oz: ".. formatNum(bz), 10)
-    local angleZ = 0
-    local angleXY = atan2(ay - by, ax - bx)
-    local diff = az - bz
-    
-    if diff == 0 then
-        angleZ = 0
+function showInfo()
+    if RSL_firstStart then
+        RSL_timer = os.clock()
+        RSL_firstStart = false
     else
-        angleZ = math.floor(math.asin(diff) * 10000 + 0.5) / 10000
+        if os.clock() - RSL_timer > 15 then
+            RSL_showtext = false
+        end
     end
-    
-    --printStringNow("0 ,".. angleXY..", ".. angleZ, 10)
-    return 0, angleXY, angleZ
+    if RSL_showtext then
+        mad.draw_text('SA REMIX SUN MOD STARTED', 300, 20, mad.font_style.MENU, 0.4, 0.9, mad.font_align.LEFT, 1000, true, false, 255, 255, 255, 255, 0, 1)
+    end
 end
 
-function loadobject(obj, id)
-    if not hasModelLoaded(id) then
-        requestModel(id)
+function moveIt()
+    if debugmode then
+        if isKeyDown(VK_NUMPAD2) then
+            daycycle.rot.z = daycycle.rot.z + 0.1
+        elseif isKeyDown(VK_NUMPAD3) then
+            daycycle.rot.z = daycycle.rot.z - 0.1
+        elseif isKeyDown(VK_NUMPAD5) then
+            roty = roty + 0.1
+        elseif isKeyDown(VK_NUMPAD6) then
+            roty = roty - 0.1
+        elseif isKeyDown(VK_NUMPAD8) then
+            daycycle.rot.x = daycycle.rot.x + 0.1
+        elseif isKeyDown(VK_NUMPAD9) then
+            daycycle.rot.x = daycycle.rot.x - 0.1
+        end
+        mad.draw_text(string.format("Rotation : x: %.2f, y : %.2f, z: %.2f %d:%d", daycycle.rot.x, roty, daycycle.rot.z, hour, minute), 100, 10)
+    end
+    
+    local hour, minute =  getTimeOfDay()
+    
+    local p = {
+                x = 0,
+                y = 0,
+                z = 0
+                }
+                
+    --p.x, p.y, p.z = getCharCoordinates(PLAYER_PED)
+    p.x, p.y, p.z = getActiveCameraCoordinates()
+    
+    daycycle.pos.x = p.x
+    daycycle.pos.y = p.y
+    
+    if daycycle.obj ~= nil then
+        daycycle.rot.y = roty + 360 - (hour * 15 + minute * 0.25)
+        setObjectCoordinates(daycycle.obj, daycycle.pos.x, daycycle.pos.y, daycycle.pos.z)
+        setObjectRotation(daycycle.obj, daycycle.rot.x, daycycle.rot.y, daycycle.rot.z)
+    end
+end
+
+function loadobject(obj)
+    if obj.obj == nil then
+        requestModel(obj.id)
         loadAllModelsNow()
-        obj = createObject(id, 0, 0, 0)
-        setObjectCollision(obj, false)
-        setObjectDynamic(obj, true)
-        return obj
-    else
-        return obj
+        obj.obj = createObject(obj.id, 0, 0, 0)
+        setObjectCollision(obj.obj, false)
+        setObjectDynamic(obj.obj, true)
     end
 end
+
 function formatNum(num)
-    return string.format("%.2f", num)
+    return string.format("%.5f", num)
 end
