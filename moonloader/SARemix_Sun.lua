@@ -5,7 +5,6 @@ script_version("0.1.1")
 require "lib.moonloader"
 
 local mad = require 'MoonAdditions'
-local math = require('math')
 local moveitTimer = 0
 local moveitDuration = 0.005
 local debugmode = false
