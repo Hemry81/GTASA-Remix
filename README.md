@@ -19,6 +19,11 @@ This mod changes the sun and moon in GTASA using MoonLoader and Lua scripts.
 - **MoonAdditions** : Download MoonAdditions from GitHub. Copy the MoonAdditions.dll file to your MoonLoader/lib folder: [MoonAdditions](https://github.com/THE-FYP/MoonAdditions).
 - **SARemix_Sun** : download the "SARemix_Sun.lua" and "SARemix_Real_Sun.dat" files from the moonloader folder. Then copy it into the "game folder\MoonLoader" folder.
 
+**Features and update** :
+- Fixed interior lighting issue where there was no sun/moon light
+- Resolved the problem of "hidden" shadows appearing at noon time
+- real-time editing of the sun/moon position by pressing the hotkey "F3".
+
   (If you previously installed my sun mod CLEO script, delete it to avoid conflicts.)
 
 # Health Bar Mod Requirements
