@@ -41,7 +41,7 @@ over "RootNode"
                     )
                     {
                         color3f color = (1, 0.9464283, 0.85714287)
-                        float intensity = 1000
+                        float intensity = 2000
                         bool light:enableCaustics = 1
                         bool normalize = 0
                         float radius = 200
@@ -83,7 +83,7 @@ over "RootNode"
                     )
                     {
                         color3f color = (0.37588885, 0.51711076, 0.7915058)
-                        float intensity = 50
+                        float intensity = 200
                         float radius = 300
                         float shaping:cone:angle = 180
                         float shaping:cone:softness
