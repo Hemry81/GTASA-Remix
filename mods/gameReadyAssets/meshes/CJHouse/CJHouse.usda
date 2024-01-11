@@ -179,8 +179,11 @@ over "RootNode"
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                         hidden = false
+                        renderType = "texture_2d"
                     )
                     float inputs:displace_in = 0.01 (
                         customData = {
@@ -192,7 +195,9 @@ over "RootNode"
                         }
                         displayGroup = "Displacement"
                         displayName = "Inwards Displacement"
-                        doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                        doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
                         hidden = false
                     )
                     asset inputs:height_texture = @../../texture/CJHouse/potted_plant_02_leaves_disp_4k.dds@ (
@@ -202,8 +207,11 @@ over "RootNode"
                         }
                         displayGroup = "Displacement"
                         displayName = "Height Map"
-                        doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                        doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
                         hidden = false
+                        renderType = "texture_2d"
                     )
                     asset inputs:normalmap_texture = @../../texture/CJHouse/potted_plant_02_leaves_nor_dx_4k.dds@ (
                         colorSpace = "auto"
@@ -213,6 +221,7 @@ over "RootNode"
                         displayGroup = "Normal"
                         displayName = "Normal Map"
                         hidden = false
+                        renderType = "texture_2d"
                     )
                     asset inputs:reflectionroughness_texture = @../../texture/CJHouse/potted_plant_02_leaves_rough_4k.dds@ (
                         colorSpace = "auto"
@@ -222,6 +231,7 @@ over "RootNode"
                         displayGroup = "Specular"
                         displayName = "Roughness Map"
                         hidden = false
+                        renderType = "texture_2d"
                     )
                     token outputs:out (
                         renderType = "material"
@@ -232,26 +242,32 @@ over "RootNode"
 
         over "mesh_02C24D2ABC64C34C"
         {
-            def Xform "Xform_mesh_0" (
-                prepend references = @./planttablecj2.usd@
-            )
-            {
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, -0.30000000447034836)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
             over "mesh" (
                 active = false
             )
             {
             }
+
+            def Xform "plant" (
+                prepend references = @./planttablecj2.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 0.7000000104308128)
+                double3 xformOp:translate = (0, 0, -0.30000000447034836)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
         }
 
         over "mesh_3810A0F543440BB2"
         {
-            def Xform "Xform_mesh_0" (
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "plant" (
                 prepend references = @./planttablecj3.usd@
             )
             {
@@ -259,12 +275,6 @@ over "RootNode"
                 double3 xformOp:scale = (1.0000000149011612, 0.91, 1.0000000149011612)
                 double3 xformOp:translate = (-0.13, 0.125, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            over "mesh" (
-                active = false
-            )
-            {
             }
         }
 
@@ -1710,8 +1720,11 @@ This parameter is unused.
                         }
                         displayGroup = "Diffuse"
                         displayName = "Albedo Map"
-                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                        doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                         hidden = false
+                        renderType = "texture_2d"
                     )
                     token outputs:out (
                         renderType = "material"
@@ -2437,6 +2450,12 @@ This parameter is unused.
                 double3 xformOp:scale = (1, 1, 0.5000000074505806)
                 double3 xformOp:translate = (0.06, -0.10000000149011612, -0.47)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Cylinder_001" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                }
             }
         }
 
@@ -3156,76 +3175,6 @@ This parameter is unused.
             }
         }
 
-        over "mesh_74DEB98A1A78AF2A"
-        {
-            def Xform "Garagedoor" (
-                prepend references = @./Grovestreet/Garagedoor.usd@
-            )
-            {
-                rel material:binding = </RootNode/meshes/mesh_74DEB98A1A78AF2A/Garagedoor01> (
-                    bindMaterialAs = "weakerThanDescendants"
-                )
-                double3 xformOp:rotateXYZ = (0, 0, -89.3000013306737)
-                double3 xformOp:scale = (3.0000000447034836, 1, 2.0000000298023224)
-                double3 xformOp:translate = (-0.10000000149011612, -0.10000000149011612, -1.9000000283122063)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            def Material "Garagedoor01"
-            {
-                token outputs:mdl:displacement.connect = </RootNode/meshes/mesh_74DEB98A1A78AF2A/Garagedoor01/Shader.outputs:out>
-                token outputs:mdl:surface.connect = </RootNode/meshes/mesh_74DEB98A1A78AF2A/Garagedoor01/Shader.outputs:out>
-                token outputs:mdl:volume.connect = </RootNode/meshes/mesh_74DEB98A1A78AF2A/Garagedoor01/Shader.outputs:out>
-
-                def Shader "Shader"
-                {
-                    uniform token info:implementationSource = "sourceAsset"
-                    uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
-                    uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-                    asset inputs:diffuse_texture = @../../texture/CJHouse/rollershutter_window_01_diff_4k.dds@ (
-                        colorSpace = "auto"
-                        customData = {
-                            asset default = @@
-                        }
-                        displayGroup = "Diffuse"
-                        displayName = "Albedo Map"
-                        doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                        hidden = false
-                    )
-                    asset inputs:metallic_texture = @../../texture/CJHouse/rollershutter_window_01_metal_4k.dds@ (
-                        colorSpace = "auto"
-                        customData = {
-                            asset default = @@
-                        }
-                        displayGroup = "Specular"
-                        displayName = "Metallic Map"
-                        hidden = false
-                    )
-                    asset inputs:normalmap_texture = @../../texture/CJHouse/rollershutter_window_01_nor_gl_4k.dds@ (
-                        colorSpace = "auto"
-                        customData = {
-                            asset default = @@
-                        }
-                        displayGroup = "Normal"
-                        displayName = "Normal Map"
-                        hidden = false
-                    )
-                    asset inputs:reflectionroughness_texture = @../../texture/CJHouse/rollershutter_window_01_rough_4k.dds@ (
-                        colorSpace = "auto"
-                        customData = {
-                            asset default = @@
-                        }
-                        displayGroup = "Specular"
-                        displayName = "Roughness Map"
-                        hidden = false
-                    )
-                    token outputs:out (
-                        renderType = "material"
-                    )
-                }
-            }
-        }
-
         over "mesh_94179CA5E9B28A1E"
         {
             def Xform "Stairs" (
@@ -3427,6 +3376,16 @@ This parameter is unused.
                 double3 xformOp:translate = (7.05, 1.66, 2.4)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
+
+            def Xform "ChaningRoom_Light" (
+                references = @./rattan_pendant_light bulb.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.700000025331974, -11.700000174343586, 6.11)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
         }
 
         over "mesh_3A658330EBE4BD63"
@@ -3604,7 +3563,8 @@ This parameter is unused.
 
             def Xform "floor" (
                 prepend apiSchemas = ["MaterialBindingAPI"]
-                prepend references = @./Floore.usd@
+                delete references = @./Floore.usd@
+                prepend references = @./Floor.usd@
             )
             {
                 rel material:binding = </Looks/WoodenFloor> (
@@ -3953,7 +3913,7 @@ This parameter is unused.
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1.4, 1.4)
-                double3 xformOp:translate = (0.01, -2.2000000327825546, -0.2)
+                double3 xformOp:translate = (0, -2.2000000327825546, -0.2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 over "Picture_01"
@@ -4463,77 +4423,82 @@ This parameter is unused.
             {
             }
         }
+
+        over "mesh_50EEBAAA8969AE98"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Bedroom_Picture_Flower" (
+                prepend references = @./PhotoFrame.usda@
+            )
+            {
+                custom bool IsRemixRef = 1
+                double3 xformOp:rotateXYZ = (0, 0, -90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Picture_01"
+                {
+                    over "Shader"
+                    {
+                        asset inputs:diffuse_texture = @../../texture/CJHouse/Picture_Flower.dds@ (
+                            colorSpace = "auto"
+                            customData = {
+                                asset default = @@
+                            }
+                            displayGroup = "Diffuse"
+                            displayName = "Albedo Map"
+                            doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                            hidden = false
+                            renderType = "texture_2d"
+                        )
+                    }
+                }
+            }
+        }
+
+        over "mesh_2012F47FB0D79B53"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_74305433B8D492A8"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "carpet" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./carpet.usd@
+            )
+            {
+                rel material:binding = </Looks/CJHouse_carpet> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
     }
 
     over "Looks"
     {
-        over "mat_1965A327A53BCFE0"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../texture/carpet/Carpet003_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.01 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @../../texture/carpet/Carpet003_height.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @../../texture/carpet/Carpet003_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @../../texture/carpet/Carpet003_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
         over "mat_9416A016D7DDD618"
         {
             over "Shader"
@@ -4611,9 +4576,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -4650,85 +4613,6 @@ This parameter is unused.
             }
         }
 
-        over "mat_39779D0586819861" (
-            active = true
-        )
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../texture/CJHouse/39779D0586819861.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.01 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:metallic_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
         over "mat_7F005A1E1BC1CA8D" (
             active = true
         )
@@ -4749,7 +4633,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:displace_in = 0.001 (
+                float inputs:displace_in = 0.01 (
                     customData = {
                         float default = 1
                         dictionary range = {
@@ -4810,9 +4694,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -4826,9 +4708,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @../../texture/concrete/Concrete034_height.dds@ (
@@ -4931,13 +4811,11 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:displace_in = 0.0001 (
+                float inputs:displace_in = 0.01 (
                     customData = {
                         float default = 1
                         dictionary range = {
@@ -4947,9 +4825,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
                     hidden = false
                 )
                 asset inputs:height_texture = @../../texture/concrete/Concrete034_height.dds@ (
@@ -4959,9 +4835,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -4998,9 +4872,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5014,9 +4886,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
                     hidden = false
                 )
                 asset inputs:height_texture = @../../texture/wood/Planks021_height.dds@ (
@@ -5026,9 +4896,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5132,9 +5000,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5148,9 +5014,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
                     hidden = false
                 )
                 asset inputs:height_texture = @../../texture/CJHouse/potted_plant_02_pot_disp_4k.dds@ (
@@ -5160,9 +5024,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5199,9 +5061,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5215,9 +5075,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
                     hidden = false
                 )
                 asset inputs:height_texture = @../../texture/floors/floor_tiles_08_disp_4k.dds@ (
@@ -5227,9 +5085,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5266,13 +5122,11 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:displace_in = 0.1 (
+                float inputs:displace_in = 0.01 (
                     customData = {
                         float default = 1
                         dictionary range = {
@@ -5282,9 +5136,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
                     hidden = false
                 )
                 asset inputs:height_texture = @../../texture/concrete/Concrete034_height.dds@ (
@@ -5294,9 +5146,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5343,9 +5193,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5359,9 +5207,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
                     hidden = false
                 )
                 asset inputs:height_texture = @../../texture/concrete/Concrete034_height.dds@ (
@@ -5371,9 +5217,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5410,9 +5254,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5426,9 +5268,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
                     hidden = false
                 )
                 asset inputs:height_texture = @../../texture/concrete/Concrete034_height.dds@ (
@@ -5438,9 +5278,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5477,9 +5315,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5526,9 +5362,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5555,55 +5389,6 @@ This parameter is unused.
             }
         }
 
-        over "mat_7B6E6D4C897AE7B6"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @../../texture/CJHouse/Matal_solid_paint_white_Base Color.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:metallic_texture = @../../texture/CJHouse/Matal_solid_paint_white_Metallic.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @../../texture/CJHouse/Matal_solid_paint_white_Normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @../../texture/CJHouse/Matal_solid_paint_white_Roughness.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-            }
-        }
-
         over "mat_D3C129AC4EA0B0C4"
         {
             over "Shader"
@@ -5614,9 +5399,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5630,9 +5413,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
                     hidden = false
                 )
                 asset inputs:height_texture = @../../texture/CJHouse/Woodkitchen_Displacement.dds@ (
@@ -5642,9 +5423,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5724,9 +5503,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Base Color"
-                    doc = """The base albedo color to use if no texture is specified
-
-"""
+                    doc = "The base albedo color to use if no texture is specified"
                     hidden = false
                     renderType = "color"
                 )
@@ -5736,9 +5513,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5752,9 +5527,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
                     hidden = false
                 )
                 asset inputs:height_texture = @../../texture/wood/Planks021_height.dds@ (
@@ -5764,9 +5537,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5803,9 +5574,7 @@ This parameter is unused.
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -5819,9 +5588,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
+                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
                     hidden = false
                 )
                 asset inputs:height_texture = @../../texture/CJHouse/Marble012_height.dds@ (
@@ -5831,9 +5598,7 @@ This parameter is unused.
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
+                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -6400,6 +6165,56 @@ This parameter is unused.
                 doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "CJHouse_carpet"
+    {
+        token outputs:mdl:displacement.connect = </Looks/CJHouse_carpet/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/CJHouse_carpet/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/CJHouse_carpet/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @../../texture/CJHouse/carpet_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @../../texture/CJHouse/carpet_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @../../texture/CJHouse/carpet_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
                 hidden = false
                 renderType = "texture_2d"
             )
