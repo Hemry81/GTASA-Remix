@@ -17,7 +17,7 @@ This mod changes the sun and moon in GTASA using MoonLoader and Lua scripts.
 **Installation** :
 - **MoonLoader** : Download and install MoonLoader from the provided link. This will allow you to run Lua scripts in GTASA: [MoonLoader (Russian)](https://www.blast.hk/threads/13305/) or [MoonLoader (English)](https://gtaforums.com/topic/890987-moonloader/).
 - **MoonAdditions** : Download MoonAdditions from GitHub. Copy the MoonAdditions.dll file to your MoonLoader/lib folder: [MoonAdditions](https://github.com/THE-FYP/MoonAdditions).
-- **Moon ImGui** : Download and install from the provided link. Copy the "imgui.lua" and "MoonImGui.dll" files to your MoonLoader/lib folder: [Moon ImGui](https://www.blast.hk/threads/19292/)
+- **Moon ImGui** : Download and install from the provided link. Copy the "imgui.lua" and "MoonImGui.dll" files to your MoonLoader/lib folder: [Moon ImGui](https://www.blast.hk/threads/19292/).
 - **SARemix_Sun** : download the "SARemix_Sun.lua" and "SARemix_Real_Sun.dat" files from the moonloader folder. Then copy it into the "game folder\MoonLoader" folder.
 
 **Features and update** :
@@ -60,7 +60,7 @@ Follow these steps to install the GTASA RTX-Remix mod:
 - **Let's RTX**: Launch GTA San Andreas with RTX enhancements.
 
 # Necessary Mod List: 
-To enhance stability and improve graphics quality, we recommend installing the following mods alongside our game mod::
+To enhance stability and improve graphics quality, we recommend installing the following mods alongside our game mod:
 - **Essentials Pack : [SA - Essentials Pack](https://www.mixmods.com.br/2019/06/sa-essentials-pack/)** (An important mod to ensure compatibility with Remix).
 - **MixSets v4.3.7 : [MixSets](https://mixmods.adorofilmes.net/2015/12/mod-mix-sets.html)** (Fixes various issues in the original game and improve stability with Remix).
 - **[SA] SilentPatch v1.1 Build 32 : [SilentPatch](https://www.mixmods.com.br/2019/12/sa-silentpatch/)** (Addresses multiple issues in the original game).
