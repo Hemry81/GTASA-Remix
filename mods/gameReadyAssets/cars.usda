@@ -1,6 +1,7 @@
 #usda 1.0
 (
     subLayers = [
+        @./Cars_PBR.usda@,
         @./Glass.usda@,
         @./Light/headlight.usda@,
         @./texture/cars/textures.usda@,
@@ -21,16 +22,6 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./texture/cars/car_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
                 float inputs:displace_in = 0.005 (
                     customData = {
                         float default = 1
@@ -41,7 +32,9 @@ over "RootNode"
                     }
                     displayGroup = "Displacement"
                     displayName = "Inwards Displacement"
-                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
                     hidden = false
                 )
                 asset inputs:height_texture = @./texture/cars/Car_height.dds@ (
@@ -51,7 +44,9 @@ over "RootNode"
                     }
                     displayGroup = "Displacement"
                     displayName = "Height Map"
-                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -88,328 +83,1102 @@ over "RootNode"
             }
         }
 
-        over "mat_08097FCF76EEE3F5"
+        over "mat_A3D429BF85070515"
         {
             over "Shader"
             {
-                float inputs:reflection_roughness_constant = 0.049999997 (
+                float inputs:displace_in = 0.02 (
                     customData = {
-                        float default = 0.5
+                        float default = 1
                         dictionary range = {
-                            float max = 1
+                            float max = 255
                             float min = 0
                         }
                     }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
                     hidden = false
                 )
-            }
-        }
-
-        over "mat_FC62E335A5FCBEA8"
-        {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.5 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Amount"
-                    doc = "Metallic Material"
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0.049999997 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_A79CD25724E4E637"
-        {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.5 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Amount"
-                    doc = "Metallic Material"
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0.099999994 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_E4528D03664561A0"
-        {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.5 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Amount"
-                    doc = "Metallic Material"
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0.099999994 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_4DD6A5D472A2104E"
-        {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.5 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Amount"
-                    doc = "Metallic Material"
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0.099999994 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_184DD4E6BEF17C07"
-        {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.5 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Amount"
-                    doc = "Metallic Material"
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0.099999994 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_CBFFF905D20D2591"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./texture/cars/CBFFF905D20D2591_albedo.dds@ (
+                asset inputs:height_texture = @./texture/cars/Car_height.dds@ (
+                    colorSpace = "raw"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
-                asset inputs:normalmap_texture = @./texture/cars/CBFFF905D20D2591_normal.dds@ (
-                    colorSpace = "auto"
+                asset inputs:metallic_texture = @./texture/cars/Car_metal.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./texture/cars/car_normal.dds@ (
+                    colorSpace = "raw"
                     customData = {
                         asset default = @@
                     }
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
-                asset inputs:reflectionroughness_texture = @./texture/cars/CBFFF905D20D2591_rough.dds@ (
-                    colorSpace = "auto"
+                asset inputs:reflectionroughness_texture = @./texture/cars/Car_rough.dds@ (
+                    colorSpace = "raw"
                     customData = {
                         asset default = @@
                     }
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
 
-        over "mat_CDC64359FC6625F1"
+        over "mat_55DB7E72CBE85A13"
         {
             over "Shader"
             {
-                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
-                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                float inputs:ior_constant = 1.5799999 (
-                    customData = {
-                        float default = 1.3
-                        dictionary range = {
-                            float max = 3
-                            float min = 1
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Index of Refraction"
-                    doc = "Index of Refraction of the material"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./texture/cars/oil_window_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                bool inputs:thin_walled = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Thin-walled"
-                    doc = "Whether the material is thin-walled"
-                    hidden = false
-                )
-                float inputs:transmittance_measurement_distance = 1 (
+                float inputs:displace_in = 0.02 (
                     customData = {
                         float default = 1
                         dictionary range = {
-                            float max = 65504
-                            float min = 0.001
+                            float max = 255
+                            float min = 0
                         }
                     }
-                    displayGroup = "Volume"
-                    displayName = "Transmittance Measurement Distance"
-                    doc = "Distance to match the transmittance through the volume at."
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
                     hidden = false
                 )
-                asset inputs:transmittance_texture = @./texture/cars/oil_window_albedo.dds@ (
-                    colorSpace = "auto"
+                asset inputs:height_texture = @./texture/cars/Car_height.dds@ (
+                    colorSpace = "raw"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Volume"
-                    displayName = "Transmittance or Diffuse Albedo Texture"
-                    doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
-                bool inputs:use_diffuse_layer = 0 (
+                asset inputs:metallic_texture = @./texture/cars/Car_metal.dds@ (
+                    colorSpace = "raw"
                     customData = {
-                        bool default = 0
+                        asset default = @@
                     }
-                    displayGroup = "Volume"
-                    displayName = "Use diffuse layer"
-                    doc = "When set, simulates a diffuse layer on top of the material"
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Map"
                     hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./texture/cars/car_normal.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./texture/cars/Car_rough.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
+    }
 
-        over "mat_E54542A76742C01E"
+    over "meshes"
+    {
+        over "mesh_FCF58C9924828898" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
         {
-            over "Shader"
+            rel material:binding = </Looks/Taxi_Yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "taxi_body" (
+                prepend references = @./meshes/cars/cutscene/taxi_body.usd@
+            )
             {
-                float inputs:metallic_constant = 0.79999995 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Metallic Amount"
-                    doc = "Metallic Material"
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0.099999994 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
-                    hidden = false
-                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_1BF75AF96CA670F2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Taxi_Yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            token visibility = "inherited"
+
+            def Xform "taxi_boot_front" (
+                prepend references = @./meshes/cars/cutscene/taxi_boot_front.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_2BB8A798F85E31D9" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Taxi_Yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "taxi_door_left_01" (
+                prepend references = @./meshes/cars/cutscene/taxi_door_left_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_25EAD6691DD380A1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Taxi_Yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "taxi_door_left_02" (
+                prepend references = @./meshes/cars/cutscene/taxi_door_left_02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_2F3887E4FDE45E34" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Taxi_Yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "taxi_boot_rear" (
+                prepend references = @./meshes/cars/cutscene/taxi_boot_rear.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_C690A331961A7081" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Taxi_Yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "taxi_bumper_rear" (
+                prepend references = @./meshes/cars/cutscene/taxi_bumper_rear.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_9C39DB9179AEBD49" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Taxi_Yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "taxi_door_right_02" (
+                prepend references = @./meshes/cars/cutscene/taxi_door_right_02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_F2159DAADFDEF417" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Taxi_Yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "taxi_door_right_01" (
+                prepend references = @./meshes/cars/cutscene/taxi_door_right_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_99351CC6894576D9" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Taxi_Yellow> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "taxi_bumper_front" (
+                prepend references = @./meshes/cars/cutscene/taxi_bumper_front.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_65FA48DDA3219772" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Police_Black> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_car_boot_front" (
+                prepend references = @./meshes/cars/cutscene/police_car_boot_front.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_5022672C9CE0ABBF" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Police_Black> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_car_body" (
+                prepend references = @./meshes/cars/cutscene/police_car_body.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_2B1F3822884F4866" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Police_Black> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_car_bumper_front" (
+                prepend references = @./meshes/cars/cutscene/police_car_bumper_front.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_5BB50B2C2C5BBED1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Police_White> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_car_door_left_01" (
+                prepend references = @./meshes/cars/cutscene/police_car_door_left_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_3F394815012CB1EF" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Police_White> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_car_door_right_01" (
+                prepend references = @./meshes/cars/cutscene/police_car_door_right_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_8BE88399758C0E4C" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Police_White> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_car_door_left_02" (
+                prepend references = @./meshes/cars/cutscene/police_car_door_left_02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_1F2D461D2C780B29" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Police_White> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_car_body_roof" (
+                prepend references = @./meshes/cars/cutscene/police_car_body_roof.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_0433AA178BEA81E7" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Police_Black> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_car_boot_rear" (
+                prepend references = @./meshes/cars/cutscene/police_car_boot_rear.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_9E164B4D72477B4F" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Police_White> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_car_door_right_02" (
+                prepend references = @./meshes/cars/cutscene/police_car_door_right_02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_B88DF2DC6D88A9CA" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Police_Black> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_car_bumper_rear" (
+                prepend references = @./meshes/cars/cutscene/police_car_bumper_rear.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_7B7857EB96F940C6"
+        {
+            def Xform "taxi_mirror_right" (
+                prepend references = @./meshes/cars/cutscene/taxi_mirror_right.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_D49F750B2060CAE8"
+        {
+            def Xform "taxi_mirror_left" (
+                prepend references = @./meshes/cars/cutscene/taxi_mirror_left.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_CD388FD219E0B901" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "taxi_taillight_glass" (
+                prepend references = @./meshes/cars/cutscene/taxi_taillight_glass.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_D11ACE6307DADDD3" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_headlight_glass" (
+                delete references = @./meshes/cars/cutscene/police_headlight_glass.usd@
+                prepend references = @./meshes/cars/cutscene/police_car_headlight_glass.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_4BC6E14090C2B0EF"
+        {
+            def Xform "police_car_mirro_left" (
+                prepend references = @./meshes/cars/cutscene/police_car_mirro_left.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_2479F96364BC8502"
+        {
+            def Xform "police_car_mirro_right" (
+                prepend references = @./meshes/cars/cutscene/police_car_mirro_right.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_E5608F2CD7235F3F" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Glass> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def Xform "police_car_taillight_glass" (
+                prepend references = @./meshes/cars/cutscene/police_car_taillight_glass.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+
+over "Looks"
+{
+    def Material "Taxi_Yellow"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Taxi_Yellow/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Taxi_Yellow/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Taxi_Yellow/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.84313726, 0.5568628, 0.0627451) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:displace_in = 0.01 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 255
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:height_texture = @./texture/cars/carpaint_height.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:metallic_texture = @./texture/cars/carpaint_metal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./texture/cars/carpaint_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./texture/cars/carpaint_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Police_Black"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Police_Black/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Police_Black/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Police_Black/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0, 0, 0) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Diffuse"
+                displayName = "Albedo Base Color"
+                doc = """The base albedo color to use if no texture is specified
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:displace_in = 0.01 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 255
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:height_texture = @./texture/cars/carpaint_height.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:metallic_texture = @./texture/cars/carpaint_metal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./texture/cars/carpaint_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./texture/cars/carpaint_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Specular"
+                displayName = "Roughness Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Police_White"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Police_White/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Police_White/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Police_White/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.9607843, 0.9607843, 0.9607843) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:displace_in = 0.01 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 255
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:height_texture = @./texture/cars/carpaint_height.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:metallic_texture = @./texture/cars/carpaint_metal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./texture/cars/carpaint_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./texture/cars/carpaint_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Glass"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Glass/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Glass/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Glass/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.5999999 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = """Index of Refraction of the material
+
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Normal"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:transmittance_texture = @./texture/windows/Fingerprints007_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Volume"
+                displayName = "Transmittance Color/Diffuse Albedo Texture"
+                doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
         }
     }
 }

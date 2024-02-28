@@ -1,10 +1,12 @@
 #usda 1.0
 (
     subLayers = [
+        @./meshes/Creek.usda@,
         @./meshes/props.usda@,
         @./meshes/Rail Remaster/rail_remaster.usda@,
         @./meshes/Buildings/Buildings.usda@,
-        @./meshes/Airport.usda@
+        @./meshes/Airport.usda@,
+        @./vegetations.usda@
     ]
     upAxis = "Z"
 )

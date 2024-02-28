@@ -11,364 +11,194 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "Shop_24_7_01_Light_self_01" (
+            def SphereLight "Shop_24_7_01_Light_main_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 100
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness = 0
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.8693710915890023, -6.787003316565944, 2.4230865104120767)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
             }
 
-            def RectLight "Shop_24_7_01_Light_self_02" (
+            def SphereLight "Shop_24_7_01_Light_main_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 100
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness = 0
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.8693710915920576, -3.8137617752480786, 2.4230865104120767)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
             }
 
-            def RectLight "Shop_24_7_01_Light_self_03" (
+            def SphereLight "Shop_24_7_01_Light_main_03" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 100
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness = 0
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (3.181075190496756, -6.787003316565944, 2.4230865104120767)
+                double3 xformOp:translate = (3.1810751904967556, -6.787003316565943, 2.4230865104120767)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
             }
 
-            def RectLight "Shop_24_7_01_Light_self_04" (
+            def SphereLight "Shop_24_7_01_Light_main_04" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 100
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness = 0
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.1810751904937007, -3.8137617752480395, 2.4230865104120767)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
             }
 
-            def RectLight "Shop_24_7_01_Light_self_05" (
+            def SphereLight "Shop_24_7_01_Light_main_05" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 100
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness = 0
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.181075190498234, 1.1794016080260548, 2.4230865104120767)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
             }
 
-            def RectLight "Shop_24_7_01_Light_self_06" (
+            def SphereLight "Shop_24_7_01_Light_main_06" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 100
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness = 0
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (8.139572374685812, -6.787003316565944, 2.4230865104120767)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
             }
 
-            def RectLight "Shop_24_7_01_Light_self_07" (
+            def SphereLight "Shop_24_7_01_Light_main_07" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 100
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness = 0
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (8.139572374682757, -3.8137617752480395, 2.4230865104120767)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
             }
 
-            def RectLight "Shop_24_7_01_Light_self_08" (
+            def SphereLight "Shop_24_7_01_Light_main_08" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 100
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness = 0
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (13.146387732108366, -6.787003316565944, 2.4230865104120767)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
             }
 
-            def RectLight "Shop_24_7_01_Light_self_09" (
+            def SphereLight "Shop_24_7_01_Light_main_09" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 100
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness = 0
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (13.14638773210531, -3.813761775247375, 2.4230865104120767)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
 
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
+            def SphereLight "Shop_24_7_01_Light_main_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness = 0
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.200000047683716, -11.800000175833702, 2.4230865104120767)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
@@ -376,578 +206,270 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "Shop_24_7_02_Light_self_01" (
+            def SphereLight "Shop_24_7_01_Light_main_14" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.085, 5.65, 3.43)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.9, 5.6499999999966235, 3.42999999999995)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_03" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (8.98, 5.649999999990541, 3.42999999999995)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_04" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (14.9, 5.6499999999864485, 3.42999999999995)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_05" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0849999999994715, 1.61, 4.28)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_06" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.8999999999999986, 1.61, 4.28)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_07" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (8.98, 1.61, 4.28)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_08" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 0, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (14.899999999999471, 1.61, 4.28)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_09" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 2.8837099046418726e-15, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0849999999994715, -1.3899999999999864, 4.279999999999973)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_10" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 2.8837099046418726e-15, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (2.8999999999999986, -1.3899999999999864, 4.279999999999973)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_11" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 2.8837099046418726e-15, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (8.98, -1.3899999999999864, 4.279999999999973)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_12" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 2.8837099046418726e-15, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (14.899999999999471, -1.3899999999999864, 4.279999999999973)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_13" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 2.9063940822440532e-15, 90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3.0849999999994715, -6.389999999999986, 3.42999999999995)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def RectLight "Shop_24_7_02_Light_self_14" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
-                float inputs:intensity = 50
-                bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
-                float inputs:shaping:cone:softness
-                float inputs:shaping:focus
-                color3f inputs:shaping:focusTint
-                asset inputs:shaping:ies:file
-                float inputs:width = 1
-                bool visibleInPrimaryRay = 0
-                double3 xformOp:rotateXYZ = (180, 2.9063940822440532e-15, 90)
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (2.8999999999999986, -6.389999999999986, 3.42999999999995)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
 
-                def RectLight "Shop_24_7_01_Light_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
-                    float inputs:intensity = 200
-                    float inputs:shaping:cone:angle = 180
-                    float inputs:shaping:cone:softness
-                    float inputs:shaping:focus
-                    color3f inputs:shaping:focusTint
-                    asset inputs:shaping:ies:file
-                    float inputs:width = 1
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (180, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
+            def SphereLight "Shop_24_7_01_Light_main_13" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0849999999994715, -6.389999999999986, 3.42999999999995)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_12" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (14.899999999999471, -1.3899999999999864, 4.279999999999973)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_11" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8.98, -1.3899999999999864, 4.279999999999973)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_10" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.8999999999999986, -1.3899999999999864, 4.279999999999973)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_09" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0849999999994715, -1.3899999999999864, 4.279999999999973)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (14.899999999999471, 1.61, 4.28)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8.98, 1.61, 4.28)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.8999999999999986, 1.61, 4.28)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.0849999999994715, 1.61, 4.28)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (14.9, 5.6499999999864485, 3.42999999999995)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (8.98, 5.649999999990541, 3.42999999999995)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2.9, 5.6499999999966235, 3.42999999999995)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Shop_24_7_01_Light_main_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                float inputs:intensity = 200
+                float inputs:radius = 0.2
+                float inputs:shaping:cone:angle = 80
+                float inputs:shaping:cone:softness
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, -0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.085, 5.65, 3.43)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
 
@@ -955,39 +477,37 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "Shop_24_7_03_Light_self_01" (
+            def SphereLight "Shop_24_7_03_Light_self_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.6407120331794793, 6.74271388318834, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -996,40 +516,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_02" (
+            def SphereLight "Shop_24_7_03_Light_self_02" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.3592879668205207, 6.74271388318834, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1038,40 +556,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_03" (
+            def SphereLight "Shop_24_7_03_Light_self_03" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (7.359287966820521, 6.74271388318834, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1080,40 +596,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_04" (
+            def SphereLight "Shop_24_7_03_Light_self_04" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (11.359287966820517, 6.74271388318834, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1122,40 +636,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_05" (
+            def SphereLight "Shop_24_7_03_Light_self_05" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.6407120331794793, 1.7427138831883404, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1164,40 +676,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_06" (
+            def SphereLight "Shop_24_7_03_Light_self_06" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.3592879668205207, 1.7427138831883404, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1206,40 +716,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_07" (
+            def SphereLight "Shop_24_7_03_Light_self_07" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (7.359287966820521, 1.7427138831883404, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1248,40 +756,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_08" (
+            def SphereLight "Shop_24_7_03_Light_self_08" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (11.359287966820517, 1.7427138831883404, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1290,40 +796,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_09" (
+            def SphereLight "Shop_24_7_03_Light_self_09" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.6407120331794793, -3.2572861168116596, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1332,40 +836,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_10" (
+            def SphereLight "Shop_24_7_03_Light_self_10" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.3592879668205207, -3.2572861168116596, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1374,40 +876,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_11" (
+            def SphereLight "Shop_24_7_03_Light_self_11" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (7.359287966820521, -3.2572861168116596, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1416,40 +916,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_12" (
+            def SphereLight "Shop_24_7_03_Light_self_12" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (11.359287966820517, -3.2572861168116596, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1458,40 +956,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_13" (
+            def SphereLight "Shop_24_7_03_Light_self_13" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.6407120331794793, -8.25728611681166, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1500,40 +996,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_14" (
+            def SphereLight "Shop_24_7_03_Light_self_14" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.3592879668205207, -8.25728611681166, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1542,40 +1036,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_15" (
+            def SphereLight "Shop_24_7_03_Light_self_15" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (7.359287966820521, -8.25728611681166, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1584,40 +1076,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_16" (
+            def SphereLight "Shop_24_7_03_Light_self_16" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (11.359287966820517, -8.25728611681166, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1626,40 +1116,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_17" (
+            def SphereLight "Shop_24_7_03_Light_self_17" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (14.859287966820517, 6.74271388318834, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1668,40 +1156,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_18" (
+            def SphereLight "Shop_24_7_03_Light_self_18" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (18.504008929171526, 6.74271388318834, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1710,40 +1196,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_19" (
+            def SphereLight "Shop_24_7_03_Light_self_19" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (22.40000033378601, 6.74271388318834, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1752,40 +1236,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_20" (
+            def SphereLight "Shop_24_7_03_Light_self_20" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (11.359287966820517, 1.7427138831883404, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1794,40 +1276,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_21" (
+            def SphereLight "Shop_24_7_03_Light_self_21" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (14.859287966820517, 1.7427138831883404, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1836,40 +1316,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_22" (
+            def SphereLight "Shop_24_7_03_Light_self_22" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (18.504008929171476, 1.7427138831882991, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1878,40 +1356,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_23" (
+            def SphereLight "Shop_24_7_03_Light_self_23" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (22.40000033378601, 1.7427138831883404, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1920,40 +1396,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_24" (
+            def SphereLight "Shop_24_7_03_Light_self_24" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (11.359287966820517, -3.2572861168116596, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -1962,40 +1436,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_25" (
+            def SphereLight "Shop_24_7_03_Light_self_25" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (14.859287966820517, -3.2572861168116596, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2004,40 +1476,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_26" (
+            def SphereLight "Shop_24_7_03_Light_self_26" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (18.50400892917143, -3.257286116811659, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2046,40 +1516,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_27" (
+            def SphereLight "Shop_24_7_03_Light_self_27" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (22.40000033378601, -3.2572861168116596, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2088,40 +1556,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_28" (
+            def SphereLight "Shop_24_7_03_Light_self_28" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (11.359287966820517, -8.25728611681166, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2130,40 +1596,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_29" (
+            def SphereLight "Shop_24_7_03_Light_self_29" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (14.859287966820517, -8.25728611681166, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2172,40 +1636,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_30" (
+            def SphereLight "Shop_24_7_03_Light_self_30" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (18.504008929171526, -8.257286116811708, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2214,40 +1676,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_03_Light_self_31" (
+            def SphereLight "Shop_24_7_03_Light_self_31" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
                 bool inputs:normalize = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (22.40000033378601, -8.25728611681166, 2.3938674642005253)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_03_Light_main_01" (
+                def SphereLight "Shop_24_7_03_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2261,37 +1721,35 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "Shop_24_7_04_Light_self_01" (
+            def SphereLight "Shop_24_7_04_Light_self_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (8.04, -1.8, 4.25)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_04_Light_main_01" (
+                def SphereLight "Shop_24_7_04_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2300,38 +1758,36 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_04_Light_self_02" (
+            def SphereLight "Shop_24_7_04_Light_self_02" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (8.04, 1.58, 4.25)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_04_Light_main_01" (
+                def SphereLight "Shop_24_7_04_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2340,37 +1796,35 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_04_Light_self_03" (
+            def SphereLight "Shop_24_7_04_Light_self_03" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (2.02, -1.8, 4.25)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_04_Light_main_01" (
+                def SphereLight "Shop_24_7_04_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2379,38 +1833,36 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_04_Light_self_04" (
+            def SphereLight "Shop_24_7_04_Light_self_04" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (2.02, 1.58, 4.25)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_04_Light_main_01" (
+                def SphereLight "Shop_24_7_04_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2419,37 +1871,35 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_04_Light_self_05" (
+            def SphereLight "Shop_24_7_04_Light_self_05" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-1.96, -1.8000000000000114, 4.25)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_04_Light_main_01" (
+                def SphereLight "Shop_24_7_04_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2458,38 +1908,36 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_04_Light_self_06" (
+            def SphereLight "Shop_24_7_04_Light_self_06" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-1.96, 1.5800000000000125, 4.25)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_04_Light_main_01" (
+                def SphereLight "Shop_24_7_04_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2498,37 +1946,35 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_04_Light_self_07" (
+            def SphereLight "Shop_24_7_04_Light_self_07" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-7.985, -1.8000000000000114, 4.25)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_04_Light_main_01" (
+                def SphereLight "Shop_24_7_04_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2537,38 +1983,36 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_04_Light_self_08" (
+            def SphereLight "Shop_24_7_04_Light_self_08" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 1
                 float inputs:intensity = 50
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-7.985, 1.5800000000000125, 4.25)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_04_Light_main_01" (
+                def SphereLight "Shop_24_7_04_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -2582,39 +2026,37 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "Shop_24_7_05_Light_self_01" (
+            def SphereLight "Shop_24_7_05_Light_self_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 bool enableColorTemperature = 0
-                float height = 1
                 float inputs:intensity = 50
                 bool normalize = 0
-                float shaping:cone:angle = 180
+                float radius = 1
+                float shaping:cone:angle = 90
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 0
-                float width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.8000000417232513, -7, 2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_05_Light_main_01" (
+                def SphereLight "Shop_24_7_05_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
@@ -2622,40 +2064,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_05_Light_self_02" (
+            def SphereLight "Shop_24_7_05_Light_self_02" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 bool enableColorTemperature = 0
-                float height = 1
                 float inputs:intensity = 50
                 bool normalize = 0
-                float shaping:cone:angle = 180
+                float radius = 1
+                float shaping:cone:angle = 90
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 0
-                float width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.8000000417232513, -2, 2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_05_Light_main_01" (
+                def SphereLight "Shop_24_7_05_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
@@ -2663,40 +2103,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_05_Light_self_03" (
+            def SphereLight "Shop_24_7_05_Light_self_03" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 bool enableColorTemperature = 0
-                float height = 1
                 float inputs:intensity = 50
                 bool normalize = 0
-                float shaping:cone:angle = 180
+                float radius = 1
+                float shaping:cone:angle = 90
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 0
-                float width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.1999999582767487, -7, 2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_05_Light_main_01" (
+                def SphereLight "Shop_24_7_05_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
@@ -2704,40 +2142,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_05_Light_self_04" (
+            def SphereLight "Shop_24_7_05_Light_self_04" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 bool enableColorTemperature = 0
-                float height = 1
                 float inputs:intensity = 50
                 bool normalize = 0
-                float shaping:cone:angle = 180
+                float radius = 1
+                float shaping:cone:angle = 90
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 0
-                float width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.1999999582767487, -2, 2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_05_Light_main_01" (
+                def SphereLight "Shop_24_7_05_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
@@ -2745,40 +2181,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_05_Light_self_05" (
+            def SphereLight "Shop_24_7_05_Light_self_05" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 bool enableColorTemperature = 0
-                float height = 1
                 float inputs:intensity = 50
                 bool normalize = 0
-                float shaping:cone:angle = 180
+                float radius = 1
+                float shaping:cone:angle = 90
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 0
-                float width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.8000000417232513, 2.0000000298023224, 2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_05_Light_main_01" (
+                def SphereLight "Shop_24_7_05_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
@@ -2786,40 +2220,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_05_Light_self_06" (
+            def SphereLight "Shop_24_7_05_Light_self_06" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 bool enableColorTemperature = 0
-                float height = 1
                 float inputs:intensity = 50
                 bool normalize = 0
-                float shaping:cone:angle = 180
+                float radius = 1
+                float shaping:cone:angle = 90
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 0
-                float width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.1999999582767487, 2.0000000298023224, 2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_05_Light_main_01" (
+                def SphereLight "Shop_24_7_05_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
@@ -2827,40 +2259,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_05_Light_self_07" (
+            def SphereLight "Shop_24_7_05_Light_self_07" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 bool enableColorTemperature = 0
-                float height = 1
                 float inputs:intensity = 50
                 bool normalize = 0
-                float shaping:cone:angle = 180
+                float radius = 1
+                float shaping:cone:angle = 90
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 0
-                float width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.8000000417232513, 7.000000104308128, 2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_05_Light_main_01" (
+                def SphereLight "Shop_24_7_05_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
@@ -2868,40 +2298,38 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Shop_24_7_05_Light_self_08" (
+            def SphereLight "Shop_24_7_05_Light_self_08" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 bool enableColorTemperature = 0
-                float height = 1
                 float inputs:intensity = 50
                 bool normalize = 0
-                float shaping:cone:angle = 180
+                float radius = 1
+                float shaping:cone:angle = 90
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 0
-                float width = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.1999999582767487, 7.000000104308128, 2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Shop_24_7_05_Light_main_01" (
+                def SphereLight "Shop_24_7_05_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 1
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1
                     double3 xformOp:rotateXYZ = (180, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)

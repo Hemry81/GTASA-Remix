@@ -1,0 +1,527 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_4C0109573B389260"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def Xform "Set_01"
+            {
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Tunnel_Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.7638148027524494, -64.00000095367432, -1.1855785599060766)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+
+                def SphereLight "Tunnel_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-13.924912978593511, -64.00000095367432, -1.1855785599060766)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Set_02"
+            {
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.9000000283122063, -12.000000178813934, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Tunnel_Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.7638148027524494, -64.00000095367432, -1.1855785599060766)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+
+                def SphereLight "Tunnel_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-13.924912978593511, -64.00000095367432, -1.1855785599060766)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Set_03"
+            {
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-3.9000000581145287, -21.40000031888485, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Tunnel_Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.7638148027524494, -64.00000095367432, -1.1855785599060766)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+
+                def SphereLight "Tunnel_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-13.924912978593511, -64.00000095367432, -1.1855785599060766)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Set_04"
+            {
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-6.500000096857548, -35.400000527501106, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Tunnel_Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.7638148027524494, -64.00000095367432, -1.1855785599060766)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+
+                def SphereLight "Tunnel_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-13.924912978593511, -64.00000095367432, -1.1855785599060766)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Set_05"
+            {
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-9.100000135600567, -48.00000071525574, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Tunnel_Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.7638148027524494, -64.00000095367432, -1.1855785599060766)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+
+                def SphereLight "Tunnel_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-13.924912978593511, -64.00000095367432, -1.1855785599060766)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+        }
+
+        over "mesh_7A5A0C5EE6AFA704"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def Xform "Set_01"
+            {
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Tunnel_Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-2.2361851972475506, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+
+                def SphereLight "Tunnel_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-17.92491297859351, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Set_02"
+            {
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.3000000193715096, 13.500000201165676, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Tunnel_Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-2.2361851972475506, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+
+                def SphereLight "Tunnel_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-17.92491297859351, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Set_03"
+            {
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.1000000312924385, 28.60000042617321, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Tunnel_Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-2.2361851972475506, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+
+                def SphereLight "Tunnel_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-17.92491297859351, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Set_04"
+            {
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-1.700000025331974, 39.1000005826354, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Tunnel_Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-2.2361851972475506, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+
+                def SphereLight "Tunnel_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-17.92491297859351, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Set_05"
+            {
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-0.6000000089406967, 54.80000081658363, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Tunnel_Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-2.2361851972475506, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+
+                def SphereLight "Tunnel_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-17.92491297859351, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Set_06"
+            {
+                double3 xformOp:rotateYZX = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.800000011920929, 67.6000010073185, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Tunnel_Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-2.2361851972475506, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+
+                def SphereLight "Tunnel_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 80
+                    float radius = 1
+                    float shaping:cone:angle = 70
+                    float shaping:cone:softness = 0.5
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-17.92491297859351, -14.800000220537186, 2.2000000327825546)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+        }
+    }
+}
+

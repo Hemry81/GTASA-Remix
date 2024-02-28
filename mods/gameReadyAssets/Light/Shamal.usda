@@ -11,14 +11,14 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def DiskLight "Shamal_Light_self_01" (
+            def SphereLight "Shamal_Light_self_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 float inputs:intensity = 20
                 float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
@@ -29,14 +29,14 @@ over "RootNode"
                 double3 xformOp:translate = (-0.06000000000006933, 0.35, 1.6)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def DiskLight "Shamal_Light_main_01" (
+                def SphereLight "Shamal_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     float inputs:intensity = 30
                     float inputs:radius = 0.2
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
@@ -49,14 +49,14 @@ over "RootNode"
                 }
             }
 
-            def DiskLight "Shamal_Light_self_02" (
+            def SphereLight "Shamal_Light_self_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 float inputs:intensity = 20
                 float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
@@ -67,14 +67,14 @@ over "RootNode"
                 double3 xformOp:translate = (-0.06000000000002337, -1.535, 1.600000000044247)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def DiskLight "Shamal_Light_main_01" (
+                def SphereLight "Shamal_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     float inputs:intensity = 30
                     float inputs:radius = 0.2
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
@@ -87,14 +87,14 @@ over "RootNode"
                 }
             }
 
-            def DiskLight "Shamal_Light_self_03" (
+            def SphereLight "Shamal_Light_self_03" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 float inputs:intensity = 20
                 float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
@@ -105,14 +105,14 @@ over "RootNode"
                 double3 xformOp:translate = (-0.05999999999995431, -3.5, 1.6000000000706223)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def DiskLight "Shamal_Light_main_01" (
+                def SphereLight "Shamal_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     float inputs:intensity = 30
                     float inputs:radius = 0.2
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
@@ -125,14 +125,14 @@ over "RootNode"
                 }
             }
 
-            def DiskLight "Shamal_Light_self_04" (
+            def SphereLight "Shamal_Light_self_04" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 float inputs:intensity = 20
                 float inputs:radius = 0.2
-                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
@@ -143,14 +143,14 @@ over "RootNode"
                 double3 xformOp:translate = (-0.05999999999991679, -5.345, 1.6000000000879027)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def DiskLight "Shamal_Light_main_01" (
+                def SphereLight "Shamal_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     float inputs:intensity = 30
                     float inputs:radius = 0.2
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint

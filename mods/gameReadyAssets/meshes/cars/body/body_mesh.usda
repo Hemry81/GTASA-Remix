@@ -1,8 +1,12 @@
 #usda 1.0
 (
-    subLayers = [
-        @./Coach_ID_34/coach.usda@
-    ]
+    customLayerData = {
+        string sourceDirPath = "C:/Users/desig/OneDrive/Documents/Blender/GTASA/Cars/"
+        string sourceFilename = "Test.blend"
+    }
+    defaultPrim = "root"
+    doc = "Blender v4.0.0 Alpha"
+    metersPerUnit = 0.01
     upAxis = "Z"
 )
 

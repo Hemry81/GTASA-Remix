@@ -7,3154 +7,48 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_6A182D98753DE50C"
+        over "mesh_7D687F37C2E020CB"
         {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Adminral_HeadLight_R_self" (
-                prepend apiSchemas = ["ShapingAPI"]
+            over "mesh" (
+                active = false
             )
             {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90, -10, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.65, 2.500000037252903, -0.05)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-
-                def RectLight "Adminral_HeadLight_R_Main" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.4
-                    double3 xformOp:rotateYZX = (0, 0, 0)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_C6F48E2BA4C909BC"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "Adminral_HeadLight_L_self" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90, 10, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.65, 2.500000037252903, -0.05)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-
-                def RectLight "Adminral_HeadLight_L_Main" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.4
-                    double3 xformOp:rotateYZX = (0, 0, 0)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_7275F21B64F2B3A8"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float diffuse = 1
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90, 0, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.75, 2.3, -0.05)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.3
-                    double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_984AEEC5BEDD04B2"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float diffuse = 1
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90, 0, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.75, 2.3, -0.05)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.3
-                    double3 xformOp:rotateYZX = (0, 0, -1.2722218725854064e-14)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_6A883D7A41A5DEB5"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float diffuse = 1
-                float intensity = 5
-                bool normalize = 0
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (-90, 90, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-1.1, 4.3, -0.30000000447034836)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.4
-                    float intensity = 500
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.3
-                    double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_2607F56366E999DF"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float diffuse = 1
-                float intensity = 5
-                bool normalize = 0
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (-90, 90, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.1, 4.3, -0.30000000447034836)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.4
-                    float intensity = 500
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.3
-                    double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_5024F1B272E1CBBE"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, -90, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.85, 2.6, 0.04)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.3
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.3
-                    double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_E7BBFE0D52F9D783"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, -90, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.85, 2.6, 0.04)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.3
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.3
-                    double3 xformOp:rotateYZX = (90.00000000000003, 90.00000000000003, -1.2722218725854064e-14)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_B99AA97452CF1E23"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 500
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, -90, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.86, 3.15, -0.20000000298023224)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
 
-            def SphereLight "HeadLight_L_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
+            def Xform "light_pos"
             {
-                float intensity = 500
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, -90, -1.2722218725854064e-14)
+                double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.86, 3.15, -0.4000000059604645)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_522CD278027E3BBE"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 500
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, -90, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.86, 3.15, -0.20000000298023224)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def SphereLight "HeadLight_R_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 500
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (90.00000000000003, -90, -1.2722218725854064e-14)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.86, 3.15, -0.4000000059604645)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_CDBF41A12652EECA"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 500
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (0, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.7, 2.25, 0.05)
+                double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
+                def Xform "Xform"
                 {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.4
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
                     uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
 
-        over "mesh_9D7F9A916692BFB4"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (0, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.7, 2.25, 0.05)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.4
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_684C916C7DA23CA7"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -82)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.62, 2.75, -0.1)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.4
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_0EEEC97FB7AEE5C5"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -98)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.62, 2.75, -0.1)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.4
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_727EFC773DFB7088"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -9090)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.86, 1.02, 0.28)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_L_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.67, 1.02, 0.28)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_A86738B409A2497C"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -9090)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.86, 1.02, 0.28)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.67, 1.02, 0.28)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_F3819C571BFC7B8F"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.7, 2.8, -0.18)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.5
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_88EED96A4F4DE2DE"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.7, 2.8, -0.18)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.5
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_F2EEB937D11804B6"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.9000000134110451, 2.7000000402331352, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.9, 2.7000000402331352, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_E965C615271D9A3C"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.66, 0.86, 0.31)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.16
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_L_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.45, 0.86, 0.31)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.16
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_F5DF8C780D02EEB9"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.66, 0.86, 0.31)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.16
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.45, 0.86, 0.31)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.16
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_8B97D014036B0726"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -80)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.67, 2.65, -0.05)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.45
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.12
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -100)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.67, 2.65, -0.05)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.45
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.12
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_DDA79F64055B560B"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.9000000134110451, 2.8, 0.05)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_FC29DBF57C961A3C"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.9000000134110451, 2.8, 0.05)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_D6C768547C08788B"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            over "mesh"
-            {
-                def SphereLight "HeadLight_L_self_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 5
-                    bool normalize = 1
-                    float radius = 0.05
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, -90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (-0.725, 2.2, 0.18)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                    def DiskLight "HeadLight_L_main_01" (
+                    def SphereLight "taillight" (
                         prepend apiSchemas = ["ShapingAPI"]
                     )
                     {
-                        float intensity = 500
-                        bool normalize = 1
-                        float radius = 0.1
-                        float shaping:cone:angle = 180
-                        float shaping:cone:softness
-                        float shaping:focus
-                        color3f shaping:focusTint
-                        asset shaping:ies:file
+                        float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                        color3f inputs:color = (1, 0.22393823, 0.22393823)
+                        float inputs:intensity = 100
+                        bool inputs:normalize = 0
+                        float inputs:radius = 0.2
+                        float inputs:shaping:cone:angle = 60
+                        float inputs:shaping:cone:softness = 0.05
+                        float inputs:shaping:focus
+                        color3f inputs:shaping:focusTint
+                        asset inputs:shaping:ies:file
                         bool visibleInPrimaryRay = 1
-                        double3 xformOp:rotateXYZ = (90, 0, 90)
+                        double3 xformOp:rotateXYZ = (-90, 0, 0)
                         double3 xformOp:scale = (1, 1, 1)
                         double3 xformOp:translate = (0, 0, 0)
                         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                     }
-                }
-            }
-        }
-
-        over "mesh_4402A7BCFD5F8336"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            over "mesh"
-            {
-                def SphereLight "HeadLight_R_self_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 5
-                    bool normalize = 1
-                    float radius = 0.05
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, -90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0.725, 2.2, 0.18)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                    def DiskLight "HeadLight_R_main_01" (
-                        prepend apiSchemas = ["ShapingAPI"]
-                    )
-                    {
-                        float intensity = 500
-                        bool normalize = 1
-                        float radius = 0.1
-                        float shaping:cone:angle = 180
-                        float shaping:cone:softness
-                        float shaping:focus
-                        color3f shaping:focusTint
-                        asset shaping:ies:file
-                        bool visibleInPrimaryRay = 1
-                        double3 xformOp:rotateXYZ = (90, 0, 90)
-                        double3 xformOp:scale = (1, 1, 1)
-                        double3 xformOp:translate = (0, 0, 0)
-                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                    }
-                }
-            }
-        }
-
-        over "mesh_586622289A2413BD"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.82, 2.68, -0.1)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_L_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.56, 2.68, -0.1)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_2B565F451DDB9949"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.82, 2.68, -0.1)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.56, 2.68, -0.1)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_EF6EEEA1104528D3"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.79, 0.8, 0.445)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.15
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.15
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_L_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.57, 0.8, 0.445)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.15
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.15
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_A93EB5FFF9C85D90"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.79, 0.8, 0.445)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.15
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.15
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.57, 0.8, 0.445)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.15
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.15
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_75E3850FA8B56150"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -85)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.68, 2.86, 0.1)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.5
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_8E58845946C01048"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -95)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.68, 2.86, 0.1)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.5
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_378B96E5FE3A5AC5"
-        {
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.800000011920929, 1.1, 0.34)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_L_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.6, 1.1, 0.34)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_762368D8CF3953A0"
-        {
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.800000011920929, 1.1, 0.34)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.6, 1.1, 0.34)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_B79408265085C729"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.95, 2.6, 0.10000000149011612)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_L_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.7, 2.6, 0.10000000149011612)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_679CE15FE89C2B02"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.95, 2.6, 0.10000000149011612)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.7, 2.6, 0.10000000149011612)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_C7CF4E6630FB0F8F"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -75)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.7, 2.62, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.355
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_4B5CF01787E34D42"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -105)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.7, 2.62, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.355
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_AA74A321F3EC6D38"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.825, 2.9000000432133675, -0.18)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_L_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.6, 2.9000000432133675, -0.18)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_995D5ABE3A220732"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.825, 2.9000000432133675, -0.18)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.6, 2.9000000432133675, -0.18)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_F7ABCC30CFF480E3"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.55, 2.3, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.35
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_498E78CA103D513E"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.55, 2.3, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.35
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_0933AC9DF54FE475"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.92, 0.98, 0.36)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_L_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.7000000104308128, 0.98, 0.36)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_L_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_715B0DDC476E72A0"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.92, 0.98, 0.36)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.7000000104308128, 0.98, 0.36)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def RectLight "HeadLight_R_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float height = 0.2
-                    float intensity = 500
-                    bool normalize = 1
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    float width = 0.2
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_FD3643F803E82338"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.86, 0.7, 0.21)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.08
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_L_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.7000000104308128, 0.72, 0.21)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.08
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_L_self_03" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.53, 0.74, 0.21)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_03" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.08
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_663E58C6112F9749"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.86, 0.7, 0.21)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.08
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.7000000104308128, 0.72, 0.21)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_02" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.08
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_R_self_03" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.53, 0.74, 0.21)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_03" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.08
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_DE5E1D1B7D743515"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0.85, 0.43)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.08
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_C969A7768C505F3E"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.68, 2.8, -0.4000000059604645)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.15
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_B41E8678D59F6FE6"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            def SphereLight "HeadLight_R_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.68, 2.8, -0.4000000059604645)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_R_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.15
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-        }
-
-        over "mesh_653259398A8D3E81"
-        {
-            custom int preserveOriginalDrawCall = 1
-
-            over "mesh"
-            {
-                def SphereLight "HeadLight_L_self_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 5
-                    bool normalize = 1
-                    float radius = 0.05
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, -90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (-0.08, 0.8, 0.42)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                    def DiskLight "HeadLight_L_main_01" (
-                        prepend apiSchemas = ["ShapingAPI"]
-                    )
-                    {
-                        float intensity = 500
-                        bool normalize = 1
-                        float radius = 0.07
-                        float shaping:cone:angle = 180
-                        float shaping:cone:softness
-                        float shaping:focus
-                        color3f shaping:focusTint
-                        asset shaping:ies:file
-                        bool visibleInPrimaryRay = 1
-                        double3 xformOp:rotateXYZ = (90, 0, 90)
-                        double3 xformOp:scale = (1, 1, 1)
-                        double3 xformOp:translate = (0, 0, 0)
-                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                    }
-                }
-
-                def SphereLight "HeadLight_R_self_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 5
-                    bool normalize = 1
-                    float radius = 0.05
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, -90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0.08, 0.8, 0.42)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                    def DiskLight "HeadLight_R_main_01" (
-                        prepend apiSchemas = ["ShapingAPI"]
-                    )
-                    {
-                        float intensity = 500
-                        bool normalize = 1
-                        float radius = 0.07
-                        float shaping:cone:angle = 180
-                        float shaping:cone:softness
-                        float shaping:focus
-                        color3f shaping:focusTint
-                        asset shaping:ies:file
-                        bool visibleInPrimaryRay = 1
-                        double3 xformOp:rotateXYZ = (90, 0, 90)
-                        double3 xformOp:scale = (1, 1, 1)
-                        double3 xformOp:translate = (0, 0, 0)
-                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                    }
-                }
-            }
-        }
-
-        over "mesh_0389E5EEEBB133E0"
-        {
-            def SphereLight "HeadLight_L_self_01" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-0.05, 0.10000000149011612, 0.27)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.06
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                }
-            }
-
-            def SphereLight "HeadLight_L_self_02" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 5
-                bool normalize = 1
-                float radius = 0.05
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, -90)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0.05, 0.1, 0.27)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def DiskLight "HeadLight_L_main_01" (
-                    prepend apiSchemas = ["ShapingAPI"]
-                )
-                {
-                    float intensity = 500
-                    bool normalize = 1
-                    float radius = 0.06
-                    float shaping:cone:angle = 180
-                    float shaping:cone:softness
-                    float shaping:focus
-                    color3f shaping:focusTint
-                    asset shaping:ies:file
-                    bool visibleInPrimaryRay = 1
-                    double3 xformOp:rotateXYZ = (90, 0, 90)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
         }
@@ -3162,7 +56,100 @@ over "RootNode"
 
     over "Looks"
     {
-        over "mat_3BEE854F63C5F7D5"
+        over "mat_72F7BB84C3C94411"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @../texture/cars/headlights/headlight_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 50 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @../texture/cars/headlights/headlight_on_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = """Metallic Material
+
+"""
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @../texture/cars/headlights/headlight_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @../texture/cars/headlights/headlight_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_A55D40C607E33773"
         {
             over "Shader"
             {
@@ -3175,7 +162,7 @@ over "RootNode"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
                 )
-                float inputs:emissive_intensity = 5 (
+                float inputs:emissive_intensity = 30 (
                     customData = {
                         float default = 40
                         dictionary range = {
@@ -3189,7 +176,7 @@ over "RootNode"
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @../texture/cars/headlights/headlight_off_emissive.dds@ (
-                    colorSpace = "auto"
+                    colorSpace = "sRGB"
                     customData = {
                         asset default = @@
                     }
@@ -3207,6 +194,110 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = "Metallic Material"
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @../texture/cars/headlights/headlight_normal.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @../texture/cars/headlights/headlight_rough.dds@ (
+                    colorSpace = "raw"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_DB50DD841ACF76F3"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @../texture/cars/headlights/headlight_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 30 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @../texture/cars/headlights/headlight_off_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = """Metallic Material
+
+"""
+                    hidden = false
+                )
                 asset inputs:normalmap_texture = @../texture/cars/headlights/headlight_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
@@ -3215,6 +306,7 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @../texture/cars/headlights/headlight_rough.dds@ (
                     colorSpace = "auto"
@@ -3224,6 +316,100 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_B206F737B4B5CE6D"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @../texture/cars/headlights/headlight_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:emissive_intensity = 50 (
+                    customData = {
+                        float default = 40
+                        dictionary range = {
+                            float max = 65504
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Intensity"
+                    doc = """Intensity of the emission
+
+"""
+                    hidden = false
+                )
+                asset inputs:emissive_mask_texture = @../texture/cars/headlights/headlight_on_emissive.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Emissive Mask Map"
+                    doc = """The texture masking the emissive color
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:enable_emission = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Emissive"
+                    displayName = "Enable Emission"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = """Metallic Material
+
+"""
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @../texture/cars/headlights/headlight_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @../texture/cars/headlights/headlight_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -3238,11 +424,13 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:emissive_intensity = 5 (
+                float inputs:emissive_intensity = 30 (
                     customData = {
                         float default = 40
                         dictionary range = {
@@ -3252,7 +440,9 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                    doc = """Intensity of the emission
+
+"""
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @../texture/cars/headlights/headlight_off_emissive.dds@ (
@@ -3262,7 +452,9 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
+                    doc = """The texture masking the emissive color
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -3272,7 +464,24 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = """Metallic Material
+
+"""
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @../texture/cars/headlights/headlight_normal.dds@ (
@@ -3298,7 +507,7 @@ over "RootNode"
             }
         }
 
-        over "mat_72F7BB84C3C94411"
+        over "mat_3BEE854F63C5F7D5"
         {
             over "Shader"
             {
@@ -3308,11 +517,13 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:emissive_intensity = 10 (
+                float inputs:emissive_intensity = 30 (
                     customData = {
                         float default = 40
                         dictionary range = {
@@ -3322,17 +533,21 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                    doc = """Intensity of the emission
+
+"""
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @../texture/cars/headlights/headlight_on_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @../texture/cars/headlights/headlight_off_emissive.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
                     }
                     displayGroup = "Emissive"
                     displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
+                    doc = """The texture masking the emissive color
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -3342,7 +557,24 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
+                    doc = """Enables the emission of light from the material
+
+"""
+                    hidden = false
+                )
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Amount"
+                    doc = """Metallic Material
+
+"""
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @../texture/cars/headlights/headlight_normal.dds@ (

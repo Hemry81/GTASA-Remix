@@ -1,0 +1,35 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_0668E5D780EED027"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Body" (
+                delete references = [
+                    @D:/Games/Grand Theft Auto San Andreas/rtx-remix/mods/gameReadyAssets/meshes/Vehicles/Plane/Plane.usd@,
+                    @D:/Games/Grand Theft Auto San Andreas/rtx-remix/mods/gameReadyAssets/meshes/Vehicles/Plane/Body.usd@,
+                    @file:/D:/Games/Grand%20Theft%20Auto%20San%20Andreas/rtx-remix/mods/gameReadyAssets/meshes/Vehicles/Plane/Andromada/Body.usd@,
+                    @./Andromada/Body.usd@,
+                    @./Andromada/Body1.usd@
+                ]
+                prepend references = @./Andromada/Body.usd@
+            )
+            {
+                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+            }
+        }
+    }
+}
+

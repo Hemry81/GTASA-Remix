@@ -11,38 +11,36 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "Ganton_Gym_Light_self_01" (
+            def SphereLight "Ganton_Gym_Light_self_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.86, 6.656, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
@@ -51,39 +49,37 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Ganton_Gym_Light_self_02" (
+            def SphereLight "Ganton_Gym_Light_self_02" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.86, 2.6559999999999997, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
@@ -92,39 +88,37 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Ganton_Gym_Light_self_03" (
+            def SphereLight "Ganton_Gym_Light_self_03" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.86, -1.3440000000000003, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
@@ -133,39 +127,37 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Ganton_Gym_Light_self_04" (
+            def SphereLight "Ganton_Gym_Light_self_04" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.86, -5.344, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
@@ -174,39 +166,37 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Ganton_Gym_Light_self_05" (
+            def SphereLight "Ganton_Gym_Light_self_05" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.86, -9.344000000000001, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
@@ -215,39 +205,37 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Ganton_Gym_Light_self_06" (
+            def SphereLight "Ganton_Gym_Light_self_06" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.25, -8.88, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
@@ -256,39 +244,37 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Ganton_Gym_Light_self_07" (
+            def SphereLight "Ganton_Gym_Light_self_07" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.25, -4.780000000000001, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
@@ -297,39 +283,37 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Ganton_Gym_Light_self_08" (
+            def SphereLight "Ganton_Gym_Light_self_08" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.25, -0.6800000000000033, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
@@ -338,39 +322,37 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Ganton_Gym_Light_self_09" (
+            def SphereLight "Ganton_Gym_Light_self_09" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.25, 3.17, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
@@ -379,39 +361,37 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Ganton_Gym_Light_self_10" (
+            def SphereLight "Ganton_Gym_Light_self_10" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.25, 7.225, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
@@ -420,39 +400,37 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Ganton_Gym_Light_self_11" (
+            def SphereLight "Ganton_Gym_Light_self_11" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-8.78, -4.825, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
@@ -461,39 +439,37 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Ganton_Gym_Light_self_12" (
+            def SphereLight "Ganton_Gym_Light_self_12" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 2.2
                 float inputs:intensity = 5
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 0.2
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-8.779999999980532, 3.15, 1.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Ganton_Gym_Light_main_01" (
+                def SphereLight "Ganton_Gym_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2.2
                     float inputs:intensity = 40
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 0.2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)

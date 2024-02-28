@@ -1,6 +1,8 @@
 #usda 1.0
 (
     subLayers = [
+        @../Interiors/Sweet_House/Sweet_House.usda@,
+        @../Interiors/Market_Station/Market_Station.usda@,
         @../CJHouse/CJHouse.usda@,
         @../CJHouse/CJHouse_outdoor.usda@,
         @./Downtown Los Santos/Downtown Los Santos.usda@

@@ -20,7 +20,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -41,7 +41,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -62,7 +62,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -83,7 +83,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -104,7 +104,7 @@ over "RootNode"
                 float intensity = 500
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -123,7 +123,7 @@ over "RootNode"
                 float height = 5
                 float intensity = 10
                 bool normalize = 1
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -143,7 +143,7 @@ over "RootNode"
                 float height = 3
                 float intensity = 10
                 bool normalize = 1
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -163,7 +163,7 @@ over "RootNode"
                 float height = 3
                 float intensity = 10
                 bool normalize = 1
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -214,7 +214,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.08
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -235,7 +235,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.08
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -299,6 +299,190 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.74, 0.335, 1.2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_6113B9CA251BF80F"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_5D7FD2DA55113531"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_CF3DB599AE097AF9"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_17FBCC83E2E5C9F4"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_B781284B7A2B10F6"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_796393D0C831B30A"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_0AF48999E75F7C29"
+        {
+            def Xform "Sink" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @../meshes/CJHouse/sink.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, -90)
+                double3 xformOp:scale = (1.01, 1.01, 1.01)
+                double3 xformOp:translate = (-3.856, 1.7, -0.55)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "Cabient" (
+                    active = false
+                )
+                {
+                }
+
+                over "Top" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+
+    over "Looks"
+    {
+        over "mat_14ED28C3B4E63F58"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @../texture/paper/Paper004_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:displace_in = 0.01 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:height_texture = @../texture/paper/Paper004_height.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @../texture/paper/Paper004_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @../texture/paper/Paper004_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:subsurface_measurement_distance = 0.19999999 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 16
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Subsurface"
+                    displayName = "Subsurface Measurement Distance"
+                    doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:subsurface_transmittance_texture = @../texture/paper/Paper004_albedo.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Subsurface"
+                    displayName = "Subsurface Transmittance Map"
+                    doc = """The texture specifying the transmittance color of subsurface materials.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
             }
         }
     }

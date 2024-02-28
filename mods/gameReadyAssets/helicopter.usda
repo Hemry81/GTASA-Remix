@@ -252,7 +252,9 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Metallic Amount"
-                    doc = "Metallic Material"
+                    doc = """Metallic Material
+
+"""
                     hidden = false
                 )
                 float inputs:reflection_roughness_constant = 0.19999999 (
@@ -265,7 +267,9 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
+                    doc = """Higher roughness values lead to more blurry reflections
+
+"""
                     hidden = false
                 )
             }
@@ -285,7 +289,9 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Metallic Amount"
-                    doc = "Metallic Material"
+                    doc = """Metallic Material
+
+"""
                     hidden = false
                 )
                 float inputs:reflection_roughness_constant = 0.19999999 (
@@ -298,7 +304,9 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
+                    doc = """Higher roughness values lead to more blurry reflections
+
+"""
                     hidden = false
                 )
             }

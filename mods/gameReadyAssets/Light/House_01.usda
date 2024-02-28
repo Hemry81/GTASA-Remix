@@ -11,37 +11,35 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "House_01_Light_self_01" (
+            def SphereLight "House_01_Light_self_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 0.8
                 float inputs:intensity = 50
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 2.1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.083, -3.48, 1.635)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "House_01_Light_main_01" (
+                def SphereLight "House_01_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 0.8
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 2.1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (2.7755575615628914e-17, 0, 0)
@@ -49,37 +47,35 @@ over "RootNode"
                 }
             }
 
-            def RectLight "House_01_Light_self_02" (
+            def SphereLight "House_01_Light_self_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 0.8
                 float inputs:intensity = 50
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 2.1
                 double3 xformOp:rotateXYZ = (180, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.0830000000000837, 3.885, 1.634999999999991)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "House_01_Light_main_01" (
+                def SphereLight "House_01_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 0.8
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 2.1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (2.7755575615628914e-17, 0, 0)
@@ -87,37 +83,35 @@ over "RootNode"
                 }
             }
 
-            def RectLight "House_01_Light_self_03" (
+            def SphereLight "House_01_Light_self_03" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                float inputs:height = 0.8
                 float inputs:intensity = 50
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2.1
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 2.1
                 double3 xformOp:rotateXYZ = (180, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0.85, 6.425, 1.634999999999991)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "House_01_Light_main_01" (
+                def SphereLight "House_01_Light_main_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 0.8
                     float inputs:intensity = 100
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2.1
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 2.1
                     double3 xformOp:rotateXYZ = (180, -0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (2.7755575615628914e-17, 0, 0)

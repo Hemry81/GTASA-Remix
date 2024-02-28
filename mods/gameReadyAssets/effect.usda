@@ -17,7 +17,9 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -28,7 +30,9 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
+                    doc = """The texture masking the emissive color
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -38,7 +42,9 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
+                    doc = """Enables the emission of light from the material
+
+"""
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @./texture/effect/rain_01_normal.dds@ (
@@ -60,7 +66,9 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
+                    doc = """Higher roughness values lead to more blurry reflections
+
+"""
                     hidden = false
                 )
                 asset inputs:reflectionroughness_texture = @@ (
@@ -87,8 +95,9 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
+                    renderType = "texture_2d"
                 )
-                float inputs:emissive_intensity = 10 (
+                float inputs:emissive_intensity = 40 (
                     customData = {
                         float default = 40
                         dictionary range = {
@@ -101,7 +110,7 @@ over "RootNode"
                     doc = "Intensity of the emission"
                     hidden = false
                 )
-                asset inputs:emissive_mask_texture = @./texture/effect/2F580E4763FAB662_emissive.dds@ (
+                asset inputs:emissive_mask_texture = @@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -110,8 +119,9 @@ over "RootNode"
                     displayName = "Emissive Mask Map"
                     doc = "The texture masking the emissive color"
                     hidden = false
+                    renderType = "texture_2d"
                 )
-                bool inputs:enable_emission = 1 (
+                bool inputs:enable_emission = 0 (
                     customData = {
                         bool default = 0
                     }
@@ -127,6 +137,7 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @@ (
                     customData = {
@@ -135,6 +146,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -166,91 +178,6 @@ over "RootNode"
                     }
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
-                    hidden = false
-                )
-            }
-        }
-
-        over "mat_5DD8C4686D5FF3D2"
-        {
-            over "Shader"
-            {
-                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
-                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                asset inputs:diffuse_texture = @@
-                float inputs:emissive_intensity = 0.001 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./texture/effect/5DD8C4686D5FF3D2_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Color Texture"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-                float inputs:ior_constant = 2.418 (
-                    customData = {
-                        float default = 1.3
-                        dictionary range = {
-                            float max = 3
-                            float min = 1
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Index of Refraction"
-                    doc = "Index of Refraction of the material"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:transmittance_texture = @@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Transmittance Color/Diffuse Albedo Texture"
-                    doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:use_diffuse_layer = 0 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Use diffuse layer"
-                    doc = "When set, simulates a diffuse layer on top of the material"
                     hidden = false
                 )
             }
@@ -296,8 +223,11 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./texture/effect/Skid_Mark_normal.dds@ (
                     customData = {
@@ -306,6 +236,7 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./texture/effect/Skid_Mark_rough.dds@ (
                     customData = {
@@ -314,6 +245,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -459,6 +391,7 @@ over "RootNode"
                     displayName = "Albedo Map"
                     doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./texture/effect/blood_01_normal.dds@ (
                     colorSpace = "auto"
@@ -468,6 +401,7 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:reflectionroughness_texture = @./texture/effect/blood_01_rough.dds@ (
                     colorSpace = "auto"
@@ -477,6 +411,7 @@ over "RootNode"
                     displayGroup = "Specular"
                     displayName = "Roughness Map"
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -491,7 +426,9 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -528,8 +465,11 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -544,10 +484,13 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
-                float inputs:emissive_intensity = 3000 (
+                float inputs:emissive_intensity = 50 (
                     customData = {
                         float default = 40
                         dictionary range = {
@@ -557,7 +500,9 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                    doc = """Intensity of the emission
+
+"""
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @./texture/effect/fire_emissive.dds@ (
@@ -567,56 +512,11 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
-                )
-                bool inputs:enable_emission = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
-                    hidden = false
-                )
-            }
-        }
+                    doc = """The texture masking the emissive color
 
-        over "mat_DF22766F02C29A32"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./texture/effect/gun_fire_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+"""
                     hidden = false
-                )
-                float inputs:emissive_intensity = 100 (
-                    customData = {
-                        float default = 40
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
-                    hidden = false
-                )
-                asset inputs:emissive_mask_texture = @./texture/effect/gun_fire_emissive.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Emissive"
-                    displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
-                    hidden = false
+                    renderType = "texture_2d"
                 )
                 bool inputs:enable_emission = 1 (
                     customData = {
@@ -624,7 +524,9 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
+                    doc = """Enables the emission of light from the material
+
+"""
                     hidden = false
                 )
             }
@@ -713,8 +615,11 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./texture/effect/Smoke_01_normal.dds@ (
                     colorSpace = "auto"
@@ -724,6 +629,54 @@ over "RootNode"
                     displayGroup = "Normal"
                     displayName = "Normal Map"
                     hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_6B98F6F7ADBDA30D"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./texture/effect/Bullet_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Diffuse"
+                    displayName = "Albedo Map"
+                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:metallic_texture = @./texture/effect/Bullet_metal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Metallic Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./texture/effect/Bullet_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./texture/effect/Bullet_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Roughness Map"
+                    hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }
@@ -754,7 +707,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (60, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0.35)
+                double3 xformOp:translate = (0, 0, 0.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def DiskLight "Waypoint_Light_up_01" (
@@ -800,7 +753,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (60, 0, 120)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0.35)
+                double3 xformOp:translate = (0, 0, 0.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def DiskLight "Waypoint_Light_up_01" (
@@ -846,7 +799,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (60, 0, 240)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0.35)
+                double3 xformOp:translate = (0, 0, 0.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def DiskLight "Waypoint_Light_up_01" (
@@ -892,7 +845,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (60, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, -1)
+                double3 xformOp:translate = (0, 0, -0.8)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def DiskLight "Waypoint_Light_up_01" (
@@ -938,7 +891,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (60, 0, 120)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, -1)
+                double3 xformOp:translate = (0, 0, -0.8)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def DiskLight "Waypoint_Light_up_01" (
@@ -984,7 +937,7 @@ over "RootNode"
                 bool visibleInPrimaryRay = 1
                 double3 xformOp:rotateXYZ = (60, 0, 240)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, -1)
+                double3 xformOp:translate = (0, 0, -0.8)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
                 def DiskLight "Waypoint_Light_up_01" (
@@ -1012,10 +965,13 @@ over "RootNode"
             }
 
             def Xform "Xform_AD224C74FA8E50CA_0" (
-                delete references = @./meshes/effectWaypoint 03.usd@
+                prepend apiSchemas = ["MaterialBindingAPI"]
                 prepend references = @./meshes/effect/Waypoint 03.usd@
             )
             {
+                rel material:binding = </Looks/Waypoint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
@@ -1034,10 +990,13 @@ over "RootNode"
             custom int preserveOriginalDrawCall = 0
 
             def Xform "Xform_CC8AB8063489A3F8_0" (
-                delete references = @./meshes/effectWaypoint 04.usd@
+                prepend apiSchemas = ["MaterialBindingAPI"]
                 prepend references = @./meshes/effect/Waypoint 04.usd@
             )
             {
+                rel material:binding = </Looks/Waypoint> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
@@ -1606,6 +1565,41 @@ over "RootNode"
                     uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
                 }
             }
+        }
+    }
+}
+
+over "Looks"
+{
+    def Material "Waypoint"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Waypoint/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Waypoint/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Waypoint/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 2.4199998 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = """Index of Refraction of the material
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
         }
     }
 }

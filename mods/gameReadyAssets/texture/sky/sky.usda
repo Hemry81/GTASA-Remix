@@ -5,57 +5,6 @@
 
 over "RootNode"
 {
-    over "Looks"
-    {
-        over "mat_166C27331EA67091"
-        {
-            over "Shader"
-            {
-                uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
-                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-                asset inputs:diffuse_texture = @./cloud_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./cloud_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                token outputs:out (
-                    renderType = "material"
-                )
-            }
-        }
-    }
-
-    over "meshes"
-    {
-        over "mesh_8EE14E459254DC7D"
-        {
-            def Xform "Xform" (
-                references = @../../meshes/Sky/Cloud.usd@
-            )
-            {
-                rel material:binding = </Looks/Cloud> (
-                    bindMaterialAs = "weakerThanDescendants"
-                )
-                double3 xformOp:rotateYZX = (0, 0, 0)
-                double3 xformOp:scale = (10, 10, 0.05)
-                double3 xformOp:translate = (27.000000402331352, 14.900000222027302, 40.20000059902668)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-        }
-    }
 }
 
 over "Looks"
@@ -78,8 +27,11 @@ over "Looks"
                 }
                 displayGroup = "Diffuse"
                 displayName = "Albedo Map"
-                doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                 hidden = false
+                renderType = "texture_2d"
             )
             float inputs:displace_in = 0.02 (
                 customData = {
@@ -91,7 +43,9 @@ over "Looks"
                 }
                 displayGroup = "Displacement"
                 displayName = "Inwards Displacement"
-                doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
                 hidden = false
             )
             asset inputs:height_texture = @./cloud_maxmip.dds@ (
@@ -101,8 +55,11 @@ over "Looks"
                 }
                 displayGroup = "Displacement"
                 displayName = "Height Map"
-                doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
                 hidden = false
+                renderType = "texture_2d"
             )
             asset inputs:normalmap_texture = @./cloud_normal.dds@ (
                 colorSpace = "raw"
@@ -112,6 +69,7 @@ over "Looks"
                 displayGroup = "Normal"
                 displayName = "Normal Map"
                 hidden = false
+                renderType = "texture_2d"
             )
             float inputs:subsurface_measurement_distance = 6 (
                 customData = {
@@ -123,7 +81,9 @@ over "Looks"
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Measurement Distance"
-                doc = "The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface."
+                doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
+This parameter is unused.
+"""
                 hidden = false
             )
             asset inputs:subsurface_single_scattering_texture = @@ (
@@ -133,8 +93,11 @@ over "Looks"
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Single Scattering Map"
-                doc = "The texture specifying the scattering albedo of subsurface materials."
+                doc = """The texture specifying the scattering albedo of subsurface materials.
+This parameter is unused.
+"""
                 hidden = false
+                renderType = "texture_2d"
             )
             asset inputs:subsurface_thickness_texture = @@ (
                 colorSpace = "raw"
@@ -143,8 +106,11 @@ over "Looks"
                 }
                 displayGroup = "Subsurface"
                 displayName = "Thickness Map"
-                doc = "The texture specifying the distance between front and back surface of subsurface materials in millimeter."
+                doc = """The texture specifying the distance between front and back surface of subsurface materials in millimeter.
+This parameter is unused.
+"""
                 hidden = false
+                renderType = "texture_2d"
             )
             color3f inputs:subsurface_transmittance_color = (0.5, 0.5, 0.5) (
                 customData = {
@@ -156,8 +122,11 @@ over "Looks"
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Transmittance Color"
-                doc = "The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume."
+                doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
+This parameter is unused.
+"""
                 hidden = false
+                renderType = "color"
             )
             asset inputs:subsurface_transmittance_texture = @./Cloud_thick.dds@ (
                 colorSpace = "sRGB"
@@ -166,8 +135,11 @@ over "Looks"
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Transmittance Map"
-                doc = "The texture specifying the transmittance color of subsurface materials."
+                doc = """The texture specifying the transmittance color of subsurface materials.
+This parameter is unused.
+"""
                 hidden = false
+                renderType = "texture_2d"
             )
             float inputs:subsurface_volumetric_anisotropy = 0 (
                 customData = {
@@ -179,7 +151,9 @@ over "Looks"
                 }
                 displayGroup = "Subsurface"
                 displayName = "Subsurface Volumetric Anisotropy"
-                doc = "The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward)."
+                doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
+This parameter is unused.
+"""
                 hidden = false
             )
             token outputs:out (

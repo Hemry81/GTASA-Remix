@@ -11,23 +11,22 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "Disco_Big_Light_01" (
+            def SphereLight "Disco_Big_Light_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 color3f color = (0.5, 1, 0.58928573)
                 float colorTemperature = 6500
                 bool enableColorTemperature = 0
-                float height = 0.5
                 float intensity = 100
                 bool normalize = 1
+                float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                float width = 0.5
                 double3 xformOp:rotateXYZ = (-90, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0.10000000149011612, -0.6000000089406967, -0.20000000298023224)
@@ -39,23 +38,22 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "Disco_Big_Light_01" (
+            def SphereLight "Disco_Big_Light_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 color3f color = (0.71129656, 0.5, 1)
                 float colorTemperature = 6500
                 bool enableColorTemperature = 0
-                float height = 0.5
                 float intensity = 100
                 bool normalize = 1
+                float radius = 0.5
                 float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                float width = 0.5
                 double3 xformOp:rotateXYZ = (-90, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, -0.800000011920929, -0.20000000298023224)
@@ -67,7 +65,7 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def DiskLight "Disco_Bar_Light_01" (
+            def SphereLight "Disco_Bar_Light_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
@@ -87,7 +85,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_02" (
+            def SphereLight "Disco_Bar_Light_02" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -108,7 +106,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_03" (
+            def SphereLight "Disco_Bar_Light_03" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -129,7 +127,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_04" (
+            def SphereLight "Disco_Bar_Light_04" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -150,7 +148,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_05" (
+            def SphereLight "Disco_Bar_Light_05" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -171,7 +169,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_06" (
+            def SphereLight "Disco_Bar_Light_06" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -192,7 +190,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_07" (
+            def SphereLight "Disco_Bar_Light_07" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -213,7 +211,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_08" (
+            def SphereLight "Disco_Bar_Light_08" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -234,7 +232,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_09" (
+            def SphereLight "Disco_Bar_Light_09" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -255,7 +253,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_10" (
+            def SphereLight "Disco_Bar_Light_10" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -276,7 +274,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_11" (
+            def SphereLight "Disco_Bar_Light_11" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -297,7 +295,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_12" (
+            def SphereLight "Disco_Bar_Light_12" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -318,7 +316,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_13" (
+            def SphereLight "Disco_Bar_Light_13" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -339,7 +337,7 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
-            def DiskLight "Disco_Bar_Light_14" (
+            def SphereLight "Disco_Bar_Light_14" (
                 prepend apiSchemas = ["ShapingAPI"]
                 hide_in_stage_window = false
             )
@@ -518,8 +516,11 @@ over "RootNode"
                     }
                     displayGroup = "Diffuse"
                     displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 float inputs:emissive_intensity = 2 (
                     customData = {
@@ -531,7 +532,9 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Emissive Intensity"
-                    doc = "Intensity of the emission"
+                    doc = """Intensity of the emission
+
+"""
                     hidden = false
                 )
                 asset inputs:emissive_mask_texture = @../texture/props/9D6A9F7B9355F09F_emissive.dds@ (
@@ -541,8 +544,11 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Emissive Mask Map"
-                    doc = "The texture masking the emissive color"
+                    doc = """The texture masking the emissive color
+
+"""
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 bool inputs:enable_emission = 1 (
                     customData = {
@@ -550,7 +556,9 @@ over "RootNode"
                     }
                     displayGroup = "Emissive"
                     displayName = "Enable Emission"
-                    doc = "Enables the emission of light from the material"
+                    doc = """Enables the emission of light from the material
+
+"""
                     hidden = false
                 )
             }

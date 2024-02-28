@@ -7,8 +7,8 @@
                 double radius = 500
             }
             dictionary Perspective = {
-                double3 position = (-579.9208660334267, -73.7047403961348, 52.56300551045258)
-                double3 target = (-688.6499033822165, -190.44869380438735, 69.82992707798633)
+                double3 position = (-420.4426579712496, -162.4612066653789, -136.58440159321444)
+                double3 target = (-544.0302445406505, -163.24485147897923, -34.23795491645345)
             }
             dictionary Right = {
                 double3 position = (0, -50000, 0)
@@ -120,9 +120,16 @@ def Xform "root"
 
                 over "Point"
                 {
+                    double3 xformOp:translate = (0, 1.2526288628578186e-7, -0.07827475666999817)
+
                     over "SphereLight"
                     {
                         float inputs:intensity = 1500
+                        bool inputs:normalize = 0
+                        float inputs:radius = 0.05
+                        float inputs:shaping:cone:angle = 180
+                        float inputs:shaping:cone:softness = 0
+                        double3 xformOp:rotateXYZ = (0, 0, 0)
                     }
                 }
             }
@@ -262,6 +269,21 @@ def Xform "root"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                float inputs:displace_in = 0.01 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                    hidden = false
+                )
                 bool inputs:enable_thin_film = 1 (
                     customData = {
                         bool default = 0
@@ -272,6 +294,19 @@ def Xform "root"
 
 """
                     hidden = false
+                )
+                asset inputs:height_texture = @../../texture/paper/Paper004_height.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @../../texture/paper/Paper004_normal.dds@ (
                     colorSpace = "auto"
@@ -323,7 +358,7 @@ def Xform "root"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:subsurface_measurement_distance = 0.98999995 (
+                float inputs:subsurface_measurement_distance = 0.07 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -338,7 +373,7 @@ This parameter is unused.
 """
                     hidden = false
                 )
-                asset inputs:subsurface_thickness_texture = @../../texture/paper/Paper004_rough.dds@ (
+                asset inputs:subsurface_thickness_texture = @@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -351,7 +386,23 @@ This parameter is unused.
                     hidden = false
                     renderType = "texture_2d"
                 )
-                asset inputs:subsurface_transmittance_texture = @../../texture/paper/Paper004_rough.dds@ (
+                color3f inputs:subsurface_transmittance_color = (0.73745173, 0.7281871, 0.60362846) (
+                    customData = {
+                        float3 default = (0.5, 0.5, 0.5)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Subsurface"
+                    displayName = "Subsurface Transmittance Color"
+                    doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "color"
+                )
+                asset inputs:subsurface_transmittance_texture = @@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@

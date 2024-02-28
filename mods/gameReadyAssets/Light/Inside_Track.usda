@@ -11,42 +11,40 @@ over "RootNode"
         {
             custom int preserveOriginalDrawCall = 1
 
-            def RectLight "Inside_Track_self_Light_01" (
+            def SphereLight "Inside_Track_self_Light_01" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 float inputs:colorTemperature = 6500
                 bool inputs:enableColorTemperature = 0
-                float inputs:height = 2
                 float inputs:intensity = 200
                 bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 2
                 bool visibleInPrimaryRay = 0
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.3, -4, 1.9)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Inside_Track_main_Light_01" (
+                def SphereLight "Inside_Track_main_Light_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2
                     float inputs:intensity = 200
                     bool inputs:normalize = 0
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (0, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -55,41 +53,39 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Inside_Track_self_Light_02" (
+            def SphereLight "Inside_Track_self_Light_02" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 float inputs:colorTemperature = 6500
                 bool inputs:enableColorTemperature = 0
-                float inputs:height = 2
                 float inputs:intensity = 200
                 bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 2
                 double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (1.3, 1.33, 1.9)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Inside_Track_main_Light_01" (
+                def SphereLight "Inside_Track_main_Light_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2
                     float inputs:intensity = 200
                     bool inputs:normalize = 0
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (0, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -98,41 +94,39 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Inside_Track_self_Light_03" (
+            def SphereLight "Inside_Track_self_Light_03" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 float inputs:colorTemperature = 6500
                 bool inputs:enableColorTemperature = 0
-                float inputs:height = 2
                 float inputs:intensity = 200
                 bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 2
                 double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (5.7, 1.3, 1.9)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Inside_Track_main_Light_01" (
+                def SphereLight "Inside_Track_main_Light_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2
                     float inputs:intensity = 200
                     bool inputs:normalize = 0
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (0, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -141,41 +135,39 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Inside_Track_self_Light_04" (
+            def SphereLight "Inside_Track_self_Light_04" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 float inputs:colorTemperature = 6500
                 bool inputs:enableColorTemperature = 0
-                float inputs:height = 2
                 float inputs:intensity = 200
                 bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 2
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 2
                 double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (5.7, -4, 1.9)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Inside_Track_main_Light_01" (
+                def SphereLight "Inside_Track_main_Light_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 2
                     float inputs:intensity = 200
                     bool inputs:normalize = 0
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 2
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 2
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (0, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)
@@ -184,41 +176,39 @@ over "RootNode"
                 }
             }
 
-            def RectLight "Inside_Track_self_Light_05" (
+            def SphereLight "Inside_Track_self_Light_05" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
                 float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                 float inputs:colorTemperature = 6500
                 bool inputs:enableColorTemperature = 0
-                float inputs:height = 0.5
                 float inputs:intensity = 200
                 bool inputs:normalize = 0
-                float inputs:shaping:cone:angle = 180
+                float inputs:radius = 1.5
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
                 asset inputs:shaping:ies:file
-                float inputs:width = 1.5
                 double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-4.700000070035458, 4.90000007301569, 1.4000000208616257)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
 
-                def RectLight "Inside_Track_main_Light_01" (
+                def SphereLight "Inside_Track_main_Light_01" (
                     prepend apiSchemas = ["ShapingAPI"]
                 )
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
-                    float inputs:height = 0.5
                     float inputs:intensity = 200
                     bool inputs:normalize = 0
-                    float inputs:shaping:cone:angle = 180
+                    float inputs:radius = 1.5
+                    float inputs:shaping:cone:angle = 90
                     float inputs:shaping:cone:softness
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    float inputs:width = 1.5
                     bool visibleInPrimaryRay = 1
                     double3 xformOp:rotateXYZ = (0, 0, 90)
                     double3 xformOp:scale = (1, 1, 1)

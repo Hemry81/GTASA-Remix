@@ -7,19 +7,11 @@ over "RootNode"
 {
     over "meshes"
     {
-        over "mesh_BBA98D7DC51F8566"
+        over "mesh_BBA98D7DC51F8566" (
+            references = None
+        )
         {
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-
             def Xform "Buddha" (
-                delete references = [
-                    @./propsBuddha.usd@,
-                    @./props/Buddha.usd@
-                ]
                 prepend references = @./props/Buddha/Buddha.usd@
             )
             {
@@ -37,16 +29,11 @@ over "RootNode"
             }
         }
 
-        over "mesh_9EEEA8DECA166C85"
+        over "mesh_9EEEA8DECA166C85" (
+            references = None
+        )
         {
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-
             def Xform "BarberShop_01_Mirror" (
-                delete references = @./props/SaloonMirror.usd@
                 prepend references = @./props/Saloon/Mirror.usd@
             )
             {
@@ -57,7 +44,9 @@ over "RootNode"
             }
         }
 
-        over "mesh_D01958624929DDBE"
+        over "mesh_D01958624929DDBE" (
+            references = None
+        )
         {
             def Xform "Binco_Mirror" (
                 references = @./props/Saloon/Mirror.usd@
@@ -70,24 +59,141 @@ over "RootNode"
             }
         }
 
-        over "mesh_08A0A4461F95E387"
+        over "mesh_0627F7D289C13A04" (
+            references = None
+        )
         {
-            custom int preserveOriginalDrawCall = 0
+        }
 
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-
-            def Xform "StreetLight_0101" (
-                references = @./props/Light/Street Lights/Street Lights 01/street light 01.usd@
+        over "mesh_0DEF220833672414" (
+            references = None
+        )
+        {
+            def Xform "fence" (
+                references = @./props/Fence/fence_01.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_FABA42940AC2A297" (
+            references = None
+        )
+        {
+            def Xform "Chair_Leg" (
+                prepend references = @./props/Furnitures/Chairs/Type_01/Chair_Leg.usd@
+            )
+            {
+                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+            }
+        }
+
+        over "mesh_CEA1FC157AC5A6F5" (
+            references = None
+        )
+        {
+            def Xform "Chair_Body" (
+                prepend references = @./props/Furnitures/Chairs/Type_01/Chair_Body.usd@
+            )
+            {
+                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+            }
+        }
+
+        over "mesh_5C4027E10554D7FC" (
+            references = None
+        )
+        {
+            def Xform "Chair_Leg" (
+                prepend references = @./props/Furnitures/Chairs/Type_02/Chair_Leg.usd@
+            )
+            {
+                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+            }
+        }
+
+        over "mesh_4C7CE194B47844B2" (
+            references = None
+        )
+        {
+            def Xform "Chair_Body" (
+                prepend references = @./props/Furnitures/Chairs/Type_02/Chair_Body.usd@
+            )
+            {
+                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+            }
+        }
+
+        over "mesh_83E189AE3CCAECE9" (
+            references = None
+        )
+        {
+            def Xform "Table_Bottom" (
+                prepend references = @./props/Furnitures/Tables/Type_01/Table_Bottom.usd@
+            )
+            {
+                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+            }
+        }
+
+        over "mesh_84F617DBBCFE4870" (
+            references = None
+        )
+        {
+            def Xform "Table_Support" (
+                prepend references = @./props/Furnitures/Tables/Type_01/Table_Support.usd@
+            )
+            {
+                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+            }
+        }
+
+        over "mesh_FDED9107BA75FCE6" (
+            references = None
+        )
+        {
+            def Xform "Table_Top" (
+                prepend references = @./props/Furnitures/Tables/Type_01/Table_Top.usd@
+            )
+            {
+                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+            }
+        }
+
+        over "mesh_C769C427BE4E12D2" (
+            references = None
+        )
+        {
+            def Xform "Body" (
+                prepend references = @./props/Light/Table_Light/Type_01/Body.usd@
+            )
+            {
+                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
+            }
+        }
+
+        over "mesh_275A56B276072EC5" (
+            references = None
+        )
+        {
+            def Xform "Body" (
+                prepend references = @./props/Light/Wall_Light/Type_01/Body.usd@
+            )
+            {
+                matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+                uniform token[] xformOpOrder = ["xformOp:transform"]
             }
         }
     }

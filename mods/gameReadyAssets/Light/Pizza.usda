@@ -1,0 +1,320 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_454D7462D5DB81EC"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Pizza_Light_self_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 50
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.3, 8.4, 0.9000000134110451)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Pizza_Light_main" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float intensity = 800
+                    bool normalize = 0
+                    float radius = 0.26
+                    float shaping:cone:angle = 60
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, -90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.10000000149011612, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def SphereLight "Pizza_Light_self_02" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 50
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.7000000551342964, 8.4, 0.9000000134110451)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Pizza_Light_main" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float intensity = 800
+                    bool normalize = 0
+                    float radius = 0.26
+                    float shaping:cone:angle = 60
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, -90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.10000000149011612, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def SphereLight "Pizza_Light_self_03" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 50
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.02, -2.95, 1.6)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Pizza_Light_main" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float intensity = 800
+                    bool normalize = 0
+                    float radius = 0.26
+                    float shaping:cone:angle = 60
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, -90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.10000000149011612, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def SphereLight "Pizza_Light_self_04" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 50
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.02, -6.38, 1.6)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Pizza_Light_main" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float intensity = 800
+                    bool normalize = 0
+                    float radius = 0.26
+                    float shaping:cone:angle = 60
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, -90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.10000000149011612, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def SphereLight "Pizza_Light_self_05" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 50
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.84, -2.95, 1.6)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Pizza_Light_main" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float intensity = 800
+                    bool normalize = 0
+                    float radius = 0.26
+                    float shaping:cone:angle = 60
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, -90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.10000000149011612, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def SphereLight "Pizza_Light_self_06" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 50
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.83, -6.38, 1.6)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Pizza_Light_main" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float intensity = 800
+                    bool normalize = 0
+                    float radius = 0.26
+                    float shaping:cone:angle = 60
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, -90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.10000000149011612, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def SphereLight "Pizza_Light_self_07" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 50
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.84, 0.8300000000000001, 1.6)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Pizza_Light_main" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float intensity = 800
+                    bool normalize = 0
+                    float radius = 0.26
+                    float shaping:cone:angle = 60
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, -90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.10000000149011612, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+
+            def SphereLight "Pizza_Light_self_08" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float intensity = 50
+                bool normalize = 0
+                float radius = 0.1
+                float shaping:cone:angle = 60
+                float shaping:cone:softness
+                float shaping:focus
+                color3f shaping:focusTint
+                asset shaping:ies:file
+                bool visibleInPrimaryRay = 1
+                double3 xformOp:rotateXYZ = (0, 90, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (3.02, 0.8300000000000001, 1.6)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Pizza_Light_main" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float intensity = 800
+                    bool normalize = 0
+                    float radius = 0.26
+                    float shaping:cone:angle = 60
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, -90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0.10000000149011612, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+        }
+    }
+}
+

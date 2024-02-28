@@ -19,7 +19,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -39,7 +39,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -59,7 +59,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -79,7 +79,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -99,7 +99,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -119,7 +119,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -139,7 +139,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -159,7 +159,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -179,7 +179,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -199,7 +199,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -219,7 +219,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -239,7 +239,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -259,7 +259,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -279,7 +279,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -299,7 +299,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -319,7 +319,7 @@ over "RootNode"
                 float intensity = 300
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
@@ -344,7 +344,7 @@ over "RootNode"
                 float intensity = 100
                 bool normalize = 1
                 float radius = 0.1
-                float shaping:cone:angle = 180
+                float shaping:cone:angle = 60
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint

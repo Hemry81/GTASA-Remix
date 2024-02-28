@@ -3,38 +3,3 @@
     upAxis = "Z"
 )
 
-over "RootNode"
-{
-    over "Looks"
-    {
-        over "mat_5BB8CF1E028BBEE2"
-        {
-            over "Shader"
-            {
-                asset inputs:diffuse_texture = @./tire_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0.29999998 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Amount"
-                    doc = "Higher roughness values lead to more blurry reflections"
-                    hidden = false
-                )
-            }
-        }
-    }
-}
-

@@ -1,0 +1,8 @@
+#usda 1.0
+(
+    subLayers = [
+        @./Plane/Andromada.usda@
+    ]
+    upAxis = "Z"
+)
+

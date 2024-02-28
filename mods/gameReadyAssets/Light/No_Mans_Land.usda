@@ -18,7 +18,7 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 float inputs:intensity = 500
                 float inputs:radius = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
@@ -37,7 +37,7 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 float inputs:intensity = 500
                 float inputs:radius = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint
@@ -56,7 +56,7 @@ over "RootNode"
                 float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                 float inputs:intensity = 500
                 float inputs:radius = 1
-                float inputs:shaping:cone:angle = 180
+                float inputs:shaping:cone:angle = 90
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
                 color3f inputs:shaping:focusTint

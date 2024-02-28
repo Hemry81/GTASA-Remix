@@ -44,6 +44,7 @@ over "RootNode"
                     displayName = "Height Map"
                     doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./A00E5CACC1852CA7_normal.dds@ (
                     colorSpace = "auto"
@@ -117,6 +118,7 @@ over "RootNode"
                     displayName = "Height Map"
                     doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
                     hidden = false
+                    renderType = "texture_2d"
                 )
                 asset inputs:normalmap_texture = @./75A3841BC95D2C88_normal.dds@ (
                     colorSpace = "auto"
@@ -138,14 +140,6 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-            }
-        }
-
-        over "mat_B06AEDEB93824BAE"
-        {
-            over "Shader"
-            {
-                uniform bool enable_opacity = 1
             }
         }
     }
