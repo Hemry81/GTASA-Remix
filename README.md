@@ -17,6 +17,7 @@ This mod changes the sun and moon in GTASA using MoonLoader and Lua scripts.
 **Installation** :
 - **MoonLoader** : Download and install MoonLoader from the provided link. This will allow you to run Lua scripts in GTASA: [MoonLoader (Russian)](https://www.blast.hk/threads/13305/) or [MoonLoader (English)](https://gtaforums.com/topic/890987-moonloader/).
 - **MoonAdditions** : Download MoonAdditions from GitHub. Copy the MoonAdditions.dll file to your MoonLoader/lib folder: [MoonAdditions](https://github.com/THE-FYP/MoonAdditions).
+- **Moon ImGui** : Download and install from the provided link. Copy the "imgui.lua" and "MoonImGui.dll" files to your MoonLoader/lib folder: [Moon ImGui](https://www.blast.hk/threads/19292/)
 - **SARemix_Sun** : download the "SARemix_Sun.lua" and "SARemix_Real_Sun.dat" files from the moonloader folder. Then copy it into the "game folder\MoonLoader" folder.
 
 **Features and update** :
@@ -65,7 +66,7 @@ To enhance stability and improve graphics quality, we recommend installing the f
 - **[SA] SilentPatch v1.1 Build 32 : [SilentPatch](https://www.mixmods.com.br/2019/12/sa-silentpatch/)** (Addresses multiple issues in the original game).
 - **Improved Streaming : [Improved Streaming](https://www.mixmods.com.br/2022/04/improved-streaming/)** (Resolves memory streaming problems).
 - **OLA – Open Limit Adjuster v1.5.9 : [Open Limit Adjuster](https://www.mixmods.com.br/2022/10/open-limit-adjuster/)** (Resolves memory-related issues).
-- **Carl Johnson Remastered (INSANITY CJ) : [Carl Johnson Remastered (INSANITY CJ)](https://www.mixmods.com.br/2018/06/carl-johnson-remastered-insanity-cj/)** (Provides high-resolution CJ textures with a recreated body mesh. Our CJ PBR texture is currently based on this pack).
+- **Carl Johnson Remastered (INSANITY CJ) : [Carl Johnson Remastered (INSANITY CJ)](https://www.mixmods.com.br/2018/06/carl-johnson-remastered-insanity-cj/)** (Provides high-resolution CJ textures with a recreated body mesh).
 - **CJ Insanity + Upscale COMPLETE (all clothes in HD : [CJ Insanity + Upscale COMPLETE (all clothes in HD)](https://www.mixmods.com.br/2021/06/cj-insanity-upscale-complete-todas-as-roupas-em-hd/)** (Enhances CJ's clothing textures with high resolution).
 - **Ped Spec : [Ped Spec](https://www.mixmods.com.br/2015/02/ped-spec-iluminacao-specular-nas-pessoas-como-no-mobile/)**  (Fixes mesh shaking issues).
 - **ImVehFt – Improved Vehicle Features : [ImVehFt](https://www.mixmods.com.br/2020/01/imvehft-improved-vehicle-features/)**.
