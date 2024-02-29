@@ -659,8 +659,8 @@ This parameter is unused.
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
                     doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
@@ -700,7 +700,7 @@ This parameter is unused.
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Normal"
+                    displayGroup = "Base Material"
                     displayName = "Normal Map"
                     hidden = false
                     renderType = "texture_2d"
@@ -710,8 +710,11 @@ This parameter is unused.
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -783,7 +786,7 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./68634351994B5E67_albedo.dds@ (
+                asset inputs:diffuse_texture = @./Sidewalk 01_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -810,7 +813,7 @@ This parameter is unused.
 """
                     hidden = false
                 )
-                asset inputs:height_texture = @./68634351994B5E67_height.dds@ (
+                asset inputs:height_texture = @./Sidewalk 01_height.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -823,7 +826,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "texture_2d"
                 )
-                asset inputs:normalmap_texture = @./68634351994B5E67_normal.dds@ (
+                asset inputs:normalmap_texture = @./Sidewalk 01_normal.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -833,7 +836,7 @@ This parameter is unused.
                     hidden = false
                     renderType = "texture_2d"
                 )
-                asset inputs:reflectionroughness_texture = @./68634351994B5E67_rough.dds@ (
+                asset inputs:reflectionroughness_texture = @./Sidewalk 01_rough.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@

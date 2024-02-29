@@ -8998,67 +8998,6 @@ This parameter is unused.
             }
         }
     }
-
-    over "meshes"
-    {
-        over "mesh_89789B55E33685C8"
-        {
-            def Xform "CustomMesh" (
-                prepend apiSchemas = ["MaterialBindingAPI"]
-                prepend references = @./meshes/cars/body/CustomMesh.usd@
-            )
-            {
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-
-            def Xform "CustomMesh_01" (
-                prepend apiSchemas = ["MaterialBindingAPI"]
-                prepend references = @./meshes/cars/body/CustomMesh.usd@
-            )
-            {
-                rel material:binding = </Looks/clearcoat_2> (
-                    bindMaterialAs = "weakerThanDescendants"
-                )
-                bool remix_category:decal_Static = 1
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1.01, 1.01, 1.01)
-                double3 xformOp:translate = (0, 0, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-        }
-
-        over "mesh_47D8BDA200AB1AA8"
-        {
-            def Xform "mirror" (
-                prepend apiSchemas = ["MaterialBindingAPI"]
-                prepend references = @./meshes/cars/body/mirror.usd@
-            )
-            {
-                rel material:binding = </Looks/Mirror> (
-                    bindMaterialAs = "weakerThanDescendants"
-                )
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-            }
-
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-        }
-    }
 }
 
 over "Looks"
