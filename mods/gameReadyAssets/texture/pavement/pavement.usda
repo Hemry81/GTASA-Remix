@@ -849,9 +849,5 @@ This parameter is unused.
             }
         }
     }
-
-    over "cameras"
-    {
-    }
 }
 

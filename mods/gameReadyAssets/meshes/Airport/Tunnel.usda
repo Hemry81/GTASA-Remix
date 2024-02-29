@@ -10,8 +10,7 @@ over "RootNode"
         over "mesh_E834500BAEC427E7"
         {
             def Xform "Xform_E834500BAEC427E7_0" (
-                delete references = @./Tunnel 01mesh_E834500BAEC427E7.usd@
-                prepend references = @./Tunnel 01/mesh_E834500BAEC427E7.usd@
+                references = @./Tunnel 01/mesh_E834500BAEC427E7.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
@@ -27,14 +26,10 @@ over "RootNode"
             }
         }
 
-        over "mesh_485BA2A627B617C4" (
-            delete references = @../../../../captures/meshes/mesh_485BA2A627B617C4.usd@
-            prepend references = @./meshes//mesh_485BA2A627B617C4.usd@
-        )
+        over "mesh_485BA2A627B617C4"
         {
             def Xform "Xform_485BA2A627B617C4_0" (
-                delete references = @./Tunnel 01mesh_485BA2A627B617C4.usd@
-                prepend references = @./Tunnel 01/mesh_485BA2A627B617C4.usd@
+                references = @./Tunnel 01/mesh_485BA2A627B617C4.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
@@ -53,8 +48,7 @@ over "RootNode"
         over "mesh_A70067C486512457"
         {
             def Xform "Xform_A70067C486512457_0" (
-                delete references = @./Tunnel 01mesh_A70067C486512457.usd@
-                prepend references = @./Tunnel 01/mesh_A70067C486512457.usd@
+                references = @./Tunnel 01/mesh_A70067C486512457.usd@
             )
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)

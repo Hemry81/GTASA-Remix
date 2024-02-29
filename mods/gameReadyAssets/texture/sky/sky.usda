@@ -3,10 +3,6 @@
     upAxis = "Z"
 )
 
-over "RootNode"
-{
-}
-
 over "Looks"
 {
     def Material "Cloud"
