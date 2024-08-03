@@ -66,8 +66,6 @@ To enhance stability and improve graphics quality, we recommend installing the f
 - **[SA] SilentPatch v1.1 Build 32 : [SilentPatch](https://www.mixmods.com.br/2019/12/sa-silentpatch/)** (Addresses multiple issues in the original game).
 - **Improved Streaming : [Improved Streaming](https://www.mixmods.com.br/2022/04/improved-streaming/)** (Resolves memory streaming problems).
 - **OLA – Open Limit Adjuster v1.5.9 : [Open Limit Adjuster](https://www.mixmods.com.br/2022/10/open-limit-adjuster/)** (Resolves memory-related issues).
-- **Carl Johnson Remastered (INSANITY CJ) : [Carl Johnson Remastered (INSANITY CJ)](https://www.mixmods.com.br/2018/06/carl-johnson-remastered-insanity-cj/)** (Provides high-resolution CJ textures with a recreated body mesh).
-- **CJ Insanity + Upscale COMPLETE (all clothes in HD : [CJ Insanity + Upscale COMPLETE (all clothes in HD)](https://www.mixmods.com.br/2021/06/cj-insanity-upscale-complete-todas-as-roupas-em-hd/)** (Enhances CJ's clothing textures with high resolution).
 - **Ped Spec : [Ped Spec](https://www.mixmods.com.br/2015/02/ped-spec-iluminacao-specular-nas-pessoas-como-no-mobile/)**  (Fixes mesh shaking issues).
 - **ImVehFt – Improved Vehicle Features : [ImVehFt](https://www.mixmods.com.br/2020/01/imvehft-improved-vehicle-features/)**.
 - **VehFuncs v2.4 : [VehFuncs](https://www.mixmods.com.br/2023/01/sa-vehfuncs/)**.
