@@ -63,7 +63,7 @@ Follow these steps to install the GTASA RTX-Remix mod:
 # Necessary Mod List: 
 To enhance stability and improve graphics quality, we recommend installing the following mods alongside our game mod:
 - **Essentials Pack : [English](https://libertycity.net/files/gta-san-andreas/154094-essentials-pak-modov-pervojj.html) or [Portuguese](https://www.mixmods.com.br/2019/06/sa-essentials-pack/)** (An important mod to ensure compatibility with Remix).
-- **MixSets v4.3.7 : [English](https://www.gtainside.com/en/sanandreas/mods/138597-mixsets-v4-3/) or [Portuguese](https://www.mixmods.com.br/2022/03/sa-mixsets/)** (Fixes various issues in the original game and improve stability with Remix).
+- **MixSets : [English](https://www.gtainside.com/en/sanandreas/mods/138597-mixsets-v4-3/) or [Portuguese](https://www.mixmods.com.br/2022/03/sa-mixsets/)** (Fixes various issues in the original game and improve stability with Remix).
 - **Improved Streaming : [Portuguese](https://www.mixmods.com.br/2022/04/improved-streaming/)** (Resolves memory streaming problems).
 - **OLA – Open Limit Adjuster : [English](https://github.com/GTAmodding/III.VC.SA.LimitAdjuster/releases) or [Portuguese](https://www.mixmods.com.br/2022/10/open-limit-adjuster/)** (Resolves memory-related issues).
 - **Ped Spec : [Portuguese](https://www.mixmods.com.br/2015/02/ped-spec-iluminacao-specular-nas-pessoas-como-no-mobile/)**  (Fixes mesh shaking issues).
