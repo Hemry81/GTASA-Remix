@@ -89,6 +89,7 @@ The GTASA RTX-Remix Project operates under the MIT License. Please review the li
 For any questions or inquiries, feel free to contact the project administrators at Discord [Hemry](https://discordapp.com/users/hemry).
 
 # News and Progress update
-GTASA Remix Discord Group: [RTX-Remix GTASA Discord Group](https://discord.com/channels/1028444667789967381/1097105394821759006).
+RTX-Remix Discord Channel: [RTX-Remix Discord Channel](https://discord.gg/rtxremix)  
+GTASA Remix Discord Group: [RTX-Remix GTASA Discord Group](https://discord.com/channels/1028444667789967381/1097105394821759006). (To join this group, you first need to join the RTX-Remix Discord channel.)
 
 We hope you enjoy your time with the GTASA RTX-Remix Project!
