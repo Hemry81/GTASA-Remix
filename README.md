@@ -1,37 +1,43 @@
 # GTASA RTX-Remix Project
-Welcome to the GTASA RTX-Remix Project! This project is dedicated to enhancing the GTA San Andreas gameplay experience through the integration of RTX technology. Join our community of modders and enthusiasts as we bring stunning visual upgrades to the world of GTA San Andreas.
 
-# Requirements
-To get started with the GTASA RTX-Remix Project, ensure that you have the following:
+Welcome to the GTASA RTX-Remix Project! This initiative aims to enhance the GTA San Andreas gaming experience by incorporating advanced RTX technology. Join our vibrant community of modders and enthusiasts as we push the boundaries of visual realism in the world of GTA San Andreas.
 
-- **GTA San Andreas Game**: Make sure you have a legally obtained copy of GTA San Andreas installed on your computer.
-- **RTX-Compatible Graphics Card**: You'll need an NVIDIA RTX series graphics card to take full advantage of the RTX enhancements.
-- **Modding Tools**: Install the necessary modding tools, such as ModLoader and MoonLoader.
-- **Downgrade**: [GTA: San Andreas Downgrader](http://downgraders.rockstarvision.com/) For better compatibility, you'll need to downgrade to version 1.0 in order to run the game with RTX-Remix.
-- **RTX-Remix**: Get the latest version of RTX-Remix from [RTX-Remix GitHub](https://github.com/NVIDIAGameWorks/rtx-remix) and download the release. Make sure to update the "bridge-remix" and "dxvk-remix" files in the Action Tab. 
+## Requirements
 
-*(You can use [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader/releases/latest/download/RTX.Remix.Downloader.exe) to download and update to lastest version of RTX-Remix). Github page of the tool : [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader))*
+To participate in the GTASA RTX-Remix Project, please ensure you have the following:
 
-# Mod Installation :
-Follow these steps to install the GTASA RTX-Remix mod:
-- **Backup**: Before installing any mods, it's highly recommended to create a backup of your GTA San Andreas game files. This will allow you to revert back to the original game state if needed.
-- **Download**:
+- **GTA San Andreas Game**: A legally purchased copy of GTA San Andreas installed on your computer.
+- **RTX-Compatible Graphics Card**: An NVIDIA RTX series graphics card is necessary to experience the full benefits of RTX enhancements.
+- **Modding Tools**: Essential modding tools like ModLoader and MoonLoader should be installed.
+- **Downgrade**: Use the [GTA: San Andreas Downgrader](http://downgraders.rockstarvision.com/) to downgrade your game to version 1.0 for optimal compatibility with RTX-Remix.
+- **RTX-Remix**: Download the most recent version of RTX-Remix from the [RTX-Remix GitHub](https://github.com/NVIDIAGameWorks/rtx-remix) page. Ensure you update the "bridge-remix" and "dxvk-remix" files in the Action Tab.
 
-    **1**. Navigate to [GitHub Desktop](https://desktop.github.com/) and click "**Download for Windows**" to download the installer file.
+  (Alternatively, use the [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader/releases/latest/download/RTX.Remix.Downloader.exe) for easy downloading and updating.)
 
-    **2**. Run the installer and follow the on-screen instructions to complete the setup process.
+## GTASA RTX-Remix Mod Installation Guide
 
-    **3**. Once installed, open GitHub Desktop and sign into your account.
+Enhance your GTA San Andreas by following these detailed installation steps:
 
-    **4**. In the mod's GitHub repository page top right corner click "Code" then "Open with GitHub Desktop".
+### Step 1: Backup Your Game Files
+Always back up your original GTA San Andreas game files before installation to safeguard your data.
 
-    **5**. In GitHub Desktop, click "Clone" and select "Your Game Folder\rtx-remix" to clone the repository to.
+### Step 2: Download and Install GitHub Desktop
+1. Visit the [GitHub Desktop download page](https://desktop.github.com/).
+2. Download the installer for your OS and follow the setup instructions.
 
-    (If the rtx-remix folder do not exist, create it manually.)
+### Step 3: Clone the Mod Repository
+1. Open GitHub Desktop and log in.
+2. Go to the mod's GitHub repository and click **Code** > **Open with GitHub Desktop**.
+3. Choose **Clone** and select or create the directory `Your Game Folder\rtx-remix` for the repository.
 
-    **6**. Wait for the cloning process to finish - this may take a few minutes for larger mods.
-- **Move File**: place the "rtx.conf" file from the "rtx-config" folder into your game folder.
-- **Let's RTX**: Launch GTA San Andreas with RTX enhancements.
+### Step 4: Move Configuration Files
+- Move the `rtx.conf` file from the `rtx-config` folder to your main game directory.
+
+### Step 5: Install Additional Mods
+- Transfer the entire `Moonloader` folder from the repository into your game directory, which includes mods like the **Sun and Moon Mod** and the **Health Bar Mod**.
+
+### Step 6: Launch the Game and Enjoy!
+- Start GTA San Andreas with RTX enhancements and enjoy the improved visuals.
 
 # Necessary Mod List: 
 To enhance stability and improve graphics quality, we recommend installing the following mods alongside our game mod:
@@ -75,7 +81,7 @@ Fixed an issue where the sun was still present in the game during nighttime, cau
 - Resolved the problem of "hidden" shadows appearing at noon time
 - real-time editing of the sun/moon position by pressing the hotkey "F3".
 
-*(If you previously installed my sun mod CLEO script, delete it to avoid conflicts.)*
+*(If you previously installed our sun mod CLEO script, delete it to avoid conflicts.)*
 
 # Health Bar Mod Requirements
 The Health Bar Mod is a Lua script designed to reveal the original health bar that is hidden in Remix.
@@ -87,25 +93,25 @@ The Health Bar Mod is a Lua script designed to reveal the original health bar th
 
   (If you've installed the sun mod, it means you already have moonloader and MoonAdditions installed, so there's **no need** to reinstall it.)
 
-# Contributing
-- We welcome contributions from the community! If you have any improvements or suggestions for the GTASA RTX-Remix mod, please follow our guidelines for contributing. Fork this repository, make your modifications, and submit a pull request.
+## Community and Contributions
+We invite and appreciate contributions from the community. If you have suggestions or improvements for the GTASA RTX-Remix mod, please contribute by forking this repository, making your changes, and submitting a pull request.
 
-# Community Guidelines
-To maintain a healthy and constructive environment, we kindly ask all community members to adhere to the following guidelines:
+## Community Guidelines
+To maintain a positive and productive environment, please adhere to these guidelines:
 
-- Be respectful and considerate towards fellow members.
-- Provide clear and concise communication.
-- Avoid spamming or posting unrelated content.
-- Report any issues or concerns to the community moderators.
+- Respect and considerate interactions.
+- Clear and concise communication.
+- Refrain from spamming and off-topic posts.
+- Report any issues to the moderators.
 
-# License
-The GTASA RTX-Remix Project operates under the MIT License. Please review the license file for more details.
+## License
+The GTASA RTX-Remix Project is licensed under the MIT License. For more details, please review the license file.
 
-# Contact
-For any questions or inquiries, feel free to contact the project administrators at Discord [Hemry](https://discordapp.com/users/hemry).
+## Contact and Updates
+For inquiries, contact the project administrators on Discord: [Hemry](https://discordapp.com/users/hemry) or in the [GTASA Remix Discord Group](https://discord.com/channels/1028444667789967381/1097105394821759006).
 
-# News and Progress update
-RTX-Remix Discord Channel: [RTX-Remix Discord Channel](https://discord.gg/rtxremix)  
-GTASA Remix Discord Group: [RTX-Remix GTASA Discord Group](https://discord.com/channels/1028444667789967381/1097105394821759006). (To join this group, you first need to join the RTX-Remix Discord channel.)
+Stay updated with our progress:
+- **RTX-Remix Discord Channel**: [Join here](https://discord.gg/rtxremix)
+- **GTASA Remix Discord Group**: [Join here](https://discord.com/channels/1028444667789967381/1097105394821759006) (Requires joining the RTX-Remix Discord channel first).
 
-We hope you enjoy your time with the GTASA RTX-Remix Project!
+Enjoy your enhanced gameplay with the GTASA RTX-Remix Project!
