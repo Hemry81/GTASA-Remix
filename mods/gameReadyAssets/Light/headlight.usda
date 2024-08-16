@@ -5,55 +5,6 @@
 
 over "RootNode"
 {
-    over "meshes"
-    {
-        over "mesh_7D687F37C2E020CB"
-        {
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-
-            def Xform "light_pos"
-            {
-                double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                def Xform "Xform"
-                {
-                    double3 xformOp:rotateXYZ = (0, 0, 0)
-                    double3 xformOp:scale = (1, 1, 1)
-                    double3 xformOp:translate = (0, 0, 0)
-                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-
-                    def SphereLight "taillight" (
-                        prepend apiSchemas = ["ShapingAPI"]
-                    )
-                    {
-                        float3[] extent = [(-50, -50, -50), (50, 50, 50)]
-                        color3f inputs:color = (1, 0.22393823, 0.22393823)
-                        float inputs:intensity = 100
-                        bool inputs:normalize = 0
-                        float inputs:radius = 0.2
-                        float inputs:shaping:cone:angle = 60
-                        float inputs:shaping:cone:softness = 0.05
-                        float inputs:shaping:focus
-                        color3f inputs:shaping:focusTint
-                        asset inputs:shaping:ies:file
-                        bool visibleInPrimaryRay = 1
-                        double3 xformOp:rotateXYZ = (-90, 0, 0)
-                        double3 xformOp:scale = (1, 1, 1)
-                        double3 xformOp:translate = (0, 0, 0)
-                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
-                    }
-                }
-            }
-        }
-    }
-
     over "Looks"
     {
         over "mat_72F7BB84C3C94411"
@@ -64,15 +15,15 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
                     doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:emissive_intensity = 50 (
+                float inputs:emissive_intensity = 30 (
                     customData = {
                         float default = 40
                         dictionary range = {
@@ -80,7 +31,7 @@ over "RootNode"
                             float min = 0
                         }
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Intensity"
                     doc = """Intensity of the emission
 
@@ -92,7 +43,7 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Mask Map"
                     doc = """The texture masking the emissive color
 
@@ -104,14 +55,14 @@ over "RootNode"
                     customData = {
                         bool default = 0
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Enable Emission"
                     doc = """Enables the emission of light from the material
 
 """
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.79999995 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -119,9 +70,9 @@ over "RootNode"
                             float min = 0
                         }
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """Metallic Material
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
 
 """
                     hidden = false
@@ -131,7 +82,7 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Normal"
+                    displayGroup = "Base Material"
                     displayName = "Normal Map"
                     hidden = false
                     renderType = "texture_2d"
@@ -141,8 +92,11 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -194,7 +148,7 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.79999995 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -236,8 +190,8 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
                     doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
@@ -252,7 +206,7 @@ over "RootNode"
                             float min = 0
                         }
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Intensity"
                     doc = """Intensity of the emission
 
@@ -264,7 +218,7 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Mask Map"
                     doc = """The texture masking the emissive color
 
@@ -276,14 +230,14 @@ over "RootNode"
                     customData = {
                         bool default = 0
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Enable Emission"
                     doc = """Enables the emission of light from the material
 
 """
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.79999995 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -291,9 +245,9 @@ over "RootNode"
                             float min = 0
                         }
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """Metallic Material
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
 
 """
                     hidden = false
@@ -303,7 +257,7 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Normal"
+                    displayGroup = "Base Material"
                     displayName = "Normal Map"
                     hidden = false
                     renderType = "texture_2d"
@@ -313,8 +267,11 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -337,7 +294,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:emissive_intensity = 50 (
+                float inputs:emissive_intensity = 30 (
                     customData = {
                         float default = 40
                         dictionary range = {
@@ -376,7 +333,7 @@ over "RootNode"
 """
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.79999995 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -422,8 +379,8 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
                     doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
@@ -438,7 +395,7 @@ over "RootNode"
                             float min = 0
                         }
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Intensity"
                     doc = """Intensity of the emission
 
@@ -450,7 +407,7 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Emissive Mask Map"
                     doc = """The texture masking the emissive color
 
@@ -462,14 +419,14 @@ over "RootNode"
                     customData = {
                         bool default = 0
                     }
-                    displayGroup = "Emissive"
+                    displayGroup = "Emission"
                     displayName = "Enable Emission"
                     doc = """Enables the emission of light from the material
 
 """
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.79999995 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -477,9 +434,9 @@ over "RootNode"
                             float min = 0
                         }
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Metallic Amount"
-                    doc = """Metallic Material
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
 
 """
                     hidden = false
@@ -489,7 +446,7 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Normal"
+                    displayGroup = "Base Material"
                     displayName = "Normal Map"
                     hidden = false
                     renderType = "texture_2d"
@@ -499,8 +456,11 @@ over "RootNode"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
@@ -562,7 +522,7 @@ over "RootNode"
 """
                     hidden = false
                 )
-                float inputs:metallic_constant = 0.79999995 (
+                float inputs:metallic_constant = 0.98999995 (
                     customData = {
                         float default = 0
                         dictionary range = {

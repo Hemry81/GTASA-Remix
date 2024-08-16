@@ -47,6 +47,27 @@ over "RootNode"
                         double3 xformOp:scale = (1, 1, 1)
                         double3 xformOp:translate = (0, 0, 0)
                         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                        def SphereLight "StreetLight_02" (
+                            prepend apiSchemas = ["ShapingAPI"]
+                        )
+                        {
+                            float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                            float inputs:colorTemperature = 4500
+                            bool inputs:enableColorTemperature = 1
+                            float inputs:intensity = 1000
+                            float inputs:radius = 0.2
+                            float inputs:shaping:cone:angle = 30
+                            float inputs:shaping:cone:softness = 0.2
+                            float inputs:shaping:focus
+                            color3f inputs:shaping:focusTint
+                            asset inputs:shaping:ies:file
+                            bool visibleInPrimaryRay = 1
+                            double3 xformOp:rotateXYZ = (0, 0, 0)
+                            double3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                        }
                     }
                 }
             }
@@ -106,6 +127,30 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-0.46837010406790475, 0.013196293136559447, 3.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Street_Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    bool inputs:normalize = 1
+                    float inputs:shaping:cone:angle = 30
+                    float inputs:shaping:cone:softness = 0.2
+                    float intensity = 500
+                    bool normalize = 0
+                    float radius = 0.15
+                    float shaping:cone:angle = 60
+                    float shaping:cone:softness
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-0.46837010406790475, 0.013196293136559447, 3.1)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
             }
         }
 
@@ -137,6 +182,32 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-1.36, 0, 4.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "Commerce_StreetLight_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    bool disableFogInteraction = 0
+                    bool enableColorTemperature = 1
+                    float inputs:intensity = 1000
+                    bool inputs:normalize = 0
+                    float inputs:shaping:cone:angle = 30
+                    float inputs:shaping:cone:softness = 0.2
+                    bool light:enableCaustics = 0
+                    bool normalize = 0
+                    float radius = 0.2
+                    float shaping:cone:angle = 60
+                    float shaping:cone:softness = 0
+                    float shaping:focus = 0
+                    color3f shaping:focusTint = (0, 0, 0)
+                    float shaping:ies:angleScale = 0
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
             }
         }
 
@@ -148,8 +219,6 @@ over "RootNode"
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 0
-                bool enableColorTemperature = 0
                 float intensity = 200
                 bool normalize = 1
                 float radius = 1
@@ -163,28 +232,65 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (3.0000000447034836, -2.1095510296631756e-17, 5.2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Dual_Street_Light_main_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float intensity = 500
+                    bool normalize = 1
+                    float radius = 1
+                    float shaping:cone:angle = 60
+                    float shaping:cone:softness = 0.1
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    asset texture:file = @@
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (45, -3.3498032093407654e-14, -180)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.309457070371587e-15, -5.543277236368352, 2.296100611297821)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
 
-            def SphereLight "Dual_Street_Light_main_02" (
+            def SphereLight "Dual_Street_Light_main_03" (
                 prepend apiSchemas = ["ShapingAPI"]
             )
             {
-                float colorTemperature = 0
-                bool enableColorTemperature = 0
                 float intensity = 200
                 bool normalize = 1
                 float radius = 1
-                float shaping:cone:angle = 60
-                float shaping:cone:softness = 0.1
+                float shaping:cone:angle = 30
+                float shaping:cone:softness = 0.2
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
-                asset texture:file = @@
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (22.5, -3.1805547185895103e-15, 90)
+                double3 xformOp:rotateXYZ = (22.5, -2.5444437748716082e-14, -90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (-3, 1.7150588081359959e-18, 5.2)
+                double3 xformOp:translate = (3.0000000447034836, -2.1095510296631756e-17, 5.2)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Dual_Street_Light_main_04" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float intensity = 500
+                    bool normalize = 1
+                    float radius = 1
+                    float shaping:cone:angle = 30
+                    float shaping:cone:softness = 0.2
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    asset texture:file = @@
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (45, -3.3498032093407654e-14, -180)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (1.309457070371587e-15, -5.543277236368352, 2.296100611297821)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
         }
 
@@ -239,6 +345,27 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-2.1000000312924385, 0.10000000149011612, 7.500000111758709)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "StreetLight_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 1000
+                    bool normalize = 1
+                    float radius = 0.1
+                    float shaping:cone:angle = 30
+                    float shaping:cone:softness = 0.2
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-2.1000000312924385, 0.10000000149011612, 7.500000111758709)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
             }
         }
 
@@ -336,6 +463,27 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-7.300000108778477, 0, 11.10000016540289)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "StreetLight_03" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 1000
+                    bool normalize = 1
+                    float radius = 0.5
+                    float shaping:cone:angle = 30
+                    float shaping:cone:softness = 0.2
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-7.300000108778477, 0, 11.10000016540289)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
             }
 
             def SphereLight "StreetLight_02" (
@@ -357,6 +505,27 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (7.3, 0, 11.10000016540289)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "StreetLight_03" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float colorTemperature = 4500
+                    bool enableColorTemperature = 1
+                    float intensity = 1000
+                    bool normalize = 1
+                    float radius = 0.5
+                    float shaping:cone:angle = 30
+                    float shaping:cone:softness = 0.2
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (7.3, 0, 11.10000016540289)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
             }
         }
 
@@ -400,6 +569,27 @@ over "RootNode"
                         double3 xformOp:scale = (1, 1, 1)
                         double3 xformOp:translate = (0, 0, 0)
                         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                        def SphereLight "StreetLight_02" (
+                            prepend apiSchemas = ["ShapingAPI"]
+                        )
+                        {
+                            float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                            float inputs:colorTemperature = 4500
+                            bool inputs:enableColorTemperature = 1
+                            float inputs:intensity = 1000
+                            float inputs:radius = 0.2
+                            float inputs:shaping:cone:angle = 30
+                            float inputs:shaping:cone:softness = 0.2
+                            float inputs:shaping:focus
+                            color3f inputs:shaping:focusTint
+                            asset inputs:shaping:ies:file
+                            bool visibleInPrimaryRay = 1
+                            double3 xformOp:rotateXYZ = (0, 0, 0)
+                            double3 xformOp:scale = (1, 1, 1)
+                            double3 xformOp:translate = (0, 0, 0)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                        }
                     }
                 }
             }
@@ -433,6 +623,25 @@ over "RootNode"
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (1.2746863010343077, 0.19837811824822893, 0.005989916708358578)
                     uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    def SphereLight "StreetLight3in1_04" (
+                        prepend apiSchemas = ["ShapingAPI"]
+                    )
+                    {
+                        float intensity = 600
+                        bool normalize = 1
+                        float radius = 0.5
+                        float shaping:cone:angle = 30
+                        float shaping:cone:softness = 0.2
+                        float shaping:focus
+                        color3f shaping:focusTint
+                        asset shaping:ies:file
+                        bool visibleInPrimaryRay = 1
+                        double3 xformOp:rotateXYZ = (-0.485155314207077, 69.76009368896484, 128.5009002685547)
+                        double3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (1.2746863010343077, 0.19837811824822893, 0.005989916708358578)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    }
                 }
 
                 def SphereLight "StreetLight3in1_02" (
@@ -452,6 +661,25 @@ over "RootNode"
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (-1.3819457305389733, 0.19720028918271737, 0.002983498213730229)
                     uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    def SphereLight "StreetLight3in1_05" (
+                        prepend apiSchemas = ["ShapingAPI"]
+                    )
+                    {
+                        float intensity = 600
+                        bool normalize = 1
+                        float radius = 0.5
+                        float shaping:cone:angle = 30
+                        float shaping:cone:softness = 0.2
+                        float shaping:focus
+                        color3f shaping:focusTint
+                        asset shaping:ies:file
+                        bool visibleInPrimaryRay = 1
+                        double3 xformOp:rotateXYZ = (-0.8211776614189148, 71.67196655273438, 53.3192024230957)
+                        double3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-1.3819457305389733, 0.19720028918271737, 0.002983498213730229)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    }
                 }
 
                 def SphereLight "StreetLight3in1_01" (
@@ -471,6 +699,25 @@ over "RootNode"
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (-0.04322708383506324, 0.15655468120598925, 0.0029834982188461368)
                     uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    def SphereLight "StreetLight3in1_06" (
+                        prepend apiSchemas = ["ShapingAPI"]
+                    )
+                    {
+                        float intensity = 600
+                        bool normalize = 1
+                        float radius = 0.5
+                        float shaping:cone:angle = 30
+                        float shaping:cone:softness = 0.2
+                        float shaping:focus
+                        color3f shaping:focusTint
+                        asset shaping:ies:file
+                        bool visibleInPrimaryRay = 1
+                        double3 xformOp:rotateXYZ = (1.505166705249167e-14, 65, 90)
+                        double3 xformOp:scale = (1, 1, 1)
+                        double3 xformOp:translate = (-0.04322708383506324, 0.15655468120598925, 0.0029834982188461368)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                    }
                 }
             }
         }
@@ -496,6 +743,25 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 1.55, 3.5)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "StreetLight_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:intensity = 600
+                    float inputs:radius = 0.2
+                    float inputs:shaping:cone:angle = 30
+                    float inputs:shaping:cone:softness = 0.2
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 1.55, 3.5)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
         }
 
@@ -528,6 +794,71 @@ over "RootNode"
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-1.73, 0, 5.800000086426735)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+
+                def SphereLight "StreetLight_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float intensity = 1000
+                    float radius = 0.2
+                    float shaping:cone:angle = 30
+                    float shaping:cone:softness = 0.2
+                    float shaping:focus
+                    color3f shaping:focusTint
+                    asset shaping:ies:file
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateYZX = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-1.73, 0, 5.800000086426735)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
+                }
+            }
+        }
+
+        over "mesh_8E3F60526CDFCE3D"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "StreetLight_01" (
+                prepend apiSchemas = ["ShapingAPI"]
+            )
+            {
+                float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                float inputs:colorTemperature = 4500
+                bool inputs:enableColorTemperature = 1
+                float inputs:intensity = 500
+                float inputs:radius = 0.5
+                float inputs:shaping:cone:angle = 60
+                float inputs:shaping:cone:softness = 0.1
+                float inputs:shaping:focus
+                color3f inputs:shaping:focusTint
+                asset inputs:shaping:ies:file
+                bool visibleInPrimaryRay = 0
+                double3 xformOp:rotateXYZ = (0, 0, 90)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (-2.0698857478735135, 0.10680535272331326, 7.62770797477523)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "StreetLight_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:intensity = 1000
+                    float inputs:radius = 0.5
+                    float inputs:shaping:cone:angle = 30
+                    float inputs:shaping:cone:softness = 0.2
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    bool visibleInPrimaryRay = 0
+                    double3 xformOp:rotateXYZ = (0, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (-2.0698857478735135, 0.10680535272331326, 7.62770797477523)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
             }
         }
     }

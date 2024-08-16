@@ -1,4 +1,1 @@
-[SARemix_Real_Sun Setting]
-X Rotaion = 30.00000
-Y Rotaion = -5.00000
-Z Rotaion = -16.00000
+{"daycycle":{"basePosition":-5,"id":3890,"obj":1312513,"pos":{"y":-1682.1578369141,"x":2499.419921875,"z":12.708299636841},"rot":{"y":-5,"x":30,"z":-16}},"clouddome":{"basePosition":0,"pos":{"y":0,"x":0,"z":0},"rot":{"y":0,"x":0,"z":0},"id":0},"stardome":{"basePosition":0,"pos":{"y":0,"x":0,"z":0},"rot":{"y":0,"x":0,"z":0},"id":0},"nightcycle":{"basePosition":0,"id":3891,"obj":1312769,"pos":{"y":-1682.1578369141,"x":2499.419921875,"z":12.708299636841},"rot":{"y":-5,"x":30,"z":-16}}}
