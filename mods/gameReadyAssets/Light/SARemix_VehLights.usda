@@ -109,7 +109,7 @@ over "RootNode"
                     bindMaterialAs = "weakerThanDescendants"
                 )
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (0.005, 0.005, 0.005)
+                double3 xformOp:scale = (0, 0, 0)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
@@ -159,7 +159,7 @@ over "RootNode"
                     bindMaterialAs = "weakerThanDescendants"
                 )
                 double3 xformOp:rotateXYZ = (0, 0, 0)
-                double3 xformOp:scale = (0.005, 0.005, 0.005)
+                double3 xformOp:scale = (0, 0, 0)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }

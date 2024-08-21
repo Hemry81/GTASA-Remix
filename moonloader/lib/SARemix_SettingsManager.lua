@@ -1,34 +1,24 @@
-function serializeToJSON(val, seen)
-    seen = seen or {}
-    local valType = type(val)
+function serializeToJSON(tbl)
+    local function serialize(tbl, level)
+        level = level or 0
+        local indent = string.rep("  ", level)  -- Create indentation based on the current level
+        local result = {}
 
-    if valType == "string" then
-        return string.format("\"%s\"", val)
-    elseif valType == "number" or valType == "boolean" then
-        return tostring(val)
-    elseif valType ~= "table" then
-        error("JSON can only serialize numbers, booleans, strings, and tables")
-    end
-
-    if seen[val] then
-        return "\"[Circular]\""
-    end
-    seen[val] = true
-
-    local s = "{"
-    for k, v in pairs(val) do
-        if type(k) ~= "string" and type(k) ~= "number" then
-            error("JSON can only serialize string or number keys")
+        if level > 0 then result[#result + 1] = "{\n" else result[#result + 1] = "{" end
+        for k, v in pairs(tbl) do
+            local formattedKey = type(k) == "string" and '"' .. k .. '":' or '[' .. k .. ']:'
+            if type(v) == "table" then
+                result[#result + 1] = indent .. formattedKey .. serialize(v, level + 1)
+            else
+                local formattedValue = type(v) == "string" and '"' .. v .. '"' or tostring(v)
+                result[#result + 1] = indent .. "  " .. formattedKey .. formattedValue
+            end
+            result[#result + 1] = ",\n"
         end
-        k = type(k) == "string" and string.format("\"%s\"", k) or k
-        s = s .. string.format("%s:%s,", k, serializeToJSON(v, seen))
+        if #result > 0 then result[#result] = "\n" .. indent .. "}" else result[#result + 1] = "}" end
+        return table.concat(result)
     end
-    if #s > 1 then
-        s = s:sub(1, -2)  -- Remove the last comma
-    end
-    s = s .. "}"
-    seen[val] = nil
-    return s
+    return serialize(tbl)
 end
 
 function saveSettings(filePath, settings)
@@ -49,14 +39,17 @@ function mergeTables(defaults, loaded)
     if type(loaded) ~= 'table' then return defaults end
     local result = {}
     for k, v in pairs(defaults) do
-        if type(v) == 'table' then
+        if type(v) == 'table' and type(loaded[k]) == 'table' then
+            -- Recursively merge tables
             result[k] = mergeTables(v, loaded[k])
         else
+            -- If loaded has a value for k, use it, otherwise use the value from defaults
             result[k] = loaded[k] ~= nil and loaded[k] or v
         end
     end
     for k, v in pairs(loaded) do
         if result[k] == nil then
+            -- If the key doesn't exist in the result yet, add it from loaded
             result[k] = v
         end
     end
@@ -69,26 +62,28 @@ function loadSettings(filePath, defaultSettings)
         print("Failed to open file for reading.")
         return defaultSettings
     end
-    
+
     local content = file:read("*a")
     file:close()
 
-    -- Convert from JSON string to Lua table manually
-    local func, err = load("return " .. content:gsub('%s*([%[%]{}:,])%s*', '%1')
-                                        :gsub('":', '"=')
-                                        :gsub('([{,]%s*)"(.-)"%s*=', '%1%2='), nil, "t", {})
-    if not func then
-        print("Failed to parse settings:", err)
+    -- Replace ':' with '=' for Lua table syntax, and ensure all keys are correctly formatted
+    content = content:gsub('"(.-)":', '%1 =')  -- Adjust string keys in objects
+    content = content:gsub('%[(%d+)%]:', '[%1] =')  -- Adjust numeric indices
+
+    -- Attempt to convert the modified string back to a Lua table
+    local settingsTable, err = load("return " .. content, nil, "t", {})
+    if not settingsTable then
+        print("Failed to parse settings: " .. err)
         return defaultSettings
     end
 
-    local status, result = pcall(func)
-    if status then
-        return mergeTables(defaultSettings, result)
-    else
-        print("Failed to execute parsed settings:", result)
+    local ok, settings = pcall(settingsTable)
+    if not ok then
+        print("Failed to execute parsed settings: " .. settings)
         return defaultSettings
     end
+
+    return settings
 end
 
 return {

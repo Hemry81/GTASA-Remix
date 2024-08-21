@@ -1,5 +1,13 @@
 #usda 1.0
 (
+    customLayerData = {
+        dictionary omni_layer = {
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+    }
     upAxis = "Z"
 )
 
@@ -45,7 +53,7 @@ over "RootNode"
                 }
 
                 def Xform "Sun" (
-                    references = @D:/Games/remix/GTASA/meshes/Sky/Sphere.usd@
+                    references = @../meshes/Sky/Sphere.usd@
                 )
                 {
                     rel material:binding = </Looks/Sun> (
@@ -95,7 +103,7 @@ over "RootNode"
                 }
 
                 def Xform "Moon" (
-                    references = @D:/Games/remix/GTASA/meshes/Sky/Sphere.usd@
+                    references = @../meshes/Sky/Sphere.usd@
                 )
                 {
                     rel material:binding = </Looks/Moon> (
