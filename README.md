@@ -14,7 +14,7 @@ To participate in the GTASA RTX-Remix Project, please ensure you have the follow
 
   (Alternatively, use the [RTX-Remix-Downloader](https://github.com/Kowlin/RTX-Remix-Downloader/releases/latest/download/RTX.Remix.Downloader.exe) for easy downloading and updating.)
 
-## GTASA RTX-Remix Mod Installation Guide
+# GTASA RTX-Remix Mod Installation Guide
 
 Enhance your GTA San Andreas by following these detailed installation steps:
 
@@ -101,10 +101,10 @@ The Health Bar Mod is a Lua script designed to reveal the original health bar th
 
   (If you've installed the sun mod, it means you already have moonloader and MoonAdditions installed, so there's **no need** to reinstall it.)
 
-## Community and Contributions
+# Community and Contributions
 We invite and appreciate contributions from the community. If you have suggestions or improvements for the GTASA RTX-Remix mod, please contribute by forking this repository, making your changes, and submitting a pull request.
 
-## Community Guidelines
+# Community Guidelines
 To maintain a positive and productive environment, please adhere to these guidelines:
 
 - Respect and considerate interactions.
@@ -112,10 +112,10 @@ To maintain a positive and productive environment, please adhere to these guidel
 - Refrain from spamming and off-topic posts.
 - Report any issues to the moderators.
 
-## License
+# License
 The GTASA RTX-Remix Project is licensed under the MIT License. For more details, please review the license file.
 
-## Contact and Updates
+# Contact and Updates
 For inquiries, contact the project administrators on Discord: [Hemry](https://discordapp.com/users/hemry) or in the [GTASA Remix Discord Group](https://discord.com/channels/1028444667789967381/1097105394821759006).
 
 Stay updated with our progress:
