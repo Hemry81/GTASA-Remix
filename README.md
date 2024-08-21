@@ -61,7 +61,15 @@ This mod changes the sun and moon in GTASA using MoonLoader and Lua scripts.
 - **SARemix_Sun** : download the "SARemix_Sun.lua" and "SARemix_Real_Sun.dat" files from the moonloader folder. Then copy it into the "game folder\MoonLoader" folder.
 - **SARemix_SettingManager** : download "SARemix_SettingsManager.lua" . Then copy it into the "moonloader/lib" folder.
 
+## Features and update (v0.1.4):
+### New Feature:
+- Sun light is brighter between 12:00 to 16:00
+
+### Fixes:
+- Fixed an issue where duplicate sun and moon would appear when saving/loading or script reloading.
+
 ## Features and update (v0.1.3):
+
 ### New Feature:
 **Smooth Transition:** 
 - The sun and moon now move smoothly, enhancing the transition between times. This improvement applies when:
