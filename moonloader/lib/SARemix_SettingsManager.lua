@@ -1,4 +1,4 @@
-function serializeToJSON(tbl)
+local function serializeToJSON(tbl)
     local function serialize(tbl, level)
         level = level or 0
         local indent = string.rep("  ", level)  -- Create indentation based on the current level
@@ -21,7 +21,7 @@ function serializeToJSON(tbl)
     return serialize(tbl)
 end
 
-function saveSettings(filePath, settings)
+local function saveSettings(filePath, settings)
     local file = io.open(filePath, "w")
     if not file then
         print("Failed to open file for writing.")
@@ -35,7 +35,7 @@ function saveSettings(filePath, settings)
     return true
 end
 
-function mergeTables(defaults, loaded)
+local function mergeTables(defaults, loaded)
     if type(loaded) ~= 'table' then return defaults end
     local result = {}
     for k, v in pairs(defaults) do
@@ -56,7 +56,7 @@ function mergeTables(defaults, loaded)
     return result
 end
 
-function loadSettings(filePath, defaultSettings)
+local function loadSettings(filePath, defaultSettings)
     local file = io.open(filePath, "r")
     if not file then
         print("Failed to open file for reading.")
