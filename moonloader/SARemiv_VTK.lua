@@ -1,11 +1,12 @@
 script_name("SARemix_Vehicle_Toolkit")
 script_author("Hemry")
 script_url("https://github.com/Hemry81/GTASA-Remix")
-script_version("0.1.0.b")
+script_version("0.1.0.c")
 
 local mad = require 'MoonAdditions'
 local imgui = require 'imgui'
 local key = require 'vkeys'
+local ffi = require "ffi"
 local settingsManager = require("SARemix_SettingsManager")
 
 local workDir = getWorkingDirectory()
@@ -26,6 +27,28 @@ local forceReset = false
 local resetCurrentCar = false
 local mod_list = {"Vanilla"}
 local cur_mod_name = mod_list[1]
+
+local InvertCamYAxis = true
+local InvertCamXAxis = false
+
+-- CMouseControllerState, from Plugin-SDK
+ffi.cdef([[
+	struct CMouseControllerState {
+		unsigned char lmb;
+		unsigned char rmb;
+		unsigned char mmb;
+		unsigned char wheelUp;
+		unsigned char wheelDown;
+		unsigned char bmx1;
+		unsigned char bmx2;
+		char __align;
+		float Z;
+		float X;
+		float Y;
+	};
+]])
+
+local mouseState 		= ffi.cast("struct CMouseControllerState*", 0xB73418)
 
 local excludeMaterial = {vehicleNames = {"quad", "streak", "firela", "freight", "hotdog", "hotrin", "monsta", "monstb", "rhino"},
 						ComponentNames = {""},
@@ -1719,6 +1742,21 @@ function loadlightobject(obj)
     end
 end
 
+function DragCameraAround()
+	local dragDelta = imgui.GetMouseDragDelta(1) -- 0 - LMB , 1 - RMB
+	if InvertCamYAxis then
+		mouseState.Y = -dragDelta.y / 10
+	else
+		mouseState.Y = dragDelta.y / 10
+	end
+
+	if InvertCamXAxis then
+		mouseState.X = -dragDelta.x / 10
+	else
+		mouseState.X = dragDelta.x / 10
+	end
+end
+
 function imgui.OnDrawFrame()
 	if im.main_window_state.v then
 		if isCharInAnyCar(PLAYER_PED) then
@@ -2363,6 +2401,9 @@ function main()
 		hour, minute = getTimeOfDay()
 		if isPlayerPlaying(PLAYER_HANDLE) then
 			imgui.Process = im.main_window_state.v
+			if imgui.Process then
+				DragCameraAround()
+			end
 			if (changecolorTimer == 0) or (os.clock() - changecolorTimer > changecolorDuration) then
 				updatevehicles()
 				changecolorTimer = os.clock()
