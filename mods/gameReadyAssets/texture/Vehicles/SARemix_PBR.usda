@@ -1,0 +1,1579 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_81EBFB0F29CC60D8"
+        {
+            custom string ColorID = "000"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_E42AFEBBB2C01A0B"
+        {
+            custom string ColorID = "001"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_919F20BBA0A6B981"
+        {
+            custom string ColorID = "002"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_AB13B63EA5BDC3C7"
+        {
+            custom string ColorID = "003"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_6EA2122724E1A009"
+        {
+            custom string ColorID = "004"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_0D08775DDA83895F"
+        {
+            custom string ColorID = "005"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_38A57DE6A51C6BF4"
+        {
+            custom string ColorID = "006"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_D7AAFF5B2F84D0B1"
+        {
+            custom string ColorID = "007"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_50AEBF138A583B71"
+        {
+            custom string ColorID = "008"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_742E11E927992CE5"
+        {
+            custom string ColorID = "009"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_F20A41F81BCCCC26"
+        {
+            custom string ColorID = "010"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_2FAA8B0BD39FDABE"
+        {
+            custom string ColorID = "011"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_E2465AB4F4B74E56"
+        {
+            custom string ColorID = "012"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_55C7F8F369D0175A"
+        {
+            custom string ColorID = "013"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_7064AE6F64D7FCC8"
+        {
+            custom string ColorID = "014"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.5
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_BD712F9EB599F2A5"
+        {
+            custom string ColorID = "015"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_C840C322198EC3F2"
+        {
+            custom string ColorID = "016"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_1DBA1760CE5FBB1D"
+        {
+            custom string ColorID = "017"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_46003A5EF019C69E"
+        {
+            custom string ColorID = "018"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_E55E3F1CD4F45D79"
+        {
+            custom string ColorID = "019"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_4D16F0DA30DDE79C"
+        {
+            custom string ColorID = "020"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_7878FF57581247B8"
+        {
+            custom string ColorID = "021"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_499A2A083A07FA83"
+        {
+            custom string ColorID = "022"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_D9AE31221170BB68"
+        {
+            custom string ColorID = "023"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_081EA2E259BB4D53"
+        {
+            custom string ColorID = "024"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_691E9E21BC817CAA"
+        {
+            custom string ColorID = "025"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_CEF1158A120412D4"
+        {
+            custom string ColorID = "026"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_D25A3A2E4637B47E"
+        {
+            custom string ColorID = "027"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_AE2BB1474EA2C4E7"
+        {
+            custom string ColorID = "028"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_2F11E7A83E21EC34"
+        {
+            custom string ColorID = "029"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_E9835EB6228C112D"
+        {
+            custom string ColorID = "030"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_F778AA004D491BFB"
+        {
+            custom string ColorID = "031"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_6D7A866F618FFE31"
+        {
+            custom string ColorID = "032"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_438D98F1CB129485"
+        {
+            custom string ColorID = "033"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_AA5A7E5971F198C3"
+        {
+            custom string ColorID = "034"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_2B897A244C9E44B1"
+        {
+            custom string ColorID = "035"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_5EAEEFD59F647CAF"
+        {
+            custom string ColorID = "036"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_1E4221C5EB4B4742"
+        {
+            custom string ColorID = "037"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_2C5EECFA0EC92C6B"
+        {
+            custom string ColorID = "038"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_202786DFDBE3563C"
+        {
+            custom string ColorID = "039"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_F11B96D6BF642F6F"
+        {
+            custom string ColorID = "040"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_74C0CB2B7A434AE1"
+        {
+            custom string ColorID = "041"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.19999999
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_3E621C79F0AFEF47"
+        {
+            custom string ColorID = "042"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_7A1BD2D425E18DC7"
+        {
+            custom string ColorID = "043"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_BCC1895B553BCB3B"
+        {
+            custom string ColorID = "044"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_00EAB6F9B9DAFB7D"
+        {
+            custom string ColorID = "045"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_52E1E029D2558C9B"
+        {
+            custom string ColorID = "046"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_68C5CF8284D873EA"
+        {
+            custom string ColorID = "047"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_E61A198A2151609C"
+        {
+            custom string ColorID = "048"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_E4DC36F3E8B61459"
+        {
+            custom string ColorID = "049"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_5D2A6ACCF01C5BEC"
+        {
+            custom string ColorID = "050"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_EA69F01C7828E3D0"
+        {
+            custom string ColorID = "051"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_35F4BE11B913E28A"
+        {
+            custom string ColorID = "052"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_7A17A21AE9AFE325"
+        {
+            custom string ColorID = "053"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_8C37239AAEA6D5F0"
+        {
+            custom string ColorID = "054"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_5B3F17D090C44FFD"
+        {
+            custom string ColorID = "055"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_F10620EF3B85F822"
+        {
+            custom string ColorID = "056"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_9977AC549F16EF85"
+        {
+            custom string ColorID = "057"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_3D1408CF1EB4F2B5"
+        {
+            custom string ColorID = "058"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_6289578686E204A3"
+        {
+            custom string ColorID = "059"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_CD90C93F2F2FB976"
+        {
+            custom string ColorID = "060"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_1E9E240FD9B0C797"
+        {
+            custom string ColorID = "061"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_2D037A6924EF6468"
+        {
+            custom string ColorID = "062"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_845ED95477FCBECA"
+        {
+            custom string ColorID = "063"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_358C1BEFB8DD48B3"
+        {
+            custom string ColorID = "064"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_1A2323CBCB9C07F9"
+        {
+            custom string ColorID = "065"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_4A644CA3854C8FDA"
+        {
+            custom string ColorID = "066"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_A6A927AB8BB34361"
+        {
+            custom string ColorID = "067"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_BBAD9043F257A518"
+        {
+            custom string ColorID = "068"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_7498C2925EAF39B4"
+        {
+            custom string ColorID = "069"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_362D6D4EBC152DC8"
+        {
+            custom string ColorID = "070"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_6AA07C54ACCE2FCE"
+        {
+            custom string ColorID = "071"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_418F35328498A2BA"
+        {
+            custom string ColorID = "072"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_2A19CB98E433802D"
+        {
+            custom string ColorID = "073"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_3BDA02D6D9C040F8"
+        {
+            custom string ColorID = "074"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_47C2C10B46529019"
+        {
+            custom string ColorID = "075"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_D46D46F332ACCCE6"
+        {
+            custom string ColorID = "076"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_31EC3D4F34B7E872"
+        {
+            custom string ColorID = "077"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_C75DEF602AC5CA40"
+        {
+            custom string ColorID = "078"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_2CF4DC870DB4D3B9"
+        {
+            custom string ColorID = "079"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_E90F7750BB19F816"
+        {
+            custom string ColorID = "080"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_540E75EE20C04456"
+        {
+            custom string ColorID = "081"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_E84D048332CDB294"
+        {
+            custom string ColorID = "082"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_946D1B6BEEED16E6"
+        {
+            custom string ColorID = "083"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_C796ECA53B5FD09A"
+        {
+            custom string ColorID = "084"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_F42D13299B20749B"
+        {
+            custom string ColorID = "085"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_A527E22B7834CC2E"
+        {
+            custom string ColorID = "086"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_508657736878802A"
+        {
+            custom string ColorID = "087"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_ED133C73981D13C7"
+        {
+            custom string ColorID = "088"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_D543D8B0DA8D922D"
+        {
+            custom string ColorID = "089"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_56487D6F9C273B24"
+        {
+            custom string ColorID = "090"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_D388275D4BD5D851"
+        {
+            custom string ColorID = "091"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_83F4DAB19DB52C5F"
+        {
+            custom string ColorID = "092"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_39C79143892B6E5F"
+        {
+            custom string ColorID = "093"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_C03F21E3951AC032"
+        {
+            custom string ColorID = "094"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_5F1E2AD8AB26F817"
+        {
+            custom string ColorID = "095"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_AC9FD2F123F40594"
+        {
+            custom string ColorID = "096"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_DCAAB8E5BC828039"
+        {
+            custom string ColorID = "097"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_73E7F094121D6AE7"
+        {
+            custom string ColorID = "098"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_230BC100F291E28B"
+        {
+            custom string ColorID = "099"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_AA598FF4180F73C9"
+        {
+            custom string ColorID = "100"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_AE9B373B60E4231A"
+        {
+            custom string ColorID = "101"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_E05A10821553887F"
+        {
+            custom string ColorID = "102"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_4A4092ADD24356FF"
+        {
+            custom string ColorID = "103"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_AF726B31BF393989"
+        {
+            custom string ColorID = "104"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_12BE8D3118915305"
+        {
+            custom string ColorID = "105"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_0C3D1D6D15571D14"
+        {
+            custom string ColorID = "106"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_AB7E9254F962CA55"
+        {
+            custom string ColorID = "107"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_93DB22B95280DF88"
+        {
+            custom string ColorID = "108"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_E6D76E25E026A3C5"
+        {
+            custom string ColorID = "109"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_261E7CD7EBB0EC57"
+        {
+            custom string ColorID = "110"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_33432CC4A6256EBF"
+        {
+            custom string ColorID = "111"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_5F6E3595C8E38400"
+        {
+            custom string ColorID = "112"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_DDBB58CFD907A7A2"
+        {
+            custom string ColorID = "113"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_8B5B2A7549BA6DF8"
+        {
+            custom string ColorID = "114"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_865FD667D9F8DA54"
+        {
+            custom string ColorID = "115"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_924FEF749FD07C1D"
+        {
+            custom string ColorID = "116"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_61927825E5057FF3"
+        {
+            custom string ColorID = "117"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_1DEDA817D090D28D"
+        {
+            custom string ColorID = "118"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_65BDF4E1A57244F0"
+        {
+            custom string ColorID = "119"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_18D371F7D287E32C"
+        {
+            custom string ColorID = "120"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_F1229BA60AA064CD"
+        {
+            custom string ColorID = "121"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_03D67914E312C378"
+        {
+            custom string ColorID = "122"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_46B04906FBBDF262"
+        {
+            custom string ColorID = "123"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_79FD7C7B00F71213"
+        {
+            custom string ColorID = "124"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_1907F9FE52E8B5C1"
+        {
+            custom string ColorID = "125"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_08E0D137FCACD1A4"
+        {
+            custom string ColorID = "126"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.2
+                float inputs:reflection_roughness_constant = 0.02
+            }
+        }
+
+        over "mat_91A9AFD3AD9EB82E"
+        {
+            custom string ColorID = "127"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                float inputs:reflection_roughness_constant = 0.05
+            }
+        }
+
+        over "mat_AFCB02FEB94DA529"
+        {
+            custom string ColorID = "Chrome 01"
+
+            over "Shader"
+            {
+                color3f inputs:diffuse_color_constant = (0.6023166, 0.6023106, 0.6023106)
+                float inputs:metallic_constant = 0.6
+                float inputs:reflection_roughness_constant = 0
+            }
+        }
+
+        over "mat_81819582263C35B3"
+        {
+            custom string ColorID = "Chrome 02"
+
+            over "Shader"
+            {
+                color3f inputs:diffuse_color_constant = (0.6023166, 0.6023106, 0.6023106)
+                float inputs:metallic_constant = 0.6
+                float inputs:reflection_roughness_constant = 0.15
+            }
+        }
+
+        over "mat_5FD5FEC97B497FEC"
+        {
+            custom string ColorID = "Chrome 03"
+
+            over "Shader"
+            {
+                color3f inputs:diffuse_color_constant = (0.6023166, 0.6023106, 0.6023106)
+                float inputs:metallic_constant = 0.6
+                float inputs:reflection_roughness_constant = 0.3
+            }
+        }
+
+        over "mat_22CEEC0F8DFC4351"
+        {
+            custom string ColorID = "Mirror"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 1
+                float inputs:reflection_roughness_constant = 0
+            }
+        }
+
+        over "mat_E11650CFF080255C"
+        {
+            custom string ColorID = "Glass"
+
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                float inputs:ior_constant = 1.6
+                bool inputs:thin_walled = 1
+                color3f inputs:transmittance_color = (0.97, 0.97, 0.97)
+                bool inputs:use_diffuse_layer = 1
+            }
+        }
+
+        over "mat_7DDB639BF52201F1"
+        {
+            custom string ColorID = "Broken Glass"
+
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                float inputs:ior_constant = 1.6 (
+                    customData = {
+                        float default = 1.3
+                        dictionary range = {
+                            float max = 3
+                            float min = 1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Index of Refraction"
+                    doc = """Index of Refraction of the material
+
+"""
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @../../SARemix/Textures/Vehicles/crack_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:thin_walled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled"
+                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.
+
+"""
+                    hidden = false
+                )
+                asset inputs:transmittance_texture = @../../SARemix/Textures/Vehicles/crack_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance Color/Diffuse Albedo Texture"
+                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_diffuse_layer = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Use diffuse layer"
+                    doc = """When set, simulates a diffuse layer on top of the material
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_1FCFEC6B7B481130"
+        {
+            custom string ColorID = "Debug Color"
+
+            over "Shader"
+            {
+                color3f inputs:diffuse_color_constant = (0, 1, 0)
+                color3f inputs:emissive_color_constant = (0, 1, 0)
+                float inputs:emissive_intensity = 10
+                bool inputs:enable_emission = 1
+            }
+        }
+
+        over "mat_78F9BBFB79156E88"
+        {
+            custom string ColorID = "Fog Glass"
+
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                float inputs:ior_constant = 1.6
+                bool inputs:thin_walled = 1
+                color3f inputs:transmittance_color = (0.97, 0.97, 0.97)
+                float inputs:transmittance_measurement_distance = 0.01
+                bool inputs:use_diffuse_layer = 1
+            }
+        }
+    }
+}
+

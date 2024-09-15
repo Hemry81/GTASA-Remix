@@ -52,15 +52,28 @@ over "RootNode"
             token visibility = "inherited"
 
             def Xform "Xform_31D3540F9E881E75_0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
                 delete references = @../Building 01mesh_31D3540F9E881E75.usd@
                 prepend references = @../Building 01/mesh_31D3540F9E881E75.usd@
             )
             {
+                rel material:binding = </Looks/Bricks038> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
                 token visibility = "inherited"
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "mesh" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = None (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                }
             }
 
             over "mesh" (
@@ -76,10 +89,14 @@ over "RootNode"
             token visibility = "inherited"
 
             def Xform "Xform_F11396299F4360FE_0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
                 delete references = @../Building 01mesh_F11396299F4360FE.usd@
                 prepend references = @../Building 01/mesh_F11396299F4360FE.usd@
             )
             {
+                rel material:binding = </Looks/Bricks038> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
                 token visibility = "inherited"
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
@@ -100,10 +117,14 @@ over "RootNode"
             token visibility = "inherited"
 
             def Xform "Xform_0914F91DDDF8D690_0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
                 delete references = @../Building 01mesh_0914F91DDDF8D690.usd@
                 prepend references = @../Building 01/mesh_0914F91DDDF8D690.usd@
             )
             {
+                rel material:binding = </Looks/Plaster003> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
                 token visibility = "inherited"
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)

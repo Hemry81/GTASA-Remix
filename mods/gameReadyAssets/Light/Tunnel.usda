@@ -1,6 +1,7 @@
 #usda 1.0
 (
     subLayers = [
+        @./Richman.usda@,
         @./Verdant_Bluffs.usda@
     ]
     upAxis = "Z"

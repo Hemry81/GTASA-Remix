@@ -1,0 +1,22 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary omni_layer = {
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+    }
+    subLayers = [
+        @./meshes/Vehicles.usda@,
+        @./meshes/Creek.usda@,
+        @./meshes/props.usda@,
+        @./meshes/Rail Remaster/rail_remaster.usda@,
+        @./meshes/Buildings/Buildings.usda@,
+        @./meshes/Airport.usda@,
+        @./meshes/Weapons/Weapons_meshes.usda@
+    ]
+    upAxis = "Z"
+)
+

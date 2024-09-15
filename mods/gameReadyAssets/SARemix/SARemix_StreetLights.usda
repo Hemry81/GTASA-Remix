@@ -1,0 +1,1124 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary omni_layer = {
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+    }
+    upAxis = "Z"
+)
+
+over "Looks"
+{
+    def Material "Warm_Light"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Warm_Light/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Warm_Light/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Warm_Light/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (1, 0.9999988, 1) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            color3f inputs:emissive_color_constant = (0.87644786, 0.8646039, 0.8053845) (
+                customData = {
+                    float3 default = (1, 0.1, 0.1)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Color"
+                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:emissive_intensity = 1 (
+                customData = {
+                    float default = 40
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Intensity"
+                doc = """Intensity of the emission
+
+"""
+                hidden = false
+            )
+            bool inputs:enable_emission = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Emission"
+                displayName = "Enable Emission"
+                doc = """Enables the emission of light from the material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 1 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "White_Light"
+    {
+        token outputs:mdl:displacement.connect = </Looks/White_Light/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/White_Light/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/White_Light/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (1, 0.9999988, 1) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            color3f inputs:emissive_color_constant = (1, 0.99999833, 1) (
+                customData = {
+                    float3 default = (1, 0.1, 0.1)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Color"
+                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:emissive_intensity = 1 (
+                customData = {
+                    float default = 40
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Intensity"
+                doc = """Intensity of the emission
+
+"""
+                hidden = false
+            )
+            bool inputs:enable_emission = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Emission"
+                displayName = "Enable Emission"
+                doc = """Enables the emission of light from the material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 1 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Red_Light"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Red_Light/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Red_Light/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Red_Light/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (1, 0, 0)
+            color3f inputs:emissive_color_constant = (1, 0, 0)
+            float inputs:emissive_intensity = 1
+            bool inputs:enable_emission = 1
+            float inputs:reflection_roughness_constant = 1
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Yellow_Light"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Yellow_Light/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Yellow_Light/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Yellow_Light/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (1, 1, 0)
+            color3f inputs:emissive_color_constant = (1, 0, 0)
+            float inputs:emissive_intensity = 1
+            bool inputs:enable_emission = 1
+            float inputs:reflection_roughness_constant = 1
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Orange_Light"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Orange_Light/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Orange_Light/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Orange_Light/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (1, 0.75, 0)
+            color3f inputs:emissive_color_constant = (1, 0, 0)
+            float inputs:emissive_intensity = 1
+            bool inputs:enable_emission = 1
+            float inputs:reflection_roughness_constant = 1
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_89299D51FEF3BC6E"
+        {
+            def Xform "Spot_Light_B_Cold"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Light_Focus" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 6500
+                    bool inputs:enableColorTemperature = 0
+                    float inputs:intensity = 6000
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 35
+                    float inputs:shaping:cone:softness = 0.35
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "Light_Normal" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 6500
+                    bool inputs:enableColorTemperature = 0
+                    float inputs:intensity = 3000
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 75
+                    float inputs:shaping:cone:softness = 0.2
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @./Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/Warm_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_2D761BA363A031E8"
+        {
+            def Xform "Spot_Light_B_Warm"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Light_Focus" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:intensity = 3000
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 35
+                    float inputs:shaping:cone:softness = 0.35
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "Light_Normal" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:intensity = 1500
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 75
+                    float inputs:shaping:cone:softness = 0.2
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @./Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/Warm_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_170FB19C6CC5CB76"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Spot_Light_M_Cold"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Light_Focus" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 6500
+                    bool inputs:enableColorTemperature = 0
+                    float inputs:intensity = 3000
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 35
+                    float inputs:shaping:cone:softness = 0.35
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "Light_Normal" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 6500
+                    bool inputs:enableColorTemperature = 0
+                    float inputs:intensity = 1500
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 75
+                    float inputs:shaping:cone:softness = 0.2
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @D:/Games/remix/GTASA/SARemix/Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/Warm_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+        }
+
+        over "mesh_7FA7D2225AE938F4"
+        {
+            def Xform "Spot_Light_M_Warm"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Light_Focus" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:intensity = 3000
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 35
+                    float inputs:shaping:cone:softness = 0.35
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "Light_Normal" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:intensity = 1500
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 75
+                    float inputs:shaping:cone:softness = 0.2
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @./Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/Warm_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_07DE55EAFF1C08FB"
+        {
+            def Xform "Spot_Light_S_Cold"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Light_Focus" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 6500
+                    bool inputs:enableColorTemperature = 0
+                    float inputs:intensity = 1500
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 35
+                    float inputs:shaping:cone:softness = 0.35
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "Light_Normal" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 6500
+                    bool inputs:enableColorTemperature = 0
+                    float inputs:intensity = 750
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 75
+                    float inputs:shaping:cone:softness = 0.2
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @D:/Games/remix/GTASA/SARemix/Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/Warm_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_6D5F0761375D1777"
+        {
+            def Xform "Spot_Light_S_Warm"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "Light_Focus" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:intensity = 1500
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 35
+                    float inputs:shaping:cone:softness = 0.35
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def SphereLight "Light_Normal" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    color3f inputs:color = (1, 1, 1)
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:intensity = 750
+                    bool inputs:normalize = 0
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 75
+                    float inputs:shaping:cone:softness = 0.2
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @./Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/Warm_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_93DDD2B323EAE2B8"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Sphere_Light_B_Cold"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "SphereLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:colorTemperature = 6500
+                    bool inputs:enableColorTemperature = 0
+                    float inputs:intensity = 800
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    bool treatAsPoint = 0
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @./Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/White_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+        }
+
+        over "mesh_723E6C73A16012FD"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Sphere_Light_B_Warm"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "SphereLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:intensity = 800
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    bool treatAsPoint = 0
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @./Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/White_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+        }
+
+        over "mesh_330EFC1E9658E546"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Sphere_Light_M_Cold"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "SphereLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:colorTemperature = 6500
+                    bool inputs:enableColorTemperature = 0
+                    float inputs:intensity = 400
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    bool treatAsPoint = 0
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @./Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/White_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+        }
+
+        over "mesh_24CEDD1B59ED8EFC"
+        {
+            def Xform "Sphere_Light_M_Warm"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "SphereLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:intensity = 400
+                    float inputs:radius = 0.3
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    bool treatAsPoint = 0
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @./Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/White_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_3EF3E5EA9CA8C678"
+        {
+            def Xform "Sphere_Light_S_Cold"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "SphereLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:intensity = 200
+                    float inputs:radius = 0.15
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    bool treatAsPoint = 0
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @./Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/White_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_129AE2C85572CCCA"
+        {
+            def Xform "Sphere_Light_S_Warm"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def SphereLight "SphereLight" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -50), (50, 50, 50)]
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:intensity = 200
+                    float inputs:radius = 0.15
+                    float inputs:shaping:cone:angle = 180
+                    float inputs:shaping:cone:softness
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    bool treatAsPoint = 0
+                    token visibility = "invisible"
+                    bool visibleInPrimaryRay = 1
+                    double3 xformOp:rotateXYZ = (90, 0, 90)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def Xform "NullObject" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                    references = @./Meshes/nullObject.usd@
+                )
+                {
+                    rel material:binding = </Looks/White_Light> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    double3 xformOp:rotateXYZ = (0, -0, 0)
+                    double3 xformOp:scale = (0, 0, 0)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                    over "env_light"
+                    {
+                        token visibility = "invisible"
+                    }
+                }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+

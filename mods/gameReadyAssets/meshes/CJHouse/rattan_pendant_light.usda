@@ -7,8 +7,8 @@
                 double radius = 517.705078125
             }
             dictionary Perspective = {
-                double3 position = (21.352316564594005, 1.9488708962667518, -51.87583582101747)
-                double3 target = (-42.35767681433517, -8.712595388870437, -49.21946361786195)
+                double3 position = (204.90990630780112, 26.23503473367937, -71.82614296496615)
+                double3 target = (141.49590959444038, 15.037963846875911, -66.08357756544424)
             }
             dictionary Right = {
                 double3 position = (0.6290089116835745, -49999.12215893121, -50.104474273013594)
@@ -18,7 +18,7 @@
                 double3 position = (0, 0, 50000)
                 double radius = 500
             }
-            string boundCamera = "/OmniverseKit_Front"
+            string boundCamera = "/OmniverseKit_Persp"
         }
         dictionary navmeshSettings = {
             double agentHeight = 180
@@ -67,6 +67,7 @@
             float3 "rtx:raytracing:inscattering:singleScatteringAlbedo" = (0.9, 0.9, 0.9)
             float3 "rtx:raytracing:inscattering:transmittanceColor" = (0.5, 0.5, 0.5)
             float3 "rtx:sceneDb:ambientLightColor" = (0.1, 0.1, 0.1)
+            bool "rtx:useViewLightingMode" = 1
         }
         string sourceDirPath = "C:/Users/desig/OneDrive/Documents/Blender/GTASA/buildings/CJ House/"
         string sourceFilename = "rattan pendant light.blend"
@@ -115,6 +116,32 @@ def Xform "root"
             uniform token info:implementationSource = "sourceAsset"
             uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Translucent.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+            float inputs:ior_constant = 1.5999999 (
+                customData = {
+                    float default = 1.3
+                    dictionary range = {
+                        float max = 3
+                        float min = 1
+                    }
+                }
+                displayGroup = "Specular"
+                displayName = "Index of Refraction"
+                doc = """Index of Refraction of the material
+
+"""
+                hidden = false
+            )
+            bool inputs:thin_walled = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Specular"
+                displayName = "Thin-walled"
+                doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.
+
+"""
+                hidden = false
+            )
             token outputs:out (
                 renderType = "material"
             )
@@ -140,9 +167,9 @@ def Xform "root"
                         float3 min = (0, 0, 0)
                     }
                 }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
 
 """
                 hidden = false
@@ -156,9 +183,9 @@ def Xform "root"
                         float min = 0
                     }
                 }
-                displayGroup = "Specular"
+                displayGroup = "Base Material"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
 
 """
                 hidden = false
@@ -180,7 +207,7 @@ def Xform "root"
             uniform token info:implementationSource = "sourceAsset"
             uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-            color3f inputs:diffuse_color_constant = (0.04633206, 0.046331596, 0.046331596) (
+            color3f inputs:diffuse_color_constant = (0.5212355, 0.5212328, 0.5212303) (
                 customData = {
                     float3 default = (0.2, 0.2, 0.2)
                     dictionary range = {
@@ -188,15 +215,30 @@ def Xform "root"
                         float3 min = (0, 0, 0)
                     }
                 }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
 
 """
                 hidden = false
                 renderType = "color"
             )
-            float inputs:reflection_roughness_constant = 0.19999999 (
+            float inputs:metallic_constant = 0.59999996 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0 (
                 customData = {
                     float default = 0.5
                     dictionary range = {
@@ -204,9 +246,9 @@ def Xform "root"
                         float min = 0
                     }
                 }
-                displayGroup = "Specular"
+                displayGroup = "Base Material"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
 
 """
                 hidden = false

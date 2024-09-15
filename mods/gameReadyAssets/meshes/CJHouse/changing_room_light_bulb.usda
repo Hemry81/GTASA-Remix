@@ -8,7 +8,7 @@
             }
             dictionary Perspective = {
                 double3 position = (114.05676755494086, 113.94461796990238, 114.4702903171618)
-                double3 target = (0.31432956457132377, 0.20217997953288602, 0.7278550416230587)
+                double3 target = (0.31432956457132377, 0.2021799795328576, 0.7278550416230729)
             }
             dictionary Right = {
                 double3 position = (0, -50000, 0)
@@ -190,9 +190,9 @@ def Xform "root"
                         float3 min = (0, 0, 0)
                     }
                 }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
 
 """
                 hidden = false
@@ -206,9 +206,9 @@ def Xform "root"
                         float min = 0
                     }
                 }
-                displayGroup = "Specular"
+                displayGroup = "Base Material"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
 
 """
                 hidden = false
@@ -221,9 +221,9 @@ def Xform "root"
                         float min = 0
                     }
                 }
-                displayGroup = "Specular"
+                displayGroup = "Base Material"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
 
 """
                 hidden = false
@@ -270,9 +270,9 @@ def Xform "root"
                         float3 min = (0, 0, 0)
                     }
                 }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
 
 """
                 hidden = false
@@ -286,9 +286,9 @@ def Xform "root"
                         float min = 0
                     }
                 }
-                displayGroup = "Specular"
+                displayGroup = "Base Material"
                 displayName = "Metallic Amount"
-                doc = """Metallic Material
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
 
 """
                 hidden = false
@@ -301,9 +301,9 @@ def Xform "root"
                         float min = 0
                     }
                 }
-                displayGroup = "Specular"
+                displayGroup = "Base Material"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
 
 """
                 hidden = false

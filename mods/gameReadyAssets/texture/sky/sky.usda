@@ -21,8 +21,8 @@ over "Looks"
                 customData = {
                     asset default = @@
                 }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Map"
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
                 doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
@@ -31,9 +31,9 @@ over "Looks"
             )
             float inputs:displace_in = 0.02 (
                 customData = {
-                    float default = 1
+                    float default = 0.05
                     dictionary range = {
-                        float max = 255
+                        float max = 0.2
                         float min = 0
                     }
                 }
@@ -62,7 +62,7 @@ This parameter is unused.
                 customData = {
                     asset default = @@
                 }
-                displayGroup = "Normal"
+                displayGroup = "Base Material"
                 displayName = "Normal Map"
                 hidden = false
                 renderType = "texture_2d"
@@ -76,8 +76,8 @@ This parameter is unused.
                     }
                 }
                 displayGroup = "Subsurface"
-                displayName = "Subsurface Measurement Distance"
-                doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
+                displayName = "Measurement Distance"
+                doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface. (Used if no texture is specified).
 This parameter is unused.
 """
                 hidden = false
@@ -88,7 +88,7 @@ This parameter is unused.
                     asset default = @@
                 }
                 displayGroup = "Subsurface"
-                displayName = "Subsurface Single Scattering Map"
+                displayName = "Single Scattering Map"
                 doc = """The texture specifying the scattering albedo of subsurface materials.
 This parameter is unused.
 """
@@ -101,7 +101,7 @@ This parameter is unused.
                     asset default = @@
                 }
                 displayGroup = "Subsurface"
-                displayName = "Thickness Map"
+                displayName = "Measurement Distance Map"
                 doc = """The texture specifying the distance between front and back surface of subsurface materials in millimeter.
 This parameter is unused.
 """
@@ -117,8 +117,8 @@ This parameter is unused.
                     }
                 }
                 displayGroup = "Subsurface"
-                displayName = "Subsurface Transmittance Color"
-                doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
+                displayName = "Transmittance Color"
+                doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume. (Used if no texture is specified).
 This parameter is unused.
 """
                 hidden = false
@@ -130,7 +130,7 @@ This parameter is unused.
                     asset default = @@
                 }
                 displayGroup = "Subsurface"
-                displayName = "Subsurface Transmittance Map"
+                displayName = "Transmittance Map"
                 doc = """The texture specifying the transmittance color of subsurface materials.
 This parameter is unused.
 """
@@ -146,7 +146,7 @@ This parameter is unused.
                     }
                 }
                 displayGroup = "Subsurface"
-                displayName = "Subsurface Volumetric Anisotropy"
+                displayName = "Volumetric Anisotropy"
                 doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
 This parameter is unused.
 """

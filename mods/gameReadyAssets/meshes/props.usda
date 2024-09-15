@@ -196,6 +196,105 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:transform"]
             }
         }
+
+        over "mesh_6E241D9AC7E4DCBE"
+        {
+            def Xform "blue_double_sign_01" (
+                prepend references = @./props/Sign/blue_double_sign_01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_82353E8762096B90"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Windows_02" (
+                references = @./props/Windows/Windows 02.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "mesh_82353E8762096B90"
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/Wood048_light> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+
+                    over "Glass" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/Looks/Windows_Glass> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+        }
+
+        over "mesh_A0E54D144644AF02"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Windows_01" (
+                references = @./props/Windows/Windows 01.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "mesh_A0E54D144644AF02"
+                {
+                    over "mesh_001" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </Looks/Wood048_light> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+
+                    over "Glass_001" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        rel material:binding = </RootNode/Looks/Windows_Glass> (
+                            bindMaterialAs = "weakerThanDescendants"
+                        )
+                    }
+                }
+            }
+        }
     }
 }
 

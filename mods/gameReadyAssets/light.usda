@@ -9,10 +9,10 @@
         }
     }
     subLayers = [
+        @./Light/Red_Country_Tunnel_Light.usda@,
         @./Light/Chuckin_Bell.usda@,
         @./Light/Low_Rider_Workshop.usda@,
         @./Light/Train_light.usda@,
-        @./Light/Bikes_light.usda@,
         @./Light/Burger_Shot.usda@,
         @./Light/Tunnel.usda@,
         @./Light/Market_Station.usda@,
@@ -834,48 +834,6 @@ over "RootNode"
                         }
                     }
                 }
-            }
-        }
-
-        over "mesh_37FDCCDA622B8867"
-        {
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-
-            def CylinderLight "Prop_Light" (
-                prepend apiSchemas = ["ShapingAPI"]
-            )
-            {
-                float intensity = 50
-                float length = 0.3
-                bool normalize = 1
-                float radius = 0.15
-                float shaping:cone:angle = 180
-                float shaping:cone:softness
-                float shaping:focus
-                color3f shaping:focusTint
-                asset shaping:ies:file
-                bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateYZX = (0, 90, 0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0.20000000298023224)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
-            }
-
-            def Xform "Prop_Light_01" (
-                references = @./meshes/props/Light/Props_Lights/mesh_37FDCCDA622B8867.usd@
-            )
-            {
-                rel material:binding = </Looks/Props_Light_01> (
-                    bindMaterialAs = "weakerThanDescendants"
-                )
-                double3 xformOp:rotateYZX = (0, 0, -0)
-                double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (0, 0, 0)
-                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateYZX", "xformOp:scale"]
             }
         }
 
@@ -3362,42 +3320,6 @@ over "RootNode"
 
     over "Looks"
     {
-        over "mat_F053CE7860A30497"
-        {
-            over "Shader"
-            {
-                float inputs:metallic_constant = 0.79999995 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0.29999998 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-            }
-        }
     }
 }
 

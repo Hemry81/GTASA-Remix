@@ -123,7 +123,6 @@ export material AperturePBR_Translucent(
     anno::description("Intensity of the emission"),
     anno::in_group("Emission")
   ]],
-
   // -------------------- SPRITE SHEET ----------------------
   uniform int sprite_sheet_fps = 0
   [[
@@ -146,8 +145,14 @@ export material AperturePBR_Translucent(
     anno::description("Number of row the spritesheet across all textures is divided into."),
     anno::in_group("Animation")
   ]],
-
   // -------------------- REMIX FLAGS ----------------------
+  uniform bool preload_textures = false
+  [[
+    anno::display_name("Preload Textures"),
+    anno::description("Use this option sparingly, this will consume video memory!  RTX Remix will load the textures associated with this material into GPU memory immediately without streaming at the highest quality possible.  Use this in situations where a material is fundamental for game play and yet is very transient.  For instance, we used this for Portal RTX on the Portals themselves."),
+    anno::in_group("Remix Flags"),
+    anno::unused()
+  ]],
   uniform bool ignore_material = false
   [[
     anno::display_name("Ignore Material"),

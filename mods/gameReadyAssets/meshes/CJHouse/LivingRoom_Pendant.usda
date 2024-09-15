@@ -8,7 +8,7 @@
             }
             dictionary Perspective = {
                 double3 position = (-420.4426579712496, -162.4612066653789, -136.58440159321444)
-                double3 target = (-544.0302445406505, -163.24485147897923, -34.23795491645345)
+                double3 target = (-544.0302445406506, -163.2448514789794, -34.237954916453404)
             }
             dictionary Right = {
                 double3 position = (0, -50000, 0)
@@ -248,9 +248,9 @@ def Xform "root"
                             float3 min = (0, 0, 0)
                         }
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Base Color"
-                    doc = """The base albedo color to use if no texture is specified
+                    displayGroup = "Base Material"
+                    displayName = "Albedo Color"
+                    doc = """The base albedo color.  (Used if no texture is specified)
 
 """
                     hidden = false
@@ -261,19 +261,19 @@ def Xform "root"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
                     doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:displace_in = 0.01 (
+                float inputs:displace_in = 0.05 (
                     customData = {
-                        float default = 1
+                        float default = 0.05
                         dictionary range = {
-                            float max = 255
+                            float max = 0.2
                             float min = 0
                         }
                     }
@@ -284,18 +284,18 @@ This parameter is unused.
 """
                     hidden = false
                 )
-                bool inputs:enable_thin_film = 1 (
+                bool inputs:enable_thin_film = 0 (
                     customData = {
                         bool default = 0
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Enable thin film"
+                    displayGroup = "Iridescence"
+                    displayName = "Enable Iridescence"
                     doc = """Adds a thin film coating to the material
 
 """
                     hidden = false
                 )
-                asset inputs:height_texture = @../../texture/paper/Paper004_height.dds@ (
+                asset inputs:height_texture = @@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -313,12 +313,12 @@ This parameter is unused.
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Normal"
+                    displayGroup = "Base Material"
                     displayName = "Normal Map"
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:opacity_constant = 0.35999998 (
+                float inputs:opacity_constant = 1 (
                     customData = {
                         float default = 1
                         dictionary range = {
@@ -326,9 +326,9 @@ This parameter is unused.
                             float min = 0
                         }
                     }
-                    displayGroup = "Diffuse"
+                    displayGroup = "Base Material"
                     displayName = "Opacity Amount"
-                    doc = """Used when no albedo texture is specified. 0 for completely transparent, 1 for completly opaque.
+                    doc = """0 for completely transparent, 1 for completely opaque.  (Used if no texture is specified)
 
 """
                     hidden = false
@@ -341,9 +341,9 @@ This parameter is unused.
                             float min = 0
                         }
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
 
 """
                     hidden = false
@@ -353,12 +353,15 @@ This parameter is unused.
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
+                    displayGroup = "Base Material"
                     displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
                     hidden = false
                     renderType = "texture_2d"
                 )
-                float inputs:subsurface_measurement_distance = 0.07 (
+                float inputs:subsurface_measurement_distance = 0.02 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -367,8 +370,8 @@ This parameter is unused.
                         }
                     }
                     displayGroup = "Subsurface"
-                    displayName = "Subsurface Measurement Distance"
-                    doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface.
+                    displayName = "Measurement Distance"
+                    doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface. (Used if no texture is specified).
 This parameter is unused.
 """
                     hidden = false
@@ -379,7 +382,7 @@ This parameter is unused.
                         asset default = @@
                     }
                     displayGroup = "Subsurface"
-                    displayName = "Thickness Map"
+                    displayName = "Measurement Distance Map"
                     doc = """The texture specifying the distance between front and back surface of subsurface materials in millimeter.
 This parameter is unused.
 """
@@ -395,8 +398,8 @@ This parameter is unused.
                         }
                     }
                     displayGroup = "Subsurface"
-                    displayName = "Subsurface Transmittance Color"
-                    doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume.
+                    displayName = "Transmittance Color"
+                    doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume. (Used if no texture is specified).
 This parameter is unused.
 """
                     hidden = false
@@ -408,7 +411,7 @@ This parameter is unused.
                         asset default = @@
                     }
                     displayGroup = "Subsurface"
-                    displayName = "Subsurface Transmittance Map"
+                    displayName = "Transmittance Map"
                     doc = """The texture specifying the transmittance color of subsurface materials.
 This parameter is unused.
 """

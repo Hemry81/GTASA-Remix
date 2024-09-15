@@ -1,0 +1,1538 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary omni_layer = {
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+    }
+    upAxis = "Z"
+)
+
+over "Looks"
+{
+    def Material "Shiny_Metal"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Shiny_Metal/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Shiny_Metal/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Shiny_Metal/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            float inputs:anisotropy_constant = 1 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = -1
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Anisotropy Amount"
+                doc = """0 for isotropic, extents of -1 to 1 for anisotropy
+
+"""
+                hidden = true
+            )
+            color3f inputs:diffuse_color_constant = (0.82625484, 0.82624656, 0.82624656) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:metallic_constant = 0.97999996 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.049999997 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Stainless_Steel"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Stainless_Steel/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Stainless_Steel/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Stainless_Steel/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.66023165, 0.66022503, 0.66022503) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:metallic_constant = 0.59999996 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.29999998 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Metal027"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Metal027/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Metal027/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Metal027/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./Metal027_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:displace_in = 0.01 (
+                customData = {
+                    float default = 0.05
+                    dictionary range = {
+                        float max = 0.2
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:height_texture = @./Metal027_height.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./Metal027_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./Metal027_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Metal042"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Metal042/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Metal042/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Metal042/Shader.outputs:out>
+        custom uniform bool paused = 0 (
+            customData = {
+                bool nonpersistant = 1
+            }
+            hidden = true
+        )
+
+        def Shader "Shader"
+        {
+            reorder properties = ["inputs:diffuse_color_constant", "inputs:opacity_constant", "inputs:diffuse_texture", "inputs:enable_thin_film", "inputs:thin_film_thickness_from_albedo_alpha", "inputs:thin_film_thickness_constant", "inputs:reflection_roughness_constant", "inputs:reflectionroughness_texture", "inputs:anisotropy_constant", "inputs:anisotropy_texture", "inputs:metallic_constant", "inputs:metallic_texture", "inputs:enable_emission", "inputs:emissive_color_constant", "inputs:emissive_mask_texture", "inputs:emissive_intensity", "inputs:sprite_sheet_fps", "inputs:sprite_sheet_cols", "inputs:sprite_sheet_rows", "inputs:ignore_material", "inputs:use_legacy_alpha_state", "inputs:blend_enabled", "inputs:blend_type", "inputs:inverted_blend", "inputs:alpha_test_type", "inputs:alpha_test_reference_value", "inputs:filter_mode", "inputs:wrap_mode_u", "inputs:wrap_mode_v", "inputs:normalmap_texture", "inputs:encoding", "inputs:height_texture", "inputs:displace_in", "inputs:subsurface_transmittance_color", "inputs:subsurface_transmittance_texture", "inputs:subsurface_measurement_distance", "inputs:subsurface_thickness_texture", "inputs:subsurface_single_scattering_albedo", "inputs:subsurface_single_scattering_texture", "inputs:subsurface_volumetric_anisotropy"]
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            float inputs:alpha_test_reference_value = 0 (
+                customData = {
+                    float default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Alpha Test Reference Value"
+                doc = """The value to use for alpha testing against.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            int inputs:alpha_test_type = 0 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Alpha Test Type"
+                doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "AlphaTestType"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Always"
+                    string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                }
+            )
+            float inputs:anisotropy_constant = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = -1
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Anisotropy Amount"
+                doc = """0 for isotropic, extents of -1 to 1 for anisotropy
+
+"""
+                hidden = true
+            )
+            asset inputs:anisotropy_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Anisotropy Map"
+                hidden = true
+                renderType = "texture_2d"
+            )
+            bool inputs:blend_enabled = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Enabled"
+                doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                hidden = false
+            )
+            int inputs:blend_type = 0 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Type"
+                doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "BlendType"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Alpha"
+                    string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                }
+            )
+            color3f inputs:diffuse_color_constant = (0.2, 0.2, 0.2) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:diffuse_texture = @../buildings/interiors/Metal042_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:displace_in = 1 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 255
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            color3f inputs:emissive_color_constant = (1, 0.1, 0.1) (
+                customData = {
+                    float3 default = (1, 0.1, 0.1)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Color"
+                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:emissive_intensity = 40 (
+                customData = {
+                    float default = 40
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Intensity"
+                doc = """Intensity of the emission
+
+"""
+                hidden = false
+            )
+            asset inputs:emissive_mask_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Mask Map"
+                doc = """The texture masking the emissive color
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:enable_emission = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Emission"
+                displayName = "Enable Emission"
+                doc = """Enables the emission of light from the material
+
+"""
+                hidden = false
+            )
+            bool inputs:enable_thin_film = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Iridescence"
+                displayName = "Enable Iridescence"
+                doc = """Adds a thin film coating to the material
+
+"""
+                hidden = false
+            )
+            int inputs:encoding = 0 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map Encoding"
+                doc = """Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel.
+
+"""
+                hidden = true
+                renderType = "normalmap_encoding"
+                sdrMetadata = {
+                    string __SDR__enum_value = "octahedral"
+                    string options = "octahedral:0|tangent_space_ogl:1|tangent_space_dx:2"
+                }
+            )
+            int inputs:filter_mode = 1 (
+                customData = {
+                    int default = 1
+                }
+                displayGroup = "Filtering"
+                displayName = "Texture Filtering Mode"
+                doc = """How texture coordinates between pixels are handled
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "FilterMode"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Linear"
+                    string options = "Nearest:0|Linear:1"
+                }
+            )
+            asset inputs:height_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:ignore_material = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Remix Flags"
+                displayName = "Ignore Material"
+                doc = """Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard.
+
+"""
+                hidden = false
+            )
+            bool inputs:inverted_blend = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Inverted Blend"
+                doc = """Indicates if an inverted blend type should be used.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            float inputs:metallic_constant = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:metallic_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @../buildings/interiors/Metal042_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:opacity_constant = 1 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Opacity Amount"
+                doc = """0 for completely transparent, 1 for completely opaque.  (Used if no texture is specified)
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @../buildings/interiors/Metal042_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            int inputs:sprite_sheet_cols = 1 (
+                customData = {
+                    int default = 1
+                    dictionary range = {
+                        int max = 255
+                        int min = 1
+                    }
+                }
+                displayGroup = "Animation"
+                displayName = "Sprite Sheet Columns"
+                doc = """Number of columns the spritesheet across all textures is divided into.
+
+"""
+                hidden = false
+            )
+            int inputs:sprite_sheet_fps = 0 (
+                customData = {
+                    int default = 0
+                    dictionary range = {
+                        int max = 255
+                        int min = 0
+                    }
+                }
+                displayGroup = "Animation"
+                displayName = "Sprite Sheet FPS"
+                doc = """Framerate in Frames Per Second to use for the spritesheet across all textures. Note that a value of 0 disables this functionality.
+
+"""
+                hidden = false
+            )
+            int inputs:sprite_sheet_rows = 1 (
+                customData = {
+                    int default = 1
+                    dictionary range = {
+                        int max = 255
+                        int min = 1
+                    }
+                }
+                displayGroup = "Animation"
+                displayName = "Sprite Sheet Rows"
+                doc = """Number of row the spritesheet across all textures is divided into.
+
+"""
+                hidden = false
+            )
+            float inputs:subsurface_measurement_distance = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 16
+                        float min = 0
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Measurement Distance"
+                doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface. (Used if no texture is specified).
+This parameter is unused.
+"""
+                hidden = false
+            )
+            color3f inputs:subsurface_single_scattering_albedo = (0.5, 0.5, 0.5) (
+                customData = {
+                    float3 default = (0.5, 0.5, 0.5)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Single Scattering Albedo"
+                doc = """The color of light that most easily passes through the material after a single time scattering inside volume. (Used if no texture is specified).
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:subsurface_single_scattering_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Subsurface"
+                displayName = "Single Scattering Map"
+                doc = """The texture specifying the scattering albedo of subsurface materials.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:subsurface_thickness_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Subsurface"
+                displayName = "Measurement Distance Map"
+                doc = """The texture specifying the distance between front and back surface of subsurface materials in millimeter.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            color3f inputs:subsurface_transmittance_color = (0.5, 0.5, 0.5) (
+                customData = {
+                    float3 default = (0.5, 0.5, 0.5)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Transmittance Color"
+                doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume. (Used if no texture is specified).
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:subsurface_transmittance_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Subsurface"
+                displayName = "Transmittance Map"
+                doc = """The texture specifying the transmittance color of subsurface materials.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:subsurface_volumetric_anisotropy = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 0.99
+                        float min = -0.99
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Volumetric Anisotropy"
+                doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
+This parameter is unused.
+"""
+                hidden = false
+            )
+            float inputs:thin_film_thickness_constant = 200 (
+                customData = {
+                    float default = 200
+                    dictionary range = {
+                        float max = 1500
+                        float min = 0.001
+                    }
+                }
+                displayGroup = "Iridescence"
+                displayName = "Thickness"
+                doc = """Thickness of the thin film in nanometers if not specified in albedo texture
+
+"""
+                hidden = false
+            )
+            bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Iridescence"
+                displayName = "Use Opacity as Thickness"
+                doc = """Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case.
+
+"""
+                hidden = false
+            )
+            bool inputs:use_legacy_alpha_state = 1 (
+                customData = {
+                    bool default = 1
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Use Legacy Alpha State"
+                doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                hidden = false
+            )
+            int inputs:wrap_mode_u = 1 (
+                customData = {
+                    int default = 1
+                }
+                displayGroup = "Filtering"
+                displayName = "Wrap Mode U"
+                doc = """How horizontal texture coordinates outside of the 0-1 range are handled
+
+"""
+                hidden = false
+                renderType = "wrap_mode"
+                sdrMetadata = {
+                    string __SDR__enum_value = "wrap_repeat"
+                    string options = "wrap_clamp:0|wrap_repeat:1|wrap_mirrored_repeat:2|wrap_clip:3"
+                }
+            )
+            int inputs:wrap_mode_v = 1 (
+                customData = {
+                    int default = 1
+                }
+                displayGroup = "Filtering"
+                displayName = "Wrap Mode V"
+                doc = """How vertical texture coordinates outside of the 0-1 range are handled
+
+"""
+                hidden = false
+                renderType = "wrap_mode"
+                sdrMetadata = {
+                    string __SDR__enum_value = "wrap_repeat"
+                    string options = "wrap_clamp:0|wrap_repeat:1|wrap_mirrored_repeat:2|wrap_clip:3"
+                }
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Metal029"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Metal029/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Metal029/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Metal029/Shader.outputs:out>
+        custom uniform bool paused = 0 (
+            customData = {
+                bool nonpersistant = 1
+            }
+            hidden = true
+        )
+
+        def Shader "Shader"
+        {
+            reorder properties = ["inputs:diffuse_color_constant", "inputs:opacity_constant", "inputs:diffuse_texture", "inputs:enable_thin_film", "inputs:thin_film_thickness_from_albedo_alpha", "inputs:thin_film_thickness_constant", "inputs:reflection_roughness_constant", "inputs:reflectionroughness_texture", "inputs:anisotropy_constant", "inputs:anisotropy_texture", "inputs:metallic_constant", "inputs:metallic_texture", "inputs:enable_emission", "inputs:emissive_color_constant", "inputs:emissive_mask_texture", "inputs:emissive_intensity", "inputs:sprite_sheet_fps", "inputs:sprite_sheet_cols", "inputs:sprite_sheet_rows", "inputs:ignore_material", "inputs:use_legacy_alpha_state", "inputs:blend_enabled", "inputs:blend_type", "inputs:inverted_blend", "inputs:alpha_test_type", "inputs:alpha_test_reference_value", "inputs:filter_mode", "inputs:wrap_mode_u", "inputs:wrap_mode_v", "inputs:normalmap_texture", "inputs:encoding", "inputs:height_texture", "inputs:displace_in", "inputs:subsurface_transmittance_color", "inputs:subsurface_transmittance_texture", "inputs:subsurface_measurement_distance", "inputs:subsurface_thickness_texture", "inputs:subsurface_single_scattering_albedo", "inputs:subsurface_single_scattering_texture", "inputs:subsurface_volumetric_anisotropy"]
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            float inputs:alpha_test_reference_value = 0 (
+                customData = {
+                    float default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Alpha Test Reference Value"
+                doc = """The value to use for alpha testing against.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            int inputs:alpha_test_type = 0 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Alpha Test Type"
+                doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "AlphaTestType"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Always"
+                    string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                }
+            )
+            float inputs:anisotropy_constant = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = -1
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Anisotropy Amount"
+                doc = """0 for isotropic, extents of -1 to 1 for anisotropy
+
+"""
+                hidden = true
+            )
+            asset inputs:anisotropy_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Anisotropy Map"
+                hidden = true
+                renderType = "texture_2d"
+            )
+            bool inputs:blend_enabled = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Enabled"
+                doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                hidden = false
+            )
+            int inputs:blend_type = 0 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Type"
+                doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "BlendType"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Alpha"
+                    string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                }
+            )
+            color3f inputs:diffuse_color_constant = (0.2, 0.2, 0.2) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:diffuse_texture = @./Metal029_1K-PNG_Color.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:displace_in = 0.01 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 255
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            color3f inputs:emissive_color_constant = (1, 0.1, 0.1) (
+                customData = {
+                    float3 default = (1, 0.1, 0.1)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Color"
+                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:emissive_intensity = 40 (
+                customData = {
+                    float default = 40
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Intensity"
+                doc = """Intensity of the emission
+
+"""
+                hidden = false
+            )
+            asset inputs:emissive_mask_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Mask Map"
+                doc = """The texture masking the emissive color
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:enable_emission = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Emission"
+                displayName = "Enable Emission"
+                doc = """Enables the emission of light from the material
+
+"""
+                hidden = false
+            )
+            bool inputs:enable_thin_film = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Iridescence"
+                displayName = "Enable Iridescence"
+                doc = """Adds a thin film coating to the material
+
+"""
+                hidden = false
+            )
+            int inputs:encoding = 0 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map Encoding"
+                doc = """Encoding type for the normal map.  Octahedral for 2 channel textures. tangent_space_dx for 3 channel normals, and tangent_space_ogl for 3 channel normals with an inverted (OpenGL style) G channel.
+
+"""
+                hidden = true
+                renderType = "normalmap_encoding"
+                sdrMetadata = {
+                    string __SDR__enum_value = "octahedral"
+                    string options = "octahedral:0|tangent_space_ogl:1|tangent_space_dx:2"
+                }
+            )
+            int inputs:filter_mode = 1 (
+                customData = {
+                    int default = 1
+                }
+                displayGroup = "Filtering"
+                displayName = "Texture Filtering Mode"
+                doc = """How texture coordinates between pixels are handled
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "FilterMode"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Linear"
+                    string options = "Nearest:0|Linear:1"
+                }
+            )
+            asset inputs:height_texture = @../CJHouse/Metal029_1K-PNG_Displacement.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:ignore_material = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Remix Flags"
+                displayName = "Ignore Material"
+                doc = """Runtime will not render any objects using an ignored material.  RTX Remix will render with a pink and black checkerboard.
+
+"""
+                hidden = false
+            )
+            bool inputs:inverted_blend = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Inverted Blend"
+                doc = """Indicates if an inverted blend type should be used.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            float inputs:metallic_constant = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:metallic_texture = @./Metal029_1K-PNG_Metalness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./Metal029_1K-PNG_NormalDX.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:opacity_constant = 1 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Opacity Amount"
+                doc = """0 for completely transparent, 1 for completely opaque.  (Used if no texture is specified)
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.5 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./Metal029_1K-PNG_Roughness.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            int inputs:sprite_sheet_cols = 1 (
+                customData = {
+                    int default = 1
+                    dictionary range = {
+                        int max = 255
+                        int min = 1
+                    }
+                }
+                displayGroup = "Animation"
+                displayName = "Sprite Sheet Columns"
+                doc = """Number of columns the spritesheet across all textures is divided into.
+
+"""
+                hidden = false
+            )
+            int inputs:sprite_sheet_fps = 0 (
+                customData = {
+                    int default = 0
+                    dictionary range = {
+                        int max = 255
+                        int min = 0
+                    }
+                }
+                displayGroup = "Animation"
+                displayName = "Sprite Sheet FPS"
+                doc = """Framerate in Frames Per Second to use for the spritesheet across all textures. Note that a value of 0 disables this functionality.
+
+"""
+                hidden = false
+            )
+            int inputs:sprite_sheet_rows = 1 (
+                customData = {
+                    int default = 1
+                    dictionary range = {
+                        int max = 255
+                        int min = 1
+                    }
+                }
+                displayGroup = "Animation"
+                displayName = "Sprite Sheet Rows"
+                doc = """Number of row the spritesheet across all textures is divided into.
+
+"""
+                hidden = false
+            )
+            float inputs:subsurface_measurement_distance = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 16
+                        float min = 0
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Measurement Distance"
+                doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface. (Used if no texture is specified).
+This parameter is unused.
+"""
+                hidden = false
+            )
+            color3f inputs:subsurface_single_scattering_albedo = (0.5, 0.5, 0.5) (
+                customData = {
+                    float3 default = (0.5, 0.5, 0.5)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Single Scattering Albedo"
+                doc = """The color of light that most easily passes through the material after a single time scattering inside volume. (Used if no texture is specified).
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:subsurface_single_scattering_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Subsurface"
+                displayName = "Single Scattering Map"
+                doc = """The texture specifying the scattering albedo of subsurface materials.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:subsurface_thickness_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Subsurface"
+                displayName = "Measurement Distance Map"
+                doc = """The texture specifying the distance between front and back surface of subsurface materials in millimeter.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            color3f inputs:subsurface_transmittance_color = (0.5, 0.5, 0.5) (
+                customData = {
+                    float3 default = (0.5, 0.5, 0.5)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Transmittance Color"
+                doc = """The transmittance color of subsurface materials. This property can be easily considered as the light color after passing through volume. (Used if no texture is specified).
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:subsurface_transmittance_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Subsurface"
+                displayName = "Transmittance Map"
+                doc = """The texture specifying the transmittance color of subsurface materials.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:subsurface_volumetric_anisotropy = 0 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 0.99
+                        float min = -0.99
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Volumetric Anisotropy"
+                doc = """The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward).
+This parameter is unused.
+"""
+                hidden = false
+            )
+            float inputs:thin_film_thickness_constant = 200 (
+                customData = {
+                    float default = 200
+                    dictionary range = {
+                        float max = 1500
+                        float min = 0.001
+                    }
+                }
+                displayGroup = "Iridescence"
+                displayName = "Thickness"
+                doc = """Thickness of the thin film in nanometers if not specified in albedo texture
+
+"""
+                hidden = false
+            )
+            bool inputs:thin_film_thickness_from_albedo_alpha = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Iridescence"
+                displayName = "Use Opacity as Thickness"
+                doc = """Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case.
+
+"""
+                hidden = false
+            )
+            bool inputs:use_legacy_alpha_state = 1 (
+                customData = {
+                    bool default = 1
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Use Legacy Alpha State"
+                doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                hidden = false
+            )
+            int inputs:wrap_mode_u = 1 (
+                customData = {
+                    int default = 1
+                }
+                displayGroup = "Filtering"
+                displayName = "Wrap Mode U"
+                doc = """How horizontal texture coordinates outside of the 0-1 range are handled
+
+"""
+                hidden = false
+                renderType = "wrap_mode"
+                sdrMetadata = {
+                    string __SDR__enum_value = "wrap_repeat"
+                    string options = "wrap_clamp:0|wrap_repeat:1|wrap_mirrored_repeat:2|wrap_clip:3"
+                }
+            )
+            int inputs:wrap_mode_v = 1 (
+                customData = {
+                    int default = 1
+                }
+                displayGroup = "Filtering"
+                displayName = "Wrap Mode V"
+                doc = """How vertical texture coordinates outside of the 0-1 range are handled
+
+"""
+                hidden = false
+                renderType = "wrap_mode"
+                sdrMetadata = {
+                    string __SDR__enum_value = "wrap_repeat"
+                    string options = "wrap_clamp:0|wrap_repeat:1|wrap_mirrored_repeat:2|wrap_clip:3"
+                }
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Painted_White_Metal"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Painted_White_Metal/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Painted_White_Metal/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Painted_White_Metal/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.9, 0.9, 0.9) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:metallic_constant = 0.19999999 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.099999994 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Metal001"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Metal001/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Metal001/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Metal001/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./Metal001_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:displace_in = 0.05 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 255
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:height_texture = @./Metal001_height.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:metallic_texture = @./Metal001_metal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./Metal001_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./Metal001_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}
+

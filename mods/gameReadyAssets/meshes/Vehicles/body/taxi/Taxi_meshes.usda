@@ -1,0 +1,304 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary omni_layer = {
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+    }
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_FCF58C9924828898"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Body" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./mainbody.usd@
+            )
+            {
+                rel material:binding = </Looks/Taxi_Yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_1BF75AF96CA670F2"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Hood" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./hood.usd@
+            )
+            {
+                rel material:binding = </Looks/Taxi_Yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_2BB8A798F85E31D9"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Left_Door_01" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./left_door_01.usd@
+            )
+            {
+                rel material:binding = </Looks/Taxi_Yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_25EAD6691DD380A1"
+        {
+            def Xform "Left_Door_02" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./left_door_02.usd@
+            )
+            {
+                rel material:binding = </Looks/Taxi_Yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_99351CC6894576D9"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Head_Skirt" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./head_skirt.usd@
+            )
+            {
+                rel material:binding = </Looks/Taxi_Yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_2F3887E4FDE45E34"
+        {
+            def Xform "Trunk" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./trunk.usd@
+            )
+            {
+                rel material:binding = </Looks/Taxi_Yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_C690A331961A7081"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Rear_Skirt" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./rear_skirt.usd@
+            )
+            {
+                rel material:binding = </Looks/Taxi_Yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_F2159DAADFDEF417"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Right_Door_01" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./right_door_01.usd@
+            )
+            {
+                rel material:binding = </Looks/Taxi_Yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_9C39DB9179AEBD49"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Right_Door_02" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./right_door_02.usd@
+            )
+            {
+                rel material:binding = </Looks/Taxi_Yellow> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_D49F750B2060CAE8"
+        {
+            def Xform "mirror_left" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                prepend references = @./mirror_left.usd@
+            )
+            {
+                rel material:binding = </Looks/Mirror> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_7B7857EB96F940C6"
+        {
+            def Xform "mirror_right" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                prepend references = @./mirror_right.usd@
+            )
+            {
+                rel material:binding = </Looks/Mirror> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+
+    over "Looks"
+    {
+        over "mat_17A7BA2A2093B14A"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./taxi_text_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./taxi_text_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+    }
+}
+

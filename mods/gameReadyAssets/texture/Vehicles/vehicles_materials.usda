@@ -1,0 +1,12 @@
+#usda 1.0
+(
+    subLayers = [
+        @./Helicopter/Helicopter_materials.usd@,
+        @./Tires/Tire_materials.usda@,
+        @./Rims/Rims_materials.usda@,
+        @./Planes/Plane_materials.usda@,
+        @./Trains/Train_materials.usda@
+    ]
+    upAxis = "Z"
+)
+

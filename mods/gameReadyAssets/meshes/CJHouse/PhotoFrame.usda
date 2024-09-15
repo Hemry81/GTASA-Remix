@@ -1,5 +1,70 @@
 #usda 1.0
 (
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (50000, 0, 0)
+                double radius = 500
+            }
+            dictionary Perspective = {
+                double3 position = (500, 500, 500)
+                double3 target = (-0.000003978038705554354, -0.000003978038478180679, 0.000007956076956361358)
+            }
+            dictionary Right = {
+                double3 position = (0, -50000, 0)
+                double radius = 500
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 50000)
+                double radius = 500
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary navmeshSettings = {
+            double agentHeight = 180
+            double agentRadius = 20
+            bool excludeRigidBodies = 1
+            int ver = 1
+            double voxelCeiling = 460
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./PhotoFrame.usda"
+        }
+        dictionary renderSettings = {
+            float3 "rtx:debugView:pixelDebug:textColor" = (0, 1e18, 0)
+            float3 "rtx:fog:fogColor" = (0.75, 0.75, 0.75)
+            float3 "rtx:index:regionOfInterestMax" = (0, 0, 0)
+            float3 "rtx:index:regionOfInterestMin" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_ground_position" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_ground_reflectivity" = (0, 0, 0)
+            float3 "rtx:iray:environment_dome_rotation_axis" = (3.4028235e38, 3.4028235e38, 3.4028235e38)
+            float3 "rtx:post:backgroundZeroAlpha:backgroundDefaultColor" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gain" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:offset" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:saturation" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:blackpoint" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gain" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:lift" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:multiply" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:offset" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:whitepoint" = (1, 1, 1)
+            float3 "rtx:post:lensDistortion:lensFocalLengthArray" = (10, 30, 50)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffX" = (450, 475, 500)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffY" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:cutoffPoint" = (2, 2, 2)
+            float3 "rtx:post:lensFlares:haloFlareFalloff" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:haloFlareRadius" = (75, 75, 75)
+            float3 "rtx:post:lensFlares:isotropicFlareFalloff" = (50, 50, 50)
+            float3 "rtx:post:tonemap:whitepoint" = (1, 1, 1)
+            float3 "rtx:raytracing:inscattering:singleScatteringAlbedo" = (0.9, 0.9, 0.9)
+            float3 "rtx:raytracing:inscattering:transmittanceColor" = (0.5, 0.5, 0.5)
+            float3 "rtx:sceneDb:ambientLightColor" = (0.1, 0.1, 0.1)
+        }
+    }
     defaultPrim = "root"
     doc = "Blender v4.0.0 Alpha"
     endTimeCode = 0
@@ -86,36 +151,67 @@ def Xform "root"
             uniform token info:implementationSource = "sourceAsset"
             uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-            asset inputs:diffuse_texture = @../../texture/wood/Wood 04_diffuse.dds@ (
+            asset inputs:diffuse_texture = @../../texture/wood/Wood026_albedo.dds@ (
                 colorSpace = "auto"
                 customData = {
                     asset default = @@
                 }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Map"
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
                 doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
 
 """
                 hidden = false
                 renderType = "texture_2d"
             )
-            asset inputs:normalmap_texture = @../../texture/wood/Wood 04_normal.dds@ (
+            float inputs:displace_in = 0.002 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 255
+                        float min = 0
+                    }
+                }
+                displayGroup = "Displacement"
+                displayName = "Inwards Displacement"
+                doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:height_texture = @../../texture/wood/Wood026_height.dds@ (
                 colorSpace = "auto"
                 customData = {
                     asset default = @@
                 }
-                displayGroup = "Normal"
+                displayGroup = "Displacement"
+                displayName = "Height Map"
+                doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @../../texture/wood/Wood026_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
                 displayName = "Normal Map"
                 hidden = false
                 renderType = "texture_2d"
             )
-            asset inputs:reflectionroughness_texture = @../../texture/wood/Wood 04_roughness.dds@ (
+            asset inputs:reflectionroughness_texture = @../../texture/wood/Wood026_rough.dds@ (
                 colorSpace = "auto"
                 customData = {
                     asset default = @@
                 }
-                displayGroup = "Specular"
+                displayGroup = "Base Material"
                 displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
                 hidden = false
                 renderType = "texture_2d"
             )
@@ -157,7 +253,7 @@ def Xform "root"
                 }
                 displayGroup = "Specular"
                 displayName = "Thin-walled"
-                doc = """Whether the material is thin-walled
+                doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.
 
 """
                 hidden = false
@@ -187,9 +283,9 @@ def Xform "root"
                         float3 min = (0, 0, 0)
                     }
                 }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Base Color"
-                doc = """The base albedo color to use if no texture is specified
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
 
 """
                 hidden = false
@@ -203,9 +299,9 @@ def Xform "root"
                         float min = 0
                     }
                 }
-                displayGroup = "Specular"
+                displayGroup = "Base Material"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
 
 """
                 hidden = false
@@ -235,9 +331,9 @@ def Xform "root"
                         float min = 0
                     }
                 }
-                displayGroup = "Specular"
+                displayGroup = "Base Material"
                 displayName = "Roughness Amount"
-                doc = """Higher roughness values lead to more blurry reflections
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
 
 """
                 hidden = false

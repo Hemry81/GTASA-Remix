@@ -1,0 +1,20 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary omni_layer = {
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+    }
+    subLayers = [
+        @./SARemix/SARemix_OriginalVehiclesPBR.usda@,
+        @./SARemix/SARemix_VehLights.usda@,
+        @./SARemix/SARemix_Sun.usda@,
+        @./SARemix/SARemix_StreetLights.usda@,
+        @./SARemix/SARemix_PBR.usda@,
+        @./SARemix/SARemix_90s_AVP.usda@
+    ]
+)
+

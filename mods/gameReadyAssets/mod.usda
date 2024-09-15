@@ -1,7 +1,7 @@
 #usda 1.0
 (
     customLayerData = {
-        string lightspeed_game_name = "GTA: San Andreas | 3440x1440 @ 60 fps"
+        string lightspeed_game_name = "SA Remix"
         string lightspeed_layer_type = "replacement"
         dictionary navmeshSettings = {
             double agentHeight = 180
@@ -12,21 +12,13 @@
         }
     }
     subLayers = [
-        @./mesh_replacement.usda@,
-        @./texture/sky/sky.usda@,
-        @./light.usda@,
-        @./texture/rail/rail.usda@,
-        @./weapons.usda@,
-        @./characters.usda@,
-        @./Pedestrian.usda@,
-        @./texture/props/props.usda@,
-        @./cars.usda@,
-        @./buildings.usda@,
-        @./effect.usda@,
-        @./materials.usda@,
-        @./water.usda@
+        @./SARemix.usda@,
+        @./Meshes.usda@,
+        @./texture/effect/Effect.usda@,
+        @./Light.usda@,
+        @./Materials.usda@,
+        @./texture/sky/sky.usda@
     ]
     timeCodesPerSecond = 24
     upAxis = "Z"
 )
-

@@ -1,7 +1,7 @@
 #usda 1.0
 (
     defaultPrim = "Looks"
-    metersPerUnit = 0.009999999776482582
+    metersPerUnit = 0.01
     timeCodesPerSecond = 24
     upAxis = "Z"
 )
@@ -20,16 +20,7 @@ def Scope "Looks"
             uniform token info:implementationSource = "sourceAsset"
             uniform asset info:mdl:sourceAsset = @./AperturePBR_Opacity.mdl@
             uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-            asset inputs:diffuse_texture = @../textures/hash.dds@ (
-                colorSpace = "auto"
-                customData = {
-                    asset default = @@
-                }
-                displayGroup = "Diffuse"
-                displayName = "Albedo Map"
-                doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                hidden = false
-            )
+            asset inputs:diffuse_texture = @../textures/hash.dds@
             token outputs:out
         }
     }

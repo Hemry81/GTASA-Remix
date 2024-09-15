@@ -1,0 +1,103 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_2B58995A152ECB9D"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def Xform "workshop" (
+                references = @./Low_Rider_Workshop/workshop.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, -90)
+                double3 xformOp:scale = (0.68, 0.5875, 0.8)
+                double3 xformOp:translate = (15.72, 365.48, -800.23)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Light"
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (2644.603477648967, -2042.1991220270593, 15.4)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                def RectLight "Light_01" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:height = 0.15
+                    float inputs:intensity = 500
+                    bool inputs:normalize = 0
+                    float inputs:shaping:cone:angle = 90
+                    float inputs:shaping:cone:softness = 0
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    float inputs:width = 2
+                    bool visibleInPrimaryRay = 0
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def RectLight "Light_02" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:height = 0.15
+                    float inputs:intensity = 500
+                    bool inputs:normalize = 0
+                    float inputs:shaping:cone:angle = 90
+                    float inputs:shaping:cone:softness = 0
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    float inputs:width = 2
+                    bool visibleInPrimaryRay = 0
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -2.737943832531073, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+
+                def RectLight "Light_03" (
+                    prepend apiSchemas = ["ShapingAPI"]
+                )
+                {
+                    float3[] extent = [(-50, -50, -0), (50, 50, 0)]
+                    float inputs:colorTemperature = 4500
+                    bool inputs:enableColorTemperature = 1
+                    float inputs:height = 0.15
+                    float inputs:intensity = 500
+                    bool inputs:normalize = 0
+                    float inputs:shaping:cone:angle = 90
+                    float inputs:shaping:cone:softness = 0
+                    float inputs:shaping:focus
+                    color3f inputs:shaping:focusTint
+                    asset inputs:shaping:ies:file
+                    float inputs:width = 2
+                    bool visibleInPrimaryRay = 0
+                    double3 xformOp:rotateXYZ = (0, 0, 0)
+                    double3 xformOp:scale = (1, 1, 1)
+                    double3 xformOp:translate = (0, -5.249782353736464, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+                }
+            }
+        }
+    }
+}
+

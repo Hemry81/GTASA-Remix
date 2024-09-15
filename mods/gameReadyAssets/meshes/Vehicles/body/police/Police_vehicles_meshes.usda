@@ -1,0 +1,276 @@
+#usda 1.0
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_5022672C9CE0ABBF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Body" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./police_car_body.usd@
+            )
+            {
+                rel material:binding = </Looks/Police_Black> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_65FA48DDA3219772"
+        {
+            def Xform "Boot_Front" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./police_car_boot_front.usd@
+            )
+            {
+                rel material:binding = </Looks/Police_Black> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_2B1F3822884F4866"
+        {
+            def Xform "Bumper_Front" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./police_car_bumper_front.usd@
+            )
+            {
+                rel material:binding = </Looks/Police_Black> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_1F2D461D2C780B29"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Roof" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./police_car_body_roof.usd@
+            )
+            {
+                rel material:binding = </Looks/Police_White> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_5BB50B2C2C5BBED1"
+        {
+            def Xform "Door_Left_01" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./police_car_door_left_01.usd@
+            )
+            {
+                rel material:binding = </Looks/Police_White> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_8BE88399758C0E4C"
+        {
+            def Xform "Door_Left_02" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./police_car_door_left_02.usd@
+            )
+            {
+                rel material:binding = </Looks/Police_White> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_0433AA178BEA81E7"
+        {
+            def Xform "Boot_Rear" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./police_car_boot_rear.usd@
+            )
+            {
+                rel material:binding = </Looks/Police_Black> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_B88DF2DC6D88A9CA"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Bumper_Rear" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./police_car_bumper_rear.usd@
+            )
+            {
+                rel material:binding = </Looks/Police_Black> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_3F394815012CB1EF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Right_Door_01" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./police_car_door_right_01.usd@
+            )
+            {
+                rel material:binding = </Looks/Police_White> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_9E164B4D72477B4F"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Right_Door_02" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./police_car_door_right_02.usd@
+            )
+            {
+                rel material:binding = </Looks/Police_White> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4BC6E14090C2B0EF"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Mirror_Left" (
+                references = @./police_car_mirror_left.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_2479F96364BC8502"
+        {
+            def Xform "Mirror_Right" (
+                references = @./police_car_mirror_right.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+

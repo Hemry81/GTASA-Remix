@@ -16,13 +16,6 @@ over "RootNode"
             }
 
             def Xform "Body" (
-                delete references = [
-                    @D:/Games/Grand Theft Auto San Andreas/rtx-remix/mods/gameReadyAssets/meshes/Vehicles/Plane/Plane.usd@,
-                    @D:/Games/Grand Theft Auto San Andreas/rtx-remix/mods/gameReadyAssets/meshes/Vehicles/Plane/Body.usd@,
-                    @file:/D:/Games/Grand%20Theft%20Auto%20San%20Andreas/rtx-remix/mods/gameReadyAssets/meshes/Vehicles/Plane/Andromada/Body.usd@,
-                    @./Andromada/Body.usd@,
-                    @./Andromada/Body1.usd@
-                ]
                 prepend references = @./Andromada/Body.usd@
             )
             {
