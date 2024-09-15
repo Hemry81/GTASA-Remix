@@ -1,7 +1,7 @@
 script_name("SARemix_Real_Sun")
 script_author("Hemry")
 script_url("https://github.com/Hemry81/GTASA-Remix")
-script_version("0.1.4")
+script_version("0.1.5")
 require "lib.moonloader"
 
 local mad = require 'MoonAdditions'
@@ -13,6 +13,7 @@ local dataFile = getWorkingDirectory().."/SARemix_Real_Sun.dat"
 local moveitTimer = 0
 local moveitDuration = 0.005
 local transiting = false
+local lightToggle = false
 local debugmode = true
 
 
@@ -27,7 +28,7 @@ Window = {
 
 local settings = {
     daycycle = {
-        id = 3890,
+        id = 15889,
         obj = nil,
         obj2 = nil,
         pos = {
@@ -43,7 +44,7 @@ local settings = {
         basePosition = 0
     },
     nightcycle = {
-        id = 3891,
+        id = 15891,
         obj = nil,
         pos = {
         x = 0,
@@ -86,7 +87,8 @@ local settings = {
             z = 0
         },
         basePosition = 0
-    }
+    },
+    discLightAsSun = false
 }
 
 local RSL_firstStart = true
@@ -109,8 +111,11 @@ local Im = {
 
 local function clearObjectList()
     for k, v in pairs(settings) do
-        if v.obj then
+        if type(v) == "table" and v.obj then
             v.obj = nil
+        end
+        if type(v) == "table" and v.obj2 then
+            v.obj2 = nil
         end
     end
 end
@@ -121,6 +126,7 @@ local function loadsettings()
     if newSettings then
         settings = newSettings
         print("Settings loaded successfully:", settings)
+        settings.discLightAsSun = settings.discLightAsSun == "true" or settings.discLightAsSun and true or false
         RSL_Rot.x = imgui.ImInt(settings.daycycle.rot.x)
         RSL_Rot.y = imgui.ImInt(settings.daycycle.rot.y)
         RSL_Rot.z = imgui.ImInt(settings.daycycle.rot.z)
@@ -169,7 +175,7 @@ local function smoothTransition(hours, minutes)
         rotationSpeed = 0
     end
     
-    transiting = math.abs(rotationDifference) > 20
+    transiting = math.abs(rotationDifference) > 10
 
     -- Update rotation in the direction of the target
     currentRotation = currentRotation + rotationSpeed * dt
@@ -179,51 +185,28 @@ local function smoothTransition(hours, minutes)
     return currentRotation
 end
 
-local function moveIt()
-    local hour, minute =  getTimeOfDay()
-    local p = {
-        x = 0,
-        y = 0,
-        z = 0
-        }
-        
-    -- p.x, p.y, p.z = getCharCoordinates(PLAYER_PED)
-    p.x, p.y, p.z = getActiveCameraCoordinates()
+local function moveNormal_Sun(rot_y)
+    setObjectRotation(settings.daycycle.obj, settings.daycycle.rot.x, rot_y, settings.daycycle.rot.z)
+    setObjectCoordinates(settings.daycycle.obj, settings.daycycle.pos.x, settings.daycycle.pos.y, settings.daycycle.pos.z)
+end
 
-    settings.daycycle.pos.x = p.x
-    settings.daycycle.pos.y = p.y
-    settings.daycycle.pos.z = p.z
-    settings.nightcycle.pos.x = p.x
-    settings.nightcycle.pos.y = p.y
-    settings.nightcycle.pos.z = p.z
-    local rot_y = settings.daycycle.basePosition - smoothTransition(hour, minute)
-    
-    if settings.daycycle.obj ~= nil then
-        if hour >= 5 and hour < 19 then
-            setObjectRotation(settings.daycycle.obj, settings.daycycle.rot.x, rot_y, settings.daycycle.rot.z)
-            setObjectCoordinates(settings.daycycle.obj, settings.daycycle.pos.x, settings.daycycle.pos.y, settings.daycycle.pos.z)
-        else
-            setObjectRotation(settings.daycycle.obj, settings.daycycle.rot.x, rot_y, settings.daycycle.rot.z)
-            if transiting == false then setObjectCoordinates(settings.daycycle.obj, -10000, -10000, -10000) end
-        end
+local function moveBright_Sun(rot_y)
+    setObjectRotation(settings.daycycle.obj2, settings.daycycle.rot.x, rot_y, settings.daycycle.rot.z)
+    setObjectCoordinates(settings.daycycle.obj2, settings.daycycle.pos.x, settings.daycycle.pos.y, settings.daycycle.pos.z)
+end
+
+local function moveMoon(rot_y)
+    setObjectRotation(settings.nightcycle.obj, settings.nightcycle.rot.x, rot_y, settings.nightcycle.rot.z)
+    setObjectCoordinates(settings.nightcycle.obj, settings.nightcycle.pos.x, settings.nightcycle.pos.y, settings.nightcycle.pos.z)
+end
+
+
+local function deleteTheObject(obj)
+    if obj ~= nil then
+        deleteObject(obj)
+        obj = nil
     end
-    if settings.daycycle.obj2 ~= nil then
-        if hour >= 12 and hour < 4 then
-            setObjectRotation(settings.daycycle.obj2, settings.daycycle.rot.x, rot_y, settings.daycycle.rot.z)
-            setObjectCoordinates(settings.daycycle.obj2, settings.daycycle.pos.x, settings.daycycle.pos.y, settings.daycycle.pos.z)
-        else
-            setObjectCoordinates(settings.daycycle.obj2, -10000, -10000, -10000)
-        end
-    end
-    if settings.nightcycle.obj ~= nil then
-        if hour >= 17 or hour < 7 then
-            setObjectRotation(settings.nightcycle.obj, settings.nightcycle.rot.x, rot_y, settings.nightcycle.rot.z)
-            setObjectCoordinates(settings.nightcycle.obj, settings.nightcycle.pos.x, settings.nightcycle.pos.y, settings.nightcycle.pos.z)
-        else
-            setObjectRotation(settings.nightcycle.obj, settings.nightcycle.rot.x, rot_y, settings.nightcycle.rot.z)
-            if transiting == false then setObjectCoordinates(settings.nightcycle.obj, -10000, -10000, -10000) end
-        end
-    end
+    return obj
 end
 
 local function loadobject(obj, id)
@@ -238,27 +221,77 @@ local function loadobject(obj, id)
     end
 end
 
+local function moveIt()
+    local hour, minute =  getTimeOfDay()
+    local p = {
+        x = 0,
+        y = 0,
+        z = 0
+        }
+        
+    p.x, p.y, p.z = getCharCoordinates(PLAYER_PED)
+    -- p.x, p.y, p.z = getActiveCameraCoordinates()
+
+    settings.daycycle.pos.x = p.x
+    settings.daycycle.pos.y = p.y
+    settings.daycycle.pos.z = p.z
+    settings.nightcycle.pos.x = p.x
+    settings.nightcycle.pos.y = p.y
+    settings.nightcycle.pos.z = p.z
+    local rot_y = settings.daycycle.basePosition - smoothTransition(hour, minute)
+    
+    local sun1, sun2, moon = true, true, true
+    if hour >= 5 and hour < 20 or transiting then
+        if settings.daycycle.obj == nil then settings.daycycle.obj = loadobject(settings.daycycle.obj, settings.daycycle.id) end
+        moveNormal_Sun(rot_y)
+    else
+        settings.daycycle.obj = deleteTheObject(settings.daycycle.obj)
+        sun1 = false
+    end
+    
+    if hour >= 12 and hour <= 16 then
+        if settings.daycycle.obj2 == nil then settings.daycycle.obj2 = loadobject(settings.daycycle.obj2, settings.daycycle.id) end
+        moveBright_Sun(rot_y)
+    else
+        settings.daycycle.obj2 = deleteTheObject(settings.daycycle.obj2)
+        sun2 = false
+    end
+    
+    if hour >= 17 or hour < 7 or transiting then
+        if settings.nightcycle.obj == nil then settings.nightcycle.obj = loadobject(settings.nightcycle.obj, settings.nightcycle.id) end
+        moveMoon(rot_y)
+    else
+        settings.nightcycle.obj = deleteTheObject(settings.nightcycle.obj)
+        moon = false
+    end
+    -- print(string.format("Time : %0d:%0d, transiting : %s sun 1 is %s sun 2 is %s moon is %s.", hour, minute, transiting and "true" or not transiting and "false", 
+    --                     sun1 and "present" or not sun1 and "hidden", sun2 and "present" or not sun2 and "hidden", moon and "hidden" or not moon and "hidden"))
+end
+
 function imgui.OnDrawFrame()
+    local toggleSunlight = imgui.ImBool(settings.discLightAsSun)
     if Im.main_window_state.v then
         imgui.SetNextWindowPos(imgui.ImVec2(10, 10),imgui.Cond.FirstUseEver)
         imgui.SetNextWindowSize(imgui.ImVec2(Window.w * (scr_w/648) , Window.h * (scr_h/448)), imgui.Cond.FirstUseEver)
-        imgui.Begin("SASRemix Sun Position Editor", Im.main_window_state, nil)
+        imgui.Begin("SASRemix Sun Editor", Im.main_window_state, nil)
         --lockPlayerControl(true)
         if imgui.SliderInt("Sun X Rotaion", RSL_Rot.x, -180, 180, "%.0f") then
             settings.daycycle.rot.x = RSL_Rot.x.v
             settings.nightcycle.rot.x = RSL_Rot.x.v
         end
-        if imgui.SliderInt("Sun Y Rotaion", RSL_Rot.y, -180, 180, "%.0f") then
-            settings.daycycle.rot.y = RSL_Rot.y.v
-            settings.nightcycle.rot.y = RSL_Rot.y.v
+        if imgui.SliderInt("Sun Y position", RSL_Rot.basePosition, -180, 180, "%.0f") then
+            settings.daycycle.basePosition = RSL_Rot.basePosition.v
         end
         if imgui.SliderInt("Sun Z Rotaion", RSL_Rot.z, -180, 180, "%.0f") then
             settings.daycycle.rot.z = RSL_Rot.z.v
             settings.nightcycle.rot.z = RSL_Rot.z.v
         end
-        if imgui.SliderInt("Base position", RSL_Rot.basePosition, -180, 180, "%.0f") then
-            settings.daycycle.basePosition = RSL_Rot.basePosition.v
+        
+        if imgui.Checkbox("Use Disc Light as Sun", toggleSunlight) then
+            settings.discLightAsSun = toggleSunlight.v
+            lightToggle = true
         end
+            
         if imgui.Button("Save") then
 			saveSettings()
 			printStringNow("Sun Setting Saved", 3000)
@@ -266,6 +299,10 @@ function imgui.OnDrawFrame()
 		imgui.SameLine()
 		if imgui.Button("Reset") then
 			loadsettings()
+			clearObjectList()
+			settings.daycycle.obj = loadobject(settings.daycycle.obj, settings.daycycle.id)
+            settings.daycycle.obj2 = loadobject(settings.daycycle.obj2, settings.daycycle.id)
+            settings.nightcycle.obj = loadobject(settings.nightcycle.obj, settings.nightcycle.id)
 			printStringNow("Sun Setting Reset", 3000)
 		end
         imgui.End()
@@ -274,10 +311,31 @@ function imgui.OnDrawFrame()
     end
 end
 
+function handleSwitchSun()
+    if lightToggle then
+        if settings.discLightAsSun then
+            settings.daycycle.id = 15890
+            settings.daycycle.obj = deleteTheObject(settings.daycycle.obj)
+            settings.daycycle.obj2 = deleteTheObject(settings.daycycle.obj2)
+            printString("Sun Light switch to Disc Light" , 1000)
+        else
+            settings.daycycle.id = 15889
+            settings.daycycle.obj = deleteTheObject(settings.daycycle.obj)
+            settings.daycycle.obj2 = deleteTheObject(settings.daycycle.obj2)
+            printString("Sun Light switch to Distant Light" , 1000)
+        end
+        lightToggle = false
+    end
+end
+
 addEventHandler('onScriptTerminate', function()
     if settings.daycycle.obj ~= nil then
         deleteObject(settings.daycycle.obj)
         settings.daycycle.obj = nil
+    end
+    if settings.daycycle.obj2 ~= nil then
+        deleteObject(settings.daycycle.obj2)
+        settings.daycycle.obj2 = nil
     end
     if settings.nightcycle.obj ~= nil then
         deleteObject(settings.nightcycle.obj)
@@ -309,6 +367,7 @@ function main()
             end
 			moveIt()
 			moveitTimer = os.clock()
+			handleSwitchSun()
 		end
     end
 end
