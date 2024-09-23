@@ -23,6 +23,9 @@
 
 ### Bug Fixes
 
+#### v0.1.0.d:
+- Fixed issue with some decal textures, such as text or logos, being disabled.
+
 #### v0.1.0.b:
 - Fixed stationary vehicle lights
 - Fixed damaged headlights
