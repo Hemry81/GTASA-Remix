@@ -1,6 +1,8 @@
 #usda 1.0
 (
     subLayers = [
+        @./Red_Country_Tunnel_Light_1.usda@,
+        @./Red_Country_Tunnel_Light_2.usda@,
         @./Richman.usda@,
         @./Verdant_Bluffs.usda@
     ]

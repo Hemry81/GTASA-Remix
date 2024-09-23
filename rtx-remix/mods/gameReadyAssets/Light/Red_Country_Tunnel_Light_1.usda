@@ -1,0 +1,150 @@
+#usda 1.0
+(
+    defaultPrim = "root"
+    doc = "Blender v4.2.1 LTS"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_A7B60D33EB8CD271"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Point_03"
+            {
+                float3[] extent = [(-0, -0, -0), (0, 0, 0)]
+                color3f inputs:color = (1, 1, 1)
+                float inputs:colorTemperature = 4500
+                float inputs:diffuse = 1
+                bool inputs:enableColorTemperature = 1
+                float inputs:exposure = 0
+                float inputs:intensity = 300
+                bool inputs:normalize = 1
+                float inputs:radius = 0.3
+                float inputs:specular = 1
+                bool treatAsPoint = 0
+                custom string userProperties:blender:data_name = "Point.002"
+                bool visibleInPrimaryRay = 1
+                float3 xformOp:rotateXYZ = (0, -0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (77.48504638671875, -85.00126647949219, -5.324023437499999)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Point_02"
+            {
+                float3[] extent = [(-0, -0, -0), (0, 0, 0)]
+                color3f inputs:color = (1, 1, 1)
+                float inputs:colorTemperature = 4500
+                float inputs:diffuse = 1
+                bool inputs:enableColorTemperature = 1
+                float inputs:exposure = 0
+                float inputs:intensity = 300
+                bool inputs:normalize = 1
+                float inputs:radius = 0.3
+                float inputs:specular = 1
+                bool treatAsPoint = 0
+                custom string userProperties:blender:data_name = "Point.001"
+                bool visibleInPrimaryRay = 1
+                float3 xformOp:rotateXYZ = (0, -0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (63.84295654296875, -31.534713745117188, -1.139699172973633)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Point_01"
+            {
+                float3[] extent = [(-0, -0, -0), (0, 0, 0)]
+                color3f inputs:color = (1, 1, 1)
+                float inputs:colorTemperature = 4500
+                float inputs:diffuse = 1
+                bool inputs:enableColorTemperature = 1
+                float inputs:exposure = 0
+                float inputs:intensity = 300
+                bool inputs:normalize = 1
+                float inputs:radius = 0.3
+                float inputs:specular = 1
+                bool treatAsPoint = 0
+                custom string userProperties:blender:data_name = "Point"
+                bool visibleInPrimaryRay = 1
+                float3 xformOp:rotateXYZ = (0, -0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (17.1240234375, 31.231582641601562, 6.271290588378907)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_8899D0C5ACC65BFD"
+        {
+            custom int preserveOriginalDrawCall = 1
+
+            def SphereLight "Point_04"
+            {
+                float3[] extent = [(-0, -0, -0), (0, 0, 0)]
+                color3f inputs:color = (1, 1, 1)
+                float inputs:colorTemperature = 4500
+                float inputs:diffuse = 1
+                bool inputs:enableColorTemperature = 1
+                float inputs:exposure = 0
+                float inputs:intensity = 300
+                bool inputs:normalize = 1
+                float inputs:radius = 0.3
+                float inputs:specular = 1
+                bool treatAsPoint = 0
+                custom string userProperties:blender:data_name = "Point.003"
+                bool visibleInPrimaryRay = 1
+                float3 xformOp:rotateXYZ = (0, -0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.84808349609375, -55.704498291015625, 3.3380373001098635)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Point_05"
+            {
+                float3[] extent = [(-0, -0, -0), (0, 0, 0)]
+                color3f inputs:color = (1, 1, 1)
+                float inputs:colorTemperature = 4500
+                float inputs:diffuse = 1
+                bool inputs:enableColorTemperature = 1
+                float inputs:exposure = 0
+                float inputs:intensity = 300
+                bool inputs:normalize = 1
+                float inputs:radius = 0.3
+                float inputs:specular = 1
+                bool treatAsPoint = 0
+                custom string userProperties:blender:data_name = "Point.004"
+                bool visibleInPrimaryRay = 1
+                float3 xformOp:rotateXYZ = (0, -0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.84808349609375, 5.335479736328125, 3.1202638626098635)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def SphereLight "Point_06"
+            {
+                float3[] extent = [(-0, -0, -0), (0, 0, 0)]
+                color3f inputs:color = (1, 1, 1)
+                float inputs:colorTemperature = 4500
+                float inputs:diffuse = 1
+                bool inputs:enableColorTemperature = 1
+                float inputs:exposure = 0
+                float inputs:intensity = 300
+                bool inputs:normalize = 1
+                float inputs:radius = 0.3
+                float inputs:specular = 1
+                bool treatAsPoint = 0
+                custom string userProperties:blender:data_name = "Point.005"
+                bool visibleInPrimaryRay = 1
+                float3 xformOp:rotateXYZ = (0, -0, 0)
+                float3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.67071533203125, 78.9859619140625, 2.9389122009277346)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+    }
+}
+

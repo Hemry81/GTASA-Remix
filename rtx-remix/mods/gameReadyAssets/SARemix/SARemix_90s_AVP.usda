@@ -22,11 +22,64 @@ over "RootNode"
             {
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
-                bool inputs:thin_walled = 1
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
-                bool inputs:use_diffuse_layer = 1
+                float inputs:ior_constant = 1.6 (
+                    customData = {
+                        float default = 1.3
+                        dictionary range = {
+                            float max = 3
+                            float min = 1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Index of Refraction"
+                    doc = """Index of Refraction of the material
+
+"""
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:thin_walled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled"
+                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.
+
+"""
+                    hidden = false
+                )
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance Color/Diffuse Albedo Texture"
+                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_diffuse_layer = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Use diffuse layer"
+                    doc = """When set, simulates a diffuse layer on top of the material
+
+"""
+                    hidden = false
+                )
             }
         }
 
@@ -39,9 +92,9 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -55,9 +108,9 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -71,9 +124,9 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -87,9 +140,9 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -103,9 +156,9 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -119,9 +172,9 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -448,8 +501,36 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.79999995
-                float inputs:reflection_roughness_constant = 0.049999997
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
             }
         }
 
@@ -465,8 +546,36 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.19999999
-                float inputs:reflection_roughness_constant = 0.02
+                float inputs:metallic_constant = 0.9 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.19999999 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
             }
         }
 
@@ -2169,8 +2278,36 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.59999996
-                float inputs:reflection_roughness_constant = 0.4
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.099999994 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
             }
         }
 
@@ -2178,8 +2315,36 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.6
-                float inputs:reflection_roughness_constant = 0.1
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
             }
         }
 
@@ -2961,7 +3126,7 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 color3f inputs:transmittance_color = (0.12941177, 0.20784314, 0.25882354)
                 asset inputs:transmittance_texture = @@
@@ -2978,7 +3143,7 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 asset inputs:transmittance_texture = @@
                 bool inputs:use_diffuse_layer = 0
@@ -3077,10 +3242,10 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 color3f inputs:transmittance_color = (0.16078432, 0.22352941, 0.25882354)
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 0
             }
         }
@@ -3102,7 +3267,7 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 asset inputs:transmittance_texture = @@
                 bool inputs:use_diffuse_layer = 0
@@ -3243,7 +3408,7 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 color3f inputs:transmittance_color = (0.16078432, 0.16862746, 0.16078432)
                 asset inputs:transmittance_texture = @@
@@ -3285,10 +3450,10 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 color3f inputs:transmittance_color = (0.21568628, 0.23921569, 0.22745098)
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 0
             }
         }
@@ -3997,9 +4162,9 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -4659,10 +4824,10 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 color3f inputs:transmittance_color = (0.03137255, 0.09411765, 0.07450981)
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -4676,10 +4841,10 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 color3f inputs:transmittance_color = (0.62352943, 0.62352943, 0.63529414)
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -5129,7 +5294,7 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/9888198F461518D7_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
@@ -5162,10 +5327,10 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 color3f inputs:transmittance_color = (0.16078432, 0.22352941, 0.25882354)
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -5241,10 +5406,10 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 color3f inputs:transmittance_color = (0.16078432, 0.22352941, 0.25882354)
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -5272,7 +5437,7 @@ over "RootNode"
 """
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@ (
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -5308,7 +5473,7 @@ over "RootNode"
                     hidden = false
                     renderType = "color"
                 )
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@ (
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -5369,10 +5534,10 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 color3f inputs:transmittance_color = (0.80784315, 0.8156863, 0.827451)
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 0
             }
         }
@@ -5577,7 +5742,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.61
+                float inputs:metallic_constant = 0.7
                 float inputs:reflection_roughness_constant = 0.19999999
             }
         }
@@ -5854,10 +6019,10 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 color3f inputs:transmittance_color = (0.12941177, 0.20784314, 0.25882354)
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches005_albedo.dds@
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
         }
@@ -5979,7 +6144,7 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/CB58D26C26A42F40_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
@@ -6048,7 +6213,7 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/393936BE38B6D313_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
@@ -6560,7 +6725,7 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/C65AE4C7F97FA257_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
@@ -6748,7 +6913,7 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches005_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
                 bool inputs:thin_walled = 1
                 asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/CC5876E71E4EEDEE_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
@@ -7233,8 +7398,36 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.79999995
-                float inputs:reflection_roughness_constant = 0.049999997
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
             }
         }
 
@@ -7271,6 +7464,1012 @@ over "RootNode"
 
 """
                     hidden = false
+                )
+            }
+        }
+
+        over "mat_7BA3ACB89684C3B0"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.19999999 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_3A7EE521E8C9A9C8"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_E3D308D29F6D9E7E"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.64 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.089999996 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_4666D997381B121C"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_DB8425C7C32F6D1D"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_EAE2E3F1C7905663"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_8D791078ACFFB3C4"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.19999999 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_C4D8305678C21EA4"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_471F28BBCCC30223"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_048868B602E39C1E"
+        {
+            over "Shader"
+            {
+                float inputs:reflection_roughness_constant = 0.39999998 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_B40D14FF444DB747"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_979BCCD3CE743417"
+        {
+            custom string ColorID = "Broken_Glass"
+
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                float inputs:ior_constant = 1.6 (
+                    customData = {
+                        float default = 1.3
+                        dictionary range = {
+                            float max = 3
+                            float min = 1
+                        }
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Index of Refraction"
+                    doc = """Index of Refraction of the material
+
+"""
+                    hidden = false
+                )
+                asset inputs:normalmap_texture = @./Textures/Vehicles/crack_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Normal"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:thin_walled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled"
+                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.
+
+"""
+                    hidden = false
+                )
+                asset inputs:transmittance_texture = @./Textures/Vehicles/crack_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Transmittance Color/Diffuse Albedo Texture"
+                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                bool inputs:use_diffuse_layer = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Volume"
+                    displayName = "Use diffuse layer"
+                    doc = """When set, simulates a diffuse layer on top of the material
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_78A2D87ECDA4A562"
+        {
+            over "Shader"
+            {
+                float inputs:reflection_roughness_constant = 0.19 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_5A767DE4EAFF6D9C"
+        {
+            over "Shader"
+            {
+                float inputs:reflection_roughness_constant = 0.19999999 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_5694B24EF2B02033"
+        {
+            over "Shader"
+            {
+                float inputs:reflection_roughness_constant = 0.099999994 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_C327AF8CAE3BE539"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/Vehicles/90sAVP/Leather030_W_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:displace_in = 0.001 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:height_texture = @./Textures/Vehicles/90sAVP/Leather030_height.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./Textures/Vehicles/90sAVP/Leather030_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/90sAVP/Leather030_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_EDBE0E6C982B533E"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/Vehicles/90sAVP/Leather030_W_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:displace_in = 0.001 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:height_texture = @./Textures/Vehicles/90sAVP/Leather030_height.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./Textures/Vehicles/90sAVP/Leather030_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/90sAVP/Leather030_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_BD3733C19327C724"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/Vehicles/90sAVP/Fabric002_albedo_grey.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:displace_in = 0.001 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:height_texture = @./Textures/Vehicles/90sAVP/Fabric002_height.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./Textures/Vehicles/90sAVP/Fabric002_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/90sAVP/Fabric002_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+            }
+        }
+
+        over "mat_3AEA1B431851AFE1"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_8D4AEAF3070FD521"
+        {
+            over "Shader"
+            {
+                float inputs:reflection_roughness_constant = 0.39999998 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_514934903E6EC8F3"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.39999998 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_7CE60F1B19BD8E76"
+        {
+            over "Shader"
+            {
+                color3f inputs:diffuse_color_constant = (1, 0.99999, 0.99999) (
+                    customData = {
+                        float3 default = (0.2, 0.2, 0.2)
+                        dictionary range = {
+                            float3 max = (1, 1, 1)
+                            float3 min = (0, 0, 0)
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo Color"
+                    doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                    hidden = false
+                    renderType = "color"
+                )
+                asset inputs:diffuse_texture = @@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:metallic_constant = 0.79999995 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_2F4CC54563CFC013"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.59999996 (
+                    customData = {
+                        float default = 0
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Amount"
+                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+                float inputs:reflection_roughness_constant = 0.049999997 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
+
+        over "mat_516E7E74D99CCD71"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./Textures/Vehicles/90sAVP/Leather030_B.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:displace_in = 0.001 (
+                    customData = {
+                        float default = 1
+                        dictionary range = {
+                            float max = 255
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Inwards Displacement"
+                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
+This parameter is unused.
+"""
+                    hidden = false
+                )
+                asset inputs:height_texture = @./Textures/Vehicles/90sAVP/Leather030_height.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Displacement"
+                    displayName = "Height Map"
+                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
+This parameter is unused.
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./Textures/Vehicles/90sAVP/Leather030_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/90sAVP/Leather030_rough.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
                 )
             }
         }

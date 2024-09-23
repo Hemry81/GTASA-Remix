@@ -13,6 +13,7 @@
         @./texture/buildings/buildings_materials.usda@,
         @./texture/characters/Character_materials.usda@,
         @./texture/Concrete/Concrete_materials.usda@,
+        @./texture/Fabric/Fabric_materials.usda@,
         @./texture/Fence/Fence_materials.usda@,
         @./texture/Floor/Floor_materials.usda@,
         @./texture/Ground/Ground_materials.usda@,

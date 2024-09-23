@@ -9,7 +9,6 @@
         }
     }
     subLayers = [
-        @./Light/Red_Country_Tunnel_Light.usda@,
         @./Light/Chuckin_Bell.usda@,
         @./Light/Low_Rider_Workshop.usda@,
         @./Light/Train_light.usda@,
