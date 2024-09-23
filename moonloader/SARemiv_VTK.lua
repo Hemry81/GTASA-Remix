@@ -7,7 +7,6 @@ local mad = require 'MoonAdditions'
 local imgui = require 'imgui'
 local key = require 'vkeys'
 local ffi = require "ffi"
-local memory = require "memory"
 local settingsManager = require("SARemix_SettingsManager")
 
 local workDir = getWorkingDirectory()
