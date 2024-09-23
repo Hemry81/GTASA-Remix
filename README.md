@@ -28,15 +28,11 @@ Always back up your original GTA San Andreas game files before installation to s
 ### Step 3: Clone the Mod Repository
 1. Open GitHub Desktop and log in.
 2. Go to the mod's GitHub repository and click **Code** > **Open with GitHub Desktop**.
-3. Choose **Clone** and select or create the directory `Your Game Folder\rtx-remix` for the repository.
 
-### Step 4: Move Configuration Files
-- Move the `rtx.conf` file from the `rtx-config` folder to your main game directory.
+### Step 4: Install Additional SARemix Script Mods
+- Transfer the entire `modloader` and `moonloader` folder from the repository into your game directory.
 
-### Step 5: Install Additional Mods
-- Transfer the entire `Moonloader` folder from the repository into your game directory, which includes mods like the **Sun and Moon Mod** and the **Health Bar Mod**.
-
-### Step 6: Launch the Game and Enjoy!
+### Step 5: Launch the Game and Enjoy!
 - Start GTA San Andreas with RTX enhancements and enjoy the improved visuals.
 
 # Necessary Mod List: 
@@ -51,55 +47,18 @@ To enhance stability and improve graphics quality, we recommend installing the f
 
 **Please note that any additional mods not listed here may cause conflicts and potentially break our mod. We strongly advise against installing any other mods unless you have a thorough understanding of their compatibility and potential effects.**
 
-# Sun Mod Requirements
-This mod changes the sun and moon in GTASA using MoonLoader and Lua scripts.
+# Installation Instructions for SARemix Script Mod :
 
-**Installation** :
-- **MoonLoader** : Download and install MoonLoader from the provided link. This will allow you to run Lua scripts in GTASA: [Russian](https://www.blast.hk/threads/13305/) or [English](https://gtaforums.com/topic/890987-moonloader/).
-- **MoonAdditions** : Download MoonAdditions from GitHub. Copy the MoonAdditions.dll file to your MoonLoader/lib folder: [MoonAdditions](https://github.com/THE-FYP/MoonAdditions).
-- **Moon ImGui** : Download and install from the provided link. Copy the "imgui.lua" and "MoonImGui.dll" files to your MoonLoader/lib folder: [Moon ImGui](https://www.blast.hk/threads/19292/).
-- **SARemix_Sun** : download the "SARemix_Sun.lua" and "SARemix_Real_Sun.dat" files from the moonloader folder. Then copy it into the "game folder\MoonLoader" folder.
-- **SARemix_SettingManager** : download "SARemix_SettingsManager.lua" . Then copy it into the "moonloader/lib" folder.
+1. Prerequisites:
+   - Download and install MoonLoader: https://gtaforums.com/topic/890987-moonloader/
+   - Download MoonAdditions: https://github.com/THE-FYP/MoonAdditions
+     Copy MoonAdditions.dll to your MoonLoader/lib folder
+   - Download Moon ImGui: https://www.blast.hk/threads/19292/
+     Copy imgui.lua and MoonImGui.dll to your MoonLoader/lib folder
 
-## Features and update (v0.1.4):
-### New Feature:
-- Sun light is brighter between 12:00 to 16:00
-
-### Fixes:
-- Fixed an issue where duplicate sun and moon would appear when saving/loading or script reloading.
-
-## Features and update (v0.1.3):
-
-### New Feature:
-**Smooth Transition:** 
-- The sun and moon now move smoothly, enhancing the transition between times. This improvement applies when:
-  - Loading a saved game
-  - During cutscenes
-  - When the player manually adjusts the time
-
-### Fixes:
-- **Weird Nighttime Lighting:** 
-  Fixed an issue where the sun was still present in the game during nighttime, causing unusual lighting effects. The sun is now properly removed (culled) when it's supposed to be night.
-- **Duplicate Sun and Moon:** 
-  This issue has been addressed.
-Fixed an issue where the sun was still present in the game during nighttime, causing unusual lighting effects. The sun is now properly removed (culled) when it's supposed to be night.
-
-## Features and update (v0.1.2):
-- Fixed interior lighting issue where there was no sun/moon light
-- Resolved the problem of "hidden" shadows appearing at noon time
-- real-time editing of the sun/moon position by pressing the hotkey "F3".
-
-*(If you previously installed our sun mod CLEO script, delete it to avoid conflicts.)*
-
-# Health Bar Mod Requirements
-The Health Bar Mod is a Lua script designed to reveal the original health bar that is hidden in Remix.
-
-**Installation** :
-- **MoonLoader** : Download and install MoonLoader from the provided link. This will allow you to run Lua scripts in GTASA: [Russian](https://www.blast.hk/threads/13305/) or [English](https://gtaforums.com/topic/890987-moonloader/).
-- **MoonAdditions** : Download MoonAdditions from GitHub. Copy the MoonAdditions.dll file to your MoonLoader/lib folder: [MoonAdditions](https://github.com/THE-FYP/MoonAdditions).
-- **SARemix_HealthBar** : download the hbao.lua file from the moonloader folder. Then copy it into the "game folder\MoonLoader" folder.
-
-  (If you've installed the sun mod, it means you already have moonloader and MoonAdditions installed, so there's **no need** to reinstall it.)
+2. Installation:
+   - Copy all files from the `modloader` folder to your `game directory\modloader` folder
+   - Copy all files from the `moonloader` folder to your `game directory\moonLoader` folder
 
 # Community and Contributions
 We invite and appreciate contributions from the community. If you have suggestions or improvements for the GTASA RTX-Remix mod, please contribute by forking this repository, making your changes, and submitting a pull request.
