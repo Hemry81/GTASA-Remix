@@ -1,12 +1,13 @@
 script_name("SARemix_Vehicle_Toolkit")
 script_author("Hemry")
 script_url("https://github.com/Hemry81/GTASA-Remix")
-script_version("0.1.0.c")
+script_version("0.1.0.d")
 
 local mad = require 'MoonAdditions'
 local imgui = require 'imgui'
 local key = require 'vkeys'
 local ffi = require "ffi"
+local memory = require "memory"
 local settingsManager = require("SARemix_SettingsManager")
 
 local workDir = getWorkingDirectory()
@@ -21,7 +22,7 @@ local playerVeh = nil
 
 local changecolorTimer = 0
 local changecolorDuration = 0.2
-local clean_list_time = 0.2
+local clean_list_time = 0.5
 local reset = true
 local forceReset = false
 local resetCurrentCar = false
@@ -31,7 +32,7 @@ local cur_mod_name = mod_list[1]
 local InvertCamYAxis = true
 local InvertCamXAxis = false
 
--- CMouseControllerState, from Plugin-SDK
+
 ffi.cdef([[
 	struct CMouseControllerState {
 		unsigned char lmb;
@@ -52,7 +53,7 @@ local mouseState 		= ffi.cast("struct CMouseControllerState*", 0xB73418)
 
 local excludeMaterial = {vehicleNames = {"quad", "streak", "firela", "freight", "hotdog", "hotrin", "monsta", "monstb", "rhino"},
 						ComponentNames = {""},
-						GlasstextureNames = {"txt", "tx"},
+						GlasstextureNames = {"txt", "tx", "light"},
 						ChrometextureNames = {""},
 						MirrortextureNames = {""},
 						ColorTextureNames = {"txt", "tx"},
@@ -61,7 +62,7 @@ local excludeMaterial = {vehicleNames = {"quad", "streak", "firela", "freight", 
 						}
 						
 local includeMaterial = {vehicleNames = {""},
-						ComponentNames = {"glass", "wind", "windscreen", "wing", "chassis", "roof", "door", "boot", "front", "back"},
+						ComponentNames = {"glass", "wind", "windscreen", "wing", "chassis", "roof", "door", "boot", "front", "back", "rf"},
 						GlasstextureNames = {"generic", "glass", "hite", "chrome", "wind", "light", "no texture"},
 						ChrometextureNames = {"hite", "chrome"},
 						MirrortextureNames = {"mirror"},
@@ -413,6 +414,7 @@ local colorID_List = {
 	{255,255,255},			
 }
 
+
 local color_textures = {}
 
 local componentNameFilter = ""
@@ -472,9 +474,10 @@ end
 CVehicle_list = {}
 CVehicle_list.__index = CVehicle_list
 
-function CVehicle_list:new(data)
-	local instance = setmetatable({}, CVehicle_list)
-	instance.vehicles = data or {}
+function CVehicle_list:new()
+    local instance = setmetatable({}, CVehicle_list)
+    instance.vehicles = {}
+    instance.count = 0
     return instance
 end
 
@@ -499,6 +502,7 @@ function CVehicle_list:createNewCar(vehPtr, name, color1, color2, color3, color4
         isFirstAssignment = true
     }
     self.vehicles[vehPtr] = newCar
+    self.count = self.count + 1
     local class, subClass = mad.get_vehicle_class(vehPtr)
     if class ~= nil then
 		if getCharInCarPassengerSeat(vehPtr, 0) ~= nil or getCharInCarPassengerSeat(vehPtr, 1) ~= nil then
@@ -543,7 +547,7 @@ function CVehicle_list:removeDisabledCars()
             
             if veh.lights then
                 for l, light in ipairs(veh.lights) do
-                    if light and light.obj and light.obj ~= nil then
+                    if light and light.obj then
                         detachObject(light.obj, 0, 0, 0, false)
                         deleteObject(light.obj)
                         light.obj = nil
@@ -551,7 +555,8 @@ function CVehicle_list:removeDisabledCars()
                 end
                 veh.lights = {}
             end
-            veh = nil
+            self.vehicles[veh.id] = nil
+            self.count = self.count - 1
         end
     end
 end
@@ -603,6 +608,9 @@ function CVehicle_list:addLight(vehPtr, class, light_index)
 		local light = veh.lights[light_index]
 		placeObjectRelativeToCar(light.obj, vehPtr, light.pos.x, light.pos.y, light.pos.z)
 		attachObjectToCar(light.obj, vehPtr, light.pos.x, light.pos.y, light.pos.z, light.rot.x, light.rot.y, light.rot.z)
+		
+	else
+		
 	end
 end
 
@@ -657,6 +665,7 @@ function CVehicle_list:checkLights(vehPtr)
 			for i, light in ipairs(veh.lights) do
 				self:removelight(vehPtr, i)
 			end
+			
 		end
 	end
 end
@@ -682,6 +691,8 @@ function CVehicle_list:checkcar(vehPtr, name, color1, color2, color3, color4)
         local anyColorChanged = colorChanged.primary or colorChanged.secondary or colorChanged.extra1 or colorChanged.extra2
 
         if anyColorChanged then
+            
+            
             check_parts(vehPtr, veh, name, veh.isFirstAssignment, colorChanged, color1, color2, color3, color4)
             veh.isFirstAssignment = false  
         end
@@ -691,6 +702,7 @@ function CVehicle_list:checkcar(vehPtr, name, color1, color2, color3, color4)
 			end
 		end
         self:checkLights(vehPtr)
+		
         
         veh.name, veh.color1, veh.color2, veh.color3, veh.color4 = name, color1, color2, color3, color4
         veh.timeupdate = os.clock()
@@ -698,17 +710,18 @@ function CVehicle_list:checkcar(vehPtr, name, color1, color2, color3, color4)
 end
 
 function CVehicle_list:reset()
-	for i, veh in pairs(self.vehicles) do
-		for l, light in ipairs(veh.lights) do
-			if light.obj ~= nil then
-				detachObject(light.obj, 0, 0, 0, true)
-				deleteObject(light.obj)
-				light.obj = nil
-			end
-		end
-		veh.lights = nil
-	end
-	self.vehicles = {}
+    for i, veh in pairs(self.vehicles) do
+        for l, light in ipairs(veh.lights) do
+            if light.obj ~= nil then
+                detachObject(light.obj, 0, 0, 0, true)
+                deleteObject(light.obj)
+                light.obj = nil
+            end
+        end
+        veh.lights = nil
+    end
+    self.vehicles = {}
+    self.count = 0
 end
 
 function CVehicle_list:resetMaterials(vehPtr)
@@ -738,10 +751,18 @@ end
 
 
 function Cvehicles_Settings:addCar(vehicle, vehicleName, componentName, mat_index, material, textureName, manualAdded)
+    
+    
+
+    
     self.vehicles[vehicleName] = self.vehicles[vehicleName] or {name = vehicleName, components = {}, dummies = {}, lights = {}}
+
+    
     if vehicle and componentName ~= "Dummy" then
         self:collectLightPositions(vehicle, vehicleName)
     end
+
+    
     if componentName == "Dummy" then
         self:addDummyComponent(vehicleName, mat_index, material)  
     else
@@ -790,9 +811,13 @@ function Cvehicles_Settings:removeCar(vehicleName)
 end
 
 function Cvehicles_Settings:addDummy(vehicleName, dummyName, pos)
+    
     if self.vehicles[vehicleName] == nil then
+        
+        
         self:addCar(nil, vehicleName, "Dummy", dummyName, pos, nil, false)
     else
+        
         self.vehicles[vehicleName].dummies = self.vehicles[vehicleName].dummies or {}
         self.vehicles[vehicleName].dummies[dummyName] = self.vehicles[vehicleName].dummies[dummyName] or {}
         self.vehicles[vehicleName].dummies[dummyName].name = dummyName
@@ -817,19 +842,26 @@ end
 function Cvehicles_Settings:getLightPosition(vehicleName, vehPtr, class, light_index)
     local veh = self.vehicles[vehicleName]
     if veh ~= nil then
+        
         veh.lights = veh.lights or {}
+        
+        
         if veh.lights[light_index] == nil then
             local pos, rot = lightPosition(vehPtr, class, light_index)
             veh.lights[light_index] = {pos = pos, rot = rot}
             return veh.lights[light_index].pos, veh.lights[light_index].rot
         end
+
+        
         if veh.lights[light_index].pos and veh.lights[light_index].rot then
             return veh.lights[light_index].pos, veh.lights[light_index].rot
         else
+            
             veh.lights[light_index].pos, veh.lights[light_index].rot = lightPosition(vehPtr, class, light_index)
             return veh.lights[light_index].pos, veh.lights[light_index].rot
         end
     else
+        
         return lightPosition(vehPtr, class, light_index)
     end
 end
@@ -842,8 +874,11 @@ function Cvehicles_Settings:setLightPosition(vehicleName, light_index, pos, rot)
 end
 
 function Cvehicles_Settings:setMaterial(vehicle, vehicleName, componentName, mat_index, material, textureName, manualAdded)
+	
     if not self.vehicles[vehicleName] then
         self:addCar(vehicle, vehicleName, componentName, mat_index, material, textureName, manualAdded)
+        
+        
         return
     end
 
@@ -854,6 +889,8 @@ function Cvehicles_Settings:setMaterial(vehicle, vehicleName, componentName, mat
     if manualAdded or isNewTexture then
         componentPath.textures.prevTexture = componentPath.textures.currentTexture
         componentPath.textures.currentTexture = textureName
+        
+        
     end
 
     componentPath.material = material
@@ -1200,18 +1237,23 @@ function lightPosition(vehPtr, class, index)
 end
 
 local function isPrimaryColor(r, g, b)
+	
+	
 	return (r == car_primaryColor.r and g == car_primaryColor.g and b == car_primaryColor.b) or (r == 133 and g == 255 and b == 0)
 end
 
 local function isSecondaryColor(r, g, b)
+	
 	return r == car_secondaryColor.r and g == car_secondaryColor.g and b == car_secondaryColor.b
 end
 
 local function isExtraColor1(r, g, b)
+	
 	return r == car_extraColor1.r and g == car_extraColor1.g and b == car_extraColor1.b
 end
 
 local function isExtraColor2(r, g, b)
+	
 	return r == car_extraColor2.r and g == car_extraColor2.g and b == car_extraColor2.b
 end
 
@@ -1277,21 +1319,18 @@ end
 local function handleSpecificComponents(veh, vehicleName, component, mat_index, mat, tex, textureName, r, g, b, a, colorisPrimary, colorisSecondary, colorisExtraColor1, colorisExtraColor2)
 	if containsString(vehicleName, excludeMaterial.vehicleNames) then
 		if check_glass(veh, vehicleName, component, mat_index, mat, a) then
-			
 			return true
 		else
 			if textureName == "no texture" then
 				r, g, b, a = mat:get_color()
 				tex = color_textures:getTexture(r, g, b, a)
 				mat:set_texture(tex)
-				
 			end
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_Original, textureName, false)
 			return true
 		end
 	elseif containsString(component.name, includeMaterial.ComponentNames) or containsString(textureName, includeMaterial.GlasstextureNames, excludeMaterial.GlasstextureNames) then
 		if check_glass(veh, vehicleName, component, mat_index, mat, a) then
-			
 			return true
 		end
 	elseif check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, colorisPrimary, colorisSecondary, colorisExtraColor1, colorisExtraColor2) then
@@ -1299,13 +1338,10 @@ local function handleSpecificComponents(veh, vehicleName, component, mat_index, 
 	end
 	
 	if check_mirror(veh, vehicleName, component, mat_index, mat, textureName) then
-        
         return true
 	elseif check_glass(veh, vehicleName, component, mat_index, mat, a) then
-		
 		return true
 	elseif containsString(textureName, includeMaterial.ChrometextureNames) then
-        
         mat:set_texture(chrome_1_texture)
         vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_Chrome1, textureName, false)
         return true
@@ -1320,8 +1356,6 @@ local function handleSpecificComponents(veh, vehicleName, component, mat_index, 
 end
 
 local function autoAssignMaterial(veh, vehicleName, component, mat, mat_index, tex)
-	
-    
     local textureName = mat:get_texture() and mat:get_texture().name or "no texture"
     local color1, color2 = getCarColours(veh)
     local color3, color4 = getExtraCarColours(veh)
@@ -1347,7 +1381,6 @@ local function autoAssignMaterial(veh, vehicleName, component, mat, mat_index, t
 			if condition(r, g, b) then
 				isVehicleColor[index] = true
 				if not containsString(vehicleName, excludeMaterial.vehicleNames) and not containsString(textureName, excludeMaterial.ColorTextureNames) then
-					
 					if not result then
 						r, g, b, a = colorIDtoRGBA(colorID)
 						result = true
@@ -1440,6 +1473,10 @@ function check_parts(vehPtr, vehicle, vehicleName, isFirstAssignment, colorChang
             if comp_mat_Index ~= nil and comp_mat_Index > mat_Original and comp_mat_Index <= mat_BlackPlasticRough then
                 mat:set_texture(materialsTex[comp_mat_Index])
                 needsUpdate = false
+			elseif comp_mat_Index == mat_Original and textureName == "no texture" then
+				r, g, b, a = mat:get_color()
+				tex = color_textures:getTexture(r, g, b, a)
+				mat:set_texture(tex)
 			end
 			if mat:get_texture() == nil and containsString(component.name, {"dummy"}) then
                 addNewDummy(vehicleName, component)
@@ -1451,7 +1488,6 @@ function check_parts(vehPtr, vehicle, vehicleName, isFirstAssignment, colorChang
 				if a > 250 and comp_mat_Index == nil or comp_mat_Index == mat_Original then
 					tex = color_textures:getTexture(r, g, b, a)
 					mat:set_texture(tex)
-					
 					vehs_settings:setMaterial(vehPtr, vehicleName, component.name, mat_index, mat_Original, "no texture", false)
 				end
             end
@@ -1460,21 +1496,23 @@ function check_parts(vehPtr, vehicle, vehicleName, isFirstAssignment, colorChang
 end
 
 function check_glass(veh, vehicleName, component, mat_index, mat, a)
-    local textureName = mat:get_texture() and mat:get_texture().name or "no texture"
-    
-	if (a < 255) and (containsString(component.name, includeMaterial.ComponentNames, excludeMaterial.ComponentNames) or containsString(textureName, includeMaterial.GlasstextureNames, excludeMaterial.GlasstextureNames)) then
-		if containsString(textureName, {"shatter"}) then
-			mat:set_texture(glass_broken_texture)
-			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_BrokenGlass, textureName, false)
-			return true
-		elseif (a > 200) then
-			mat:set_texture(glass_fog_texture)
-			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_FogGlass, textureName, false)
-			return true
-		else
-			mat:set_texture(glass_texture)
-			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_Glass, textureName, false)
-			return true
+	local textureName = mat:get_texture() and mat:get_texture().name or "no texture"
+	
+	if (a < 255) and (containsString(component.name, includeMaterial.ComponentNames, excludeMaterial.ComponentNames) or containsString(textureName, includeMaterial.GlasstextureNames)) then
+		if not containsString(textureName, excludeMaterial.GlasstextureNames) then
+			if containsString(textureName, {"shatter"}) then
+				mat:set_texture(glass_broken_texture)
+				vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_BrokenGlass, textureName, false)
+				return true
+			elseif (a > 180) then
+				mat:set_texture(glass_fog_texture)
+				vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_FogGlass, textureName, false)
+				return true
+			else
+				mat:set_texture(glass_texture)
+				vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_Glass, textureName, false)
+				return true
+			end
 		end
 	end
 	return false
@@ -1499,7 +1537,7 @@ end
 function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, colorisPrimary, colorisSecondary, colorisExtraColor1, colorisExtraColor2)
 	local textureName = mat:get_texture() and mat:get_texture().name or "no texture"
 	local tex = nil
-	if (a > 250) then
+	if (a > 250) and not containsString(textureName, excludeMaterial.ColorTextureNames) then
 		local materialtype = vehs_settings:getMaterial(vehicleName, component.name, textureName, mat_index)
 		if colorisPrimary or isPrimaryMaterial(materialtype) then
 			if containsString(component.name, includeMaterial.InteriorComponentNames) or 
@@ -1516,6 +1554,8 @@ function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, co
 			mat:set_color(car_primaryColorSimple)
 			mat:set_texture(tex)
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, materialtype, textureName, false)
+			
+			
 			return true
 		elseif colorisSecondary or isSecondaryMaterial(materialtype) then
 			if containsString(component.name, includeMaterial.InteriorComponentNames) or
@@ -1532,6 +1572,8 @@ function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, co
 			mat:set_color(car_secondaryColorSimple)
 			mat:set_texture(tex)
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, materialtype, textureName, false)
+			
+			
 			return true
 		elseif colorisExtraColor1 or isExtraColor1Material(materialtype) then
 			if containsString(component.name, includeMaterial.InteriorComponentNames) or
@@ -1548,6 +1590,7 @@ function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, co
 			mat:set_color(car_extraColor1Simple)
 			mat:set_texture(tex)
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, materialtype, textureName, false)
+			
 			
 			return true
 		elseif colorisExtraColor2 or isExtraColor2Material(materialtype) then
@@ -1566,6 +1609,7 @@ function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, co
 			mat:set_texture(tex)
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, materialtype, textureName, false)
 			
+			
 			return true
 		elseif containsString(component.name, includeMaterial.InteriorComponentNames, excludeMaterial.InteriorComponentNames) or containsString(textureName, includeMaterial.ColorTextureNames, excludeMaterial.ColorTextureNames) then
 			local color1, color2 = getCarColours(veh)
@@ -1578,6 +1622,8 @@ function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, co
 			mat:set_color(r,g,b,a)
 			mat:set_texture(tex)
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_PrimaryColor_Leather, textureName, false)
+			
+			
 			return true
 		end
 	end
@@ -1705,7 +1751,10 @@ function serializeToJSON(tbl)
 
         local entries = {}
         for k, v in pairs(tbl) do
+            
             local formattedKey = string.format('%q', k) .. ":"
+
+            
             local formattedValue
             if type(v) == "table" then
                 formattedValue = serialize(v, level + 1)
@@ -1718,8 +1767,11 @@ function serializeToJSON(tbl)
             else
                 formattedValue = 'null'  
             end
+
             entries[#entries + 1] = indent .. "  " .. formattedKey .. "  " .. formattedValue
         end
+
+        
         result[#result + 1] = table.concat(entries, ",\n")
 
         if level > 0 then
@@ -1743,7 +1795,7 @@ function loadlightobject(obj)
 end
 
 function DragCameraAround()
-	local dragDelta = imgui.GetMouseDragDelta(1) -- 0 - LMB , 1 - RMB
+	local dragDelta = imgui.GetMouseDragDelta(1) 
 	if InvertCamYAxis then
 		mouseState.Y = -dragDelta.y / 10
 	else
@@ -1782,13 +1834,37 @@ function imgui.OnDrawFrame()
 			
 			function resetSetting()
 				local vehicle = vehs_settings.vehicles[im.currentName]
+				
 				if vehicle then
+					
+				
 					im.prevName = im.currentName
+					
+					
+					for i = 1, 20 do
+						local x, y, z = mad.get_vehicle_dummy_element_position(veh, i, {true, false})
+						if x ~= 0 or y ~= 0 or z ~= 0 then
+							print(string.format("Component id %d: x = %f, y = %f, z = %f", i, x, y, z))
+						end
+					end
+					
+					if vehicle.dummies then
+						print(string.format("Vehicle Dummies count: %d", #vehicle.dummies))
+						for i, dummy in ipairs(vehicle.dummies) do
+							print(string.format("Dummy %d name %s : x = %f, y = %f, z = %f", i, dummy.name, dummy.x, dummy.y, dummy.z))
+						end
+					else
+						print(string.format("No dummies found for %s", im.currentName))
+					end
+					
+					
 					im.components_List.items = {}
 					im.texture_List.items = {}
 					
+					
 					local componentTracker = {}
 					local textureTracker = {}
+					
 					
 					table.insert(im.components_List.items, "#All")
 					componentTracker["#All"] = true
@@ -1806,6 +1882,8 @@ function imgui.OnDrawFrame()
 										table.insert(im.components_List.items, component.name)
 										componentTracker[component.name] = true
 									end
+					
+									
 									local texture_name = mat.get_texture and mat:get_texture() and mat:get_texture().name or 'no texture'
 									if not textureTracker[texture_name] then
 										table.insert(im.texture_List.items, texture_name)
@@ -1837,6 +1915,86 @@ function imgui.OnDrawFrame()
 				tempClose()
 			end
 			imgui.PopItemWidth()
+			
+			imgui.SameLine()
+			imgui.PushItemWidth(100)
+			imgui.PushID("Input Mod Name ID")
+			if imgui.Button("Add Mod") then
+				im.showoPopup = true
+			end
+			imgui.PopItemWidth()
+			imgui.PopID()
+			
+			if im.showoPopup then
+				imgui.OpenPopup("Input Mod Name")
+			end
+			
+			if imgui.BeginPopupModal("Input Mod Name", nil, imgui.WindowFlags.AlwaysAutoResize) then
+				imgui.Text("Mod Name : ")
+				imgui.SameLine()
+				imgui.PushItemWidth(100)
+				imgui.InputText("", im.mod_name)
+				imgui.PopItemWidth()
+				
+				imgui.PushID("Input Mod Name OK")
+				if imgui.Button("OK") then
+					if im.mod_name.v ~= "" then
+						local exists = false
+						for _, mod in ipairs(mod_list) do
+							if mod == im.mod_name.v then
+								exists = true
+								break
+							end
+						end
+						
+						if not exists then
+							table.insert(mod_list, im.mod_name.v)
+							cur_mod_name = im.mod_name.v
+							im.current_mod.v = #mod_list - 1  
+							forceReset = true
+							tempClose()
+							
+							
+							imgui.SetNextItemValue(im.current_mod.v)
+						end
+					end
+					im.showoPopup = false
+					imgui.CloseCurrentPopup()
+				end
+				imgui.PopID()
+				
+				imgui.PushID("Input Mod Name Cancel")
+				imgui.SameLine()
+				imgui.PushItemWidth(100)
+				if imgui.Button("Cancel") then
+					im.showoPopup = false
+					imgui.CloseCurrentPopup()
+				end
+				imgui.PopItemWidth()
+				imgui.PopID()
+				
+				imgui.EndPopup()
+			end
+			
+			if #mod_list > 1 then
+				imgui.SameLine()
+				imgui.PushItemWidth(100)
+				imgui.PushID("Remove Mod Btn")
+				if imgui.Button("Remove Mod") then
+					if cur_mod_name ~= "Vanilla" then
+						for i, mod in ipairs(mod_list) do
+							if mod == cur_mod_name then
+								table.remove(mod_list, i)
+								break
+							end
+						end
+						cur_mod_name = mod_list[1]
+						im.current_mod = imgui.ImInt(0)
+					end
+				end
+				imgui.PopItemWidth()
+				imgui.PopID()
+			end
 			
 			imgui.PushID("Save Btn")
 			imgui.PushItemWidth(100)
@@ -1911,6 +2069,7 @@ function imgui.OnDrawFrame()
 					imgui.PopID()
 				end
 				
+				
 				if imgui.CollapsingHeader("Material Configuration") then
 					
 					imgui.PushID("Part Name")
@@ -1919,6 +2078,7 @@ function imgui.OnDrawFrame()
 					imgui.PopItemWidth()
 					imgui.PopID()
 					
+					
 					imgui.PushID("Texture Name")
 					imgui.SameLine(180)
 					imgui.PushItemWidth(150)
@@ -1926,12 +2086,14 @@ function imgui.OnDrawFrame()
 					imgui.PopItemWidth()
 					imgui.PopID()
 					
+					
 					imgui.PushID("Material Type")
 					imgui.SameLine(360)
 					imgui.PushItemWidth(200)
 					imgui.Text('Material Type')
 					imgui.PopItemWidth()
 					imgui.PopID()
+					
 					
 					imgui.PushID("components filter")
 					imgui.PushItemWidth(150)
@@ -1941,6 +2103,7 @@ function imgui.OnDrawFrame()
 					end
 					imgui.PopItemWidth()
 					imgui.PopID()
+					
 					
 					imgui.PushID("textures filter")
 					imgui.SameLine(180)
@@ -1952,6 +2115,7 @@ function imgui.OnDrawFrame()
 					imgui.PopItemWidth()
 					imgui.PopID()
 					
+					
 					imgui.PushID("materials filter")
 					imgui.SameLine(360)
 					imgui.PushItemWidth(200)
@@ -1962,7 +2126,11 @@ function imgui.OnDrawFrame()
 					imgui.PopItemWidth()
 					imgui.PopID()
 					
+					
 					imgui.Separator()
+					
+					
+					
 					for compIndex, component in ipairs(Components) do
 						local mats = getAllMaterials(component)
 						if mats ~= nil then
@@ -1971,6 +2139,9 @@ function imgui.OnDrawFrame()
 								if mat ~= nil then
 									local textureName = mat:get_texture() and mat:get_texture().name or "no texture"
 									local comp_mat_Index = vehs_settings:getMaterial(im.currentName, component.name, textureName, mat_index)
+									
+									
+									
 									if comp_mat_Index == nil then
 										vehs_settings:setMaterial(veh, im.currentName, component.name, mat_index, mat_Original, textureName, false)
 										comp_mat_Index = 1
@@ -2003,6 +2174,7 @@ function imgui.OnDrawFrame()
 										imgui.Text(string.format('%s', textureName))
 										imgui.PopItemWidth()
 										imgui.PopID()
+										
 										
 										imgui.SameLine(280)
 										imgui.PushItemWidth(200)
@@ -2075,9 +2247,13 @@ function imgui.OnDrawFrame()
 							vehs_settings:setLightPosition(im.currentName, i, pos, rot)
 							
 							if not light.obj or not veh then
+								
 								return
 							else
 								local status, err = pcall(placeObjectRelativeToCar, light.obj, veh, x[i].v, y[i].v, z[i].v)
+								if not status then
+									
+								end
 							end
 							attachObjectToCar(light.obj, veh, x[i].v, y[i].v, z[i].v, rot.x, rot.y, rot.z)
 							if mirrorCB.v then
@@ -2164,6 +2340,12 @@ function imgui.OnDrawFrame()
 					if isEmergencyServicesVehicle(veh) then
 						printString("It's Emergency Services Vehicle", 1000)
 					end
+					
+					
+					
+					
+					
+					
 				end
 			end
 			imgui.End()
@@ -2307,6 +2489,7 @@ end
 
 function updatevehicles()
     local vehs = getAllVehicles()
+    
     for i, veh in ipairs(vehs) do
         local vehicleName = getVehicleName(veh)
         local color1, color2 = getCarColours(veh)
