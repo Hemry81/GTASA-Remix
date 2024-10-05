@@ -22,7 +22,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -33,7 +36,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -44,7 +50,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -55,7 +64,37 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
             }
         }
 
@@ -66,7 +105,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -77,7 +119,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -88,7 +133,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -99,7 +147,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -110,7 +161,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -121,7 +175,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -132,7 +189,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -143,7 +203,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -154,7 +217,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -165,7 +231,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -175,36 +244,8 @@ over "RootNode"
 
             over "Shader"
             {
-                float inputs:metallic_constant = 0.5 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-                float inputs:reflection_roughness_constant = 0.02 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
+                float inputs:metallic_constant = 0.5
+                float inputs:reflection_roughness_constant = 0.02
             }
         }
 
@@ -215,7 +256,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -226,7 +270,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -237,7 +284,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -248,7 +298,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -259,7 +312,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -270,7 +326,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -281,7 +340,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -292,7 +354,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -303,7 +368,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -314,7 +382,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -325,7 +396,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -336,7 +410,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -347,7 +424,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -358,7 +438,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -369,7 +452,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -380,7 +466,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -391,7 +480,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -402,7 +494,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -413,7 +508,37 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Metallic Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Map"
+                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
             }
         }
 
@@ -424,7 +549,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -435,7 +563,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -446,7 +577,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -457,7 +591,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -468,7 +605,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -479,7 +619,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -490,7 +633,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -512,7 +658,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -523,7 +672,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -534,7 +686,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -545,7 +700,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -556,7 +714,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -567,7 +728,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -578,7 +742,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -589,7 +756,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -600,7 +770,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -611,7 +784,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -622,7 +798,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -633,7 +812,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -644,7 +826,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -655,7 +840,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -666,7 +854,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -677,7 +868,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -688,7 +882,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -699,7 +896,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -710,7 +910,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -721,7 +924,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -732,7 +938,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -743,7 +952,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -754,7 +966,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -765,7 +980,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -776,7 +994,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -787,7 +1008,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -798,7 +1022,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -809,7 +1036,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -820,7 +1050,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -831,7 +1064,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -842,7 +1078,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -853,7 +1092,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -864,7 +1106,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -875,7 +1120,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -886,7 +1134,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -897,7 +1148,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -908,7 +1162,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -919,7 +1176,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -930,7 +1190,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -941,7 +1204,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -952,7 +1218,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -963,7 +1232,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -974,7 +1246,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -985,7 +1260,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -996,7 +1274,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1007,7 +1288,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1018,7 +1302,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1029,7 +1316,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1040,7 +1330,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1051,7 +1344,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1062,7 +1358,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1073,7 +1372,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1084,7 +1386,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1095,7 +1400,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1106,7 +1414,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1117,7 +1428,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1128,7 +1442,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1139,7 +1456,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1150,7 +1470,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1161,7 +1484,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1172,7 +1498,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1183,7 +1512,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1194,7 +1526,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1205,7 +1540,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1216,7 +1554,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1227,7 +1568,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1238,7 +1582,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1249,7 +1596,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1260,7 +1610,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1271,7 +1624,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1282,7 +1638,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1293,7 +1652,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1304,7 +1666,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1315,7 +1680,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1326,7 +1694,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1337,7 +1708,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1348,7 +1722,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1359,7 +1736,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1370,7 +1750,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1381,7 +1764,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1392,7 +1778,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1403,7 +1792,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1414,7 +1806,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1425,7 +1820,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1436,7 +1834,10 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:metallic_constant = 0.4
+                asset inputs:metallic_texture = @./Textures/Vehicles/Car_Paint_metal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0.02
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1446,8 +1847,8 @@ over "RootNode"
 
             over "Shader"
             {
-                float inputs:metallic_constant = 0.79999995
-                float inputs:reflection_roughness_constant = 0.19999999
+                float inputs:metallic_constant = 0.6
+                float inputs:reflection_roughness_constant = 0.2
             }
         }
 
@@ -1457,23 +1858,43 @@ over "RootNode"
 
             over "Shader"
             {
-                color3f inputs:diffuse_color_constant = (0.6023166, 0.6023106, 0.6023106) (
-                    customData = {
-                        float3 default = (0.2, 0.2, 0.2)
-                        dictionary range = {
-                            float3 max = (1, 1, 1)
-                            float3 min = (0, 0, 0)
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo Color"
-                    doc = """The base albedo color.  (Used if no texture is specified)
+                color3f inputs:diffuse_color_constant = (0.8, 0.8, 0.8)
+                float inputs:metallic_constant = 0.8
+                float inputs:reflection_roughness_constant = 0.05
+            }
+        }
 
-"""
-                    hidden = false
-                    renderType = "color"
-                )
-                float inputs:metallic_constant = 0.79999995 (
+        over "mat_81819582263C35B3"
+        {
+            custom string ColorID = "Chrome 02"
+
+            over "Shader"
+            {
+                color3f inputs:diffuse_color_constant = (0.8, 0.8, 0.8)
+                float inputs:metallic_constant = 0.6
+                float inputs:reflection_roughness_constant = 0.15
+            }
+        }
+
+        over "mat_5FD5FEC97B497FEC"
+        {
+            custom string ColorID = "Chrome 03"
+
+            over "Shader"
+            {
+                color3f inputs:diffuse_color_constant = (0.8, 0.8, 0.8)
+                float inputs:metallic_constant = 0.6
+                float inputs:reflection_roughness_constant = 0.3
+            }
+        }
+
+        over "mat_22CEEC0F8DFC4351"
+        {
+            custom string ColorID = "Mirror"
+
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.8 (
                     customData = {
                         float default = 0
                         dictionary range = {
@@ -1506,41 +1927,6 @@ over "RootNode"
             }
         }
 
-        over "mat_81819582263C35B3"
-        {
-            custom string ColorID = "Chrome 02"
-
-            over "Shader"
-            {
-                color3f inputs:diffuse_color_constant = (0.6023166, 0.6023106, 0.6023106)
-                float inputs:metallic_constant = 0.6
-                float inputs:reflection_roughness_constant = 0.15
-            }
-        }
-
-        over "mat_5FD5FEC97B497FEC"
-        {
-            custom string ColorID = "Chrome 03"
-
-            over "Shader"
-            {
-                color3f inputs:diffuse_color_constant = (0.6023166, 0.6023106, 0.6023106)
-                float inputs:metallic_constant = 0.6
-                float inputs:reflection_roughness_constant = 0.3
-            }
-        }
-
-        over "mat_22CEEC0F8DFC4351"
-        {
-            custom string ColorID = "Mirror"
-
-            over "Shader"
-            {
-                float inputs:metallic_constant = 1
-                float inputs:reflection_roughness_constant = 0
-            }
-        }
-
         over "mat_E11650CFF080255C"
         {
             custom string ColorID = "Glass"
@@ -1549,79 +1935,12 @@ over "RootNode"
             {
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                float inputs:ior_constant = 1.6 (
-                    customData = {
-                        float default = 1.3
-                        dictionary range = {
-                            float max = 3
-                            float min = 1
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Index of Refraction"
-                    doc = """Index of Refraction of the material
-
-"""
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:thin_walled = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Thin-walled"
-                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.
-
-"""
-                    hidden = false
-                )
-                float inputs:transmittance_measurement_distance = 3 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0.001
-                        }
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Transmittance Measurement Distance"
-                    doc = """Distance to match the transmittance through the volume at.
-
-"""
-                    hidden = false
-                )
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Transmittance Color/Diffuse Albedo Texture"
-                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:use_diffuse_layer = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Use diffuse layer"
-                    doc = """When set, simulates a diffuse layer on top of the material
-
-"""
-                    hidden = false
-                )
+                float inputs:ior_constant = 1.6
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
+                bool inputs:thin_walled = 1
+                float inputs:transmittance_measurement_distance = 3
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
+                bool inputs:use_diffuse_layer = 1
             }
         }
 
@@ -1633,79 +1952,12 @@ over "RootNode"
             {
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
-                float inputs:ior_constant = 1.6 (
-                    customData = {
-                        float default = 1.3
-                        dictionary range = {
-                            float max = 3
-                            float min = 1
-                        }
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Index of Refraction"
-                    doc = """Index of Refraction of the material
-
-"""
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:thin_walled = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Thin-walled"
-                    doc = """Whether the material is thin-walled, use when material is being applied to single triangle thick geometry.
-
-"""
-                    hidden = false
-                )
-                float inputs:transmittance_measurement_distance = 0.005 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 65504
-                            float min = 0.001
-                        }
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Transmittance Measurement Distance"
-                    doc = """Distance to match the transmittance through the volume at.
-
-"""
-                    hidden = false
-                )
-                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Transmittance Color/Diffuse Albedo Texture"
-                    doc = """Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                bool inputs:use_diffuse_layer = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Volume"
-                    displayName = "Use diffuse layer"
-                    doc = """When set, simulates a diffuse layer on top of the material
-
-"""
-                    hidden = false
-                )
+                float inputs:ior_constant = 1.6
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
+                bool inputs:thin_walled = 1
+                float inputs:transmittance_measurement_distance = 0.005
+                asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
+                bool inputs:use_diffuse_layer = 1
             }
         }
 

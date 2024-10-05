@@ -1,12 +1,13 @@
 script_name("SARemix_Vehicle_Toolkit")
 script_author("Hemry")
 script_url("https://github.com/Hemry81/GTASA-Remix")
-script_version("0.1.0.d")
+script_version("0.1.0.e")
 
 local mad = require 'MoonAdditions'
 local imgui = require 'imgui'
 local key = require 'vkeys'
 local ffi = require "ffi"
+local memory = require "memory"
 local settingsManager = require("SARemix_SettingsManager")
 
 local workDir = getWorkingDirectory()
@@ -68,7 +69,7 @@ local includeMaterial = {vehicleNames = {""},
 						ChrometextureNames = {"hite", "chrome"},
 						MirrortextureNames = {"mirror"},
 						ColorTextureNames = {"grunge"},
-						InteriorComponentNames = {"int"},
+						InteriorComponentNames = {"int", "seat"},
 						InteriorTextureNames = {"int", "leath"}
 						}
 	
@@ -878,6 +879,8 @@ function Cvehicles_Settings:setMaterial(vehicle, vehicleName, componentName, mat
 	local uid = string.format("%s%s%s", componentName, textureName, mat_index)
     if not self.vehicles[vehicleName] then
         self:addCar(vehicle, vehicleName, componentName, mat_index, material, textureName, manualAdded)
+        
+        
         return
     end
 
@@ -888,6 +891,8 @@ function Cvehicles_Settings:setMaterial(vehicle, vehicleName, componentName, mat
     if manualAdded or isNewTexture then
         componentPath.textures.prevTexture = componentPath.textures.currentTexture
         componentPath.textures.currentTexture = textureName
+        
+        
     end
 
     componentPath.material = material
@@ -898,8 +903,10 @@ function Cvehicles_Settings:getMaterial(vehicleName, componentName, textureName,
 	local uid = string.format("%s%s%s", componentName, textureName, mat_index)
     local veh = self.vehicles[vehicleName]
     if veh and veh.components[componentName] and veh.components[componentName][textureName] and veh.components[componentName][textureName][mat_index] then
+        
         return veh.components[componentName][textureName][mat_index].material
     else
+        
         return nil
     end
 end
@@ -1324,7 +1331,7 @@ local function handleSpecificComponents(veh, vehicleName, component, mat_index, 
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_Original, textureName, false)
 			return true
 		end
-	elseif containsString(component.name, includeMaterial.ComponentNames) or containsString(textureName, includeMaterial.GlasstextureNames) then
+	elseif containsString(component.name, includeMaterial.ComponentNames) or containsString(textureName, includeMaterial.GlasstextureNames, excludeMaterial.GlasstextureNames) then
 		if check_glass(veh, vehicleName, component, mat_index, mat, a) then
 			return true
 		end
@@ -1343,8 +1350,8 @@ local function handleSpecificComponents(veh, vehicleName, component, mat_index, 
 	end
 	
 	if textureName == "no texture" then
-		
-		tex = color_textures:getTexture(1, 1, 1, 255)
+		r, g, b, a = mat:get_color()
+			tex = color_textures:getTexture(r, g, b, a)
 		mat:set_texture(tex)
 	end
 	vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_Original, textureName, false)
@@ -1444,8 +1451,10 @@ local function autoAssignMaterial(veh, vehicleName, component, mat, mat_index, t
 	end
 	if result then
 		check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, isVehicleColor[1], isVehicleColor[2], isVehicleColor[3],  isVehicleColor[4])
+		print(string.format("Auto assigned color to component %s", component.name))
     else
         handleSpecificComponents(veh, vehicleName, component, mat_index, mat, tex, textureName, r, g, b, a, isVehicleColor[1], isVehicleColor[2], isVehicleColor[3], isVehicleColor[4])
+        print(string.format("Proceed to check material at component part name %s", component.name))
 	end
 end
 
@@ -1465,18 +1474,18 @@ function check_parts(vehPtr, vehicle, vehicleName, isFirstAssignment, colorChang
 										(colorChanges.secondary and isSecondaryColor(r, g, b) or isSecondaryColor(comp_mat_Index)) or
 										(colorChanges.extra1 and isExtraColor1(r, g, b) or isExtraColor1Material(comp_mat_Index)) or
 										(colorChanges.extra2 and isExtraColor2(r, g, b) or isExtraColor2Material(comp_mat_Index))
-            if comp_mat_Index ~= nil and comp_mat_Index > mat_Original and comp_mat_Index <= mat_BlackPlasticRough then
+            if comp_mat_Index ~= nil and comp_mat_Index > mat_Debug and comp_mat_Index <= mat_BlackPlasticRough then
                 mat:set_texture(materialsTex[comp_mat_Index])
                 needsUpdate = false
 			elseif comp_mat_Index == mat_Original and textureName == "no texture" then
 				r, g, b, a = mat:get_color()
 				tex = color_textures:getTexture(r, g, b, a)
 				mat:set_texture(tex)
-			end
-			if mat:get_texture() == nil and containsString(component.name, {"dummy"}) then
+			elseif mat:get_texture() == nil and containsString(component.name, {"dummy"}) and a == 255 then
                 addNewDummy(vehicleName, component)
                 vehs_settings:setMaterial(vehPtr, vehicleName, component.name, mat_index, mat_Original, "no texture", false)
-            elseif needsUpdate then
+            end
+            if needsUpdate then
 				autoAssignMaterial(vehPtr, vehicleName, component, mat, mat_index, tex)
 			elseif mat:get_texture() == nil then
 				r, g, b, a = mat:get_color()
@@ -1493,19 +1502,21 @@ end
 function check_glass(veh, vehicleName, component, mat_index, mat, a)
 	local textureName = mat:get_texture() and mat:get_texture().name or "no texture"
 	
-	if (a <= 240) and (containsString(component.name, includeMaterial.ComponentNames) or containsString(textureName, includeMaterial.GlasstextureNames, {"light"})) then
-		if containsString(textureName, {"shatter"}) then
-			mat:set_texture(glass_broken_texture)
-			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_BrokenGlass, textureName, false)
-			return true
-		elseif (a > 180) then
-			mat:set_texture(glass_fog_texture)
-			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_FogGlass, textureName, false)
-			return true
-		else
-			mat:set_texture(glass_texture)
-			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_Glass, textureName, false)
-			return true
+	if (a < 255) and (containsString(component.name, includeMaterial.ComponentNames, excludeMaterial.ComponentNames) or containsString(textureName, includeMaterial.GlasstextureNames)) then
+		if not containsString(textureName, excludeMaterial.GlasstextureNames) then
+			if containsString(textureName, {"shatter"}) then
+				mat:set_texture(glass_broken_texture)
+				vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_BrokenGlass, textureName, false)
+				return true
+			elseif (a > 180) then
+				mat:set_texture(glass_fog_texture)
+				vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_FogGlass, textureName, false)
+				return true
+			else
+				mat:set_texture(glass_texture)
+				vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_Glass, textureName, false)
+				return true
+			end
 		end
 	end
 	return false
@@ -2554,6 +2565,9 @@ function saveMainSettings()
 end
 
 local function unloadTextures(Texturelist)
+    
+    
+    
     collectgarbage("collect")
 end
 
@@ -2600,6 +2614,7 @@ function main()
 						im:reset()
 						forceReset = false
 					end
+					
 					im.main_window_state.v = not im.main_window_state.v
 				end
 			end
