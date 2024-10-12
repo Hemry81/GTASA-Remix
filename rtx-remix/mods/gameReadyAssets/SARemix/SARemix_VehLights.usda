@@ -43,7 +43,7 @@ over "RootNode"
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    bool visibleInPrimaryRay = 1
+                    bool visibleInPrimaryRay = 0
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
@@ -151,7 +151,7 @@ over "RootNode"
                     float inputs:shaping:focus
                     color3f inputs:shaping:focusTint
                     asset inputs:shaping:ies:file
-                    bool visibleInPrimaryRay = 1
+                    bool visibleInPrimaryRay = 0
                     double3 xformOp:rotateXYZ = (0, 0, 0)
                     double3 xformOp:scale = (1, 1, 1)
                     double3 xformOp:translate = (0, 0, 0)
