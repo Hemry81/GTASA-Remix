@@ -8,8 +8,15 @@
 
 ### Features
 
+#### v0.1.2:
+- Auto assign mirror material at door component (mainly for support original GTASA vehicles)
+- Added Infernus wheel texture
+
+#### v0.1.1:
+- The vehicle materials now added car paint flake detail.
+
 #### v0.1.0.c:
-- View different angles when adjusting vehicle materials
+- Allow for view different angles when adjusting vehicle materials
 
 #### v0.1.0.b:
 - Toggle vehicle lights with "L" key
@@ -22,6 +29,12 @@
 - Automatic vehicle lights between 19:00 and 6:00
 
 ### Bug Fixes
+
+#### v0.1.2:
+- Fixed noob mistake
+
+#### v0.1.1:
+- Fixed issue where some saved materials settings were not being loaded.
 
 #### v0.1.0.e:
 - Fixed issue where saved materials settings were not being loaded.
