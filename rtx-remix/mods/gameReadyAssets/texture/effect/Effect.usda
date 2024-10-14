@@ -786,6 +786,50 @@ This parameter is unused.
                 )
             }
         }
+
+        over "mat_470163CEBDD9080F"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./470163CEBDD9080F_albedo.dds@ (
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Albedo/Opacity Map"
+                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                asset inputs:normalmap_texture = @./470163CEBDD9080F_normal.dds@ (
+                    colorSpace = "auto"
+                    customData = {
+                        asset default = @@
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Normal Map"
+                    hidden = false
+                    renderType = "texture_2d"
+                )
+                float inputs:reflection_roughness_constant = 0.19999999 (
+                    customData = {
+                        float default = 0.5
+                        dictionary range = {
+                            float max = 1
+                            float min = 0
+                        }
+                    }
+                    displayGroup = "Base Material"
+                    displayName = "Roughness Amount"
+                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                    hidden = false
+                )
+            }
+        }
     }
 
     over "meshes"
