@@ -718,21 +718,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:reflection_roughness_constant = 0.29999998 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
+                float inputs:reflection_roughness_constant = 0.29999998
             }
         }
 
@@ -4895,6 +4881,9 @@ over "RootNode"
             over "Shader"
             {
                 float inputs:displace_in = 0.01
+                float inputs:emissive_intensity = 0.2
+                asset inputs:emissive_mask_texture = @./Textures/Vehicles/90sAVP/Infernus_light_emissive.dds@
+                bool inputs:enable_emission = 1
                 asset inputs:height_texture = @./Textures/Vehicles/90sAVP/Infernus_light_height.dds@
                 float inputs:metallic_constant = 0.59999996
                 asset inputs:normalmap_texture = @./Textures/Vehicles/90sAVP/Infernus_light_normal.dds@
@@ -4970,21 +4959,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:reflection_roughness_constant = 0.39999998 (
-                    customData = {
-                        float default = 0.5
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Amount"
-                    doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
+                float inputs:reflection_roughness_constant = 0.39999998
             }
         }
 
