@@ -9,6 +9,7 @@
         }
     }
     subLayers = [
+        @./SARemix/SARemix_RVP.usda@,
         @./SARemix/SARemix_OriginalVehiclesPBR.usda@,
         @./SARemix/SARemix_VehLights.usda@,
         @./SARemix/SARemix_Sun.usda@,

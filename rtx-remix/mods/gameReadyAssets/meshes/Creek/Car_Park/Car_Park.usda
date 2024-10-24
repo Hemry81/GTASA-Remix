@@ -38,9 +38,13 @@ over "RootNode"
         over "mesh_0853A3DA5D9FBC21"
         {
             def Xform "Lot" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
                 prepend references = @./Lot.usd@
             )
             {
+                rel material:binding = </Looks/White_Lane> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
                 double3 xformOp:rotateXYZ = (0, 0, 0)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0, 0, 0)

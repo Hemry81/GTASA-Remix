@@ -1,7 +1,7 @@
 script_name("SARemix_Vehicle_Toolkit")
 script_author("Hemry")
 script_url("https://github.com/Hemry81/GTASA-Remix")
-script_version("0.1.2")
+script_version("0.1.3")
 
 local mad = require 'MoonAdditions'
 local imgui = require 'imgui'
@@ -9,6 +9,7 @@ local key = require 'vkeys'
 local ffi = require "ffi"
 local memory = require "memory"
 local settingsManager = require("SARemix_SettingsManager")
+
 local workDir = getWorkingDirectory()
 
 local VTK_firstStart = true
@@ -24,10 +25,11 @@ local changecolorDuration = 0.2
 local clean_list_time = 0.5
 local reset = true
 local forceReset = false
-local resetCurrentCar = false
 local mod_list = {"Vanilla"}
 local cur_mod_name = mod_list[1]
 
+local scr_w, scr_h = getScreenResolution()
+local scr_w_half, scr_h_half = scr_w / 2, scr_h / 2
 local InvertCamYAxis = true
 local InvertCamXAxis = false
 
@@ -52,14 +54,14 @@ local mouseState 		= ffi.cast("struct CMouseControllerState*", 0xB73418)
 
 local excludeMaterial = {vehicleNames = {"quad", "streak", "firela", "freight", "hotdog", "hotrin", "monsta", "monstb", "rhino"},
 						ComponentNames = {""},
-						GlasstextureNames = {"txt", "tx", "light", "gril", "badge", "decal", "scratch", "dash", "logo", "steer"},
-						GlassComponentNames = {""},
+						GlasstextureNames = {"txt", "tx", "gril", "badge", "decal", "scratch", "dash", "logo", "steer", "rotor"},
+						GlassComponentNames = {"gril", "badge", "decal", "scratch", "dash", "logo", "steer", "rotor"},
 						ChrometextureNames = {""},
 						MirrorComponentNames = {""},
 						MirrortextureNames = {""},
-						ColorTextureNames = {"txt", "tx"},
-						InteriorComponentNames = {""},
-						InteriorTextureNames = {""}
+						ColorTextureNames = {"txt", "tx","decal"},
+						LeatherComponentNames = {""},
+						LeatherTextureNames = {""}
 						}
 						
 local includeMaterial = {vehicleNames = {""},
@@ -70,8 +72,8 @@ local includeMaterial = {vehicleNames = {""},
 						MirrorComponentNames = {"mirror"},
 						MirrortextureNames = {"mirror", "vehiclelights128"},
 						ColorTextureNames = {"grunge"},
-						InteriorComponentNames = {"int", "seat"},
-						InteriorTextureNames = {"int", "leath"}
+						LeatherComponentNames = {"int", "seat"},
+						LeatherTextureNames = {"int", "leath"}
 						}
 	
 local lightType = {
@@ -208,6 +210,10 @@ local materialsName = {
 	"Secondary Color Leather",      
 	"Extra Color 1 Leather",        
 	"Extra Color 2 Leather",        
+	"Primary Color Metallic",       
+	"Secondary Color Metallic",     
+	"Extra Color 1 Metallic",       
+    "Extra Color 2 Metallic",       
 }
 
 local mat_Original = 1
@@ -233,6 +239,11 @@ local mat_PrimaryColor_Leather = 20
 local mat_SecondaryColor_Leather = 21
 local mat_ExtraColor1_Leather = 22
 local mat_ExtraColor2_Leather = 23
+local mat_PrimaryColor_Metallic = 24
+local mat_SecondaryColor_Metallic = 25
+local mat_ExtraColor1_Metallic = 26
+local mat_ExtraColor2_Metallic = 27
+
 
 local materialsTex = {
 	0,                                                                                      
@@ -246,6 +257,10 @@ local materialsTex = {
 	assert(mad.load_png_texture(workDir .. '/SARemix/texture/chrome_3.png')),               
 	assert(mad.load_png_texture(workDir .. '/SARemix/texture/black_plastic_g.png')),        
 	assert(mad.load_png_texture(workDir .. '/SARemix/texture/black_plastic_r.png')),        
+	{r = 0x3C, g = 0xFF, b = 0x00},                                                         
+	{r = 0xFF, g = 0x00, b = 0xAF},                                                         
+	{r = 0x00, g = 0xFF, b = 0xFF},                                                         
+	{r = 0x00, g = 0xFF, b = 0x00},                                                         
 	{r = 0x3C, g = 0xFF, b = 0x00},                                                         
 	{r = 0xFF, g = 0x00, b = 0xAF},                                                         
 	{r = 0x00, g = 0xFF, b = 0xFF},                                                         
@@ -274,20 +289,20 @@ local blackPlasticRough_texture = materialsTex[11]
 local car_primaryColor = {r = 60, g = 255, b = 0, a = 255}
 local car_secondaryColor = {r = 255, g = 0, b = 175, a = 255}
 local car_extraColor1 = {r = 0, g = 255, b = 255, a = 255}
-local car_extraColor2 = {r = 0, g = 255, b = 0, a = 255}
+local car_extraColor2 = {r = 255, g = 0, b = 255, a = 255}
 
 local car_primaryColorSimple = {60, 255, 0, 255}
 local car_secondaryColorSimple = {255, 0, 175,255}
 local car_extraColor1Simple = {0, 255, 255, 255}
-local car_extraColor2Simple = {0, 255, 0, 255}
+local car_extraColor2Simple = {255, 0, 255, 255}
 
 local car_primaryColorHex = {r = 0x3C, g = 0xFF, b = 0x00, a = 0xFF}
 local car_secondaryColorHex = {r = 0xFF, g = 0x00, b = 0xAF, a = 0xFF}
 local car_extraColor1Hex = {r = 0x00, g = 0xFF, b = 0xFF, a = 0xFF}
-local car_extraColor2Hex = {r = 0x00, g = 0xFF, b = 0x00, a = 0xFF}
+local car_extraColor2Hex = {r = 0xFF, g = 0x00, b = 0xFF, a = 0xFF}
 
 local colorID_List = {
-	{0,0,0},                
+	{1,1,1},                
 	{245,245,245},			
 	{42,119,161},			
 	{132,4,16},			    
@@ -522,7 +537,7 @@ function CVehicle_list:createNewCar(vehPtr, name, color1, color2, color3, color4
 						self:addLight(vehPtr, class, i)
 					end
 				end
-			elseif class == vehicle_class.BIKE then
+			elseif class == vehicle_class.BIKE and name ~= "BIKE" and name ~= "BMX" and name ~= "MTBIKE" then
 				for i = 1, 4 do
 					if i == 1 or i == 4 then
 						self.vehicles[vehPtr].lights[i] = {
@@ -558,7 +573,6 @@ function CVehicle_list:removeDisabledCars()
                 end
                 veh.lights = {}
             end
-            
             self.vehicles[veh.id] = nil
             self.count = self.count - 1
         end
@@ -612,9 +626,6 @@ function CVehicle_list:addLight(vehPtr, class, light_index)
 		local light = veh.lights[light_index]
 		placeObjectRelativeToCar(light.obj, vehPtr, light.pos.x, light.pos.y, light.pos.z)
 		attachObjectToCar(light.obj, vehPtr, light.pos.x, light.pos.y, light.pos.z, light.rot.x, light.rot.y, light.rot.z)
-		
-	else
-		
 	end
 end
 
@@ -755,18 +766,11 @@ end
 
 
 function Cvehicles_Settings:addCar(vehicle, vehicleName, componentName, mat_index, material, textureName, manualAdded)
-    
-    
-
-    
     self.vehicles[vehicleName] = self.vehicles[vehicleName] or {name = vehicleName, components = {}, dummies = {}, lights = {}}
 
-    
     if vehicle and componentName ~= "Dummy" then
         self:collectLightPositions(vehicle, vehicleName)
     end
-
-    
     if componentName == "Dummy" then
         self:addDummyComponent(vehicleName, mat_index, material)  
     else
@@ -782,9 +786,7 @@ function Cvehicles_Settings:collectLightPositions(vehPtr, vehicleName)
             local pos, rot = lightPosition(vehPtr, class, i)
             if pos and rot then
                 self.vehicles[vehicleName].lights[i] = {pos = pos, rot = rot}
-            else
-                
-            end
+			end
         end
     end
 end
@@ -817,17 +819,13 @@ end
 function Cvehicles_Settings:addDummy(vehicleName, dummyName, pos)
     
     if self.vehicles[vehicleName] == nil then
-        
-        
         self:addCar(nil, vehicleName, "Dummy", dummyName, pos, nil, false)
     else
-        
         self.vehicles[vehicleName].dummies = self.vehicles[vehicleName].dummies or {}
         self.vehicles[vehicleName].dummies[dummyName] = self.vehicles[vehicleName].dummies[dummyName] or {}
         self.vehicles[vehicleName].dummies[dummyName].name = dummyName
         self.vehicles[vehicleName].dummies[dummyName].position = pos
         self.vehicles[vehicleName].dummies[dummyName].active = false
-        
     end
 end
 
@@ -846,26 +844,19 @@ end
 function Cvehicles_Settings:getLightPosition(vehicleName, vehPtr, class, light_index)
     local veh = self.vehicles[vehicleName]
     if veh ~= nil then
-        
         veh.lights = veh.lights or {}
-        
-        
         if veh.lights[light_index] == nil then
             local pos, rot = lightPosition(vehPtr, class, light_index)
             veh.lights[light_index] = {pos = pos, rot = rot}
             return veh.lights[light_index].pos, veh.lights[light_index].rot
         end
-
-        
         if veh.lights[light_index].pos and veh.lights[light_index].rot then
             return veh.lights[light_index].pos, veh.lights[light_index].rot
         else
-            
             veh.lights[light_index].pos, veh.lights[light_index].rot = lightPosition(vehPtr, class, light_index)
             return veh.lights[light_index].pos, veh.lights[light_index].rot
         end
     else
-        
         return lightPosition(vehPtr, class, light_index)
     end
 end
@@ -881,8 +872,6 @@ function Cvehicles_Settings:setMaterial(vehicle, vehicleName, componentName, mat
 	local uid = string.format("%s%s%s", componentName, textureName, mat_index)
     if not self.vehicles[vehicleName] then
         self:addCar(vehicle, vehicleName, componentName, mat_index, material, textureName, manualAdded)
-        
-        
         return
     end
 
@@ -893,8 +882,6 @@ function Cvehicles_Settings:setMaterial(vehicle, vehicleName, componentName, mat
     if manualAdded or isNewTexture then
         componentPath.textures.prevTexture = componentPath.textures.currentTexture
         componentPath.textures.currentTexture = textureName
-        
-        
     end
 
     componentPath.material = material
@@ -905,10 +892,8 @@ function Cvehicles_Settings:getMaterial(vehicleName, componentName, textureName,
 	local uid = string.format("%s%s%s", componentName, textureName, mat_index)
     local veh = self.vehicles[vehicleName]
     if veh and veh.components[componentName] and veh.components[componentName][textureName] and veh.components[componentName][textureName][mat_index] then
-        
         return veh.components[componentName][textureName][mat_index].material
     else
-        
         return nil
     end
 end
@@ -937,7 +922,7 @@ function Cvehicles_Settings:loadSettings(mod_name, printStatus)
         mod_name = "Vanilla"
     end
     local filename = string.format('%s/SARemix_VTK_%s.dat', workDir, mod_name)
-	local newSettings, status = settingsManager.loadSettings(filename, {})
+	local newSettings, status = settingsManager.loadSettings(filename, self.vehicles)
 	if newSettings then
 		self.vehicles = newSettings
 		if printStatus then
@@ -997,8 +982,37 @@ function debugMaterial:update()
 				end
 			else
 				for i, comp in pairs(self.components) do
-					
-					comp.material:reset_texture()
+					if comp.originalMaterial == mat_Original then
+						comp.material:reset_texture()
+					elseif comp.originalMaterial >= mat_Mirror and comp.originalMaterial <= mat_BlackPlasticRough then
+						comp.material:set_texture(materialsTex[comp.originalMaterial])
+					elseif comp.originalMaterial >= mat_PrimaryColor_Glossy and comp.originalMaterial <= mat_ExtraColor2_Glossy then
+						local tex = color_textures:getTexture(comp.color.r, comp.color.g, comp.color.b, comp.color.a)
+						if tex then
+							comp.material:set_texture(tex)
+						end
+					elseif comp.originalMaterial >= mat_PrimaryColor_Matte and comp.originalMaterial <= mat_ExtraColor2_Matte then
+						local tex = color_textures:getTexture(comp.color.r, comp.color.g, comp.color.b, 1)
+						if tex then
+							comp.material:set_texture(tex)
+						end
+					elseif comp.originalMaterial >= mat_PrimaryColor_Leather and comp.originalMaterial <= mat_ExtraColor2_Leather then
+						local tex = color_textures:getTexture(comp.color.r, comp.color.g, comp.color.b, 2)
+						if tex then
+							comp.material:set_texture(tex)
+						end
+					elseif comp.originalMaterial >= mat_PrimaryColor_Metallic and comp.originalMaterial <= mat_ExtraColor2_Metallic then
+						local tex = color_textures:getTexture(comp.color.r, comp.color.g, comp.color.b, 3)
+						if tex then
+							comp.material:set_texture(tex)
+						end
+					end
+					if comp.isHover then
+						comp.countdown = comp.countdown - 1
+						if comp.countdown <= 0 then
+							self.components[i] = nil
+						end
+					end
 				end
 			end
 		end
@@ -1011,9 +1025,7 @@ function debugMaterial:removeMaterial(index)
 			self.components[v] = nil
 		end
 	end
-	
 	self.debugmode = #self.components > 0
-	
 end
 
 function debugMaterial:reset()
@@ -1417,6 +1429,11 @@ local function autoAssignMaterial(veh, vehicleName, component, mat, mat_index, t
 			r, g, b, a = colorIDtoRGBA(color1)
 			a = 2
             result = true
+        elseif materialType == mat_PrimaryColor_Metallic then
+			isVehicleColor[1] = true
+			r, g, b, a = colorIDtoRGBA(color1)
+			a = 3
+            result = true
         elseif materialType == mat_SecondaryColor_Glossy then
             isVehicleColor[2] = true
             r, g, b, a = colorIDtoRGBA(color2)
@@ -1430,6 +1447,11 @@ local function autoAssignMaterial(veh, vehicleName, component, mat, mat_index, t
 			isVehicleColor[2] = true
 			r, g, b, a = colorIDtoRGBA(color2)
 			a = 2
+			result = true
+		elseif materialType == mat_SecondaryColor_Metallic then
+			isVehicleColor[2] = true
+			r, g, b, a = colorIDtoRGBA(color2)
+			a = 3
 			result = true
 		elseif materialType == mat_ExtraColor1_Glossy then
 			isVehicleColor[3] = true
@@ -1445,6 +1467,11 @@ local function autoAssignMaterial(veh, vehicleName, component, mat, mat_index, t
 			r, g, b, a = colorIDtoRGBA(color3)
 			a = 2
 			result = true
+		elseif materialType == mat_ExtraColor1_Metallic then
+            isVehicleColor[3] = true
+			r, g, b, a = colorIDtoRGBA(color3)
+			a = 3
+			result = true
 		elseif materialType == mat_ExtraColor2_Glossy then
 			isVehicleColor[4] = true
 			r, g, b, a = colorIDtoRGBA(color4)
@@ -1458,6 +1485,11 @@ local function autoAssignMaterial(veh, vehicleName, component, mat, mat_index, t
 			isVehicleColor[4] = true
 			r, g, b, a = colorIDtoRGBA(color4)
 			a = 2
+			result = true
+		elseif materialType == mat_ExtraColor2_Metallic then
+			isVehicleColor[4] = true
+			r, g, b, a = colorIDtoRGBA(color4)
+			a = 3
 			result = true
 		end
 	end
@@ -1484,7 +1516,7 @@ function check_parts(vehPtr, vehicle, vehicleName, isFirstAssignment, colorChang
 										(colorChanges.secondary and isSecondaryColor(r, g, b) or isSecondaryColor(comp_mat_Index)) or
 										(colorChanges.extra1 and isExtraColor1(r, g, b) or isExtraColor1Material(comp_mat_Index)) or
 										(colorChanges.extra2 and isExtraColor2(r, g, b) or isExtraColor2Material(comp_mat_Index))
-            if comp_mat_Index ~= nil and comp_mat_Index > mat_Debug and comp_mat_Index <= mat_BlackPlasticRough and vehs_settings:isEdited(vehicleName, component.name, textureName, mat_index) then
+            if comp_mat_Index ~= nil and comp_mat_Index > mat_Debug and comp_mat_Index <= mat_BlackPlasticRough then
                 mat:set_texture(materialsTex[comp_mat_Index])
                 needsUpdate = false
 			elseif comp_mat_Index == mat_Original and textureName == "no texture" then
@@ -1497,7 +1529,7 @@ function check_parts(vehPtr, vehicle, vehicleName, isFirstAssignment, colorChang
             end
             if needsUpdate then
 				autoAssignMaterial(vehPtr, vehicleName, component, mat, mat_index, tex)
-			elseif mat:get_texture() == nil then
+			elseif textureName == "no texture" then
 				r, g, b, a = mat:get_color()
 				if a > 250 and comp_mat_Index == nil or comp_mat_Index == mat_Original then
 					tex = color_textures:getTexture(r, g, b, a)
@@ -1533,19 +1565,19 @@ function check_glass(veh, vehicleName, component, mat_index, mat, a)
 end
 
 function isPrimaryMaterial(materialtype)
-	return materialtype == mat_PrimaryColor_Glossy or materialtype == mat_PrimaryColor_Matte or materialtype == mat_PrimaryColor_Leather
+	return materialtype == mat_PrimaryColor_Glossy or materialtype == mat_PrimaryColor_Matte or materialtype == mat_PrimaryColor_Leather or materialtype == mat_PrimaryColor_Metallic
 end
 
 function isSecondaryMaterial(materialtype)
-	return materialtype == mat_SecondaryColor_Glossy or materialtype == mat_SecondaryColor_Matte or materialtype == mat_SecondaryColor_Leather
+	return materialtype == mat_SecondaryColor_Glossy or materialtype == mat_SecondaryColor_Matte or materialtype == mat_SecondaryColor_Leather or materialtype == mat_SecondaryColor_Metallic
 end
 
 function isExtraColor1Material(materialtype)
-	return materialtype == mat_ExtraColor1_Glossy or materialtype == mat_ExtraColor1_Matte or materialtype == mat_ExtraColor1_Leather
+	return materialtype == mat_ExtraColor1_Glossy or materialtype == mat_ExtraColor1_Matte or materialtype == mat_ExtraColor1_Leather or materialtype == mat_ExtraColor1_Metallic
 end
 
 function isExtraColor2Material(materialtype)
-	return materialtype == mat_ExtraColor2_Glossy or materialtype == mat_ExtraColor2_Matte or materialtype == mat_ExtraColor2_Leather
+	return materialtype == mat_ExtraColor2_Glossy or materialtype == mat_ExtraColor2_Matte or materialtype == mat_ExtraColor2_Leather or materialtype == mat_ExtraColor2_Metallic
 end
 
 function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, colorisPrimary, colorisSecondary, colorisExtraColor1, colorisExtraColor2)
@@ -1554,8 +1586,10 @@ function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, co
 	if (a > 250) and not containsString(textureName, excludeMaterial.ColorTextureNames) then
 		local materialtype = vehs_settings:getMaterial(vehicleName, component.name, textureName, mat_index)
 		if colorisPrimary or isPrimaryMaterial(materialtype) then
-			if containsString(component.name, includeMaterial.InteriorComponentNames) or 
-				containsString(textureName, includeMaterial.InteriorTextureNames)  or
+			if materialtype == mat_PrimaryColor_Metallic then
+				tex = color_textures:getTexture(r,g,b,3)
+			elseif containsString(component.name, includeMaterial.LeatherComponentNames) or 
+				containsString(textureName, includeMaterial.LeatherTextureNames)  or
 				materialtype == mat_PrimaryColor_Leather then
 				tex = color_textures:getTexture(r,g,b,2)
 				materialtype = mat_PrimaryColor_Leather
@@ -1568,12 +1602,12 @@ function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, co
 			mat:set_color(car_primaryColorSimple)
 			mat:set_texture(tex)
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, materialtype, textureName, false)
-			
-			
 			return true
 		elseif colorisSecondary or isSecondaryMaterial(materialtype) then
-			if containsString(component.name, includeMaterial.InteriorComponentNames) or
-				containsString(textureName, includeMaterial.InteriorTextureNames) or
+			if materialtype == mat_SecondaryColor_Metallic then
+				tex = color_textures:getTexture(r,g,b,3)
+			elseif containsString(component.name, includeMaterial.LeatherComponentNames) or
+				containsString(textureName, includeMaterial.LeatherTextureNames) or
 				materialtype == mat_SecondaryColor_Leather then
 				tex = color_textures:getTexture(r,g,b,2)
 				materialtype = mat_SecondaryColor_Leather
@@ -1586,12 +1620,12 @@ function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, co
 			mat:set_color(car_secondaryColorSimple)
 			mat:set_texture(tex)
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, materialtype, textureName, false)
-			
-			
 			return true
 		elseif colorisExtraColor1 or isExtraColor1Material(materialtype) then
-			if containsString(component.name, includeMaterial.InteriorComponentNames) or
-				containsString(textureName, includeMaterial.InteriorTextureNames) or
+			if materialtype == mat_ExtraColor1_Metallic then
+				tex = color_textures:getTexture(r,g,b,3)
+			elseif containsString(component.name, includeMaterial.LeatherComponentNames) or
+				containsString(textureName, includeMaterial.LeatherTextureNames) or
 				materialtype == mat_ExtraColor1_Leather then
 				tex = color_textures:getTexture(r,g,b,2)
 				materialtype = mat_ExtraColor1_Leather
@@ -1604,15 +1638,14 @@ function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, co
 			mat:set_color(car_extraColor1Simple)
 			mat:set_texture(tex)
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, materialtype, textureName, false)
-			
-			
 			return true
 		elseif colorisExtraColor2 or isExtraColor2Material(materialtype) then
-			if containsString(component.name, includeMaterial.InteriorComponentNames) or
-				containsString(textureName, includeMaterial.InteriorTextureNames) or
+			if materialtype == mat_ExtraColor2_Metallic then
+				tex = color_textures:getTexture(r,g,b,3)
+			elseif containsString(component.name, includeMaterial.LeatherComponentNames) or
+				containsString(textureName, includeMaterial.LeatherTextureNames) or
 				materialtype == mat_ExtraColor2_Leather then
 				tex = color_textures:getTexture(r,g,b,2)
-				materialtype = mat_ExtraColor2_Leather
 			elseif materialtype == mat_ExtraColor2_Matte then
 				tex = color_textures:getTexture(r,g,b,1)
 			else
@@ -1622,13 +1655,11 @@ function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, co
 			mat:set_color(car_extraColor2Simple)
 			mat:set_texture(tex)
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, materialtype, textureName, false)
-			
-			
 			return true
-		elseif containsString(component.name, includeMaterial.InteriorComponentNames, excludeMaterial.InteriorComponentNames) or containsString(textureName, includeMaterial.ColorTextureNames, excludeMaterial.ColorTextureNames) then
+		elseif containsString(component.name, includeMaterial.LeatherComponentNames, excludeMaterial.LeatherComponentNames) or containsString(textureName, includeMaterial.ColorTextureNames, excludeMaterial.ColorTextureNames) then
 			local color1, color2 = getCarColours(veh)
 			r, g, b, a = colorIDtoRGBA(color1)
-			if containsString(component.name, includeMaterial.InteriorComponentNames) or containsString(textureName, includeMaterial.InteriorTextureNames) then
+			if containsString(component.name, includeMaterial.LeatherComponentNames) or containsString(textureName, includeMaterial.LeatherTextureNames) then
 				tex = color_textures:getTexture(r,g,b,2)
 			else
 				tex = color_textures:getTexture(r,g,b,a)
@@ -1636,8 +1667,6 @@ function check_color(veh, vehicleName, component, mat_index, mat, r, g, b, a, co
 			mat:set_color(r,g,b,a)
 			mat:set_texture(tex)
 			vehs_settings:setMaterial(veh, vehicleName, component.name, mat_index, mat_PrimaryColor_Leather, textureName, false)
-			
-			
 			return true
 		end
 	end
@@ -1678,7 +1707,10 @@ local function changePartColor(vehPtr, r, g, b, a, colorType, colorID)
 				local tex = nil
 				if materialType then
 					if colorType == mat_PrimaryColor_Glossy and isPrimaryMaterial(materialType) then
-						if materialType == mat_PrimaryColor_Leather then
+						if materialType == mat_PrimaryColor_Metallic then
+							tex = color_textures:getTexture(r, g, b, 3)
+							mat:set_texture(tex)
+						elseif materialType == mat_PrimaryColor_Leather then
 							tex = color_textures:getTexture(r, g, b, 2)
 							mat:set_texture(tex)
 						elseif materialType == mat_PrimaryColor_Matte then
@@ -1690,7 +1722,10 @@ local function changePartColor(vehPtr, r, g, b, a, colorType, colorID)
 						end
 						printString(string.format("Part name : %s change color to color ID %d ", component.name, colorID), 1000)
 					elseif colorType == mat_SecondaryColor_Glossy and isSecondaryMaterial(materialType) then
-						if materialType == mat_SecondaryColor_Leather then
+						if materialType == mat_SecondaryColor_Metallic then
+							tex = color_textures:getTexture(r, g, b, 3)
+							mat:set_texture(tex)
+						elseif materialType == mat_SecondaryColor_Leather then
 							tex = color_textures:getTexture(r, g, b, 2)
 							mat:set_texture(tex)
 						elseif materialType == mat_SecondaryColor_Matte then
@@ -1702,7 +1737,10 @@ local function changePartColor(vehPtr, r, g, b, a, colorType, colorID)
 						end
 						printString(string.format("Part name : %s change color to color ID %d ", component.name, colorID), 1000)
 					elseif colorType == mat_ExtraColor1_Glossy and isExtraColor1Material(materialType) then
-						if materialType == mat_ExtraColor1_Leather then
+						if materialType == mat_ExtraColor1_Metallic then
+							tex = color_textures:getTexture(r, g, b, 3)
+							mat:set_texture(tex)
+						elseif materialType == mat_ExtraColor1_Leather then
 							tex = color_textures:getTexture(r, g, b, 2)
 							mat:set_texture(tex)
 						elseif materialType == mat_ExtraColor1_Matte then
@@ -1714,7 +1752,10 @@ local function changePartColor(vehPtr, r, g, b, a, colorType, colorID)
 						end
 						printString(string.format("Part name : %s change color to color ID %d ", component.name, colorID), 1000)
 					elseif colorType == mat_ExtraColor2_Glossy and isExtraColor2Material(materialType) then
-						if materialType == mat_ExtraColor2_Leather then
+						if materialType == mat_ExtraColor2_Metallic then
+							tex = color_textures:getTexture(r, g, b, 3)
+							mat:set_texture(tex)
+						elseif materialType == mat_ExtraColor2_Leather then
 							tex = color_textures:getTexture(r, g, b, 2)
 							mat:set_texture(tex)
 						elseif materialType == mat_ExtraColor2_Matte then
@@ -1768,7 +1809,6 @@ function serializeToJSON(tbl)
         for k, v in pairs(tbl) do
             
             local formattedKey = string.format('%q', k) .. ":"
-
             
             local formattedValue
             if type(v) == "table" then
@@ -1785,7 +1825,6 @@ function serializeToJSON(tbl)
 
             entries[#entries + 1] = indent .. "  " .. formattedKey .. "  " .. formattedValue
         end
-
         
         result[#result + 1] = table.concat(entries, ",\n")
 
@@ -1851,12 +1890,10 @@ function imgui.OnDrawFrame()
 				local vehicle = vehs_settings.vehicles[im.currentName]
 				
 				if vehicle then
-					
-				
 					im.prevName = im.currentName
 					im.components_List.items = {}
 					im.texture_List.items = {}
-					
+
 					local componentTracker = {}
 					local textureTracker = {}
 					
@@ -1871,10 +1908,12 @@ function imgui.OnDrawFrame()
 						if mats then
 							for mat_index, mat in ipairs(mats) do
 								if mat then
+									
 									if not componentTracker[component.name] then
 										table.insert(im.components_List.items, component.name)
 										componentTracker[component.name] = true
 									end
+					
 									
 									local texture_name = mat.get_texture and mat:get_texture() and mat:get_texture().name or 'no texture'
 									if not textureTracker[texture_name] then
@@ -1899,7 +1938,7 @@ function imgui.OnDrawFrame()
 			
 			imgui.SameLine()
 			imgui.PushItemWidth(100)
-			if imgui.Combo("Mod Name", im.current_mod, mod_list, #mod_list) then
+			if imgui.Combo("", im.current_mod, mod_list, #mod_list) then
 				cur_mod_name = mod_list[im.current_mod.v + 1]
 				vehs_settings:loadSettings(cur_mod_name)
 				forceReset = true
@@ -1907,86 +1946,6 @@ function imgui.OnDrawFrame()
 				tempClose()
 			end
 			imgui.PopItemWidth()
-			
-			imgui.SameLine()
-			imgui.PushItemWidth(100)
-			imgui.PushID("Input Mod Name ID")
-			if imgui.Button("Add Mod") then
-				im.showoPopup = true
-			end
-			imgui.PopItemWidth()
-			imgui.PopID()
-			
-			if im.showoPopup then
-				imgui.OpenPopup("Input Mod Name")
-			end
-			
-			if imgui.BeginPopupModal("Input Mod Name", nil, imgui.WindowFlags.AlwaysAutoResize) then
-				imgui.Text("Mod Name : ")
-				imgui.SameLine()
-				imgui.PushItemWidth(100)
-				imgui.InputText("", im.mod_name)
-				imgui.PopItemWidth()
-				
-				imgui.PushID("Input Mod Name OK")
-				if imgui.Button("OK") then
-					if im.mod_name.v ~= "" then
-						local exists = false
-						for _, mod in ipairs(mod_list) do
-							if mod == im.mod_name.v then
-								exists = true
-								break
-							end
-						end
-						
-						if not exists then
-							table.insert(mod_list, im.mod_name.v)
-							cur_mod_name = im.mod_name.v
-							im.current_mod.v = #mod_list - 1  
-							forceReset = true
-							tempClose()
-							
-							
-							imgui.SetNextItemValue(im.current_mod.v)
-						end
-					end
-					im.showoPopup = false
-					imgui.CloseCurrentPopup()
-				end
-				imgui.PopID()
-				
-				imgui.PushID("Input Mod Name Cancel")
-				imgui.SameLine()
-				imgui.PushItemWidth(100)
-				if imgui.Button("Cancel") then
-					im.showoPopup = false
-					imgui.CloseCurrentPopup()
-				end
-				imgui.PopItemWidth()
-				imgui.PopID()
-				
-				imgui.EndPopup()
-			end
-			
-			if #mod_list > 1 then
-				imgui.SameLine()
-				imgui.PushItemWidth(100)
-				imgui.PushID("Remove Mod Btn")
-				if imgui.Button("Remove Mod") then
-					if cur_mod_name ~= "Vanilla" then
-						for i, mod in ipairs(mod_list) do
-							if mod == cur_mod_name then
-								table.remove(mod_list, i)
-								break
-							end
-						end
-						cur_mod_name = mod_list[1]
-						im.current_mod = imgui.ImInt(0)
-					end
-				end
-				imgui.PopItemWidth()
-				imgui.PopID()
-			end
 			
 			imgui.PushID("Save Btn")
 			imgui.PushItemWidth(100)
@@ -2017,10 +1976,11 @@ function imgui.OnDrawFrame()
 			imgui.PushID("Reset Btn")
 			if imgui.Button("Reset Materials") then
 				forceReset = true
-				resetCurrentCar = true
+				vehs_settings:removeCar(im.currentName)
+				vehs_settings:saveSettings(cur_mod_name)
 				resetSetting()
 				vehicleList:resetMaterials(veh)
-				im.currentName = string.format("%s", getVehicleName(veh))
+				printString(string.format("Vehicle %s materials reset", im.currentName), 3000)
 				tempClose()
 			end
 			imgui.PopItemWidth()
@@ -2070,14 +2030,12 @@ function imgui.OnDrawFrame()
 					imgui.PopItemWidth()
 					imgui.PopID()
 					
-					
 					imgui.PushID("Texture Name")
 					imgui.SameLine(180)
 					imgui.PushItemWidth(150)
 					imgui.Text('Texture Name')
 					imgui.PopItemWidth()
 					imgui.PopID()
-					
 					
 					imgui.PushID("Material Type")
 					imgui.SameLine(360)
@@ -2096,7 +2054,6 @@ function imgui.OnDrawFrame()
 					imgui.PopItemWidth()
 					imgui.PopID()
 					
-					
 					imgui.PushID("textures filter")
 					imgui.SameLine(180)
 					imgui.PushItemWidth(150)
@@ -2106,7 +2063,6 @@ function imgui.OnDrawFrame()
 					end
 					imgui.PopItemWidth()
 					imgui.PopID()
-					
 					
 					imgui.PushID("materials filter")
 					imgui.SameLine(360)
@@ -2118,9 +2074,8 @@ function imgui.OnDrawFrame()
 					imgui.PopItemWidth()
 					imgui.PopID()
 					
-					
 					imgui.Separator()
-
+					
 					for compIndex, component in ipairs(Components) do
 						local mats = getAllMaterials(component)
 						if mats ~= nil then
@@ -2132,7 +2087,7 @@ function imgui.OnDrawFrame()
 									
 									if comp_mat_Index == nil then
 										vehs_settings:setMaterial(veh, im.currentName, component.name, mat_index, mat_Original, textureName, false)
-										comp_mat_Index = 1
+										comp_mat_Index = mat_Original
 									end
 									
 									if (im.components_List.filter == "#All" or im.components_List.filter == component.name) and
@@ -2151,33 +2106,51 @@ function imgui.OnDrawFrame()
 										imgui.PushItemWidth(120)
 										imgui.Text(string.format('%s', component.name))
 										imgui.PopItemWidth()
+										if imgui.IsItemHovered() then
+											showComponent(component)
+											editMaterial(mat_Debug, component.name, mat, color1, color2, color3, color4, uid, comp_mat_Index, true)
+										end
 										imgui.PopID()
 										
 										imgui.PushID(uid .. "_texture")
 										imgui.SameLine(140)
 										imgui.PushItemWidth(120)
 										imgui.Text(string.format('%s', textureName))
+										if imgui.IsItemHovered() then
+											showComponent(component)
+											editMaterial(mat_Debug, component.name, mat, color1, color2, color3, color4, uid, comp_mat_Index, true)
+										end
 										imgui.PopItemWidth()
 										imgui.PopID()
 										
-										
+										imgui.PushID(uid .. "_color")
 										imgui.SameLine(280)
-										imgui.PushItemWidth(200)
+										imgui.PushItemWidth(240)
 										local r, g, b, a = mat:get_color()
 										local color = imgui.ImVec4(r / 255, g / 255, b / 255, a / 255)
 										imgui.ColorButton("##color", color, imgui.ColorEditFlags.NoTooltip, imgui.ImVec2(20, 20))
 										imgui.SameLine()
 										imgui.Text(string.format("%d, %d, %d, %d", r, g, b, a))
+										if imgui.IsItemHovered() then
+											showComponent(component)
+											editMaterial(mat_Debug, component.name, mat, color1, color2, color3, color4, uid, comp_mat_Index, true)
+										end
 										imgui.PopItemWidth()
+										imgui.PopID()
 										
+										imgui.PushID(uid .. "_slider")
 										imgui.SameLine(460)
 										imgui.PushItemWidth(160)
-										imgui.PushID(uid .. "_slider")
-										if imgui.SliderInt(" ", im.selectedVehicle.items[uid].index, 1, #materialsName, materialsName[im.selectedVehicle.items[uid].index.v]) then
-											local newIndex = im.selectedVehicle.items[uid].index.v
+										imgui.SliderInt(" ", im.selectedVehicle.items[uid].index, 1, #materialsName, materialsName[im.selectedVehicle.items[uid].index.v])
+										if imgui.IsItemHovered() then
+											showComponent(component)
+											editMaterial(mat_Debug, component.name, mat, color1, color2, color3, color4, uid, comp_mat_Index, true)
+										end
+										local newIndex = im.selectedVehicle.items[uid].index.v
+										if newIndex ~= comp_mat_Index then
 											im.selectedVehicle.items[uid].name = materialsName[newIndex]
-											local materialChanged = editMaterial(newIndex, component.name, mat, color1, color2, color3, color4, uid)
-											if debugMaterial.debugmode and materialChanged then
+											local materialChanged = editMaterial(newIndex, component.name, mat, color1, color2, color3, color4, uid, newIndex, false)
+											if debugMaterial.debugmode then
 												debugMaterial:removeMaterial(uid)
 											elseif materialChanged then
 												textureName = mat:get_texture() and mat:get_texture().name or "no texture"
@@ -2232,13 +2205,9 @@ function imgui.OnDrawFrame()
 							vehs_settings:setLightPosition(im.currentName, i, pos, rot)
 							
 							if not light.obj or not veh then
-								
 								return
 							else
 								local status, err = pcall(placeObjectRelativeToCar, light.obj, veh, x[i].v, y[i].v, z[i].v)
-								if not status then
-									
-								end
 							end
 							attachObjectToCar(light.obj, veh, x[i].v, y[i].v, z[i].v, rot.x, rot.y, rot.z)
 							if mirrorCB.v then
@@ -2325,12 +2294,6 @@ function imgui.OnDrawFrame()
 					if isEmergencyServicesVehicle(veh) then
 						printString("It's Emergency Services Vehicle", 1000)
 					end
-					
-					
-					
-					
-					
-					
 				end
 			end
 			imgui.End()
@@ -2344,7 +2307,7 @@ function imgui.OnDrawFrame()
 	end
 end
 
-function editMaterial(materialType, componentName, mat, color1, color2, color3, color4, uid)
+function editMaterial(materialType, componentName, mat, color1, color2, color3, color4, uid, original_mat_Index, isHover)
 	local r, g, b, a = 0, 0, 0, 0
 	local changed = true
 	if materialType == mat_Original then
@@ -2352,11 +2315,11 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 			r, g, b, a = mat:get_color()
 			tex = color_textures:getTexture(r, g, b, a)
 			mat:set_texture(tex)
-			printString(string.format("Vehicle %s Component %s id %s reset to original and assigned a pure color texture", im.currentName, componentName, uid), 3000)
+			printString(string.format("Vehicle %s Component %s id %s reset to original and assigned a pure color texture", im.currentName, componentName, uid), 1000)
 		else
 			mat:reset_texture()
 			mat:reset_color()
-			printString(string.format("%s's material reset to original texture", componentName), 3000)
+			printString(string.format("%s's material reset to original texture", componentName), 1000)
 		end
 	elseif (materialType == mat_PrimaryColor_Glossy) then
 		r, g, b, a = colorIDtoRGBA(color1)
@@ -2364,7 +2327,7 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_primaryColorSimple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif (materialType == mat_SecondaryColor_Glossy) then
 		r, g, b, a = colorIDtoRGBA(color2)
@@ -2372,7 +2335,7 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_secondaryColorSimple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif (materialType == mat_ExtraColor1_Glossy) then
 		r, g, b, a = colorIDtoRGBA(color3)
@@ -2380,7 +2343,7 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_extraColor1Simple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif (materialType == mat_ExtraColor2_Glossy) then
 		r, g, b, a = colorIDtoRGBA(color4)
@@ -2388,7 +2351,7 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_extraColor2Simple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif (materialType == mat_PrimaryColor_Matte) then
 		r, g, b, a = colorIDtoRGBA(color1)
@@ -2396,7 +2359,7 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_primaryColorSimple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif (materialType == mat_SecondaryColor_Matte) then
 		r, g, b, a = colorIDtoRGBA(color2)
@@ -2404,7 +2367,7 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_secondaryColorSimple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif (materialType == mat_ExtraColor1_Matte) then
 		r, g, b, a = colorIDtoRGBA(color3)
@@ -2412,7 +2375,7 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_extraColor1Simple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif (materialType == mat_ExtraColor2_Matte) then
 		r, g, b, a = colorIDtoRGBA(color4)
@@ -2420,7 +2383,7 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_extraColor2Simple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif (materialType == mat_PrimaryColor_Leather) then
 		r, g, b, a = colorIDtoRGBA(color1)
@@ -2428,7 +2391,7 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_primaryColorSimple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif (materialType == mat_SecondaryColor_Leather) then
 		r, g, b, a = colorIDtoRGBA(color2)
@@ -2436,7 +2399,7 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_secondaryColorSimple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif (materialType == mat_ExtraColor1_Leather) then
 		r, g, b, a = colorIDtoRGBA(color3)
@@ -2444,7 +2407,7 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_extraColor1Simple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif (materialType == mat_ExtraColor2_Leather) then
 		r, g, b, a = colorIDtoRGBA(color4)
@@ -2452,22 +2415,72 @@ function editMaterial(materialType, componentName, mat, color1, color2, color3, 
 		mat:set_color(car_extraColor2Simple)
 		if tex then
 			mat:set_texture(tex)
-			printString(string.format("Part name : %s assigned to %s color", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
+		end
+	elseif (materialType == mat_PrimaryColor_Metallic) then
+		r, g, b, a = colorIDtoRGBA(color1)
+		local tex = color_textures:getTexture(r,g,b,3)
+		mat:set_color(car_primaryColorSimple)
+		if tex then
+			mat:set_texture(tex)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
+		end
+	elseif (materialType == mat_SecondaryColor_Metallic) then
+		r, g, b, a = colorIDtoRGBA(color2)
+		local tex = color_textures:getTexture(r,g,b,3)
+		mat:set_color(car_secondaryColorSimple)
+		if tex then
+			mat:set_texture(tex)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
+		end
+	elseif (materialType == mat_ExtraColor1_Metallic) then
+		r, g, b, a = colorIDtoRGBA(color3)
+		local tex = color_textures:getTexture(r,g,b,3)
+		mat:set_color(car_extraColor1Simple)
+		if tex then
+			mat:set_texture(tex)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
+		end
+	elseif (materialType == mat_ExtraColor2_Metallic) then
+		r, g, b, a = colorIDtoRGBA(color4)
+		local tex = color_textures:getTexture(r,g,b,3)
+		mat:set_color(car_extraColor2Simple)
+		if tex then
+			mat:set_texture(tex)
+			printString(string.format("Part name : %s assigned to %s", componentName, materialsName[materialType]), 1000)
 		end
 	elseif materialType == mat_Debug then
 		changed = false
-		debugMaterial.debugmode = true
-		debugMaterial.components[uid] = {
-			material = mat
-		}
+		if isPrimaryMaterial(original_mat_Index) then
+			r, g, b, a = colorIDtoRGBA(color1)
+		elseif isSecondaryMaterial(original_mat_Index) then
+			r, g, b, a = colorIDtoRGBA(color2)
+		elseif isExtraColor1Material(original_mat_Index) then
+            r, g, b, a = colorIDtoRGBA(color3)
+        elseif isExtraColor2Material(original_mat_Index) then
+			r, g, b, a = colorIDtoRGBA(color4)
+		end
+        debugMaterial.debugmode = true
+        if debugMaterial.components[uid] == nil then
+			debugMaterial.components[uid] = {
+				isHover = isHover,
+				material = mat,
+				originalMaterial = original_mat_Index,
+				color = {r = r, g = g, b = b, a = a},
+				countdown = 2
+			}
+		end
 		mat:set_texture(debug_texture)
 	else
 		local tex = materialsTex[materialType]
 		if tex then
 			mat:set_texture(tex)
 			mat:reset_color()
-			printString(string.format("Part name : %s assigned to %s material", componentName, materialsName[materialType]), 3000)
+			printString(string.format("Part name : %s assigned to %s material", componentName, materialsName[materialType]), 1000)
 		end
+	end
+	if debugMaterial.components[uid] ~= nil then
+		debugMaterial.components[uid].originalMaterial = original_mat_Index
 	end
 	return changed
 end	
@@ -2498,6 +2511,26 @@ function showInfo()
     end
 end
 
+function showComponent(component)
+	local x, y, z = component.matrix.pos:get()
+	local sx, sy = convert3DCoordsToScreen(x, y, z)
+	local exsx, exsy, tsx, tsy = 0, 0, 0, 0
+	if sx > scr_w_half then
+		exsx, exsy = convert3DCoordsToScreen(x + 0.5, y, z)
+	else
+		exsx, exsy = convert3DCoordsToScreen(x - 0.5, y, z)
+	end
+	renderDrawLine(sx, sy, exsx, exsy, 2.0, 0xFFFFFFFF)
+	local extendx = 40
+	local textx = 0
+	if exsx < sx then
+		extendx = -40
+		textx = -40
+	end
+	renderDrawLine(exsx, exsy, exsx + extendx, exsy, 2.0, 0xFFFFFFFF)
+	mad.draw_text("here", exsx + textx, exsy - 20, mad.font_style.SUBTITLES, 0.4, 0.8, mad.font_align.LEFT, 2000, true, false, 255, 255, 255, 255, 1, 0, 30, 30, 30, 120)
+end
+
 function loadMainSetting()
 	local setting = io.open(workDir .. "/SARemix_VTK.conf", "r")
 	if setting then
@@ -2511,7 +2544,7 @@ function loadMainSetting()
 				end
 			elseif line:find("Mod Name") then
 				local mod_name = trimString(line:match("= (.+)"))
-				cur_mod_name = nil  
+				cur_mod_name = ""  
 				for index, mod in ipairs(mod_list) do
 					if mod == mod_name then
 						cur_mod_name = mod_list[index]
@@ -2519,7 +2552,7 @@ function loadMainSetting()
 						break
 					end
 				end
-				if cur_mod_name == nil then
+				if cur_mod_name == "" then
 					cur_mod_name = mod_list[1]
 				end
 			end
@@ -2578,21 +2611,16 @@ function main()
 				debugMaterial:update()
 			end
 			if tempClosed ~= nil then
-				if os.clock() - tempClosed > 0.2 then
+				if os.clock() - tempClosed > 0.1 then
 					tempClosed = nil
 					if forceReset then
 						vehs_settings:loadSettings(cur_mod_name, false)
-						if resetCurrentCar then
-							printString(string.format("Vehicle %s materials reset", im.currentName), 3000)
-							vehs_settings:removeCar(im.currentName)
-							resetCurrentCar = false
-						end
 						vehicleList:reset()
 						debugMaterial:reset()
 						im:reset()
 						forceReset = false
 					end
-					
+					updatevehicles()
 					im.main_window_state.v = not im.main_window_state.v
 				end
 			end

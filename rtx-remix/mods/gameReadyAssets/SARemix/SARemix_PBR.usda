@@ -15,7 +15,7 @@ over "RootNode"
 {
     over "Looks"
     {
-        over "mat_81EBFB0F29CC60D8"
+        over "mat_E1AC320610CF81C7"
         {
             custom string ColorID = "000"
 
@@ -1545,9 +1545,9 @@ over "RootNode"
 
             over "Shader"
             {
-                float inputs:metallic_constant = 0.6
+                float inputs:metallic_constant = 0.4
                 asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
-                float inputs:reflection_roughness_constant = 0.35
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
 
@@ -1596,6 +1596,7 @@ over "RootNode"
 
             over "Shader"
             {
+                color3f inputs:diffuse_color_constant = (0.8, 0.8, 0.8)
                 float inputs:metallic_constant = 0.8
                 asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 float inputs:reflection_roughness_constant = 0
@@ -1628,9 +1629,9 @@ over "RootNode"
                 uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
                 uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
                 float inputs:ior_constant = 1.6
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Scratches_001H_normal.dds@
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
                 bool inputs:thin_walled = 1
-                float inputs:transmittance_measurement_distance = 0.01
+                float inputs:transmittance_measurement_distance = 0.001
                 asset inputs:transmittance_texture = @./Textures/Vehicles/Scratches_001H_albedo.dds@
                 bool inputs:use_diffuse_layer = 1
             }
@@ -1660,6 +1661,7 @@ over "RootNode"
             over "Shader"
             {
                 color3f inputs:diffuse_color_constant = (0, 1, 0)
+                asset inputs:diffuse_texture = @@
                 color3f inputs:emissive_color_constant = (0, 1, 0)
                 float inputs:emissive_intensity = 1
                 bool inputs:enable_emission = 1
@@ -1673,7 +1675,7 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
-                float inputs:reflection_roughness_constant = 0.099999994
+                float inputs:reflection_roughness_constant = 0.1
             }
         }
 
@@ -1684,7 +1686,25 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:normalmap_texture = @./Textures/Vehicles/Car_Paint_normal.dds@
-                float inputs:reflection_roughness_constant = 0.39999998
+                float inputs:reflection_roughness_constant = 0.5
+            }
+        }
+
+        over "mat_0957D349A2952638"
+        {
+            over "Shader"
+            {
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Leather_001H_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Leather_001H_rough.dds@
+            }
+        }
+
+        over "mat_3188F73F2559AE51"
+        {
+            over "Shader"
+            {
+                asset inputs:normalmap_texture = @./Textures/Vehicles/Leather_001H_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Leather_001H_rough.dds@
             }
         }
 
@@ -2849,15 +2869,6 @@ over "RootNode"
             }
         }
 
-        over "mat_3188F73F2559AE51"
-        {
-            over "Shader"
-            {
-                asset inputs:normalmap_texture = @./Textures/Vehicles/Leather_001H_normal.dds@
-                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Leather_001H_rough.dds@
-            }
-        }
-
         over "mat_00DB1380462ED9C5"
         {
             over "Shader"
@@ -2873,6 +2884,1167 @@ over "RootNode"
             {
                 asset inputs:normalmap_texture = @./Textures/Vehicles/Leather_001H_normal.dds@
                 asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Leather_001H_rough.dds@
+            }
+        }
+
+        over "mat_70899B0B316D4F48"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_512C601E198DF102"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_4B2B3EAC8BC2868F"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_30793B122BF9975E"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_4E3F4A79F1B52E15"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_23CFC5C7AD78F4EE"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_6CE0F152A5D02C07"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_03D38C6E8BB59A8E"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_BDD8CD67961694A4"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_873E0141F0AD4A39"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_9C8DAB75D9A20CC9"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_E5276AC730D99421"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_B445280F9B277446"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_3438A8E211F6A450"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_58461499A73733CC"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_A2356A4ECE6F4E18"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_643B13195338898F"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_C012DC8D7420F03C"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_5B69F7A10DDDB956"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_89E56B2CE6C2F5FB"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_94C7E72E720E62EE"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_919D88810F64CA34"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_6EAD8382F49BBBC6"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_AC2051D08793E5F4"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_B24CCDE7A3D53E87"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_56CD495AA822B63E"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_7155FCCC48C81764"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_B4C4394A9AC21FD7"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_77D3FE727A11D5CE"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_4B8DCCC96304AF3C"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_896095988CEF39A3"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_A4BC6B59B91D9507"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_7106228E2F20CC59"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_586731AD4572C412"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_DAE640C0D162635A"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_199B9D7233069C3A"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_859C109F138AAF53"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_5648548FA36FF922"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_2BE298191D7144E8"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_A513AFF9AE5E72DE"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_6A191BA2C4095DE0"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_6BA731E2FB80CFB7"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_D2911E0C2D40925C"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_06D3EC1A831C8394"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_B111E7394567A28F"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_5AA2B322AA6C1EB8"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_E6E4C344C028BEFB"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_228FC8217A238367"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_01DC26A10D75D5E4"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_E63C70A9143596DE"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_94E87465A90E4E02"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_85FA733AC69E6920"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_7713A94B58A0DED4"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_EA1DF2374C5BDADD"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_A6C27BC35488F8C8"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_B7BCE683B0DF5E37"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_5FF127C0070C97AE"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_3CF46A7703BA7DC2"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_565398E587FDB2E9"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_295BE778C43A71FE"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_732B91375D47A5FB"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_766D98B0CF8568A7"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_4298CC5F168DE152"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_654E386B40476384"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_32C4605BEA6A77E5"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_20672382FC842824"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_5E536BD78E13A79A"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_E3177B616967BC5B"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_F17597F089DA810C"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_E1B8BC3BC2669751"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_9277615EEF788CF8"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_E5A0E94F71636E68"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_4F98A0BF034CD11D"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_EAA749F3F6993D30"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_00DFE63C92C9D8F8"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_1AB7A7871F6DDFAA"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_6BA2F5F28FF3BEFB"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_089EFCFAE922BB87"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_F1CE239D1350AE30"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_3A4EACCCE7AE6BAF"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_2D7424F073928909"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_822653DC90449C31"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_73E13ABACB43685F"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_173F22D9341B5273"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_C47C104F09E55E00"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_3B517723CEC695CC"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_FFB80AE52AC3EF6D"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_93C5D948452F20E0"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_0E581E2C3C6C0DDF"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_C92937B5A365100D"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_AAEF7AB70C8F6C75"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_81B4120C01770C92"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_DAD630FE7369B36C"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_67E1DA7EF5D11818"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_8C9213920437A494"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_88E358D3E1A99328"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_09CA931A57F7B861"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_45371F61B69577E4"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_EAE792DD2FC8E62C"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_19E801943E271659"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_473E15806089CA8A"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_36D8F31D4BC73709"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_797E60255E2CA8F8"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_66822C0D7D50C18E"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_0269712BCB55DFB9"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_3DE470D23F383020"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_96133E4219CF01AC"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_371CBE4218E1E61B"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_39ADD13E06130EB4"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_50FD5A4ED860357C"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_6810959C8298F98B"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_E9ED2CE1976D2860"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_12DA1299A9F32FD3"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_4E32A8FF181453B6"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_B4A957640A2C4DB1"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_6898EA2F015F5200"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_4266C7A523DF7347"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_4108BACB1CDF5886"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_F7259E1192541202"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_51EBE739A6B3A402"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_FE4A086B0C838D7F"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_5EFC59DE8E969234"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_57B27F84CEEF79FF"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_C74004EF4B707F79"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_1C72FE9A867F6C2A"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_B913CAFE4B0D874F"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_69C5D3A39B2D3537"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_A6DDD499937A515C"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
+            }
+        }
+
+        over "mat_AB26022D00812B71"
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.6
+                asset inputs:reflectionroughness_texture = @./Textures/Vehicles/Car_Paint_rough.dds@
             }
         }
     }
