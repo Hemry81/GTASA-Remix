@@ -6,50 +6,59 @@
 
 ## Vehicle Toolkit
 
-### Features
+## Features:
+### v0.1.3:
+- Highlight current component
+- Added simple line pointing to selected component (position may not be accurate)
+- Added metallic car paint
 
-#### v0.1.2:
+### v0.1.2:
 - Auto assign mirror material at door component (mainly for support original GTASA vehicles)
-- Added Infernus wheel texture
+- Added Infernus wheel texture (90s AVP)
 
-#### v0.1.1:
+### v0.1.1:
 - The vehicle materials now added car paint flake detail.
 
-#### v0.1.0.c:
-- Allow for view different angles when adjusting vehicle materials
+### v0.1.0.c:
+- Allow for viewing different angles when adjusting vehicle materials
 
-#### v0.1.0.b:
+### v0.1.0.b:
 - Toggle vehicle lights with "L" key
 
-#### v0.1.0.a:
+### v0.1.0.a:
 - Automatic color assignment without Remix "Terrain System"
 - Automatic glass, chrome, and leather texture assignment
 - Customizable materials (press "M" in car to toggle editor)
 - Reveal hidden meshes due to Remix "Skip First N untexture drawcall" issue
 - Automatic vehicle lights between 19:00 and 6:00
 
-### Bug Fixes
+## Bug Fixes:
+### v0.1.3:
+- Extra Color 2 now works properly
+- Color ID 1 (black color) no longer has a highly reflective (mirror-like) appearance
+- Reset material now works properly
+- Fog glass material is now more foggy
 
-#### v0.1.2:
+### v0.1.2:
 - Fixed noob mistake
 
-#### v0.1.1:
+### v0.1.1:
 - Fixed issue where some saved materials settings were not being loaded.
 
-#### v0.1.0.e:
+### v0.1.0.e:
 - Fixed issue where saved materials settings were not being loaded.
 
-#### v0.1.0.d:
+### v0.1.0.d:
 - Fixed issue with some decal textures, such as text or logos, being disabled.
 
-#### v0.1.0.b:
+### v0.1.0.b:
 - Fixed stationary vehicle lights
 - Fixed damaged headlights
 - Removed Light Sphere shape for headlights
 
 ## Sun Mod
 
-### Features
+## Features
 
 #### v0.15:
 - Replace sun lighting with direct light
@@ -64,7 +73,7 @@
 #### v0.12:
 - Real-time sun/moon position editing (F3 hotkey)
 
-### Fixes
+## Bug Fixes
 
 #### v0.15:
 - Replaced object ID with custom object for easier mesh replacement
