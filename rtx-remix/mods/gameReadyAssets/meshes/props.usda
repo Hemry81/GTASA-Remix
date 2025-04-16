@@ -295,6 +295,29 @@ over "RootNode"
                 }
             }
         }
+
+        over "mesh_76750BC95854512E"
+        {
+            def Xform "TrashBag" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Props/Street_Props/Trash_Bag.usd@
+            )
+            {
+                rel material:binding = </Looks/Black_Plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (0.800000011920929, 0.800000011920929, 0.800000011920929)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
     }
 }
 

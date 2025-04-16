@@ -1,0 +1,403 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_FAE3F2CABD39F39E"
+        {
+            def Xform "Xform" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Meshes/Vehicles/Infernus/door_left.usd@
+            )
+            {
+                rel material:binding = </Looks/CarPaint_Red> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_68E83B27A7CF1457"
+        {
+            def Xform "Xform" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Meshes/Vehicles/Infernus/body.usd@
+            )
+            {
+                rel material:binding = </Looks/CarPaint_Red> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_11E8856995E9C2E9"
+        {
+            def Xform "Xform" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Meshes/Vehicles/Infernus/bumper_front.usd@
+            )
+            {
+                rel material:binding = </Looks/CarPaint_Red> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_EA67C63064EEA5F3"
+        {
+            def Xform "Xform" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Meshes/Vehicles/Infernus/cover_front.usd@
+            )
+            {
+                rel material:binding = </Looks/CarPaint_Red> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_A5244ECC537432B7"
+        {
+            def Xform "Xform" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Meshes/Vehicles/Infernus/cover_rear.usd@
+            )
+            {
+                rel material:binding = </Looks/CarPaint_Red> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_5BA7C5AF7C080AB2"
+        {
+            def Xform "Xform" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Meshes/Vehicles/Infernus/bumper_rear.usd@
+            )
+            {
+                rel material:binding = </Looks/CarPaint_Red> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_6CC01527158C4BB0"
+        {
+            def Xform "Xform" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Meshes/Vehicles/Infernus/door_left.usd@
+            )
+            {
+                rel material:binding = </Looks/CarPaint_Red> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (-1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_4CE2E579C28B9CD1"
+        {
+            def Xform "Xform" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Meshes/Vehicles/Infernus/light_cover_left.usd@
+            )
+            {
+                rel material:binding = </Looks/CarPaint_Red> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_880D05F204654AF6"
+        {
+            def Xform "Xform" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Meshes/Vehicles/Infernus/light_cover_left.usd@
+            )
+            {
+                rel material:binding = </Looks/CarPaint_Red> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (-1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+
+over "Looks"
+{
+    def Material "CarPaint_Metallic"
+    {
+        token outputs:mdl:displacement.connect = </Looks/CarPaint_Metallic/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/CarPaint_Metallic/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/CarPaint_Metallic/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.6, 0.599994, 0.599994) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:metallic_constant = 0.79999995 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./Textures/Vehicles/car_paint_edited_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "CarPaint_Red"
+    {
+        token outputs:mdl:displacement.connect = </Looks/CarPaint_Red/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/CarPaint_Red/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/CarPaint_Red/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.52509654, 0, 0) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:metallic_constant = 0.59999996 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Amount"
+                doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:metallic_texture = @@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Metallic Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./Textures/Vehicles/car_paint_edited_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:opacity_constant = 1 (
+                customData = {
+                    float default = 1
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Opacity Amount"
+                doc = """0 for completely transparent, 1 for completely opaque.  (Used if no texture is specified)
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 0.049999997 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            asset inputs:reflectionroughness_texture = @./Textures/Vehicles/car_paint_edited_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}
+

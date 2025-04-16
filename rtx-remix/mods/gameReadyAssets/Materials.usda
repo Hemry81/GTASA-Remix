@@ -9,6 +9,8 @@
         }
     }
     subLayers = [
+        @./texture/Lights/Light_materials.usda@,
+        @./texture/Plastic/Plastic_materials.usda@,
         @./texture/Asphalt/Asphalt_materials.usda@,
         @./texture/buildings/buildings_materials.usda@,
         @./texture/characters/Character_materials.usda@,

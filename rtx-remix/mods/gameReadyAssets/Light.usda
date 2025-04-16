@@ -424,9 +424,9 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.8, -1.5000000223517418, 1.1)
+                double3 xformOp:translate = (2.2000000327825546, -1.5000000223517418, 1.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -445,9 +445,9 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
-                double3 xformOp:translate = (1.8, 2.500000037252903, 1.1)
+                double3 xformOp:translate = (2.2000000327825546, 2.500000037252903, 1.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
 
@@ -464,7 +464,7 @@ over "RootNode"
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (-1.77, 1.7617460767608382, 0.8506610970915744)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
@@ -476,16 +476,17 @@ over "RootNode"
             {
                 float colorTemperature = 4500
                 bool enableColorTemperature = 1
+                float inputs:diffuse = 1
                 float intensity = 100
                 bool normalize = 1
                 float radius = 0.05
-                float shaping:cone:angle = 60
+                float shaping:cone:angle = 180
                 float shaping:cone:softness
                 float shaping:focus
                 color3f shaping:focusTint
                 asset shaping:ies:file
                 bool visibleInPrimaryRay = 1
-                double3 xformOp:rotateXYZ = (90, 0, 90)
+                double3 xformOp:rotateXYZ = (0, 0, 90)
                 double3 xformOp:scale = (1, 1, 1)
                 double3 xformOp:translate = (0.57, 0.83, 0.1)
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
@@ -3315,10 +3316,6 @@ over "RootNode"
                 uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
             }
         }
-    }
-
-    over "Looks"
-    {
     }
 }
 

@@ -1,0 +1,66 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "Looks"
+{
+    def Material "Black_Plastic"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Black_Plastic/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Black_Plastic/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Black_Plastic/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:diffuse_color_constant = (0.03474903, 0.034748685, 0.034748685) (
+                customData = {
+                    float3 default = (0.2, 0.2, 0.2)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo Color"
+                doc = """The base albedo color.  (Used if no texture is specified)
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            asset inputs:normalmap_texture = @./Plastic013B_2K-PNG_NormalDX.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:reflection_roughness_constant = 0.25 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}
+

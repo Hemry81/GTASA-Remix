@@ -19,69 +19,48 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./1CB126F1AE5A3A08_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+                asset inputs:diffuse_texture = @./1CB126F1AE5A3A08_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./1CB126F1AE5A3A08_height.dds@
+                asset inputs:normalmap_texture = @./1CB126F1AE5A3A08_normal.dds@
+                asset inputs:reflectionroughness_texture = @./1CB126F1AE5A3A08_rough.dds@
+            }
+        }
+        
+        over "mat_E9F08D2420BAF56A"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./E9F08D2420BAF56A_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./E9F08D2420BAF56A_height.dds@
+                asset inputs:normalmap_texture = @./E9F08D2420BAF56A_normal.dds@
+                asset inputs:reflectionroughness_texture = @./E9F08D2420BAF56A_rough.dds@
+                asset inputs:metallic_texture = @./E9F08D2420BAF56A_metal.dds@
+            }
+        }
 
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.025 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./1CB126F1AE5A3A08_height.dds@ (
-                    colorSpace = "raw"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./1CB126F1AE5A3A08_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./1CB126F1AE5A3A08_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+        over "mat_1B44B67804396086"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./1B44B67804396086_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./1B44B67804396086_height.dds@
+                asset inputs:normalmap_texture = @./1B44B67804396086_normal.dds@
+                asset inputs:reflectionroughness_texture = @./1B44B67804396086_rough.dds@
+            }
+        }
 
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+        over "mat_1BD426966EE336DA"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./1BD426966EE336DA_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./1BD426966EE336DA_height.dds@
+                asset inputs:normalmap_texture = @./1BD426966EE336DA_normal.dds@
+                asset inputs:reflectionroughness_texture = @./1BD426966EE336DA_rough.dds@
             }
         }
 
@@ -89,69 +68,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./83896A160E0B0486_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.025 (
-                    customData = {
-                        float default = 0.05
-                        dictionary range = {
-                            float max = 0.2
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./83896A160E0B0486_height.dds@ (
-                    colorSpace = "raw"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./83896A160E0B0486_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./83896A160E0B0486_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./83896A160E0B0486_albedo.dds@
+                float inputs:displace_in = 0.015
+                asset inputs:height_texture = @./83896A160E0B0486_height.dds@
+                asset inputs:normalmap_texture = @./83896A160E0B0486_normal.dds@
+                asset inputs:reflectionroughness_texture = @./83896A160E0B0486_rough.dds@
             }
         }
 
@@ -159,69 +80,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./8A04C4005EC0D1C2_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.02 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./8A04C4005EC0D1C2_height.dds@ (
-                    colorSpace = "raw"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./8A04C4005EC0D1C2_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./8A04C4005EC0D1C2_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./8A04C4005EC0D1C2_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./8A04C4005EC0D1C2_height.dds@
+                asset inputs:normalmap_texture = @./8A04C4005EC0D1C2_normal.dds@
+                asset inputs:reflectionroughness_texture = @./8A04C4005EC0D1C2_rough.dds@
             }
         }
 
@@ -229,69 +92,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./031FC630D9629701_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.025 (
-                    customData = {
-                        float default = 0.05
-                        dictionary range = {
-                            float max = 0.2
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./031FC630D9629701_height.dds@ (
-                    colorSpace = "raw"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./031FC630D9629701_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./031FC630D9629701_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./031FC630D9629701_albedo.dds@
+                float inputs:displace_in = 0.015
+                asset inputs:height_texture = @./031FC630D9629701_height.dds@
+                asset inputs:normalmap_texture = @./031FC630D9629701_normal.dds@
+                asset inputs:reflectionroughness_texture = @./031FC630D9629701_rough.dds@
             }
         }
 
@@ -299,69 +104,23 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./A1A030CB1C532B19_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.025 (
-                    customData = {
-                        float default = 0.05
-                        dictionary range = {
-                            float max = 0.2
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./A1A030CB1C532B19_height.dds@ (
-                    colorSpace = "raw"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./A1A030CB1C532B19_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./A1A030CB1C532B19_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./A1A030CB1C532B19_albedo.dds@
+                float inputs:displace_in = 0.015
+                asset inputs:height_texture = @./A1A030CB1C532B19_height.dds@
+                asset inputs:normalmap_texture = @./A1A030CB1C532B19_normal.dds@
+                asset inputs:reflectionroughness_texture = @./A1A030CB1C532B19_rough.dds@
+            }
+        }
+        
+        over "mat_D709BBFF3E9C2A7C"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./D709BBFF3E9C2A7C_albedo.dds@
+                float inputs:displace_in = 0.015
+                asset inputs:height_texture = @./D709BBFF3E9C2A7C_height.dds@
+                asset inputs:normalmap_texture = @./D709BBFF3E9C2A7C_normal.dds@
+                asset inputs:reflectionroughness_texture = @./D709BBFF3E9C2A7C_rough.dds@
             }
         }
 
@@ -369,69 +128,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./B53827C8E12BB227_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.025 (
-                    customData = {
-                        float default = 0.05
-                        dictionary range = {
-                            float max = 0.2
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./B53827C8E12BB227_height.dds@ (
-                    colorSpace = "raw"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./B53827C8E12BB227_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./B53827C8E12BB227_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./B53827C8E12BB227_albedo.dds@
+                float inputs:displace_in = 0.015
+                asset inputs:height_texture = @./B53827C8E12BB227_height.dds@
+                asset inputs:normalmap_texture = @./B53827C8E12BB227_normal.dds@
+                asset inputs:reflectionroughness_texture = @./B53827C8E12BB227_rough.dds@
             }
         }
 
@@ -439,69 +140,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./CB19E4B1627C6E5D_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.025 (
-                    customData = {
-                        float default = 0.05
-                        dictionary range = {
-                            float max = 0.2
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./CB19E4B1627C6E5D_height.dds@ (
-                    colorSpace = "raw"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./CB19E4B1627C6E5D_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./CB19E4B1627C6E5D_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./CB19E4B1627C6E5D_albedo.dds@
+                float inputs:displace_in = 0.015
+                asset inputs:height_texture = @./CB19E4B1627C6E5D_height.dds@
+                asset inputs:normalmap_texture = @./CB19E4B1627C6E5D_normal.dds@
+                asset inputs:reflectionroughness_texture = @./CB19E4B1627C6E5D_rough.dds@
             }
         }
 
@@ -509,69 +152,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./PavingStones125A_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.01 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./PavingStones125A_height.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./PavingStones125A_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./PavingStones125A_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./PavingStones125A_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./PavingStones125A_height.dds@
+                asset inputs:normalmap_texture = @./PavingStones125A_normal.dds@
+                asset inputs:reflectionroughness_texture = @./PavingStones125A_rough.dds@
             }
         }
 
@@ -579,56 +164,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./3B9B8CDB3A0C60BF_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                float inputs:displace_in = 0.05 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
-                    hidden = false
-                )
-                asset inputs:height_texture = @./3B9B8CDB3A0C60BF_height.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./3B9B8CDB3A0C60BF_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @./3B9B8CDB3A0C60BF_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
+                asset inputs:diffuse_texture = @./3B9B8CDB3A0C60BF_albedo.dds@
+                float inputs:displace_in = 0.05
+                asset inputs:height_texture = @./3B9B8CDB3A0C60BF_height.dds@
+                asset inputs:normalmap_texture = @./3B9B8CDB3A0C60BF_normal.dds@
+                asset inputs:reflectionroughness_texture = @./3B9B8CDB3A0C60BF_rough.dds@
             }
         }
 
@@ -636,56 +176,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./PavingStones119_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                float inputs:displace_in = 0.05 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = "Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep."
-                    hidden = false
-                )
-                asset inputs:height_texture = @./PavingStones119_height.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = "A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point."
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @./PavingStones119_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Normal"
-                    displayName = "Normal Map"
-                    hidden = false
-                )
-                asset inputs:reflectionroughness_texture = @./PavingStones119_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
-                    hidden = false
-                )
+                asset inputs:diffuse_texture = @./PavingStones119_albedo.dds@
+                float inputs:displace_in = 0.05
+                asset inputs:height_texture = @./PavingStones119_height.dds@
+                asset inputs:normalmap_texture = @./PavingStones119_normal.dds@
+                asset inputs:reflectionroughness_texture = @./PavingStones119_rough.dds@
             }
         }
 
@@ -693,69 +188,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./PavingStones_01_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.01 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./PavingStones_01_height.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./PavingStones_01_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./PavingStones_01_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./PavingStones_01_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./PavingStones_01_height.dds@
+                asset inputs:normalmap_texture = @./PavingStones_01_normal.dds@
+                asset inputs:reflectionroughness_texture = @./PavingStones_01_rough.dds@
             }
         }
 
@@ -763,69 +200,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./PavingStones_02_H_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.02 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./PavingStones_02_H_height.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./PavingStones_02_H_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./PavingStones_02_H_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./PavingStones_02_H_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./PavingStones_02_H_height.dds@
+                asset inputs:normalmap_texture = @./PavingStones_02_H_normal.dds@
+                asset inputs:reflectionroughness_texture = @./PavingStones_02_H_rough.dds@
             }
         }
 
@@ -833,69 +212,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Sidewalk 01_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.002 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./Sidewalk 01_height.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./Sidewalk 01_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./Sidewalk 01_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./Sidewalk 01_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./Sidewalk 01_height.dds@
+                asset inputs:normalmap_texture = @./Sidewalk 01_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Sidewalk 01_rough.dds@
             }
         }
 
@@ -903,69 +224,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Sidewalk 02_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.002 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./Sidewalk 01_height.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./Sidewalk 01_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./Sidewalk 02_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./Sidewalk 02_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./Sidewalk 01_height.dds@
+                asset inputs:normalmap_texture = @./Sidewalk 01_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Sidewalk 02_rough.dds@
             }
         }
 
@@ -973,69 +236,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Tiles_01H_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.02 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./Tiles_01H_height.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./Tiles_01H_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./Tiles_01H_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./Tiles_01H_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./Tiles_01H_height.dds@
+                asset inputs:normalmap_texture = @./Tiles_01H_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Tiles_01H_rough.dds@
             }
         }
 
@@ -1043,69 +248,11 @@ This parameter is unused.
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Tiles_02H_albedo.dds@ (
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Albedo/Opacity Map"
-                    doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                float inputs:displace_in = 0.02 (
-                    customData = {
-                        float default = 1
-                        dictionary range = {
-                            float max = 255
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Inwards Displacement"
-                    doc = """Ratio of UV width to depth.  If the texture is displayed as 1 meter wide, then a value of 1 means it can be at most 1 meter deep.  A value of 0.1 means that same 1 meter wide quad can be at most 0.1 meters deep.
-This parameter is unused.
-"""
-                    hidden = false
-                )
-                asset inputs:height_texture = @./Tiles_02H_height.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Displacement"
-                    displayName = "Height Map"
-                    doc = """A pixel value of 0 is the lowest point.  A pixel value of 1 will be the highest point.
-This parameter is unused.
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:normalmap_texture = @./Tiles_02H_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @./Tiles_02H_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                asset inputs:diffuse_texture = @./Tiles_02H_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./Tiles_02H_height.dds@
+                asset inputs:normalmap_texture = @./Tiles_02H_normal.dds@
+                asset inputs:reflectionroughness_texture = @./Tiles_02H_rough.dds@
             }
         }
     }

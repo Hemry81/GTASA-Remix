@@ -1,0 +1,16 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary omni_layer = {
+            dictionary locked = {
+            }
+            dictionary muteness = {
+            }
+        }
+    }
+    subLayers = [
+        @./Tree/trees.usda@,
+        @./Palm_Tree/palm_trees.usda@
+    ]
+)
+

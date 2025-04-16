@@ -15,6 +15,7 @@
         @./meshes/Rail Remaster/rail_remaster.usda@,
         @./meshes/Buildings/Buildings.usda@,
         @./meshes/Airport.usda@,
+        @./meshes/Vegetation/vegetations.usda@,
         @./meshes/Weapons/Weapons_meshes.usda@
     ]
     upAxis = "Z"

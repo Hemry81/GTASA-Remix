@@ -1,0 +1,836 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "meshes"
+    {
+        over "mesh_E71E350718F09778"
+        {
+            def Xform "Palm_Tree_01_Fruit"
+            {
+                rel material:binding = </Looks/Coconut_Palm_Levaes> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+
+        over "mesh_1F23971CE02E16F0"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Palm_Tree_03_Trunk" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Palm_Tree_03_trunk.usd@
+            )
+            {
+                rel material:binding = </Looks/Coconut_Palm_Trunk> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_625BA99F4123E61B"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Palm_Tree_03_Leaves" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Palm_Tree_03_leaves.usd@
+            )
+            {
+                rel material:binding = </Looks/Coconut_Palm_Levaes> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_FCF137F11A0005EA"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Palm_Tree_02_Trunk" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Palm_Tree_02_trunk.usd@
+            )
+            {
+                rel material:binding = </Looks/Date_Palm_Trunk> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            def Xform "Palm_Tree_02_Branch" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Palm_Tree_02_branch.usd@
+            )
+            {
+                rel material:binding = </Looks/Date_Palm_Levaes> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_38292DC55A29C969"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Palm_Tree_02_Leaves_01" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Palm_Tree_02_leaves_01.usd@
+            )
+            {
+                rel material:binding = </Looks/Date_Palm_Levaes> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "leaves"
+                {
+                    over "tree_001" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                    }
+                }
+            }
+
+            def Xform "Palm_Tree_02_Leaves_02" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Palm_Tree_02_leaves_02.usd@
+            )
+            {
+                rel material:binding = </Looks/Date_Palm_Levaes> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+                over "leaves"
+                {
+                    over "tree_001" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                    }
+                }
+            }
+        }
+
+        over "mesh_3202A3237C593BE6"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Palm_Tree_01_Trunk" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Palm_Tree_01_trunk.usd@
+            )
+            {
+                rel material:binding = </Looks/Coconut_Palm_Trunk> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_B48AF438AE66330C" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Looks/Coconut_Palm_Levaes> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Palm_Tree_01_Leaves" (
+                references = @./Palm_Tree_01_leaves.usd@
+            )
+            {
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_4114EE751CB648BE"
+        {
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+
+            def Xform "Palm_Tree_04_Trunk" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Palm_Tree_04_trunk.usd@
+            )
+            {
+                rel material:binding = </Looks/Key_Thatch_Palm_Trunk> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+        }
+
+        over "mesh_26FA090E812B78AE"
+        {
+            def Xform "Palm_Tree_04_Leaves" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+                references = @./Palm_Tree_04_leaves.usd@
+            )
+            {
+                rel material:binding = </Looks/Key_Thatch_Palm_Levaes> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double3 xformOp:rotateXYZ = (0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
+            }
+        }
+    }
+}
+
+over "Looks"
+{
+    def Material "Date_Palm_Trunk"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Date_Palm_Trunk/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Date_Palm_Trunk/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Date_Palm_Trunk/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./textures/Date_Palm_Trunk_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./textures/Date_Palm_Trunk_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./textures/Date_Palm_Trunk_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Date_Palm_Levaes"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Date_Palm_Levaes/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Date_Palm_Levaes/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Date_Palm_Levaes/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            int inputs:alpha_test_type = 5 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Alpha Test Type"
+                doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "AlphaTestType"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Always"
+                    string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                }
+            )
+            bool inputs:blend_enabled = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Enabled"
+                doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                hidden = false
+            )
+            int inputs:blend_type = 0 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Type"
+                doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "BlendType"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Alpha"
+                    string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                }
+            )
+            asset inputs:diffuse_texture = @./textures/Date_Palm_Leaves_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:inverted_blend = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Inverted Blend"
+                doc = """Indicates if an inverted blend type should be used.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @./textures/Date_Palm_Leaves_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./textures/Date_Palm_Leaves_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:subsurface_measurement_distance = 0.005 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 16
+                        float min = 0
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Measurement Distance"
+                doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface. (Used if no texture is specified).
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:subsurface_transmittance_texture = @./textures/coconut_palm_leaves_translucency.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Subsurface"
+                displayName = "Transmittance Map"
+                doc = """The texture specifying the transmittance color of subsurface materials.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_legacy_alpha_state = 0 (
+                customData = {
+                    bool default = 1
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Use Legacy Alpha State"
+                doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Coconut_Palm_Trunk"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Coconut_Palm_Trunk/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Coconut_Palm_Trunk/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Coconut_Palm_Trunk/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./textures/coconut_palm_trunk_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./textures/coconut_palm_trunk_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./textures/coconut_palm_trunk_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Coconut_Palm_Levaes"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Coconut_Palm_Levaes/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Coconut_Palm_Levaes/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Coconut_Palm_Levaes/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            int inputs:alpha_test_type = 5 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Alpha Test Type"
+                doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "AlphaTestType"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Always"
+                    string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                }
+            )
+            bool inputs:blend_enabled = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Enabled"
+                doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                hidden = false
+            )
+            int inputs:blend_type = 0 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Type"
+                doc = """The alpha state blend type to use.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "BlendType"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Alpha"
+                    string options = "Alpha:0|AlphaEmissive:1|ReverseAlphaEmissive:2|Color:3|ColorEmissive:4|ReverseColorEmissive:5|Emissive:6|Multiplicative:7|DoubleMultiplicative:8"
+                }
+            )
+            asset inputs:diffuse_texture = @./textures/coconut_palm_leaves_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:inverted_blend = 0 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Inverted Blend"
+                doc = """Indicates if an inverted blend type should be used.
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:normalmap_texture = @./textures/coconut_palm_leaves_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./textures/coconut_palm_leaves_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:subsurface_measurement_distance = 0.005 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 16
+                        float min = 0
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Measurement Distance"
+                doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface. (Used if no texture is specified).
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:subsurface_transmittance_texture = @./textures/coconut_palm_leaves_translucency.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Subsurface"
+                displayName = "Transmittance Map"
+                doc = """The texture specifying the transmittance color of subsurface materials.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_legacy_alpha_state = 0 (
+                customData = {
+                    bool default = 1
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Use Legacy Alpha State"
+                doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Key_Thatch_Palm_Trunk"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Key_Thatch_Palm_Trunk/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Key_Thatch_Palm_Trunk/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Key_Thatch_Palm_Trunk/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            asset inputs:diffuse_texture = @./textures/Key_Thatch_Palm_Trunk_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./textures/Key_Thatch_Palm_Trunk_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./textures/Key_Thatch_Palm_Trunk_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "Key_Thatch_Palm_Levaes"
+    {
+        token outputs:mdl:displacement.connect = </Looks/Key_Thatch_Palm_Levaes/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/Key_Thatch_Palm_Levaes/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/Key_Thatch_Palm_Levaes/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../../../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            int inputs:alpha_test_type = 5 (
+                customData = {
+                    int default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Alpha Test Type"
+                doc = """The alpha state alpha test type to use.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "AlphaTestType"
+                sdrMetadata = {
+                    string __SDR__enum_value = "Always"
+                    string options = "Always:0|Never:1|Less:2|Equal:3|LessOrEqual:4|Greater:5|NotEqual:6|GreaterOrEqual:7"
+                }
+            )
+            bool inputs:blend_enabled = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Blend Enabled"
+                doc = """Indicates if alpha state blending should be enabled.
+
+"""
+                hidden = false
+            )
+            asset inputs:diffuse_texture = @./textures/Key_Thatch_Palm_Levaes_albedo.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Albedo/Opacity Map"
+                doc = """The texture specifying the albedo value and the optional opacity value to use in the alpha channel
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:normalmap_texture = @./textures/Key_Thatch_Palm_Levaes_normal.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Normal Map"
+                hidden = false
+                renderType = "texture_2d"
+            )
+            asset inputs:reflectionroughness_texture = @./textures/Key_Thatch_Palm_Levaes_rough.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Map"
+                doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
+
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            float inputs:subsurface_measurement_distance = 0.005 (
+                customData = {
+                    float default = 0
+                    dictionary range = {
+                        float max = 16
+                        float min = 0
+                    }
+                }
+                displayGroup = "Subsurface"
+                displayName = "Measurement Distance"
+                doc = """The distance between front and back surface of subsurface materials in millimeter, or the thickness of the surface. (Used if no texture is specified).
+This parameter is unused.
+"""
+                hidden = false
+            )
+            asset inputs:subsurface_transmittance_texture = @./textures/Key_Thatch_Palm_Levaes_translucency.dds@ (
+                colorSpace = "auto"
+                customData = {
+                    asset default = @@
+                }
+                displayGroup = "Subsurface"
+                displayName = "Transmittance Map"
+                doc = """The texture specifying the transmittance color of subsurface materials.
+This parameter is unused.
+"""
+                hidden = false
+                renderType = "texture_2d"
+            )
+            bool inputs:use_legacy_alpha_state = 0 (
+                customData = {
+                    bool default = 1
+                }
+                displayGroup = "Alpha Blending"
+                displayName = "Use Legacy Alpha State"
+                doc = """Indicates if the alpha state should be driven by the game itself, or overridden by this material.
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+}
+

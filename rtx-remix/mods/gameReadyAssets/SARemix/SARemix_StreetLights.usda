@@ -305,7 +305,7 @@ over "RootNode"
                     color3f inputs:color = (1, 1, 1)
                     float inputs:colorTemperature = 6500
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 3000
+                    float inputs:intensity = 1200
                     bool inputs:normalize = 0
                     float inputs:radius = 0.3
                     float inputs:shaping:cone:angle = 75
@@ -365,7 +365,7 @@ over "RootNode"
                     color3f inputs:color = (1, 1, 1)
                     float inputs:colorTemperature = 4500
                     bool inputs:enableColorTemperature = 1
-                    float inputs:intensity = 3000
+                    float inputs:intensity = 1200
                     bool inputs:normalize = 0
                     float inputs:radius = 0.3
                     float inputs:shaping:cone:angle = 35
@@ -389,7 +389,7 @@ over "RootNode"
                     color3f inputs:color = (1, 1, 1)
                     float inputs:colorTemperature = 4500
                     bool inputs:enableColorTemperature = 1
-                    float inputs:intensity = 1500
+                    float inputs:intensity = 900
                     bool inputs:normalize = 0
                     float inputs:radius = 0.3
                     float inputs:shaping:cone:angle = 75
@@ -434,12 +434,6 @@ over "RootNode"
 
         over "mesh_170FB19C6CC5CB76"
         {
-            over "mesh" (
-                active = false
-            )
-            {
-            }
-
             def Xform "Spot_Light_M_Cold"
             {
                 double3 xformOp:rotateXYZ = (0, 0, 0)
@@ -479,7 +473,7 @@ over "RootNode"
                     color3f inputs:color = (1, 1, 1)
                     float inputs:colorTemperature = 6500
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 1500
+                    float inputs:intensity = 900
                     bool inputs:normalize = 0
                     float inputs:radius = 0.3
                     float inputs:shaping:cone:angle = 75
@@ -513,6 +507,12 @@ over "RootNode"
                         token visibility = "invisible"
                     }
                 }
+            }
+
+            over "mesh" (
+                active = false
+            )
+            {
             }
         }
 
@@ -557,7 +557,7 @@ over "RootNode"
                     color3f inputs:color = (1, 1, 1)
                     float inputs:colorTemperature = 4500
                     bool inputs:enableColorTemperature = 1
-                    float inputs:intensity = 1500
+                    float inputs:intensity = 900
                     bool inputs:normalize = 0
                     float inputs:radius = 0.3
                     float inputs:shaping:cone:angle = 75
@@ -617,7 +617,7 @@ over "RootNode"
                     color3f inputs:color = (1, 1, 1)
                     float inputs:colorTemperature = 6500
                     bool inputs:enableColorTemperature = 0
-                    float inputs:intensity = 1500
+                    float inputs:intensity = 1200
                     bool inputs:normalize = 0
                     float inputs:radius = 0.3
                     float inputs:shaping:cone:angle = 35
@@ -701,7 +701,7 @@ over "RootNode"
                     color3f inputs:color = (1, 1, 1)
                     float inputs:colorTemperature = 4500
                     bool inputs:enableColorTemperature = 1
-                    float inputs:intensity = 1500
+                    float inputs:intensity = 1200
                     bool inputs:normalize = 0
                     float inputs:radius = 0.3
                     float inputs:shaping:cone:angle = 35
