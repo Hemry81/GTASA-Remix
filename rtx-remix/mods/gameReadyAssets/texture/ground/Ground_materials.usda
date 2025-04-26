@@ -246,7 +246,7 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @./Grass001_albedo.dds@
-                float inputs:displace_in = 0.015
+                float inputs:displace_in = 0.001
                 asset inputs:height_texture = @./Grass001_height.dds@
                 asset inputs:normalmap_texture = @./Grass001_normal.dds@
                 asset inputs:reflectionroughness_texture = @./Grass001_rough.dds@

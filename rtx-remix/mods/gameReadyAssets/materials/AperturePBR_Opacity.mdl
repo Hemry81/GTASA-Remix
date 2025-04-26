@@ -359,6 +359,45 @@ export material AperturePBR_Opacity(
     anno::description("The anisotropy of the scattering phase function. 0.99 = light mostly passes straight through (forward), 0 = light spreads a lot (diffuse), -0.99 = light mostly reflects (backward)."),
     anno::in_group("Subsurface"),
     anno::unused()
+  ]],
+  uniform bool subsurface_diffusion_profile = 0
+  [[
+    anno::display_name("Subsurface Scattering Diffusion Profile"),
+    anno::hard_range(0, 1),
+    anno::description("Enable Subsurface Scattering Diffusion Profile."),
+    anno::in_group("Subsurface"),
+    anno::unused()
+  ]],
+  uniform color subsurface_radius = color(0.5f)
+  [[
+    anno::display_name("Subsurface Scattering Radius"),
+    anno::hard_range(color(0.0), color(1.0)),
+    anno::description("The max distance light can scatter under a surface, defined per color channel. Also known as MFP or mean free path. (Only used if no scattering radius map texture is specified.)"),
+    anno::in_group("Subsurface"),
+    anno::unused()
+  ]],
+  uniform texture_2d subsurface_radius_texture = texture_2d("", tex::gamma_linear)
+  [[
+    anno::display_name("Subsurface Scattering Radius Map"),
+    anno::description("Subsurface Scattering Radius but defined as a texture."),
+    anno::in_group("Subsurface"),
+    anno::unused()
+  ]],
+  uniform float subsurface_radius_scale = 1.0f
+  [[
+    anno::display_name("Subsurface Scattering Scale"),
+    anno::hard_range(0, 1000),
+    anno::description("Scale of diffusion profile for subsurface scattering."),
+    anno::in_group("Subsurface"),
+    anno::unused()
+  ]],
+  uniform float subsurface_max_sample_radius = 16.0f
+  [[
+    anno::display_name("Subsurface Scattering Max Scale"),
+    anno::hard_range(0, 65504),
+    anno::description("Max sample distance of diffusion profile for subsurface scattering."),
+    anno::in_group("Subsurface"),
+    anno::unused()
   ]]
 )
 [[

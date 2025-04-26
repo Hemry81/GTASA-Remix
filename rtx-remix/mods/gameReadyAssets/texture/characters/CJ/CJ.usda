@@ -88,6 +88,7 @@ over "RootNode"
                     hidden = false
                     renderType = "texture_2d"
                 )
+                asset inputs:metallic_texture = @./1AB00AD812498A17_metal.dds@
             }
         }
 

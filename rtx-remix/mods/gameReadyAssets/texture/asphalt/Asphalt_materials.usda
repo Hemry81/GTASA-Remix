@@ -426,11 +426,11 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Asphalt024C_albedo.dds@
+                asset inputs:diffuse_texture = @./F7B04EC7EAC3E083_albedo.dds@
                 float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./Asphalt024C_height.dds@
-                asset inputs:normalmap_texture = @./Asphalt024C_normal.dds@
-                asset inputs:reflectionroughness_texture = @./Asphalt024C_rough.dds@
+                asset inputs:height_texture = @./F7B04EC7EAC3E083_height.dds@
+                asset inputs:normalmap_texture = @./F7B04EC7EAC3E083_normal.dds@
+                asset inputs:reflectionroughness_texture = @./F7B04EC7EAC3E083_rough.dds@
             }
         }
     }

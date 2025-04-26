@@ -29,7 +29,7 @@ over "RootNode"
             {
                 float inputs:angle = 1
                 color3f inputs:color = (0.99215686, 0.9843137, 0.827451)
-                float inputs:intensity = 30
+                float inputs:intensity = 20
                 float inputs:shaping:cone:angle = 180
                 float inputs:shaping:cone:softness
                 float inputs:shaping:focus
@@ -149,7 +149,7 @@ over "RootNode"
                 {
                     float3[] extent = [(-50, -50, -0), (50, 50, 0)]
                     color3f inputs:color = (0.99215686, 0.9843137, 0.827451)
-                    float inputs:intensity = 30000
+                    float inputs:intensity = 20000
                     float inputs:radius = 50
                     float inputs:shaping:cone:angle = 180
                     float inputs:shaping:cone:softness

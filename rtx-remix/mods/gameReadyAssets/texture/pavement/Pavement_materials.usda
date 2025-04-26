@@ -81,8 +81,8 @@ over "RootNode"
             over "Shader"
             {
                 asset inputs:diffuse_texture = @./8A04C4005EC0D1C2_albedo.dds@
-                float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./8A04C4005EC0D1C2_height.dds@
+                float inputs:displace_in = 0.015
+                asset inputs:height_texture = @./B53827C8E12BB227_height.dds@
                 asset inputs:normalmap_texture = @./8A04C4005EC0D1C2_normal.dds@
                 asset inputs:reflectionroughness_texture = @./8A04C4005EC0D1C2_rough.dds@
             }
@@ -109,6 +109,30 @@ over "RootNode"
                 asset inputs:height_texture = @./A1A030CB1C532B19_height.dds@
                 asset inputs:normalmap_texture = @./A1A030CB1C532B19_normal.dds@
                 asset inputs:reflectionroughness_texture = @./A1A030CB1C532B19_rough.dds@
+            }
+        }
+        
+        over "mat_B6609D3AF1C444FE"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./B6609D3AF1C444FE_albedo.dds@
+                float inputs:displace_in = 0.015
+                asset inputs:height_texture = @./B6609D3AF1C444FE_height.dds@
+                asset inputs:normalmap_texture = @./B6609D3AF1C444FE_normal.dds@
+                asset inputs:reflectionroughness_texture = @./B6609D3AF1C444FE_rough.dds@
+            }
+        }
+        
+        over "mat_3B51E3D431A85153"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./3B51E3D431A85153_albedo.dds@
+                float inputs:displace_in = 0.015
+                asset inputs:height_texture = @./3B51E3D431A85153_height.dds@
+                asset inputs:normalmap_texture = @./3B51E3D431A85153_normal.dds@
+                asset inputs:reflectionroughness_texture = @./3B51E3D431A85153_rough.dds@
             }
         }
         
@@ -212,11 +236,23 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Sidewalk 01_albedo.dds@
+                asset inputs:diffuse_texture = @./68634351994B5E67_albedo.dds@
                 float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./Sidewalk 01_height.dds@
-                asset inputs:normalmap_texture = @./Sidewalk 01_normal.dds@
-                asset inputs:reflectionroughness_texture = @./Sidewalk 01_rough.dds@
+                asset inputs:height_texture = @./68634351994B5E67_height.dds@
+                asset inputs:normalmap_texture = @./68634351994B5E67_normal.dds@
+                asset inputs:reflectionroughness_texture = @./68634351994B5E67_rough.dds@
+            }
+        }
+        
+        over "mat_0BA96221E0FD58EC"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./0BA96221E0FD58EC_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./0BA96221E0FD58EC_height.dds@
+                asset inputs:normalmap_texture = @./0BA96221E0FD58EC_normal.dds@
+                asset inputs:reflectionroughness_texture = @./0BA96221E0FD58EC_rough.dds@
             }
         }
 
@@ -224,11 +260,35 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./Sidewalk 02_albedo.dds@
+                asset inputs:diffuse_texture = @./7F5C05425BC26D02_albedo.dds@
                 float inputs:displace_in = 0.01
-                asset inputs:height_texture = @./Sidewalk 01_height.dds@
-                asset inputs:normalmap_texture = @./Sidewalk 01_normal.dds@
-                asset inputs:reflectionroughness_texture = @./Sidewalk 02_rough.dds@
+                asset inputs:height_texture = @./7F5C05425BC26D02_height.dds@
+                asset inputs:normalmap_texture = @./7F5C05425BC26D02_normal.dds@
+                asset inputs:reflectionroughness_texture = @./7F5C05425BC26D02_rough.dds@
+            }
+        }
+        
+        over "mat_0518EF59481BBE18"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./0518EF59481BBE18_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./0518EF59481BBE18_height.dds@
+                asset inputs:normalmap_texture = @./0518EF59481BBE18_normal.dds@
+                asset inputs:reflectionroughness_texture = @./0518EF59481BBE18_rough.dds@
+            }
+        }
+        
+        over "mat_14665DEAED728721"
+        {
+            over "Shader"
+            {
+                asset inputs:diffuse_texture = @./14665DEAED728721_albedo.dds@
+                float inputs:displace_in = 0.01
+                asset inputs:height_texture = @./14665DEAED728721_height.dds@
+                asset inputs:normalmap_texture = @./14665DEAED728721_normal.dds@
+                asset inputs:reflectionroughness_texture = @./14665DEAED728721_rough.dds@
             }
         }
 

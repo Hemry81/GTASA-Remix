@@ -367,7 +367,7 @@ This parameter is unused.
                 hidden = false
                 renderType = "texture_2d"
             )
-            float inputs:displace_in = 0.02 (
+            float inputs:displace_in = 0.01 (
                 customData = {
                     float default = 0.05
                     dictionary range = {
