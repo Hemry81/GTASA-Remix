@@ -1,0 +1,859 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_02B161B24402F9FB" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_032123631B5B198B" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_06A3BDFBA661D206" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_070D71C6DFA6FDA8" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_0DAB196E1EA4A28A" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_0FDB390E9A4E3EDE" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_1089EAF841A3FA8B" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_1156FD71DC00AF3A" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_125D4ABD9D0C890D" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_15EF6CD52AEFFB7B" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_17D5007F46DF0423" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_17E74055E0C87AD1" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_1968AC46131BAA0A" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_19B7D8FB47BF12F8" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_1A22FFFDB26C7F53" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_1C63ADA580B28F4B" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_2571D57679BA41B4" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_287717E9C1CC8CF1" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_28D8709C4A09121E" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_28F59ADEF5ACB083" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_2B69C257F9279DE5" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_2E8944E4D4E931B9" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_2EA053253205733B" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_2F53C97A869614E7" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_30B648AFF21765FE" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_3263C443D8405D4D" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_33A8A25422E92D0B" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_3D8346F2BAE11D23" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_44155ECFBECFFC58" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_568CA9CED8367CE7" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_56E96BD630090A9C" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_5741C76005CB2B4D" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_5DDB91146BA39185" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_5EF7117BE2BBA720" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_5F4A3E2677CF37B3" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_60D5772BDCD03CBC" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_64B5F6C135DECB2F" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_651C1B4DB6106A92" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_659C12A29C598F6C" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_68C5CF8284D873EA" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_6B33169F5C007541" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_6CBF4359BFCCC038" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_6FDE2296B7EA357E" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_702D898CBA93832D" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_72304B279D93A053" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_724B5FAF90DFB0AF" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_77EAE202E2F3B273" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_7D676D7C00F34984" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_7D8094C09654B31E" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_804D278149D6286A" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_82A9E96BA0E9EA9B" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_8318CA905028A3F8" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_83FBD3EBE5644DBA" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_8631F1CE6ACEA3A8" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_89C49AE467386C6E" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_8D791078ACFFB3C4" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_91B9F9D6B2EB488F" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_93CC9DFBA7F09CAF" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_941A176CA1435A02" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_94C427E5514B05F7" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_951F0280F8DA2A54" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_974B60C8338D9234" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_977B1FA5CEEE51EB" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_9C28280A5D61A655" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_9CB3CA31E900B8C4" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_A00931C0DB907E07" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_A03C6173B7CCFB22" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_A0E9B53C3AF53DB6" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_A2E6E34006EB5F69" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_A4421BB8BEDE2BD7" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_A8060F0D27818ABD" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_A89AAE0215936668" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_AB154B2100C33044" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_AB735B136C9DD33A" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_AC498C02AF227F9B" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_ACEB090241F23D4F" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_AD64D596DC510AF4" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_B06823294BA51E90" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_B72EA4D19542954B" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_B9E311FB040369AE" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_BA78FB76AB1A2E25" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_BD260ABA1528C1B1" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_BD3733C19327C724" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_BD5232352FFD6000" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_BE1FEA8B89510FBC" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_BEB0A7FF00DC72F9" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_BEEF2842653E1BF7" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_C4F04CE8BA9CD506" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_C789514909192E83" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_CD1AA8862F68F8D4" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_D25A3A2E4637B47E" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_D4F8A06274177AF5" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_D7F6653FA8CD4899" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_D8F7EFBFD32665C9" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_E0AF9DF54DE77C47" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_E0BA3583CDDF47B2" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_E3297628E8DA5C9D" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_E4DEEE3FB2B15C24" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_E67E32BAB3F608C1" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_E79DB936644C8720" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_F10447D79E83CAD9" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_F107FB3E8B45E83E" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_F678EF8B93254C3C" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_F7B6C1D91C6C522E" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_FD4F30697E7367A9" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+        over "mat_FDD52E0B5BB40178" 
+        {
+            over "Shader"
+            {
+                float inputs:metallic_constant = 0.60
+                float inputs:reflection_roughness_constant = 0.30
+            }
+        }
+    }
+}

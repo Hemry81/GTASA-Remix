@@ -1,0 +1,55 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_98969302F928AFB6"
+        {
+            over "Shader"
+            {
+                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 2.0
+                asset inputs:emissive_mask_texture = @./Textures/Vehicles/90sAVP/Light/98969302F928AFB6_emissive.dds@
+                float inputs:metallic_constant = 0.8
+                float inputs:reflection_roughness_constant = 0.05
+            }
+        }
+        over "mat_ABD1931B78E80D6C"
+        {
+            over "Shader"
+            {
+                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 2.0
+                asset inputs:emissive_mask_texture = @./Textures/Vehicles/90sAVP/Light/ABD1931B78E80D6C_emissive.dds@
+                float inputs:metallic_constant = 0.8
+                float inputs:reflection_roughness_constant = 0.05
+            }
+        }
+        over "mat_D39C3F599BB58319"
+        {
+            over "Shader"
+            {
+                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 2.0
+                asset inputs:emissive_mask_texture = @./Textures/Vehicles/90sAVP/Light/D39C3F599BB58319_emissive.dds@
+                float inputs:metallic_constant = 0.8
+                float inputs:reflection_roughness_constant = 0.05
+            }
+        }
+        over "mat_ED3B4249D8C10B3F"
+        {
+            over "Shader"
+            {
+                bool inputs:enable_emission = 1
+                float inputs:emissive_intensity = 2.0
+                asset inputs:emissive_mask_texture = @./Textures/Vehicles/90sAVP/Light/ED3B4249D8C10B3F_emissive.dds@
+                float inputs:metallic_constant = 0.8
+                float inputs:reflection_roughness_constant = 0.05
+            }
+        }
+    }
+}

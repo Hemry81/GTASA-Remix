@@ -1,0 +1,88 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+over "RootNode"
+{
+    over "Looks"
+    {
+        over "mat_FDB882662430B36E"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                bool inputs:thin_walled = 1
+                asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/Light/FDB882662430B36E_albedo.dds@
+                bool inputs:use_diffuse_layer = 1
+            }
+        }
+        over "mat_5D2A1F46A2237D25"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                bool inputs:thin_walled = 1
+                asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/Light/5D2A1F46A2237D25_albedo.dds@
+                bool inputs:use_diffuse_layer = 1
+            }
+        }
+        over "mat_7EF3E621EB3AE129"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                bool inputs:thin_walled = 1
+                asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/Light/7EF3E621EB3AE129_albedo.dds@
+                bool inputs:use_diffuse_layer = 1
+            }
+        }
+        over "mat_A643B57C7AFE6D14"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                bool inputs:thin_walled = 1
+                asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/Light/A643B57C7AFE6D14_albedo.dds@
+                bool inputs:use_diffuse_layer = 1
+            }
+        }
+        over "mat_3018F04DF1075FDD"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                bool inputs:thin_walled = 1
+                asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/Light/3018F04DF1075FDD_albedo.dds@
+                bool inputs:use_diffuse_layer = 1
+            }
+        }
+        over "mat_1493F7AF55885CEB"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                bool inputs:thin_walled = 1
+                asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/Light/1493F7AF55885CEB_albedo.dds@
+                bool inputs:use_diffuse_layer = 1
+            }
+        }
+        over "mat_1493F7AF55885CEB"
+        {
+            over "Shader"
+            {
+                uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                bool inputs:thin_walled = 1
+                asset inputs:transmittance_texture = @./Textures/Vehicles/90sAVP/Light/1493F7AF55885CEB_albedo.dds@
+                bool inputs:use_diffuse_layer = 1
+            }
+        }
+    }
+}

@@ -36,7 +36,7 @@ over "RootNode"
                 {
                     float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                     color3f inputs:color = (1, 1, 1)
-                    float inputs:intensity = 2000
+                    float inputs:intensity = 1200
                     float inputs:radius = 0.1
                     float inputs:shaping:cone:angle = 38
                     float inputs:shaping:cone:softness = 0.1
@@ -55,7 +55,7 @@ over "RootNode"
                     {
                         float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                         color3f inputs:color = (1, 0.67058825, 0)
-                        float inputs:intensity = 1000
+                        float inputs:intensity = 800
                         float inputs:radius = 0.1
                         float inputs:shaping:cone:angle = 39
                         float inputs:shaping:cone:softness = 0.02
@@ -74,7 +74,7 @@ over "RootNode"
                     {
                         float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                         color3f inputs:color = (1, 0.35302097, 0.04247105)
-                        float inputs:intensity = 1000
+                        float inputs:intensity = 800
                         float inputs:radius = 0.1
                         float inputs:shaping:cone:angle = 39.5
                         float inputs:shaping:cone:softness = 0.02
@@ -93,7 +93,7 @@ over "RootNode"
                     {
                         float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                         color3f inputs:color = (0, 0.1776061, 1)
-                        float inputs:intensity = 1000
+                        float inputs:intensity = 800
                         float inputs:radius = 0.1
                         float inputs:shaping:cone:angle = 40
                         float inputs:shaping:cone:softness = 0.02
@@ -112,7 +112,7 @@ over "RootNode"
                     references = @./Meshes/nullObject.usd@
                 )
                 {
-                    rel material:binding = </Looks/White_Emission> (
+                    rel material:binding = </Looks/mat_Plain> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                     double3 xformOp:rotateXYZ = (0, 0, 0)
@@ -144,7 +144,7 @@ over "RootNode"
                 {
                     float3[] extent = [(-50, -50, -50), (50, 50, 50)]
                     color3f inputs:color = (1, 0.04247105, 0.04247105)
-                    float inputs:intensity = 20
+                    float inputs:intensity = 50
                     float inputs:radius = 0.05
                     float inputs:shaping:cone:angle = 180
                     float inputs:shaping:cone:softness = 0
@@ -163,7 +163,7 @@ over "RootNode"
                     references = @./Meshes/nullObject.usd@
                 )
                 {
-                    rel material:binding = </Looks/Red_Emission> (
+                    rel material:binding = </Looks/mat_Plain> (
                         bindMaterialAs = "weakerThanDescendants"
                     )
                     double3 xformOp:rotateXYZ = (0, -0, 0)
@@ -205,7 +205,7 @@ over "Looks"
                 hidden = false
                 renderType = "color"
             )
-            float inputs:emissive_intensity = 1000 (
+            float inputs:emissive_intensity = 800 (
                 customData = {
                     float default = 40
                     dictionary range = {
@@ -339,6 +339,80 @@ over "Looks"
                 renderType = "color"
             )
             bool inputs:enable_emission = 1 (
+                customData = {
+                    bool default = 0
+                }
+                displayGroup = "Emission"
+                displayName = "Enable Emission"
+                doc = """Enables the emission of light from the material
+
+"""
+                hidden = false
+            )
+            float inputs:reflection_roughness_constant = 1 (
+                customData = {
+                    float default = 0.5
+                    dictionary range = {
+                        float max = 1
+                        float min = 0
+                    }
+                }
+                displayGroup = "Base Material"
+                displayName = "Roughness Amount"
+                doc = """Higher roughness values lead to more blurry reflections, use 0 for perfectly smooth.  (Used if no texture is specified).
+
+"""
+                hidden = false
+            )
+            token outputs:out (
+                renderType = "material"
+            )
+        }
+    }
+
+    def Material "mat_Plain"
+    {
+        token outputs:mdl:displacement.connect = </Looks/mat_Plain/Shader.outputs:out>
+        token outputs:mdl:surface.connect = </Looks/mat_Plain/Shader.outputs:out>
+        token outputs:mdl:volume.connect = </Looks/mat_Plain/Shader.outputs:out>
+
+        def Shader "Shader"
+        {
+            uniform token info:implementationSource = "sourceAsset"
+            uniform asset info:mdl:sourceAsset = @../materials/AperturePBR_Opacity.mdl@
+            uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
+            color3f inputs:emissive_color_constant = (1, 0.1, 0.1) (
+                customData = {
+                    float3 default = (1, 0.1, 0.1)
+                    dictionary range = {
+                        float3 max = (1, 1, 1)
+                        float3 min = (0, 0, 0)
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Color"
+                doc = """The emissive color when no emissive color texture is specified.
+
+"""
+                hidden = false
+                renderType = "color"
+            )
+            float inputs:emissive_intensity = 40 (
+                customData = {
+                    float default = 40
+                    dictionary range = {
+                        float max = 65504
+                        float min = 0
+                    }
+                }
+                displayGroup = "Emission"
+                displayName = "Emissive Intensity"
+                doc = """Intensity of the emission
+
+"""
+                hidden = false
+            )
+            bool inputs:enable_emission = 0 (
                 customData = {
                     bool default = 0
                 }

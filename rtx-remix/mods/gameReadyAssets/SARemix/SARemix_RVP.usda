@@ -70,44 +70,9 @@ over "RootNode"
         {
             over "Shader"
             {
-                float inputs:metallic_constant = 0.39999998 (
-                    customData = {
-                        float default = 0
-                        dictionary range = {
-                            float max = 1
-                            float min = 0
-                        }
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Metallic Amount"
-                    doc = """How metallic is this material, 0 for not at all, 1 for fully metallic. (Used if no texture is specified).
-
-"""
-                    hidden = false
-                )
-                asset inputs:normalmap_texture = @../Textures/Vehicles/Car_Paint_normal.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Normal Map"
-                    hidden = false
-                    renderType = "texture_2d"
-                )
-                asset inputs:reflectionroughness_texture = @../Textures/Vehicles/Car_Paint_rough.dds@ (
-                    colorSpace = "auto"
-                    customData = {
-                        asset default = @@
-                    }
-                    displayGroup = "Base Material"
-                    displayName = "Roughness Map"
-                    doc = """A single channel texture defining roughness per texel.  Higher roughness values lead to more blurry reflections.
-
-"""
-                    hidden = false
-                    renderType = "texture_2d"
-                )
+                float inputs:metallic_constant = 0.39999998
+                asset inputs:normalmap_texture = @../Textures/Vehicles/Car_Paint_normal.dds@
+                float inputs:reflection_roughness_constant = 0.05
             }
         }
     }
